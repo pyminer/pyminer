@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check1_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_check1_hover" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#FFFFFF" x="0" y="0" width="16" height="16"></rect>
+            <path d="M8.511,1 C12.089,1 15,3.911 15,7.489 C15,11.067 12.089,13.978 8.511,13.978 C4.933,13.978 2.022,11.067 2.022,7.489 C2.022,3.911 4.933,1 8.511,1 L8.511,1 Z M8.511,0 C4.375,0 1.021,3.353 1.021,7.489 C1.021,11.625 4.375,14.978 8.51,14.978 C12.647,14.978 15.999,11.624 15.999,7.489 C16,3.353 12.647,0 8.511,0 L8.511,0 Z" id="Shape" fill="#4196FF"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_check_hover1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_check_hover1" transform="translate(-24.000000, 1.000000)" fill-rule="nonzero">
+            <path d="M26,0 L38,0 C38.552,0 39,0.448 39,1 L39,13 C39,13.552 38.552,14 38,14 L26,14 C25.448,14 25,13.552 25,13 L25,1 C25,0.448 25.448,0 26,0 Z" id="Shape" fill="#4196FF"></path>
+            <polygon id="Shape" fill="#FFFFFF" points="37.584 4.017 30.603 11.005 26.803 7.205 28.003 6.005 30.6 8.602 36.384 2.818"></polygon>
+        </g>
+    </g>
+</svg>
