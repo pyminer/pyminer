@@ -13,7 +13,7 @@ from PyQt5.QtCore import *
 
 # 获取项目相关目录添加到path中
 rootdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-uidir = rootdir + '\\ui'
+uidir = os.path.join(rootdir ,'ui')
 # 把目录加入环境变量
 sys.path.insert(0, rootdir)
 sys.path.insert(0, uidir)

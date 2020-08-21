@@ -32,7 +32,7 @@ from pyminer.ui.data.data_standard import Ui_Form as DataStandard_Ui_Form
 from pyminer.ui.data.data_column_encode import Ui_Form as DataColumnEncode_Ui_Form
 from pyminer.ui.data.data_column_name import Ui_Form as DataColumnName_Ui_Form
 from pyminer.ui.data.data_repace import Ui_Form as DataReplace_Ui_Form
-
+from pyminer.share.exceptionhandler import exception_handler
 # 定义日志输出格式
 logging.basicConfig(format="%(asctime)s %(name)s:%(levelname)s:%(message)s", datefmt="%Y-%m-%d %H:%M:%S",
                     level=logging.INFO)
@@ -454,7 +454,7 @@ class DataRowFilterForm(QDialog, DataRowFilter_Ui_Form):
         else:
             self.comboBox_col_condition.clear()
             self.comboBox_col_condition.addItems(['模糊匹配', 'in', 'not in'])
-
+    @exception_handler
     def filter_column(self):
         # 根据列筛选
         data = self.current_dataset.copy()
@@ -473,6 +473,7 @@ class DataRowFilterForm(QDialog, DataRowFilter_Ui_Form):
                 elif self.comboBox_col_condition.currentText() == "<=":
                     self.filter_dataset = data[data[col] <= float(content)]
             else:
+                content=content.lower()
                 if self.comboBox_col_condition.currentText() == "模糊匹配":
                     self.filter_dataset = data[data[col].map(str.lower).str.contains(content)]
                 elif self.comboBox_col_condition.currentText() == "in":
@@ -484,6 +485,9 @@ class DataRowFilterForm(QDialog, DataRowFilter_Ui_Form):
     def filter_dtype(self):
         data = self.current_dataset.copy()
         dtype = self.comboBox_dtype.currentText()  # 当前要筛选的数据类型
+        if dtype =="全部":
+            self.data_preview(data)
+            return
         self.filter_dataset = data.select_dtypes(include=dtype)
         self.data_preview(self.filter_dataset)
 

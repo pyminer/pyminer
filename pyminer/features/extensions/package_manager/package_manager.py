@@ -33,8 +33,8 @@ class PackageManagerForm(QWidget, EnvManager_Ui_Form):
         self.widget.hide()
         self.package_filter_change()
 
-        ui_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))))+r'\ui'
-        qss_path = ui_dir + "\\source\\qss\\patata.qss"
+        ui_dir = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))),'ui')
+        qss_path = os.path.join(ui_dir ,"source","qss","patata.qss")
         QssTools.set_qss_to_obj(qss_path, self)
 
         self.pushButton_install.clicked.connect(self.package_install_display)

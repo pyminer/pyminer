@@ -11,9 +11,9 @@ import pandas as pd
 # 导入PyQt5模块
 from PyQt5.Qt import *
 
-#导入功能组件
+# 导入功能组件
 
-from pyminer.share import threads #导入多线程处理模块
+from pyminer.share import threads  # 导入多线程处理模块
 from pyminer.features.sample import io  # 导入数据相关操作模块
 from pyminer.features.visualize import base as plot  # 导入可视化相关操作模块
 from pyminer.features.statistics import basic_stats  # 导入统计相关操作模块
@@ -22,7 +22,7 @@ from pyminer.features.extensions.package_manager import package_manager  # 导�
 from pyminer.features.report import pyreport  # 导入输出报告模块
 from pyminer.features.preprocess import preprocess  # 导入数据预处理模块
 
-#导入UI相关模块
+# 导入UI相关模块
 from pyminer.ui.base.mainForm import Ui_MainWindow
 from pyminer.ui.base.newItem import Ui_Form as New_Ui_Form
 from pyminer.ui.base.aboutMe import Ui_Form as AboutMe_Ui_Form
@@ -31,19 +31,18 @@ from pyminer.ui.source.qss.qss_tools import QssTools
 import qdarkstyle
 
 __Author__ = """
-By: lixianglong
+By: PyMiner Development Team
 QQ: 454017698
 Email: aboutlong@qq.com
 """
-__Copyright__ = 'Copyright (c) 2020 lixianglong'
-__Version__ = 0.1
+__Copyright__ = 'Copyright (c) 2020 PyMiner Development Team'
+__Version__ = '1.0.1'
 
 root_dir = os.path.dirname(os.path.abspath(__file__)) + r'\pyminer'
 
 # 定义日志输出格式
 logging.basicConfig(format="%(asctime)s %(name)s:%(levelname)s:%(message)s", datefmt="%Y-%m-%d %H:%M:%S",
                     level=logging.INFO)
-
 
 TextStyle = """
 QMessageBox QPushButton[text="OK"] {
@@ -105,12 +104,16 @@ QMessageBox QPushButton[text="Ignore"] {
 }
 """
 
+
 class Application(QApplication):
     def __init__(self, argv):
         QApplication.__init__(self, argv)
 
     def _slot_setStyle(self):
-        app.setStyleSheet('')
+        """
+        设置app样式
+        """
+        app.setStyleSheet('')  # 重置当前app样式
         tmp = self.sender().objectName()[6:]
         print(QStyleFactory.keys())
         if tmp in QStyleFactory.keys():
@@ -120,7 +123,6 @@ class Application(QApplication):
 
 
 class NotificationIcon:
-
     Info, Success, Warning, Error, Close = range(5)
     Types = {
         Info: None,
@@ -132,10 +134,14 @@ class NotificationIcon:
 
     @classmethod
     def init(cls):
-        cls.Types[cls.Info] = QPixmap(QImage.fromData(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC5ElEQVRYR8VX0VHbQBB9e/bkN3QQU0FMBSEVYFcQ8xPBJLJ1FWAqOMcaxogfTAWQCiAVRKkgTgfmM4zRZu6QhGzL0p0nDPr17e7bt7tv14RX/uiV48MJgAon+8TiAMRtMFogaqUJxADPwRRzg67kl8+xbWJWANR40iPQSSFgtX/mGQkaDr56V3VAKgGos4s2JXwJoF3naMPvMS+SrpTHs032GwGkdF+DsFMVnJm/oyGGeHico0EjIjpYes+YMyVd6R/flfkpBWCCQ9zaZM2LZDfLMGXsZ5kdI/lYBmINgHHyyLd1mWdBbAFAM/GY7K2WYx1AeB4T6L1N9umbGxZ0qktATaEAdCps48D39oq/LwEw3U5CN92LfczJoewfT7MAywDCaEbAuxeLrh0zz4L+0e4aAJfGy+sP3IMxlH1vpMJoSMCJDXgWtJeJVc6ACs9HBBrYODCJAFdYvAmkPJxnNqMwYht7Bn+T/lGg3z4DGEd3RPhQ54DBvwAOVkeqagRXfTLjh+x7+8sALOtfHLuiYzWOAiLoKbD58mnIGbCmLxUepS6NQmYlUGE0JeCTTXT9JvA9E9sZgO5iIpoyc6/YzcqSwQzgGgBXB7oXpH9klpRSkxY1xW/b7Iu2zk34PILPnazCqEPAtTWA8iZ0HsOu9L0bw4DzCJeNocMGNDpQ3IKO+6NUiJ4ysZNiBv5I3zPnmJmG5oM+wbS+9+qkvGi7NAXGmeUy0ioofa+XA0jH0UaMKpdRWs/adcwMqfV/tenqpqHY/Znt+j2gJi00RUzA201dXaxh9iZdZloJS+9H1otrkbRrD5InFqpPskxEshJQ468CkSmJC+i1HigaaxCAuCljgoDhwPdOjf7rFVxxuJrMkXScjtKc1rOLNpJk6nii5XmYzbngzlZn+RIb40kPJPTBYXUt6VEDJ8Pi6bWpNFb/jFYY6YGpDeKdjBmTKdMcxDGEmP73v2a2Gr/NOycGtglQZ/MPzEqCMLGckJEAAAAASUVORK5CYII=')))
-        cls.Types[cls.Success] = QPixmap(QImage.fromData(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACZUlEQVRYR8VXS3LTQBDtVsDbcAPMCbB3limkcAKSG4QFdnaYE2BOQLKzxSLJCeAGSUQheSnfwLmB2VJhXmpExpFHI2sk2RWv5FJPv9evP9NieuIfPzE+VSJw8qt3IMDvmahDoDYxt2UAACXMWIIowR5ffn8TJbaBWRE4CXvHAH9RgKXOgQUI48CfXZbZbiTw8Xe/w3d0zkydMkem91IZpyWOJu5sUXS+kEAqt3B+MNOLOuDqDEBLxxFHk7eza5MfIwEJDjhXTYD1s8zinYlEjsCD7FdNI9cJpEq0RFdPR47AMOzLCn69zegz6UgCP+pmfa8RSKudnPNdgCufTOLDxJtdPP7PoA1Cd8HEL5sSUCCD0B0x8bc1f8Bi6sevcgS2VXh6hMOwDz0gsUddNaxWKRjeuKfE/KlJ9Dq4UYH/o/Ns6scj+bgiMAjdayb26xLQwTfVEwg3gRcf6ARq578KuLo7VDc8psCQqwfjr4EfjYvkrAquFJ56UYpdSkAZSmNd1rrg0leOQFELgvA58OJTxVyRaAJORPOpF6UXnFUR5sDiXjs7UqsOMGMRlrWhTkJXpFL3mNrQZhA1lH3F0TiI5FurUQyMpn58VjhkSqQA4Tbw4nSVW6sBU5VXktXSeONlJH3s8jrOVr9RgVSFuNcWfzlh5n3LoKzMAPxxWuiULiQpiR2sZNnCyzIuWUr5Z1Ml0sgdHFZaShVDuR86/0huL3VXtDk/F4e11vKsTHLSCeKx7bYkW80hjLOrV1GhWH0ZrSlyh2MwdZhYfi8oZeYgLBmUiGd8sfVPM6syr2lUSYGaGBuP3QN6rVUwYV/egwAAAABJRU5ErkJggg==')))
-        cls.Types[cls.Warning] = QPixmap(QImage.fromData(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACmElEQVRYR8VXTW7TUBD+xjYSXZFukOIsSE9AskNJJMoJmq4r7OYEwAkabhBOkB/Emt4gVIojdpgbpIumEitX6gKB7UHPkauXxLHfc4F6Z3l+vvnmm/fGhAd+6IHzQwvA9cfOITMfAdQAcx1EdVEAM/tEFADsWyaPn57MfdXClABcT1qnzHSWJiwMzrwgoF91vXGRbS6AH59ajd8hDYmoURQo67tgxoij42rv62KX/04Agu44xmciVMokT32YERgGjquvZ1+y4mQCWPUa0/sk3vQlwqssEFsAVrQbU4XKL/ai2+5PPK6waQ4AOsoDnDARh83NdmwBuJq0fQI9L6p+L7rd3+/5gbAToMPI+FbkIzRRc72mbLcGIFE7jGFRIPHddmZrvstJh1X8CHGv6sxHqe1GkPYCoGcqgcoCAPPCdr2DLQC6wqMoPEj7qdqCNKllxs30sLpjYDluDUDGG5XqhY2sal3w4PiD7c7fJnHShMtJR8zpy/8CALiwndnhBgD1/t+XAXkaZAaUVHwnHulg0W6BNEWlAQD8zna8gQB0Ne70iXCm2j55jCUAei1gxvuaO+uXAcDg7zXHSy640iKUAehOEDJFqDmGQkiPLO5Fv+KADXOqvCuIsrPGsIyQdHou22YeRMJgOdHTQTkAfGk7XrLKrWlAvOhcRgBfWiZ3RQti0zxXuUFXCXMuo0TRitfxugjbIxC5RYzI6s9kIGFh+KLOpiW22id5AUuI8IaisFG4kCQg/sFKJgtPLix3KWXGeRETRbQDuCFCV2spTYMm+2FEI1WBbYIRPTeiqFtqLZeDraaD+qrbkpgQAvfl1WsXU0p/RjIjYYhTkNFgcCVlRlRKoAAc+5aF0V//NVPoc2kTLQZKZ8lx/AMXBmMwuXUwOAAAAABJRU5ErkJggg==')))
-        cls.Types[cls.Error] = QPixmap(QImage.fromData(base64.b64decode('iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACrklEQVRYR82XW27aQBSG/4PtiNhIpStouoImKwjZAV1B07coWCpZQcgK6kh2lLeSFZSsIOwgdAdkBaUSEBQDpxpjU9vM+EJR03nDzJz/mzm3GcIrD3plfZQCeD47O1ho2jERNRmoE9AQG2BgBGBAwIiZe5Zh3JPjiG+5oxCAEF5q2iWITnMtRhOYu5XF4mr/9naYtSYXYGLbHQCXhYVTEwlom657rVqvBOB2uz71/a+ldq1SYe6ahnEhc4sSYGzbfQKOt915eh0D/ZrrnqS/SwEmrVYXRJ92Jb4OC+C65rrtuN0NgIltNwF837V4zN5Hy3V70e9NgFZrCKJ3CQDmJ9MwDsW36XzeB/AhA/CHqeuN2WxWX2paX2JraHneeynA+Pz8lCqVbxLjV5brimxAEJxqiEA8CjZVBvFy+bl2c9MV9hInoAw85qFpGEeRYQVEQjzMokcQHWxsiPne8jzh6j8AodGfyqNlHpiGcaKAkIk/gChwm2yYuv5W2FqfwLNtN5bAQ2bwySB83zENo50A8/1McaFRAU72XVek+mpk+D/JlIKI/xkee654uCbIhjVAqZIrgSgpLhiCwN4OAEj4vEB2yDybBCjsAol4ZD0nRdMQSRcUCsKUeNSw4o2mKMRGEOamoVx8FXDZKVosDYNMUHXAsBRnppo8RQcbpTgIGEkhykpFjnWxzGhPQYxt2yHgS/oIlKVYTJxImpG482nz+VG1Wh1N84pMCCGa0ULXHwmoJwCYnyzPW5fn/68dh7EgPbrMMl3gz7gro+n/7EoWD7w4a96l1NnJ1Yz5Lt6wCgFEk0r1CIkbiPnC9DxH5aHcd4FYGD5MOqVOg/muslh0/vphkm63k5eXZvA0I6qD+ZCI3jDzLxANiHn1NNvb6+30aVYgwLeeUsgFW1svsPA3Ncq4MHzVeO8AAAAASUVORK5CYII=')))
+        cls.Types[cls.Info] = QPixmap(QImage.fromData(base64.b64decode(
+            'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC5ElEQVRYR8VX0VHbQBB9e/bkN3QQU0FMBSEVYFcQ8xPBJLJ1FWAqOMcaxogfTAWQCiAVRKkgTgfmM4zRZu6QhGzL0p0nDPr17e7bt7tv14RX/uiV48MJgAon+8TiAMRtMFogaqUJxADPwRRzg67kl8+xbWJWANR40iPQSSFgtX/mGQkaDr56V3VAKgGos4s2JXwJoF3naMPvMS+SrpTHs032GwGkdF+DsFMVnJm/oyGGeHico0EjIjpYes+YMyVd6R/flfkpBWCCQ9zaZM2LZDfLMGXsZ5kdI/lYBmINgHHyyLd1mWdBbAFAM/GY7K2WYx1AeB4T6L1N9umbGxZ0qktATaEAdCps48D39oq/LwEw3U5CN92LfczJoewfT7MAywDCaEbAuxeLrh0zz4L+0e4aAJfGy+sP3IMxlH1vpMJoSMCJDXgWtJeJVc6ACs9HBBrYODCJAFdYvAmkPJxnNqMwYht7Bn+T/lGg3z4DGEd3RPhQ54DBvwAOVkeqagRXfTLjh+x7+8sALOtfHLuiYzWOAiLoKbD58mnIGbCmLxUepS6NQmYlUGE0JeCTTXT9JvA9E9sZgO5iIpoyc6/YzcqSwQzgGgBXB7oXpH9klpRSkxY1xW/b7Iu2zk34PILPnazCqEPAtTWA8iZ0HsOu9L0bw4DzCJeNocMGNDpQ3IKO+6NUiJ4ysZNiBv5I3zPnmJmG5oM+wbS+9+qkvGi7NAXGmeUy0ioofa+XA0jH0UaMKpdRWs/adcwMqfV/tenqpqHY/Znt+j2gJi00RUzA201dXaxh9iZdZloJS+9H1otrkbRrD5InFqpPskxEshJQ468CkSmJC+i1HigaaxCAuCljgoDhwPdOjf7rFVxxuJrMkXScjtKc1rOLNpJk6nii5XmYzbngzlZn+RIb40kPJPTBYXUt6VEDJ8Pi6bWpNFb/jFYY6YGpDeKdjBmTKdMcxDGEmP73v2a2Gr/NOycGtglQZ/MPzEqCMLGckJEAAAAASUVORK5CYII=')))
+        cls.Types[cls.Success] = QPixmap(QImage.fromData(base64.b64decode(
+            'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACZUlEQVRYR8VXS3LTQBDtVsDbcAPMCbB3limkcAKSG4QFdnaYE2BOQLKzxSLJCeAGSUQheSnfwLmB2VJhXmpExpFHI2sk2RWv5FJPv9evP9NieuIfPzE+VSJw8qt3IMDvmahDoDYxt2UAACXMWIIowR5ffn8TJbaBWRE4CXvHAH9RgKXOgQUI48CfXZbZbiTw8Xe/w3d0zkydMkem91IZpyWOJu5sUXS+kEAqt3B+MNOLOuDqDEBLxxFHk7eza5MfIwEJDjhXTYD1s8zinYlEjsCD7FdNI9cJpEq0RFdPR47AMOzLCn69zegz6UgCP+pmfa8RSKudnPNdgCufTOLDxJtdPP7PoA1Cd8HEL5sSUCCD0B0x8bc1f8Bi6sevcgS2VXh6hMOwDz0gsUddNaxWKRjeuKfE/KlJ9Dq4UYH/o/Ns6scj+bgiMAjdayb26xLQwTfVEwg3gRcf6ARq578KuLo7VDc8psCQqwfjr4EfjYvkrAquFJ56UYpdSkAZSmNd1rrg0leOQFELgvA58OJTxVyRaAJORPOpF6UXnFUR5sDiXjs7UqsOMGMRlrWhTkJXpFL3mNrQZhA1lH3F0TiI5FurUQyMpn58VjhkSqQA4Tbw4nSVW6sBU5VXktXSeONlJH3s8jrOVr9RgVSFuNcWfzlh5n3LoKzMAPxxWuiULiQpiR2sZNnCyzIuWUr5Z1Ml0sgdHFZaShVDuR86/0huL3VXtDk/F4e11vKsTHLSCeKx7bYkW80hjLOrV1GhWH0ZrSlyh2MwdZhYfi8oZeYgLBmUiGd8sfVPM6syr2lUSYGaGBuP3QN6rVUwYV/egwAAAABJRU5ErkJggg==')))
+        cls.Types[cls.Warning] = QPixmap(QImage.fromData(base64.b64decode(
+            'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACmElEQVRYR8VXTW7TUBD+xjYSXZFukOIsSE9AskNJJMoJmq4r7OYEwAkabhBOkB/Emt4gVIojdpgbpIumEitX6gKB7UHPkauXxLHfc4F6Z3l+vvnmm/fGhAd+6IHzQwvA9cfOITMfAdQAcx1EdVEAM/tEFADsWyaPn57MfdXClABcT1qnzHSWJiwMzrwgoF91vXGRbS6AH59ajd8hDYmoURQo67tgxoij42rv62KX/04Agu44xmciVMokT32YERgGjquvZ1+y4mQCWPUa0/sk3vQlwqssEFsAVrQbU4XKL/ai2+5PPK6waQ4AOsoDnDARh83NdmwBuJq0fQI9L6p+L7rd3+/5gbAToMPI+FbkIzRRc72mbLcGIFE7jGFRIPHddmZrvstJh1X8CHGv6sxHqe1GkPYCoGcqgcoCAPPCdr2DLQC6wqMoPEj7qdqCNKllxs30sLpjYDluDUDGG5XqhY2sal3w4PiD7c7fJnHShMtJR8zpy/8CALiwndnhBgD1/t+XAXkaZAaUVHwnHulg0W6BNEWlAQD8zna8gQB0Ne70iXCm2j55jCUAei1gxvuaO+uXAcDg7zXHSy640iKUAehOEDJFqDmGQkiPLO5Fv+KADXOqvCuIsrPGsIyQdHou22YeRMJgOdHTQTkAfGk7XrLKrWlAvOhcRgBfWiZ3RQti0zxXuUFXCXMuo0TRitfxugjbIxC5RYzI6s9kIGFh+KLOpiW22id5AUuI8IaisFG4kCQg/sFKJgtPLix3KWXGeRETRbQDuCFCV2spTYMm+2FEI1WBbYIRPTeiqFtqLZeDraaD+qrbkpgQAvfl1WsXU0p/RjIjYYhTkNFgcCVlRlRKoAAc+5aF0V//NVPoc2kTLQZKZ8lx/AMXBmMwuXUwOAAAAABJRU5ErkJggg==')))
+        cls.Types[cls.Error] = QPixmap(QImage.fromData(base64.b64decode(
+            'iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACrklEQVRYR82XW27aQBSG/4PtiNhIpStouoImKwjZAV1B07coWCpZQcgK6kh2lLeSFZSsIOwgdAdkBaUSEBQDpxpjU9vM+EJR03nDzJz/mzm3GcIrD3plfZQCeD47O1ho2jERNRmoE9AQG2BgBGBAwIiZe5Zh3JPjiG+5oxCAEF5q2iWITnMtRhOYu5XF4mr/9naYtSYXYGLbHQCXhYVTEwlom657rVqvBOB2uz71/a+ldq1SYe6ahnEhc4sSYGzbfQKOt915eh0D/ZrrnqS/SwEmrVYXRJ92Jb4OC+C65rrtuN0NgIltNwF837V4zN5Hy3V70e9NgFZrCKJ3CQDmJ9MwDsW36XzeB/AhA/CHqeuN2WxWX2paX2JraHneeynA+Pz8lCqVbxLjV5brimxAEJxqiEA8CjZVBvFy+bl2c9MV9hInoAw85qFpGEeRYQVEQjzMokcQHWxsiPne8jzh6j8AodGfyqNlHpiGcaKAkIk/gChwm2yYuv5W2FqfwLNtN5bAQ2bwySB83zENo50A8/1McaFRAU72XVek+mpk+D/JlIKI/xkee654uCbIhjVAqZIrgSgpLhiCwN4OAEj4vEB2yDybBCjsAol4ZD0nRdMQSRcUCsKUeNSw4o2mKMRGEOamoVx8FXDZKVosDYNMUHXAsBRnppo8RQcbpTgIGEkhykpFjnWxzGhPQYxt2yHgS/oIlKVYTJxImpG482nz+VG1Wh1N84pMCCGa0ULXHwmoJwCYnyzPW5fn/68dh7EgPbrMMl3gz7gro+n/7EoWD7w4a96l1NnJ1Yz5Lt6wCgFEk0r1CIkbiPnC9DxH5aHcd4FYGD5MOqVOg/muslh0/vphkm63k5eXZvA0I6qD+ZCI3jDzLxANiHn1NNvb6+30aVYgwLeeUsgFW1svsPA3Ncq4MHzVeO8AAAAASUVORK5CYII=')))
         cls.Types[cls.Close] = QPixmap(QImage.fromData(base64.b64decode(
             'iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAeElEQVQ4T2NkoBAwUqifgboGzJy76AIjE3NCWmL0BWwumzV/qcH/f38XpCfHGcDkUVwAUsDw9+8GBmbmAHRDcMlheAGbQnwGYw0DZA1gp+JwFUgKZyDCDQGpwuIlrGGAHHAUGUCRFygKRIqjkeKERE6+oG5eIMcFAOqSchGwiKKAAAAAAElFTkSuQmCC')))
 
@@ -145,7 +151,6 @@ class NotificationIcon:
 
 
 class NotificationItem(QWidget):
-
     closed = pyqtSignal(QListWidgetItem)
 
     def __init__(self, title, message, item, *args, ntype=0, callback=None, **kwargs):
@@ -245,7 +250,6 @@ class NotificationItem(QWidget):
 
 
 class NotificationWindow(QListWidget):
-
     _instance = None
 
     def __init__(self, *args, **kwargs):
@@ -343,11 +347,11 @@ class CustomRect(QGraphicsObject):
 
     def paint(self, painter, styles, widget=None):
         pen1 = QPen(Qt.SolidLine)
-        pen1.setColor(QColor(128,128,128))
+        pen1.setColor(QColor(128, 128, 128))
         painter.setPen(pen1)
 
         brush1 = QBrush(Qt.SolidPattern)
-        brush1.setColor(QColor(212,227,242))
+        brush1.setColor(QColor(212, 227, 242))
         painter.setBrush(brush1)
 
         painter.setRenderHint(QPainter.Antialiasing)  # 反锯齿
@@ -355,13 +359,12 @@ class CustomRect(QGraphicsObject):
 
     def mousePressEvent(self, evt):
         print('鼠标按下')
-        if evt.button()==Qt.LeftButton:
+        if evt.button() == Qt.LeftButton:
             print("左键被按下")
-        elif evt.button()==Qt.RightButton:
+        elif evt.button() == Qt.RightButton:
             print("左键被按下")
-        elif evt.button()==Qt.MidButton:
+        elif evt.button() == Qt.MidButton:
             print("中间键被按下")
-
 
     def paintEvent(self, QPaintEvent):
         pen1 = QPen()
@@ -373,7 +376,21 @@ class CustomRect(QGraphicsObject):
         painter.end()
 
 
+class RewriteQFileSystemModel(QFileSystemModel):
+    def __init__(self,parent = None):
+        super().__init__(parent)
 
+    def headerData(self, p_int, Qt_Orientation, role=None):
+        if((p_int == 0) and (role == Qt.DisplayRole)):
+            return u'名称'
+        elif((p_int == 1) and (role == Qt.DisplayRole)):
+            return u'大小'
+        elif((p_int == 2) and (role == Qt.DisplayRole)):
+            return '类型'
+        elif ((p_int == 3) and (role == Qt.DisplayRole)):
+            return '修改日期'
+        else:
+            return super().headerData(p_int,Qt_Orientation,role)
 
 class MyMainForm(QMainWindow, Ui_MainWindow):
     """
@@ -416,8 +433,6 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         tray_menu.addAction(hide_action)
         tray_menu.addAction(quit_action)
 
-
-
         self.tray_icon.setContextMenu(tray_menu)
         self.tray_icon.show()
 
@@ -428,44 +443,36 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.action_warning.triggered.connect(self.warning_show)
         self.action_error.triggered.connect(self.error_show)
 
-        #按钮特效测试
-        self.eff = QGraphicsDropShadowEffect()  # 实例阴影
-        self.eff.setColor(QColor(63,72,204))  # 设置阴影颜色
-        self.eff.setOffset(0,0) #设置阴影方向
-        self.eff.setBlurRadius(20)  # 设置模糊度
+        self.action_menu_data_merge_h.triggered.connect(self.data_merge_horizontal_display)
+        self.action_menu_data_merge_v.triggered.connect(self.data_merge_vertical_display)
 
-
-
-        #文件管理器
+        # 文件管理器
         # my_dir = QDir.rootPath()
-        my_dir =''
-        self.model = QFileSystemModel()
+        my_dir = ''
+        self.model = RewriteQFileSystemModel()
         self.model.setRootPath(my_dir)
-        #self.model.setFilter(QDir.NoDotAndDotDot)
-
-
         # self.treeView_files.setRootIndex(self.model.index(QDir.homePath()))
 
         self.treeView_files.setModel(self.model)
         self.treeView_files.setRootIndex(self.model.index(my_dir))
-        self.treeView_files.setAnimated(True)
-        # self.treeView_files.setIndentation(20)
-        self.treeView_files.setSortingEnabled(True) #启用排序
-        self.treeView_files.header().setSortIndicatorShown(True) #启用标题排序
+        self.treeView_files.setAnimated(False)
+        self.treeView_files.setSortingEnabled(True)  # 启用排序
+        self.treeView_files.header().setSortIndicatorShown(True)  # 启用标题排序
+        self.treeView_files.setContextMenuPolicy(Qt.CustomContextMenu)
+        self.treeView_files.customContextMenuRequested.connect(self.treeViewFilesShowContextMenu)
 
-        #流程图
+
+
+        # 流程图
         self.rect = CustomRect()
         self.rect.setPos(50, 50)
         self.scene = QGraphicsScene()
         self.scene.setSceneRect(0, 0, 300, 300)
         self.scene.addItem(self.rect)
-        self.graphicsView.setScene(self.scene)
+        self.tab_flow.graphicsView.setScene(self.scene)
 
-
-        self.btn_data_row_filter.setGraphicsEffect(self.eff) #特效测试
-
-
-        self.btn_data_column_encode.clicked.connect(self.test_report) #报告测试
+        # self.btn_data_row_filter.setGraphicsEffect(self.eff) #特效测试。
+        # 与page_data有关的全部事件，都移动到了ui.base.widgets.controlpanel的PMPageData类之中。
 
         # 打开"菜单-文件导入"窗口
         self.action_menu_import_file.triggered.connect(self.data_import_file_display)
@@ -483,10 +490,10 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.action_about.triggered.connect(self.main_aboutme_display)
         # 打开"模型WOE"窗口
         self.action_menu_woe_iv.triggered.connect(self.model_woe_display)
-        self.btn_assess_woe.clicked.connect(self.model_woe_display)
+
         # 打开"数据-行筛选"窗口
         self.action_menu_data_row_filter.triggered.connect(self.data_row_filter_display)
-        self.btn_data_row_filter.clicked.connect(self.data_row_filter_display)
+        self.page_data.btn_data_row_filter.clicked.connect(self.data_row_filter_display)
 
         # "快速退出"
         self.action_menu_quick_exit.triggered.connect(qApp.quit)
@@ -495,61 +502,19 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.action_hide_right.triggered.connect(self.right_widget_hide)
 
         # 更新主页面的显示数据
-        self.action_data.triggered.connect(self.page_data_display)
-        self.action_stats.triggered.connect(self.page_stats_display)
-        self.action_plot.triggered.connect(self.page_plot_display)
-        self.action_model.triggered.connect(self.page_model_display)
-        self.action_assess.triggered.connect(self.page_assess_display)
+        self.action_data.triggered.connect(self.change_stacked_page)
+        self.action_stats.triggered.connect(self.change_stacked_page)
+        self.action_plot.triggered.connect(self.change_stacked_page)
+        self.action_model.triggered.connect(self.change_stacked_page)
+        self.action_assess.triggered.connect(self.change_stacked_page)
 
-        # 筛选数据
-        self.btn_data_filter.clicked.connect(self.data_filter_display)
         self.action_menu_data_filter.triggered.connect(self.data_row_filter_display)
 
         # 排序数据
         self.action_menu_sort.triggered.connect(self.data_sort_display)
-        # 替换数据
-        self.btn_data_replace.clicked.connect(self.data_replace_display)
 
-        # 显示“数据信息”窗口
-        self.btn_data_info.clicked.connect(self.data_info_display)
-        # 数据角色
-        self.btn_data_role.clicked.connect(self.data_role_display)
-
-        # 删除行
-        self.btn_delete_row.clicked.connect(self.data_delete_row_display)
-        self.btn_delete_row.clicked.connect(self.data_delete_col_display)
-        # 纵向合并
-        self.action_menu_data_merge_v.triggered.connect(self.data_merge_vertical_display)
-        self.btn_data_merge_vertical.clicked.connect(self.data_merge_vertical_display)
-        # 横向合并
-        self.action_menu_data_merge_h.triggered.connect(self.data_merge_horizontal_display)
-        self.btn_data_merge_horizontal.clicked.connect(self.data_merge_horizontal_display)
-        # 数据分区
-        self.btn_data_partition.clicked.connect(self.data_partition_display)
-        # 数据-新增列
-        self.btn_data_new_column.clicked.connect(self.data_new_column_display)
-        # 数据-缺失值
-        self.btn_data_missing_value.clicked.connect(self.data_missing_value_display)
-        # 数据-筛选和排序
-        self.btn_data_sort.clicked.connect(self.data_sort_display)
-        # 数据-转置
-        self.btn_data_transpose.clicked.connect(self.data_transpose_display)
-        # 数据-标准化
-        self.btn_data_standard.clicked.connect(self.data_standard_display)
-        # 数据-抽样
-        self.btn_data_sample.clicked.connect(self.data_sample_display)
-        # 数据-列名处理
-        self.btn_data_column_name.clicked.connect(self.data_column_name_display)
-        # 数据-数据编码
-        self.btn_data_column_encode.clicked.connect(self.data_column_encode_display)
-
-        self.btn_plot_hist.clicked.connect(self.plot_frame_display)  # 打开"数据可视化-直方图"窗口
-        self.btn_model_linear_regression.clicked.connect(self.model_frame_display)  # 展示模型页面
         self.action_menu_tree.triggered.connect(self.model_tree_display)  # 打开"模型-决策树"窗口
-        self.btn_model_tree.clicked.connect(self.model_tree_display)  # 打开"模型-决策树"窗口
 
-        self.btn_data_column_desc.clicked.connect(self.data_column_desc_display)  # 列出数据
-        self.btn_stats_base.clicked.connect(self.stats_base_display)  # 显示“描述统计”窗口
         self.action_menu_stat_describe.triggered.connect(self.stats_base_display)  # 显示“描述统计”窗口
 
         # 显示“官方网站”
@@ -562,14 +527,14 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
 
         # 显示“Jupyter-notebook”
         self.action_jupyter_notebook.triggered.connect(self.jupyter_notebook_display)
-        #self.action_ipython.triggered.connect(self.func_test)
+        # self.action_ipython.triggered.connect(self.func_test)
 
         # self.action_menu_result.triggered.connect(self.send_signal)
         # self.action_menu_dataset.triggered.connect(self.accept_signal)
         # self.action_menu_dataset.triggered.connect(self.data_import_file_display)
         # self.accept_signal()
 
-        #隐藏工具栏、状态栏
+        # 隐藏工具栏、状态栏
         self.action_menu_toolbar.triggered.connect(self.menu_toolbar_hide)
         self.action_menu_statusbar.triggered.connect(self.menu_statusbar_hide)
 
@@ -577,8 +542,9 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.action_menu_workdir.triggered.connect(self.menu_workdir_hide)
         self.action_menu_todolist.triggered.connect(self.menu_todolist_hide)
 
-        #隐藏工具窗口
+        # 隐藏工具窗口
         self.action_menu_toolbox.triggered.connect(self.right_widget_hide)
+
     #  ================================事件处理函数=========================
     def closeEvent(self, event):
         """
@@ -613,6 +579,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             QSystemTrayIcon.Information,
             2000
         )
+
     def info_show(self):
         NotificationWindow.info('提示', '这是一条会自动关闭的消息')
 
@@ -624,7 +591,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
 
     def error_show(self):
         NotificationWindow.error('提示',
-            '<html><head/><body><p><span style=" font-style:italic; color:teal;">这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案</span></p></body></html>')
+                                 '<html><head/><body><p><span style=" font-style:italic; color:teal;">这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案这是提示文案</span></p></body></html>')
 
     def menu_toolbar_hide(self):
         self.toolBar_left.setVisible(False) if self.toolBar_left.isVisible() else self.toolBar_left.setVisible(True)
@@ -633,10 +600,11 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.statusBar.setVisible(False) if self.statusBar.isVisible() else self.statusBar.setVisible(True)
 
     def menu_workdir_hide(self):
-        if self.widget_left.isHidden() :
+        if self.widget_left.isHidden():
             self.widget_left.setVisible(True)
 
-        self.treeWidget_storehouse.setVisible(False) if self.treeWidget_storehouse.isVisible() else self.treeWidget_storehouse.setVisible(True)
+        self.treeWidget_storehouse.setVisible(
+            False) if self.treeWidget_storehouse.isVisible() else self.treeWidget_storehouse.setVisible(True)
 
         if self.treeWidget_storehouse.isHidden() and self.treeWidget_history.isHidden():
             self.widget_left.setVisible(False)
@@ -645,14 +613,14 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         if self.widget_left.isHidden():
             self.widget_left.setVisible(True)
 
-        self.treeWidget_history.setVisible(False) if self.treeWidget_history.isVisible() else self.treeWidget_history.setVisible(True)
+        self.treeWidget_history.setVisible(
+            False) if self.treeWidget_history.isVisible() else self.treeWidget_history.setVisible(True)
 
-        if self.treeWidget_storehouse.isHidden()  and self.treeWidget_history.isHidden():
+        if self.treeWidget_storehouse.isHidden() and self.treeWidget_history.isHidden():
             self.widget_left.setVisible(False)
 
     def right_widget_hide(self):
         self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
 
     def test_report(self):
         print("查看测试报告")
@@ -663,6 +631,31 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.slot_flush_report("info", "描述统计:Age", new, data_name, precision=2)
 
     #  ================================自定义功能函数=========================
+    def treeViewFilesShowContextMenu(self, pos):  # 创建右键菜单
+        self.treeView_files.contextMenu = QMenu(self.treeView_files)
+        self.openAction = self.treeView_files.contextMenu.addAction(u'打开')
+        self.importAction = self.treeView_files.contextMenu.addAction(u'导入')
+        self.renameAction = self.treeView_files.contextMenu.addAction(u'重命名')
+        self.deleteAction = self.treeView_files.contextMenu.addAction(u'删除')
+        self.openAction.triggered.connect(self.openActionHandler)
+        self.importAction.triggered.connect(self.importActionHandler)
+        self.renameAction.triggered.connect(self.renameActionHandler)
+        self.deleteAction.triggered.connect(self.deleteActionHandler)
+        self.treeView_files.contextMenu.popup(QCursor.pos())
+        self.treeView_files.contextMenu.show()
+
+    def openActionHandler(self):
+        print("打开功能的函数是openActionHandler")
+
+    def importActionHandler(self):
+        print("打开功能的函数是importActionHandler")
+
+    def renameActionHandler(self):
+        print("打开功能的函数是renameActionHandler")
+
+    def deleteActionHandler(self):
+        print("打开功能的函数是deleteActionHandler")
+
     def setting_check(self):
         setting_path = root_dir + r'\settings.json'
         logging.info("配置文件加载完成，路径:{}".format(setting_path))
@@ -761,8 +754,10 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         else:
             html = "<a style='font-family:verdana;color:black;font-size:11;'>" + msg + "</a>"
 
-        self.textEdit_console.moveCursor(QTextCursor.End)
-        self.textEdit_console.append(html)
+        console = self.text_edit_console_tab.textEdit_console  # 由于代码重构，这里出现了不同。
+        # [!TODO]应当创建方法，一次性的完成这个工作。
+        console.moveCursor(QTextCursor.End)
+        console.append(html)
 
     def slot_flush_result(self, dataset):
         pass
@@ -838,63 +833,63 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         menuList = QMenu(self)  # 创建菜单
         if item == "数据集" or self.__treeWidget_storehouse_node_parent == "数据集":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/dbqueryedit.png'), '打开', self,
-                                                 triggered=self.main_open_data))
+                                       triggered=self.main_open_data))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/dbqueryedit.png'), '导入数据集', self,
-                                                 triggered=self.main_open_data_chooseFile))
+                                       triggered=self.main_open_data_chooseFile))
             menuList.addAction(
                 QAction(QIcon(root_dir + '/ui/source/images/formfilternavigator.png'), '筛选', self,
-                                  triggered=self.main_open_data_chooseFile))
+                        triggered=self.main_open_data_chooseFile))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_sortascending.png'), '排序', self,
-                                                 triggered=self.main_open_data_chooseFile))
+                                       triggered=self.main_open_data_chooseFile))
 
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon('./ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
         elif item == "数据处理" or self.__treeWidget_storehouse_node_parent == "数据处理":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/dbviewtables.png'), '新建数据处理', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
         elif item == "统计" or self.__treeWidget_storehouse_node_parent == "统计":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_autosum.png'), '新建描述统计', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
         elif item == "可视化" or self.__treeWidget_storehouse_node_parent == "可视化":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_drawchart.png'), '新建可视化', self,
-                                                 triggered=self.plot_frame_display))
+                                       triggered=self.plot_frame_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
         elif item == "模型" or self.__treeWidget_storehouse_node_parent == "模型":
             menuList.addAction(
                 QAction(QIcon(root_dir + '/ui/source/images/lc_switchcontroldesignmode.png'), '新建模型', self,
-                                  triggered=self.model_frame_display))
+                        triggered=self.model_frame_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
         elif item == "评估" or self.__treeWidget_storehouse_node_parent == "评估":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_rotateleft.png'), '新建评估', self,
-                                                 triggered=self.model_frame_display))
+                                       triggered=self.model_frame_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
 
         elif item == "结果" or self.__treeWidget_storehouse_node_parent == "结果":
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_optimizetable.png'), '导出结果', self,
-                                                 triggered=self.model_frame_display))
+                                       triggered=self.model_frame_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_renametable.png'), '重命名', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
             menuList.addAction(QAction(QIcon(root_dir + '/ui/source/images/lc_deletepage.png'), '删除', self,
-                                                 triggered=self.stats_base_display))
+                                       triggered=self.stats_base_display))
 
         menuList.exec(QCursor.pos())  # 显示菜单
 
@@ -908,6 +903,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             time.sleep(1)  # 加载数据
             sp.showMessage("加载... {0}%".format(i * 30), Qt.AlignHCenter | Qt.AlignBottom, Qt.black)
             qApp.processEvents()  # 允许主进程处理事件
+
     def main_officesite_display(self):
         """
         打开官方网站页面
@@ -1021,11 +1017,10 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             logging.info("\n取消选择")
             return
 
-        if os.path.split(self.__file_path_choose)[1].endswith(('xls', 'xlsx', 'xlsm', 'xltx', 'xltm')):
+        if os.path.split(self.__file_path_choose)[1].endswith(('xlsx', 'xlsm', 'xltx', 'xltm')):
             if len(self.__file_path_choose) > 0:
                 self.import_excel_form = io.ImportExcelForm()
                 self.import_excel_form.file_path_init(self.__file_path_choose)
-                self.import_excel_form.file_path = self.__file_path_choose
                 self.import_excel_form.signal_data_change.connect(self.slot_dataset_reload)  # 接收信号
                 self.import_excel_form.exec_()
             else:
@@ -1035,7 +1030,6 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             if len(self.__file_path_choose) > 0:
                 self.import_spss_form = io.ImportSpssForm()
                 self.import_spss_form.file_path_init(self.__file_path_choose)
-                self.import_spss_form.file_path = self.__file_path_choose
                 self.import_spss_form.signal_data_change.connect(self.slot_dataset_reload)  # 接收信号
                 self.import_spss_form.exec_()
             else:
@@ -1046,7 +1040,6 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
             if len(self.__file_path_choose) > 0:
                 self.import_sas_form = io.ImportSasForm()
                 self.import_sas_form.file_path_init(self.__file_path_choose)
-                self.import_sas_form.file_path = self.__file_path_choose
                 self.import_sas_form.signal_data_change.connect(self.slot_dataset_reload)  # 接收信号
                 self.import_sas_form.exec_()
             else:
@@ -1055,49 +1048,30 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         else:
             if len(self.__file_path_choose) > 0:
                 self.import_form = io.ImportForm()
-                self.import_form.file_path = self.__file_path_choose
                 self.import_form.file_path_init()
                 self.import_form.signal_data_change.connect(self.slot_dataset_reload)  # 接收信号
                 self.import_form.exec_()
-
             else:
                 logging.info("信号发射失败")
 
-
-    def page_data_display(self):
-        self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
-        # 设置当前可见的选项卡的索引
-        self.stackedWidget.setCurrentIndex(0)
-
-    def page_stats_display(self):
-        self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
-        # 设置当前可见的选项卡的索引
-        self.stackedWidget.setCurrentIndex(1)
-
-    def page_plot_display(self):
-        self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
-        # 设置当前可见的选项卡的索引
-        self.stackedWidget.setCurrentIndex(2)
-
-    def page_model_display(self):
-        self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
-        # 设置当前可见的选项卡的索引
-        self.stackedWidget.setCurrentIndex(3)
-
-    def page_assess_display(self):
-        self.widget_right.setVisible(False) if self.widget_right.isVisible() else self.widget_right.setVisible(True)
-
-        # 设置当前可见的选项卡的索引
-        self.stackedWidget.setCurrentIndex(4)
+    def change_stacked_page(self):
+        """
+        显示或隐藏右侧工具栏
+        """
+        widget = getattr(self, self.sender().objectName().replace('action', 'page'), None)
+        if widget:
+            cur_widget = self.stackedWidget.currentWidget()
+            if widget == cur_widget:
+                self.widget_right.setVisible(not self.widget_right.isVisible())
+            else:
+                self.widget_right.setVisible(True)
+                self.stackedWidget.setCurrentWidget(widget)
 
     def get_node_dataset(self):
         return self.treeWidget_storehouse.topLevelItem(0)
 
-    def alter_current_dataset(self, dataset_name, dataset, path='', create_time='', update_time='', remarks='',
+    def alter_current_dataset(self, dataset_name, dataset, path='',
+                              create_time='', update_time='', remarks='',
                               file_size=''):
         # 修改当前正在使用的数据集
         self.__current_dataset = dataset
@@ -1180,39 +1154,32 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.import_form.signal_data_change.connect(self.slot_dataset_reload)
         self.import_form.exec_()
 
-    def data_import_display(self):
-        """
-        显示"导入文本文件"窗口
-        """
-        self.import_form = io.ImportForm()
-        self.import_form.show()
-
-    def data_import_excel_display(self):
-        """
-        显示"导入excel文件窗口"窗口
-        """
-        self.excel_import_form = io.ImportExcelForm()
-        self.excel_import_form.show()
-
-    def data_import_spss_display(self):
-        """
-        显示"导入spss文件"窗口
-        """
-        self.spss_import_form = io.ImportSpssForm()
-        self.spss_import_form.show()
-
-    def data_import_sas_display(self):
-        """
-        显示"导入sas文件"窗口
-        """
-        self.sas_import_form = io.ImportSasForm()
-        self.sas_import_form.show()
+    def data_import_file_test(self, csv_path: str):
+        '''
+        这是一个测试时使用的方法。当调用时，可以直接打开数据。当界面崩溃之后，可以尽可能快速的启动。
+        '''
+        create_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 数据创建时间
+        update_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 数据更新时间
+        path = csv_path
+        print("path:", path)
+        file_size = str(os.path.getsize(path))
+        print("file_size:", file_size)
+        remarks = ''
+        current_dataset = pd.read_csv(path, engine="python",
+                                      encoding='utf8')
+        current_dataset_name = 'test_file'
+        tmpargs = (current_dataset_name, current_dataset.to_dict(), path,
+                   create_time, update_time, remarks, file_size)  # 发射信号
+        logging.info("导入数据信号已发射")
+        self.slot_dataset_reload(*tmpargs)
 
     def data_import_database_display(self):
         """
         显示"从数据库导入"窗口
         """
         self.import_database = io.ImportDatabase()
+        self.import_database.all_dataset = self.__all_dataset
+        self.import_database.signal_data_change.connect(self.slot_dataset_reload)
         self.import_database.show()
 
     def data_row_filter_display(self):
@@ -1307,7 +1274,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         显示"数据-数据分区"窗口
         """
         self.data_partition = preprocess.DataPartitionForm()
-        #self.data_partition.current_dataset = self.__current_dataset
+        # self.data_partition.current_dataset = self.__current_dataset
         # self.data_partition.current_dataset_name = self.__current_dataset_name
         # self.data_partition.lineEdit_dataset_name.setText(self.__current_dataset_name)
         # self.data_partition.signal_data_change.connect(self.slot_dataset_reload)
@@ -1529,7 +1496,6 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         self.slot_flush_console("info", "jupyter", msg)
 
 
-
 class NewItemForm(QWidget, New_Ui_Form):
     """
     "新建窗口"
@@ -1673,17 +1639,19 @@ class Application(QApplication):
 # ====================================窗体测试程序============================
 if __name__ == '__main__':
     app = Application(sys.argv)
-    app.setWindowIcon(QIcon(root_dir+'/ui/source/icons/logo.png'))
+    app.setWindowIcon(QIcon(root_dir + '/ui/source/icons/logo.png'))
     # 通过QSS样式的方式设置按钮文字
     app.setStyleSheet(TextStyle)
 
-    splash = QSplashScreen(QPixmap(root_dir+'/ui/source/images/splash.png'))
+    splash = QSplashScreen(QPixmap(root_dir + '/ui/source/images/splash.png'))
     splash.showMessage("加载pyminer... 0%", Qt.AlignHCenter | Qt.AlignBottom, Qt.black)
     splash.show()  # 显示启动界面
     qApp.processEvents()  # 处理主进程事件
 
     myWin = MyMainForm()
     myWin.load_data(splash)
+
+    myWin.data_import_file_test('class.csv')
     # 窗口美化设置
     # QssTools.set_qss_to_obj(root_dir + "/ui/source/qss/pyminer.qss", app)
     # 设置窗口风格

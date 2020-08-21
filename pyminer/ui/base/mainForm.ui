@@ -2887,7 +2887,7 @@
            </item>
           </layout>
          </widget>
-         <widget class="QWidget" name="page">
+         <widget class="QWidget" name="page_assess">
           <layout class="QGridLayout" name="gridLayout_7">
            <item row="1" column="3">
             <widget class="QToolButton" name="btn_assess_auc">

@@ -4,10 +4,8 @@ import sys
 import logging
 import webbrowser
 import time
-import graphviz
 import numpy as np
 import pandas as pd
-import pydotplus
 from sklearn import tree
 # from IPython.display import Image
 from sklearn.datasets import load_wine
