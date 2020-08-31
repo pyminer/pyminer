@@ -1,3 +1,10 @@
+
+'''
+此模块已经被分离
+暂时留下，待其他成员确认无误后处理
+'''
+
+
 import os
 import sys
 import logging
@@ -1796,7 +1803,7 @@ class DataTransposeForm(QDialog, DataTranspose_Ui_Form):
 
 class DataStandardForm(QWidget, DataStandard_Ui_Form):
     """
-    打开"从sas导入"窗口
+    打开数据标准化窗口
     """
 
     def __init__(self, parent=None):

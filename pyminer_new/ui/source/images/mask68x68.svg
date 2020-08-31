@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>设置登录后默认头像</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="设置登录后默认头像" fill-rule="nonzero" fill="#FAFBFC">
+            <path d="M34,68 C15.2223185,68 0,52.7776815 0,34 C0,15.2223185 15.2223185,0 34,0 C52.7776815,0 68,15.2223185 68,34 C68,52.7776815 52.7776815,68 34,68 Z M34,64 C50.5685425,64 64,50.5685425 64,34 C64,17.4314575 50.5685425,4 34,4 C17.4314575,4 4,17.4314575 4,34 C4,50.5685425 17.4314575,64 34,64 Z" id="Combined-Shape"></path>
+        </g>
+    </g>
+</svg>

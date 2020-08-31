@@ -61,10 +61,10 @@ class ImportForm(QDialog,Import_Ui_Form):
         # 帮助
         # self.pushButton_help.clicked.connect(self.accept_signal)
 
-    def file_path_init(self):
+    def file_path_init(self, file_path):
         print("开始更新数据")
         print("开始修改文件路径")
-        self.file_path = self.file_path
+        self.file_path = file_path
         if len(self.file_path) != 0:
             self.lineEdit_filePath.setText(self.file_path)
 
@@ -256,7 +256,7 @@ class ImportDatabase(QDialog,ImportDatabase_Ui_Form):
 
         self.current_dataset_name = ''  # 当前数据集名称
         self.current_dataset = pd.DataFrame()  # 修改后的数据集
-        self.all_dataset=''  #当前已导入的全部数据
+        self.data_manager= ''  #当前已导入的全部数据
         self.file_path='' #当前数据路径
 
         #QssTools.set_qss_to_obj(ui_dir + "/source/qss/patata.qss", self)

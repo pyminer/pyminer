@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>calendar_operation_hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="calendar_operation_hover" fill-rule="nonzero">
+            <rect id="Rectangle-path" fill="#FFFFFF" x="0" y="1" width="12" height="12"></rect>
+            <path d="M12,1 L12,12 L1,12 L1,1 L12,1 L12,1 Z M13,0 L0,0 L0,13 L13,13 L13,0 L13,0 Z" id="Shape" fill="#BABEBF"></path>
+            <polygon id="Shape" fill="#8E9294" points="3 5 10 5 6.5 9"></polygon>
+        </g>
+    </g>
+</svg>

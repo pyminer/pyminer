@@ -7,6 +7,7 @@ import time
 import numpy as np
 import pandas as pd
 from sklearn import tree
+from pyminer.pmutil import get_root_dir
 # from IPython.display import Image
 from sklearn.datasets import load_wine
 from sklearn.model_selection import train_test_split
@@ -91,7 +92,7 @@ class ModelTreeForm(QDialog, ModelTree_Ui_Form):
         self.current_dataset = pd.DataFrame()
         self.current_dataset_columns = []
         self.tree_count = 0
-
+        output_dir = './'
         self.lineEdit_result_path.setText(output_dir)
         self.pushButton_dependent_add.clicked.connect(self.dependent_add)
         self.pushButton_dependent_del.clicked.connect(self.dependent_del)
@@ -132,7 +133,8 @@ class ModelTreeForm(QDialog, ModelTree_Ui_Form):
         self.tree_count += 1  # 用户生成决策树名称，根据第几次调用决策树进行命名
         result_name = "tree_" + str(self.tree_count)
         result_png = result_name + '.png'
-        result_png_path = output_dir + '\\' + result_png
+        output_dir = './'
+        result_png_path = output_dir  + result_png
         print('result_name', result_name)
         print('result_png_path', result_png_path)
 
@@ -194,11 +196,12 @@ class ModelTreeForm(QDialog, ModelTree_Ui_Form):
                                         , special_characters=True
                                         )
 
-        os.environ["PATH"] += root_dir + r'\features\plugins\graphviz-2.38\release\bin'
-        graph = pydotplus.graph_from_dot_data(dot_tree)
-        # img = Image(graph.create_png())
-        graph.write_png(result_png_path)
-        print("图片已生成！")
+        os.environ["PATH"] += get_root_dir() + r'\features\plugins\graphviz-2.38\release\bin'
+        #TODO:no attribute： pydotplus
+        # graph = pydotplus.graph_from_dot_data(dot_tree)
+        # # img = Image(graph.create_png())
+        # graph.write_png(result_png_path)
+        # print("图片已生成！")
 
         html = """
 <!DOCTYPE html>
@@ -313,6 +316,7 @@ class ModelWoeForm(QDialog, ModelWoe_Ui_Form):
         self.lineEdit_output_path.setText(directory)
 
     def calc_woe(self):
+        output_dir = './'
         if os.path.isfile(output_dir + r"\features_detail.csv"):
             feature_detail = pd.read_csv(output_dir + r"\features_detail.csv")
         else:

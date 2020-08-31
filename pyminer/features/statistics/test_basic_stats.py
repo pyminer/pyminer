@@ -10,6 +10,7 @@ from PyQt5.QtGui import QCursor, QIcon, QPixmap
 from PyQt5 import QtWidgets, QtCore
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
+from pyminer.pmutil import get_main_window
 
 # 获取项目相关目录添加到path中
 rootdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,7 +20,7 @@ sys.path.insert(0, rootdir)
 sys.path.insert(0, uidir)
 
 # 导入统计相关操作模块
-from ui.stats.stats_base import Ui_Form as StatsBase_Ui_Form
+from pyminer.ui.stats.stats_base import Ui_Form as StatsBase_Ui_Form
 
 # 定义日志输出格式
 logging.basicConfig(format="%(asctime)s %(name)s:%(levelname)s:%(message)s", datefmt="%Y-%m-%d %H:%M:%S",
@@ -57,7 +58,7 @@ class StatsBaseForm(QWidget):
     def get_data_columns(self):
         # 获取已经导入页面获取的数据集
         try:
-            main_form = MyMainForm()
+            main_form = get_main_window()
             columns = main_form.get_current_dataset_columns()
             for i in columns:
                 self.__ui.listWidget_var.addItem(i)

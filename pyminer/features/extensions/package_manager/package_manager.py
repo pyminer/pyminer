@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 # 导入PyQt5模块
 from PyQt5.Qt import *
+from qtpy import QtCore, QtWidgets
 
 from pyminer.share.threads import *
 from pyminer.features.extensions.package_manager.env_manager import Ui_Form as EnvManager_Ui_Form

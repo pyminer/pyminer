@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_ellipse</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_ellipse" transform="translate(2.000000, 3.000000)" fill-rule="nonzero">
+            <path d="M8,0.033 C12.418,0.033 16,3.152 16,7 C16,10.848 12.418,13.967 8,13.967 C3.582,13.967 0,10.848 0,7 C0,3.152 3.582,0.033 8,0.033 Z" id="Shape" fill="#4196FF"></path>
+            <path d="M8.108,1 C11.974,1 15.108,3.686 15.108,7 C15.108,10.314 11.974,13 8.108,13 C4.242,13 1.108,10.314 1.108,7 C1.108,3.686 4.243,1 8.108,1 Z" id="Shape" fill="#FFFFFF"></path>
+        </g>
+    </g>
+</svg>

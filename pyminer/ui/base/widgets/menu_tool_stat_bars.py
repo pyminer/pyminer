@@ -1,6 +1,12 @@
-from PyQt5.QtWidgets import QMenuBar, QMenu, QMainWindow, QAction, QToolBar, QStatusBar
-from PyQt5.QtGui import QFont
-from PyQt5.QtCore import QRect, QCoreApplication, Qt
+import os
+import sys
+
+from PyQt5.QtWidgets import QMenuBar, QMenu, QMainWindow, QAction, QToolBar, QStatusBar, QWidget, QApplication, \
+    QGridLayout, QPushButton, QSizePolicy, QTabWidget, QSpacerItem, QHBoxLayout, QVBoxLayout, QToolButton, QSplitter, \
+    QLabel
+from PyQt5.QtGui import QFont, QIcon, QPixmap
+from PyQt5.QtCore import QRect, QCoreApplication, Qt, QSize
+from pyminer.features.preprocess.PMToolButton import PMToolButton
 
 
 def init_actions(app):
@@ -9,7 +15,7 @@ def init_actions(app):
         icon_input, icon_Save, icon_wb_setting_normal, icon_Delete, icon_Cut, icon_Copy, icon_Paste, \
         icon_lc_formfilternavigator, icon_lc_mergecells, icon_hlinettp, icon_dbqueryedit, icon_infobox, \
         icon_lc_dbqueryrename, icon_lc_dia, icon_lc_dbsortingandgrouping, icon_lc_insertplugin, icon_jupyter, \
-        icon_python, icon_lc_arrowshapes_right_arrow_callout
+        icon_python, icon_lc_arrowshapes_right_arrow_callout, icon_ext, icon_ext_install
 
     app.action_data = QAction(app)
 
@@ -22,6 +28,9 @@ def init_actions(app):
     app.action_plot = QAction(app)
     app.action_plot.setIcon(icon_lc_draw_chart)
     app.action_plot.setObjectName("action_plot")
+    app.action_ext = QAction(app)
+    app.action_ext.setIcon(icon_ext)
+    app.action_ext.setObjectName('action_ext')
     app.action_model = QAction(app)
     app.action_model.setIcon(icon_lc_statisiticsmenu)
     app.action_model.setObjectName("action_model")
@@ -63,6 +72,11 @@ def init_actions(app):
 
     app.action_quit.setIcon(icon_Delete)
     app.action_quit.setObjectName("action_quit")
+
+    app.action_install_ext = QAction(app)
+    app.action_install_ext.setIcon(icon_ext_install)
+    app.action_install_ext.setObjectName('action_install_ext')
+
     app.action_menu_cut = QAction(app)
 
     app.action_menu_cut.setIcon(icon_Cut)
@@ -205,6 +219,7 @@ def init_actions(app):
     app.action_assess = QAction(app)
     app.action_assess.setIcon(icon_lc_dbreportedit)
     app.action_assess.setObjectName("action_assess")
+
     app.action_menu_dataset = QAction(app)
     app.action_menu_dataset.setIcon(icon_lc_dataarearefresh)
     app.action_menu_dataset.setObjectName("action_menu_dataset")
@@ -217,10 +232,11 @@ def init_actions(app):
     app.action_dataset_rename.setObjectName("action_dataset_rename")
     app.action_menu_data_row_filter = QAction(app)
     app.action_menu_data_row_filter.setObjectName("action_menu_data_row_filter")
-    app.action_menu_result = QAction(app)
 
+    app.action_menu_result = QAction(app)
     app.action_menu_result.setIcon(icon_lc_dia)
     app.action_menu_result.setObjectName("action_menu_result")
+
     app.action_menu_sort = QAction(app)
 
     app.action_menu_sort.setIcon(icon_lc_dbsortingandgrouping)
@@ -278,12 +294,135 @@ def init_actions(app):
     app.action_error.setObjectName("action_error")
 
 
+class PMModernToolbar(QTabWidget):
+    def __init__(self):
+        super().__init__()
+        tab1 = PMToolbarTabHome('主页')
+        self.addTab(tab1, tab1.tab_name)
+        tab = PMModernToolbarTab('绘图')
+        self.addTab(tab, tab.tab_name)
+        tab = PMModernToolbarTab('APP')
+        self.addTab(tab, tab.tab_name)
+        self.setContentsMargins(0, 0, 0, 0)
+        # self.setFixedHeight(105)
+        # self.setMaximumHeight(120)
+        self.setStyleSheet("QTabWidget::pane{border-width: 0px;background-color:#ffffff}"
+                           "QTabBar::tab{border-width: 0px;width:60px;font-size:14px;background-color:#618Bd5;height:30px;}")
+        # "QTabBar::tab:selected{background-color:#618Bd5;font-size:14px;border-bottom:2px solid #618BE5;}"
+        # "QTabBar::tab:hover{color:#918Bf5;font-size:14px;border-bottom:2px solid #618BE5;}")
+
+
+class PMModernToolbarTab(QWidget):
+    def __init__(self, tab_name: str):
+        super().__init__()
+        self.tab_name = tab_name
+
+        self.grid_layout = QGridLayout()
+        self.grid_layout.setContentsMargins(0, 0, 0, 0)
+        self.grid_layout.setAlignment(Qt.AlignTop | Qt.AlignBottom)
+        self.grid_layout.setSpacing(0)
+        layout = QHBoxLayout()
+        layout.addLayout(self.grid_layout)
+        layout.addItem(QSpacerItem(20, 20, QSizePolicy.Expanding, QSizePolicy.Minimum))
+        layout.setContentsMargins(0, 0, 0, 0)
+        self.setLayout(layout)
+        self.setContentsMargins(0, 0, 0, 0)
+
+    def add_action(self, from_row: int, from_column: int, row_span: int, column_span: int, icon_path: str = ''):
+        if os.path.isfile(icon_path):
+            b = PMToolButton(text='hahaha', icon=QIcon(icon_path))
+        else:
+            b = PMToolButton(text='hahaha')
+        b.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+        b.setFixedHeight(30 * row_span)
+        b.setFixedWidth(30 * column_span)
+        self.grid_layout.addWidget(b, from_row, from_column, row_span, column_span,
+                                   alignment=Qt.AlignTop | Qt.AlignBottom)
+
+
+class PMToolbarTabHome(PMModernToolbarTab):
+    def __init__(self, tab_name: str):
+        from pyminer.ui.base.widgets.resources import icon_python, icon_lc_save, icon_New
+        super().__init__(tab_name)
+
+        icon_open = QIcon()
+        icon_open.addPixmap(
+            QPixmap(":/pyqt/source/images/folder.png").scaled(60, 60, Qt.IgnoreAspectRatio, Qt.SmoothTransformation),
+            QIcon.Normal, QIcon.Off)
+
+        icon_load_data = QIcon(
+            '/media/hzy/程序/novalide/forgitcommit/pyminer/pyminer/pyminer/ui' + '/source/images/dbqueryedit.png')
+        self.current_col = 0
+
+        self.add_default_sized_action(2, icon=icon_New, text='新建\n脚本')
+        self.add_default_sized_action(2, icon=icon_New, text='新建\n数据')
+        self.add_splitter(self.current_col)
+        self.add_default_sized_action(1, text='打开')
+        self.add_default_sized_action(2, text='导入\n数据', icon=icon_load_data)
+        self.add_default_sized_action(2, text='保存\n工作区')
+        self.add_default_sized_action(2, text='插件')
+        self.add_default_sized_action(2, text='帮助')
+        self.add_three_stacked_actions(3, text=['分析代码', '运行并计时', '清除命令'], icons=[icon_load_data, icon_open, icon_New])
+
+    def add_action(self, from_row: int, from_column: int, row_span: int = 3, column_span: int = 2, text: str = '',
+                   icon: QIcon = None, text_under_icon=True):
+        if text_under_icon:
+            b = QToolButton()
+            b.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+            b.setStyleSheet('QToolButton{background-color:white;border:1px;padding:2px 2px} '
+                            'QToolButton:hover{background-color:#ededed}'
+                            )
+        else:
+            b = QPushButton()
+            b.setStyleSheet('QPushButton{background-color:white;border:1px;padding:2px 2px;text-align:left;} '
+                            'QPushButton:hover{background-color:#ededed}'
+                            )
+        if icon is not None:
+            b.setIcon(icon)
+        b.setText(text)
+
+        b.setFixedHeight(25 * row_span)
+        b.setFixedWidth(30 * column_span)
+        self.grid_layout.addWidget(b, from_row, from_column, row_span, column_span,
+                                   alignment=Qt.AlignTop | Qt.AlignBottom)
+        d = min(row_span, column_span)
+
+        # b.setIconSize(QSize(30 * d, 30 * d))
+        # spacer = QSpacerItem(20,20,QSizePolicy.Expanding,QSizePolicy.Minimum)
+        # self.grid_layout.addWidget(spacer,2,2)
+
+    def add_default_sized_action(self, col_span, text: str = '', icon: QIcon = None):
+        self.add_action(0, self.current_col, row_span=3, column_span=col_span, text=text, icon=icon)
+        self.current_col += col_span
+
+    def add_three_stacked_actions(self, col_span, text=None, icons=None):
+        if text is None:
+            text = ['', '', '']
+        if icons is None:
+            icons = [None, None, None]
+        for i in range(3):
+            self.add_action(i, self.current_col, row_span=1, column_span=col_span, text=text[i], icon=icons[i],
+                            text_under_icon=False)
+        # self.add_action(0, self.current_col, row_span=1, column_span=col_span,text=text,icon_path=icon_path)
+        # self.add_action(0, self.current_col, row_span=1, column_span=col_span,text=text,icon_path=icon_path)
+
+    def add_splitter(self, xpos):
+        l = QLabel()
+        l.setFixedWidth(1)
+        l.setFixedHeight(75)
+        # l.setSizePolicy(QSizePolicy.Fixed,QSizePolicy.Expanding)
+        l.setStyleSheet('QLabel{margin:3px;background-color:#cccccc;border-radius:0px;border:0px}')
+        self.grid_layout.addWidget(l, 0, xpos, 3, 1)
+        self.current_col += 1
+
+
 class PMMenuBar(QMenuBar):
     def __init__(self, main_window: QMainWindow):
         super().__init__()
         self.main_window = main_window
         self.setGeometry(QRect(0, 0, 1366, 23))
         self.setObjectName("menubar")
+
         self.menu_file = QMenu(self)
         font = QFont()
         font.setFamily("Microsoft YaHei UI")
@@ -321,10 +460,8 @@ class PMMenuBar(QMenuBar):
         self.menu_assess.setObjectName("menu_assess")
         init_actions(self.main_window)
         self.translate()
-        self.bind_events()
 
-    def bind_events(self):
-        app = self.main_window
+    def bind_events(self, app):
         self.menu_file.addAction(app.action_menu_new)
         self.menu_file.addAction(app.action_menu_open)
         self.menu_file.addSeparator()
@@ -337,6 +474,7 @@ class PMMenuBar(QMenuBar):
         self.menu_file.addAction(app.action_menu_option)
         self.menu_file.addSeparator()
         self.menu_file.addAction(app.action_quit)
+        self.menu_file.addAction(app.action_install_ext)
         self.menu_edit.addAction(app.action_menu_cut)
         self.menu_edit.addAction(app.action_menu_copy)
         self.menu_edit.addAction(app.action_menu_paste)
@@ -380,6 +518,7 @@ class PMMenuBar(QMenuBar):
         self.addAction(self.menu_model.menuAction())
         self.addAction(self.menu_assess.menuAction())
         self.addAction(self.menu_help.menuAction())
+        self.translate()
 
     def translate(self):
         app = self.main_window
@@ -403,6 +542,8 @@ class PMMenuBar(QMenuBar):
         app.action_plot.setToolTip(_translate("MainWindow", "可视化"))
         app.action_model.setText(_translate("MainWindow", "模型"))
         app.action_model.setToolTip(_translate("MainWindow", "模型"))
+        app.action_ext.setText(_translate("MainWindow","插件"))
+        app.action_ext.setToolTip(_translate("MainWindow","插件"))
         app.action_menu_new.setText(_translate("MainWindow", "新建(&N)"))
         app.action_menu_new.setShortcut(_translate("MainWindow", "Ctrl+N"))
         app.action_menu_open.setText(_translate("MainWindow", "打开(&O)"))
@@ -416,6 +557,8 @@ class PMMenuBar(QMenuBar):
         app.action_menu_option.setShortcut(_translate("MainWindow", "Alt+M"))
         app.action_quit.setText(_translate("MainWindow", "退出(&Q)"))
         app.action_quit.setShortcut(_translate("MainWindow", "Alt+Q"))
+        app.action_install_ext.setText(_translate("MainWindow","安装插件"))
+        app.action_install_ext.setShortcut(_translate("MainWindow","安装插件"))
         app.action_menu_cut.setText(_translate("MainWindow", "剪切(&X)"))
         app.action_menu_copy.setText(_translate("MainWindow", "复制(&C)"))
         app.action_menu_paste.setText(_translate("MainWindow", "粘贴(P)"))
@@ -509,6 +652,8 @@ class PMToolBarTop(QToolBar):
         self.main_window = parent
         app = self.main_window
         self.setObjectName("toolBar_left")
+
+    def bind_events(self, app):
         self.addAction(app.action_menu_new)
         self.addAction(app.action_menu_open)
         self.addSeparator()
@@ -536,7 +681,8 @@ class PMToolBarRight(QToolBar):
     def __init__(self, parent):
         super().__init__(parent)
         self.main_window = parent
-        app = self.main_window
+
+    def bind_events(self, app):
         _translate = QCoreApplication.translate
         self.setLayoutDirection(Qt.RightToLeft)
         self.setObjectName("toolBar_right")
@@ -545,6 +691,7 @@ class PMToolBarRight(QToolBar):
         self.addAction(app.action_plot)
         self.addAction(app.action_model)
         self.addAction(app.action_assess)
+        self.addAction(app.action_ext)
         self.setWindowTitle(_translate("MainWindow", "分析工具栏"))
 
 
@@ -557,3 +704,24 @@ class PMStatusBar(QStatusBar):
         self.setAutoFillBackground(False)
         self.setStyleSheet("background-color: rgb(240, 240, 240);")
         self.setObjectName("statusBar")
+
+
+if __name__ == '__main__':
+    class TestWidget(QWidget):
+        def __init__(self):
+            super().__init__()
+            layout = QVBoxLayout()
+            self.setLayout(layout)
+            layout.addWidget(PMModernToolbar())
+            layout.addWidget(QPushButton())
+
+
+    app = QApplication(sys.argv)
+
+    fname = None
+
+    if len(sys.argv) > 1:
+        fname = sys.argv[1]
+    form = TestWidget()
+    form.show()
+    app.exec_()

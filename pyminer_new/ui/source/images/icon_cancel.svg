@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_cancel</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_cancel" transform="translate(4.000000, 4.000000)" fill-rule="nonzero" fill="#F63F3F">
+            <path d="M11.928,10.622 C11.971,10.733 12,10.851 12,10.977 C12,11.527 11.552,11.972 11,11.972 C10.874,11.972 10.755,11.943 10.644,11.9 L10.572,11.972 L6,7.422 L1.429,11.972 L1.357,11.9 C1.245,11.943 1.127,11.972 1,11.972 C0.448,11.972 0,11.526 0,10.977 C0,10.851 0.029,10.733 0.072,10.622 L0,10.55 L4.571,6 L0,1.45 L0.072,1.378 C0.029,1.267 0,1.149 0,1.023 C0,0.473 0.448,0.028 1,0.028 C1.127,0.028 1.245,0.057 1.357,0.1 L1.429,0.028 L6,4.578 L10.571,0.028 L10.643,0.1 C10.754,0.057 10.873,0.028 10.999,0.028 C11.551,0.028 11.999,0.474 11.999,1.023 C11.999,1.149 11.97,1.267 11.927,1.378 L12,1.45 L7.429,6 L12,10.55 L11.928,10.622 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

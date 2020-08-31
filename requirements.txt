@@ -24,3 +24,6 @@ scipy==1.5.2
 six==1.15.0
 threadpoolctl==2.1.0
 xlrd==1.2.0
+qtconsole==4.7.6
+pywin32==228
+pretty_errors

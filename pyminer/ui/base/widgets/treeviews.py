@@ -1,11 +1,31 @@
-from PyQt5.QtWidgets import QTreeView, QWidget, QTreeWidgetItem, QTreeWidget
+import os
+
+from PyQt5.QtWidgets import QTreeView, QWidget, QTreeWidgetItem, QTreeWidget, QFileSystemModel, QMenu
 from PyQt5.QtCore import Qt, QCoreApplication
-from PyQt5.QtGui import QPixmap, QIcon
+from PyQt5.QtGui import QPixmap, QIcon, QCursor
+from pyminer.pmutil import get_root_dir
+
+
+class RewriteQFileSystemModel(QFileSystemModel):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+    def headerData(self, p_int, Qt_Orientation, role=None):
+        if ((p_int == 0) and (role == Qt.DisplayRole)):
+            return u'名称'
+        elif ((p_int == 1) and (role == Qt.DisplayRole)):
+            return u'大小'
+        elif ((p_int == 2) and (role == Qt.DisplayRole)):
+            return '类型'
+        elif ((p_int == 3) and (role == Qt.DisplayRole)):
+            return '修改日期'
+        else:
+            return super().headerData(p_int, Qt_Orientation, role)
 
 
 class PMFilesTreeview(QTreeView):
-    def __init__(self):
-        super().__init__()
+    def __init__(self,parent):
+        super().__init__(parent)
         self.setTabKeyNavigation(True)
         self.setDragEnabled(True)
         self.setDragDropOverwriteMode(True)
@@ -18,6 +38,41 @@ class PMFilesTreeview(QTreeView):
         self.setHeaderHidden(False)
         self.setObjectName("treeView_files")
         self.header().setSortIndicatorShown(True)
+
+        # 文件管理器
+        # my_dir = QDir.rootPath()
+        my_dir = os.path.dirname('')#get_root_dir())
+        self.model = RewriteQFileSystemModel()
+        self.model.setRootPath(my_dir)
+        # self.setRootIndex(self.model.index(QDir.homePath()))
+
+        self.setModel(self.model)
+        self.setRootIndex(self.model.index(my_dir))
+        self.setAnimated(False)
+        self.setSortingEnabled(True)  # 启用排序
+        self.header().setSortIndicatorShown(True)  # 启用标题排序
+        self.setContextMenuPolicy(Qt.CustomContextMenu)
+
+        self.init_context_menu()
+
+    def bind_events(self, main_window):
+        self.openAction.triggered.connect(main_window.openActionHandler)
+        self.importAction.triggered.connect(main_window.importActionHandler)
+        self.renameAction.triggered.connect(main_window.renameActionHandler)
+        self.deleteAction.triggered.connect(main_window.deleteActionHandler)
+
+        self.customContextMenuRequested.connect(self.show_context_menu)
+
+    def init_context_menu(self):
+        self.contextMenu = QMenu(self)
+        self.openAction = self.contextMenu.addAction(u'打开')
+        self.importAction = self.contextMenu.addAction(u'导入')
+        self.renameAction = self.contextMenu.addAction(u'重命名')
+        self.deleteAction = self.contextMenu.addAction(u'删除')
+
+    def show_context_menu(self):
+        self.contextMenu.popup(QCursor.pos())
+        self.contextMenu.show()
 
 
 class PMDatasetsTreeview(QTreeWidget):

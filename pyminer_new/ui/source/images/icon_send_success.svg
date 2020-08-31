@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_send_success</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_send_success" fill="#13B541">
+            <path d="M18,0 C8.059,0 0,8.059 0,18 C0,27.941 8.059,36 18,36 C27.941,36 36,27.941 36,18 C36,8.059 27.941,0 18,0 Z M18,35 C8.611,35 1,27.389 1,18 C1,8.611 8.611,1 18,1 C27.389,1 35,8.611 35,18 C35,27.389 27.389,35 18,35 Z" id="Shape"></path>
+            <path d="M26.952,13.51 L16.645,23.817 C16.453,24.004 16.065,24.159 15.625,23.817 L10.318,18.51 C10.135,18.327 10.135,18.03 10.318,17.847 L10.981,17.184 C11.164,17.001 11.461,17.001 11.644,17.184 L16.134,21.674 L25.624,12.184 C25.807,12.001 26.104,12.001 26.287,12.184 L26.95,12.847 C27.135,13.03 27.135,13.327 26.952,13.51 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
