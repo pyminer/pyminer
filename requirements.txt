@@ -24,6 +24,14 @@ scipy==1.5.2
 six==1.15.0
 threadpoolctl==2.1.0
 xlrd==1.2.0
-qtconsole==4.7.6
+qtconsole==4.7.7
 pywin32==228
 pretty_errors
+json-rpc==1.13.0
+Werkzeug==1.0.1
+requests==2.24.0
+tornado==6.0.4
+jedi==0.17.2
+dill==0.3.2
+matgen>=0.1.1
+QScintilla==2.11.5

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <style>
+        table {
+            font-family: 微软雅黑,verdana,arial,sans-serif;
+            font-size:12px;
+            color:#333333;
+            /* border-spacing: 10px; */
+        }
+
+        th {
+            font-family: 微软雅黑,verdana,arial,sans-serif;
+            height:18px;
+            width: 50px;
+            font-weight:bold;
+            text-align:right;
+            padding: 8px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+            border-bottom-color: #333333
+        }
+
+        td {
+            text-align:right;
+            font: 12px;
+            font-family: 微软雅黑,verdana,arial,sans-serif;
+            height:18px;
+        }
+
+        a {
+            font-size: small;
+        }
+
+        p {
+            color: #333333;
+            font-size: large;
+        }
+        hr{
+            background-color: gray;
+        }
+
+        .title {
+            color: rgb(38, 135, 226);
+        }
+    </style>
+</head>
+<body>
+    <!-- 数据集名 -->
+    <a><img src="C:/patata/patata/output/data.png" alt="zheshiyizhangzhaopian" title="dataset_png" /></a>
+    <a>class.csv</a>
+    <br>
+    <p>info</p>
+    <!-- 主标题 -->
+    <hr>
+    <!-- 副标题 -->
+    <p style="color: rgb(38, 135, 226);">描述统计:Age</p>
+    <!-- 数据集 -->
+    <table cellspacing="0" cellpadding="0">
+    <!-- 表格设置标题行 -->
+     <tr><th>变量</th><th>count</th><th>mean</th><th>std</th><th>min</th><th>25%</th><th>50%</th><th>75%</th><th>max</th></tr>    
+     <!-- 设置表格单元格 -->
+     <tr><td>ID</td><td>30,000.00</td><td>15,000.50</td><td>8,660.40</td><td>1.00</td><td>7,500.75</td><td>15,000.50</td><td>22,500.25</td><td>30,000.00</td></tr><tr><td>LIMIT_BAL</td><td>30,000.00</td><td>167,484.32</td><td>129,747.66</td><td>10,000.00</td><td>50,000.00</td><td>140,000.00</td><td>240,000.00</td><td>1,000,000.00</td></tr><tr><td>SEX</td><td>30,000.00</td><td>1.60</td><td>0.49</td><td>1.00</td><td>1.00</td><td>2.00</td><td>2.00</td><td>2.00</td></tr><tr><td>EDUCATION</td><td>30,000.00</td><td>1.85</td><td>0.79</td><td>0.00</td><td>1.00</td><td>2.00</td><td>2.00</td><td>6.00</td></tr><tr><td>MARRIAGE</td><td>30,000.00</td><td>1.55</td><td>0.52</td><td>0.00</td><td>1.00</td><td>2.00</td><td>2.00</td><td>3.00</td></tr><tr><td>AGE</td><td>30,000.00</td><td>35.49</td><td>9.22</td><td>21.00</td><td>28.00</td><td>34.00</td><td>41.00</td><td>79.00</td></tr><tr><td>PAY_0</td><td>30,000.00</td><td>-0.02</td><td>1.12</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>PAY_2</td><td>30,000.00</td><td>-0.13</td><td>1.20</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>PAY_3</td><td>30,000.00</td><td>-0.17</td><td>1.20</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>PAY_4</td><td>30,000.00</td><td>-0.22</td><td>1.17</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>PAY_5</td><td>30,000.00</td><td>-0.27</td><td>1.13</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>PAY_6</td><td>30,000.00</td><td>-0.29</td><td>1.15</td><td>-2.00</td><td>-1.00</td><td>0.00</td><td>0.00</td><td>8.00</td></tr><tr><td>BILL_AMT1</td><td>30,000.00</td><td>51,223.33</td><td>73,635.86</td><td>-165,580.00</td><td>3,558.75</td><td>22,381.50</td><td>67,091.00</td><td>964,511.00</td></tr><tr><td>BILL_AMT2</td><td>30,000.00</td><td>49,179.08</td><td>71,173.77</td><td>-69,777.00</td><td>2,984.75</td><td>21,200.00</td><td>64,006.25</td><td>983,931.00</td></tr><tr><td>BILL_AMT3</td><td>30,000.00</td><td>47,013.15</td><td>69,349.39</td><td>-157,264.00</td><td>2,666.25</td><td>20,088.50</td><td>60,164.75</td><td>1,664,089.00</td></tr><tr><td>BILL_AMT4</td><td>30,000.00</td><td>43,262.95</td><td>64,332.86</td><td>-170,000.00</td><td>2,326.75</td><td>19,052.00</td><td>54,506.00</td><td>891,586.00</td></tr><tr><td>BILL_AMT5</td><td>30,000.00</td><td>40,311.40</td><td>60,797.16</td><td>-81,334.00</td><td>1,763.00</td><td>18,104.50</td><td>50,190.50</td><td>927,171.00</td></tr><tr><td>BILL_AMT6</td><td>30,000.00</td><td>38,871.76</td><td>59,554.11</td><td>-339,603.00</td><td>1,256.00</td><td>17,071.00</td><td>49,198.25</td><td>961,664.00</td></tr><tr><td>PAY_AMT1</td><td>30,000.00</td><td>5,663.58</td><td>16,563.28</td><td>0.00</td><td>1,000.00</td><td>2,100.00</td><td>5,006.00</td><td>873,552.00</td></tr><tr><td>PAY_AMT2</td><td>30,000.00</td><td>5,921.16</td><td>23,040.87</td><td>0.00</td><td>833.00</td><td>2,009.00</td><td>5,000.00</td><td>1,684,259.00</td></tr><tr><td>PAY_AMT3</td><td>30,000.00</td><td>5,225.68</td><td>17,606.96</td><td>0.00</td><td>390.00</td><td>1,800.00</td><td>4,505.00</td><td>896,040.00</td></tr><tr><td>PAY_AMT4</td><td>30,000.00</td><td>4,826.08</td><td>15,666.16</td><td>0.00</td><td>296.00</td><td>1,500.00</td><td>4,013.25</td><td>621,000.00</td></tr><tr><td>PAY_AMT5</td><td>30,000.00</td><td>4,799.39</td><td>15,278.31</td><td>0.00</td><td>252.50</td><td>1,500.00</td><td>4,031.50</td><td>426,529.00</td></tr><tr><td>PAY_AMT6</td><td>30,000.00</td><td>5,215.50</td><td>17,777.47</td><td>0.00</td><td>117.75</td><td>1,500.00</td><td>4,000.00</td><td>528,666.00</td></tr><tr><td>target</td><td>30,000.00</td><td>0.22</td><td>0.42</td><td>0.00</td><td>0.00</td><td>0.00</td><td>0.00</td><td>1.00</td></tr>
+    </table>
+</body>
+</html>
+

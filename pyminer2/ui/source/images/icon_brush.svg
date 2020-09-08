@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_brush</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_brush" transform="translate(1.000000, 2.000000)" fill-rule="nonzero">
+            <path d="M5.585,10.082 C5.585,10.082 7.951,12.622 8.001,12.674 C6.791,18.122 0.972,15.172 0.972,15.172 C0.972,15.172 3.075,15.085 3.075,12.961 C3.075,10.516 5.585,10.082 5.585,10.082 Z" id="Shape" fill="#13B541"></path>
+            <path d="M6.497,9.335 C6.497,9.335 16.115,-0.772 16.935,0.067 C17.755,0.907 8.474,11.469 8.474,11.469 L6.497,9.335 Z" id="Shape" fill="#F2A828"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,82 @@
+QPushButton {
+  color: white;
+  text-align: center;
+  background-color: #4196FF;
+  font: bold;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 6px;
+  height: 14px;
+  width: 45px;
+  font: 12px;
+}
+QPushButton:pressed {
+  color: white;
+  text-align: center;
+  background-color: light gray;
+  font: bold;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 6px;
+  height: 14px;
+  width: 45px;
+  font: 12px;
+}
+QPushButton:hover {
+  color: white;
+  text-align: center;
+  background-color: #2a83f2;
+  font: bold;
+  border-width: 2px;
+  border-radius: 4px;
+  padding: 6px;
+  height: 14px;
+  width: 45px;
+  font: 12px;
+}
+checkBox {
+  color: white;
+  text-align: center;
+  background-color: #4196ff;
+  font: bold;
+}
+QCheckBox {
+  spacing: 5px;
+}
+
+QCheckBox::indicator {
+  width: 13px;
+  height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_uncheck.svg);
+}
+
+QCheckBox::indicator:unchecked:hover {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_uncheck_hover.svg);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_uncheck.svg);
+}
+
+QCheckBox::indicator:checked {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_checked.svg);
+}
+
+QCheckBox::indicator:checked:hover {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_checked_hover.svg);
+}
+
+QCheckBox::indicator:checked:pressed {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_checked.svg);
+}
+
+QCheckBox::indicator:indeterminate:hover {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_checked.svg);
+}
+
+QCheckBox::indicator:indeterminate:pressed {
+  image: url(C:/patata/patata/ui/themes/sea_blue/public/checkbox/icon_checked.svg);
+}

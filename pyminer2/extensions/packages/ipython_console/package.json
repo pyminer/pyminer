@@ -1,0 +1,26 @@
+{
+    "name":"ipython_console",
+    "display_name":"Ipython 控制台",
+    "version":"0.1.0",
+    "description":"支持运行 python 命令",
+    "icon":"ipython_console.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"ConsoleInterface"
+    },
+    "widgets":[
+        {
+            "file":"main.py",
+            "widget":"ConsoleWidget",
+            "position":"new_dock_window",
+            "config":{
+                "message": "no",
+                "name": "ipython_console",
+                "side": "bottom",
+                "text": "控制台"
+            }
+        }
+    ],
+    "requirements":[
+    ]
+}

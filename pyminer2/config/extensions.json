@@ -1,0 +1,12 @@
+{
+    "extensions": [
+        "code_editor", 
+        "test_ext",
+        "extension_dialog_demo",
+        "workspace_inspector",
+        "ipython_console",
+        "drawings_toolbar",
+        "pmagg"
+
+    ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_save</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_save" transform="translate(3.000000, 3.000000)" fill-rule="nonzero">
+            <path d="M0.969,0.046 C3.468,0.046 9.938,0.046 9.938,0.046 L14,4.027 C14,4.027 14,11.282 14,13.98 C14,14.592 13.51,14.976 12.937,14.976 C10.303,14.976 3.501,14.976 0.968,14.976 C0.49,14.976 0,14.592 0,13.98 C0,11.256 0,3.698 0,1.01 C0,0.564 0.333,0.046 0.969,0.046 Z" id="Shape" fill="#4196FF"></path>
+            <path d="M9,2.011 L2,2.011 L2,5.011 L9,5.011 L9,2.011 Z M11,8.011 L3,8.011 C2.448,8.011 2,8.459 2,9.011 L2,12.011 C2,12.563 2.448,13.011 3,13.011 L11,13.011 C11.552,13.011 12,12.563 12,12.011 L12,9.011 C12,8.459 11.552,8.011 11,8.011 Z" id="Shape" fill="#FFFFFF"></path>
+            <path d="M9.501,9.005 L10.51,9.005 C10.784,9.005 11.005,9.227 11.005,9.5 L11.005,10.509 C11.005,10.783 10.783,11.004 10.51,11.004 L9.501,11.004 C9.227,11.004 9.006,10.782 9.006,10.509 L9.006,9.5 C9.005,9.227 9.227,9.005 9.501,9.005 Z" id="Shape" fill="#4196FF"></path>
+        </g>
+    </g>
+</svg>

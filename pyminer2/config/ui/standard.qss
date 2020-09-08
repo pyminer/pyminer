@@ -1,0 +1,116 @@
+/*
+作者：@吴宫幽径
+鸣谢：@Irony提供的滚动条样式
+github链接：
+https://github.com/PyQt5/PyQt/blob/master/QScrollArea/Data/style.qss
+文件加载时，将会自动替换MAIN_THEME和MARGIN_THEME为相应的颜色。
+*/
+QMainWindow{background-color:MAIN_THEME;}
+QDialog{background-color:MAIN_THEME;}
+
+
+QAbstractScrollArea{
+border:1px solid MARGIN_THEME;
+}
+
+QDockWidget {
+
+      border: 0px;
+
+  }
+
+  QDockWidget::title {
+      border:0px 0px;
+      text-align: left; /* align the text to the left */
+      background: lightgray;
+      padding-left: 5px;
+  }
+
+  QDockWidget::close-button, QDockWidget::float-button {
+      border: 1px solid transparent;
+      background: darkgray;
+      padding: 0px;
+  }
+
+  QDockWidget::close-button:hover, QDockWidget::float-button:hover {
+      background: gray;
+  }
+
+  QDockWidget::close-button:pressed, QDockWidget::float-button:pressed {
+      padding: 1px -1px -1px 1px;
+  }
+
+QPushButton{
+width:50px;
+background-color:MAIN_THEME;
+border:1px solid MARGIN_THEME;
+border-radius:5px;
+height:20px;
+}
+QPushButton:hover{background-color:MARGIN_THEME;}
+/*按钮停留态*/
+QPushButton#pmtopToolbarButton{
+    /*背景颜色*/
+    height:20px;
+    padding:0px 0px 0px 0px;
+    border:1px;
+    border-radius:8px;
+}
+QPushButton#pmtopToolbarButton:hover{
+    /*背景颜色*/
+    background-color:red;
+    height:20px;
+    padding:0px 0px 0px 0px;
+    border:1px;
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+    /*背景颜色*/
+    background-color:MARGIN_THEME;
+}
+
+
+QToolButton{
+border:1px;
+padding:2px 2px;
+text-align:left;
+border-radius:5px;
+}
+/*按钮停留态*/
+QToolButton:hover
+{
+    /*背景颜色*/
+    background-color:MARGIN_THEME;
+}
+
+QScrollBar::vertical {
+    background: MARGIN_THEME;
+    border: -0px solid grey;
+    margin: 0px 0px 0px 0px;
+    width: 10px;
+    border-radius:5px;
+}
+QScrollBar::horizontal {
+    background: MARGIN_THEME;
+    margin: 0px 0px 0px 0px;
+    height:10px;
+
+}
+
+QScrollBar::handle:vertical{
+border-radius:3px;
+background:MARGIN_THEME;
+}
+
+QScrollBar::handle:horizontal{
+border-radius:3px;
+background:MARGIN_THEME;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: MAIN_THEME;
+    border:0px;
+}

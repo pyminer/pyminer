@@ -1,0 +1,1167 @@
+PyQt5.QtChart.PYQT_CHART_VERSION?7
+PyQt5.QtChart.PYQT_CHART_VERSION_STR?7
+PyQt5.QtChart.QAbstractAxis.AxisType?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeNoAxis?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeValue?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeBarCategory?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeCategory?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeDateTime?10
+PyQt5.QtChart.QAbstractAxis.AxisTypeLogValue?10
+PyQt5.QtChart.QAbstractAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QAbstractAxis.isVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.isLineVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setLineVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setLinePen?4(QPen)
+PyQt5.QtChart.QAbstractAxis.linePen?4() -> QPen
+PyQt5.QtChart.QAbstractAxis.setLinePenColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.linePenColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.isGridLineVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setGridLineVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setGridLinePen?4(QPen)
+PyQt5.QtChart.QAbstractAxis.gridLinePen?4() -> QPen
+PyQt5.QtChart.QAbstractAxis.labelsVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setLabelsVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setLabelsBrush?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.labelsBrush?4() -> QBrush
+PyQt5.QtChart.QAbstractAxis.setLabelsFont?4(QFont)
+PyQt5.QtChart.QAbstractAxis.labelsFont?4() -> QFont
+PyQt5.QtChart.QAbstractAxis.setLabelsAngle?4(int)
+PyQt5.QtChart.QAbstractAxis.labelsAngle?4() -> int
+PyQt5.QtChart.QAbstractAxis.setLabelsColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.labelsColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.shadesVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setShadesVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setShadesPen?4(QPen)
+PyQt5.QtChart.QAbstractAxis.shadesPen?4() -> QPen
+PyQt5.QtChart.QAbstractAxis.setShadesBrush?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.shadesBrush?4() -> QBrush
+PyQt5.QtChart.QAbstractAxis.setShadesColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.shadesColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.setShadesBorderColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.shadesBorderColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.setMin?4(QVariant)
+PyQt5.QtChart.QAbstractAxis.setMax?4(QVariant)
+PyQt5.QtChart.QAbstractAxis.setRange?4(QVariant, QVariant)
+PyQt5.QtChart.QAbstractAxis.show?4()
+PyQt5.QtChart.QAbstractAxis.hide?4()
+PyQt5.QtChart.QAbstractAxis.orientation?4() -> Qt.Orientation
+PyQt5.QtChart.QAbstractAxis.visibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.lineVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.labelsVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.gridVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.colorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.labelsColorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.shadesVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.shadesColorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.shadesBorderColorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.isTitleVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setTitleVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setTitleBrush?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.titleBrush?4() -> QBrush
+PyQt5.QtChart.QAbstractAxis.setTitleFont?4(QFont)
+PyQt5.QtChart.QAbstractAxis.titleFont?4() -> QFont
+PyQt5.QtChart.QAbstractAxis.setTitleText?4(QString)
+PyQt5.QtChart.QAbstractAxis.titleText?4() -> QString
+PyQt5.QtChart.QAbstractAxis.alignment?4() -> Qt.Alignment
+PyQt5.QtChart.QAbstractAxis.linePenChanged?4(QPen)
+PyQt5.QtChart.QAbstractAxis.labelsBrushChanged?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.labelsFontChanged?4(QFont)
+PyQt5.QtChart.QAbstractAxis.labelsAngleChanged?4(int)
+PyQt5.QtChart.QAbstractAxis.gridLinePenChanged?4(QPen)
+PyQt5.QtChart.QAbstractAxis.titleTextChanged?4(QString)
+PyQt5.QtChart.QAbstractAxis.titleBrushChanged?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.titleVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.titleFontChanged?4(QFont)
+PyQt5.QtChart.QAbstractAxis.shadesPenChanged?4(QPen)
+PyQt5.QtChart.QAbstractAxis.shadesBrushChanged?4(QBrush)
+PyQt5.QtChart.QAbstractAxis.isMinorGridLineVisible?4() -> bool
+PyQt5.QtChart.QAbstractAxis.setMinorGridLineVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractAxis.setMinorGridLinePen?4(QPen)
+PyQt5.QtChart.QAbstractAxis.minorGridLinePen?4() -> QPen
+PyQt5.QtChart.QAbstractAxis.setGridLineColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.gridLineColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.setMinorGridLineColor?4(QColor)
+PyQt5.QtChart.QAbstractAxis.minorGridLineColor?4() -> QColor
+PyQt5.QtChart.QAbstractAxis.setReverse?4(bool reverse=True)
+PyQt5.QtChart.QAbstractAxis.isReverse?4() -> bool
+PyQt5.QtChart.QAbstractAxis.minorGridVisibleChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.minorGridLinePenChanged?4(QPen)
+PyQt5.QtChart.QAbstractAxis.gridLineColorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.minorGridLineColorChanged?4(QColor)
+PyQt5.QtChart.QAbstractAxis.reverseChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.setLabelsEditable?4(bool editable=True)
+PyQt5.QtChart.QAbstractAxis.labelsEditable?4() -> bool
+PyQt5.QtChart.QAbstractAxis.labelsEditableChanged?4(bool)
+PyQt5.QtChart.QAbstractAxis.AxisTypes?1()
+PyQt5.QtChart.QAbstractAxis.AxisTypes.__init__?1(self)
+PyQt5.QtChart.QAbstractAxis.AxisTypes?1(int)
+PyQt5.QtChart.QAbstractAxis.AxisTypes.__init__?1(self, int)
+PyQt5.QtChart.QAbstractAxis.AxisTypes?1(QAbstractAxis.AxisTypes)
+PyQt5.QtChart.QAbstractAxis.AxisTypes.__init__?1(self, QAbstractAxis.AxisTypes)
+PyQt5.QtChart.QAbstractSeries.SeriesType?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeLine?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeArea?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeStackedBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypePercentBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypePie?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeScatter?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeSpline?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeHorizontalBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeHorizontalStackedBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeHorizontalPercentBar?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeBoxPlot?10
+PyQt5.QtChart.QAbstractSeries.SeriesTypeCandlestick?10
+PyQt5.QtChart.QAbstractSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QAbstractSeries.setName?4(QString)
+PyQt5.QtChart.QAbstractSeries.name?4() -> QString
+PyQt5.QtChart.QAbstractSeries.setVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractSeries.isVisible?4() -> bool
+PyQt5.QtChart.QAbstractSeries.chart?4() -> QChart
+PyQt5.QtChart.QAbstractSeries.show?4()
+PyQt5.QtChart.QAbstractSeries.hide?4()
+PyQt5.QtChart.QAbstractSeries.nameChanged?4()
+PyQt5.QtChart.QAbstractSeries.visibleChanged?4()
+PyQt5.QtChart.QAbstractSeries.opacity?4() -> float
+PyQt5.QtChart.QAbstractSeries.setOpacity?4(float)
+PyQt5.QtChart.QAbstractSeries.attachAxis?4(QAbstractAxis) -> bool
+PyQt5.QtChart.QAbstractSeries.detachAxis?4(QAbstractAxis) -> bool
+PyQt5.QtChart.QAbstractSeries.attachedAxes?4() -> unknown-type
+PyQt5.QtChart.QAbstractSeries.opacityChanged?4()
+PyQt5.QtChart.QAbstractSeries.setUseOpenGL?4(bool enable=True)
+PyQt5.QtChart.QAbstractSeries.useOpenGL?4() -> bool
+PyQt5.QtChart.QAbstractSeries.useOpenGLChanged?4()
+PyQt5.QtChart.QAbstractBarSeries.LabelsPosition?10
+PyQt5.QtChart.QAbstractBarSeries.LabelsCenter?10
+PyQt5.QtChart.QAbstractBarSeries.LabelsInsideEnd?10
+PyQt5.QtChart.QAbstractBarSeries.LabelsInsideBase?10
+PyQt5.QtChart.QAbstractBarSeries.LabelsOutsideEnd?10
+PyQt5.QtChart.QAbstractBarSeries.setBarWidth?4(float)
+PyQt5.QtChart.QAbstractBarSeries.barWidth?4() -> float
+PyQt5.QtChart.QAbstractBarSeries.append?4(QBarSet) -> bool
+PyQt5.QtChart.QAbstractBarSeries.remove?4(QBarSet) -> bool
+PyQt5.QtChart.QAbstractBarSeries.append?4(unknown-type) -> bool
+PyQt5.QtChart.QAbstractBarSeries.insert?4(int, QBarSet) -> bool
+PyQt5.QtChart.QAbstractBarSeries.count?4() -> int
+PyQt5.QtChart.QAbstractBarSeries.barSets?4() -> unknown-type
+PyQt5.QtChart.QAbstractBarSeries.clear?4()
+PyQt5.QtChart.QAbstractBarSeries.setLabelsVisible?4(bool visible=True)
+PyQt5.QtChart.QAbstractBarSeries.isLabelsVisible?4() -> bool
+PyQt5.QtChart.QAbstractBarSeries.take?4(QBarSet) -> bool
+PyQt5.QtChart.QAbstractBarSeries.clicked?4(int, QBarSet)
+PyQt5.QtChart.QAbstractBarSeries.hovered?4(bool, int, QBarSet)
+PyQt5.QtChart.QAbstractBarSeries.countChanged?4()
+PyQt5.QtChart.QAbstractBarSeries.labelsVisibleChanged?4()
+PyQt5.QtChart.QAbstractBarSeries.barsetsAdded?4(unknown-type)
+PyQt5.QtChart.QAbstractBarSeries.barsetsRemoved?4(unknown-type)
+PyQt5.QtChart.QAbstractBarSeries.setLabelsFormat?4(QString)
+PyQt5.QtChart.QAbstractBarSeries.labelsFormat?4() -> QString
+PyQt5.QtChart.QAbstractBarSeries.setLabelsPosition?4(QAbstractBarSeries.LabelsPosition)
+PyQt5.QtChart.QAbstractBarSeries.labelsPosition?4() -> QAbstractBarSeries.LabelsPosition
+PyQt5.QtChart.QAbstractBarSeries.labelsFormatChanged?4(QString)
+PyQt5.QtChart.QAbstractBarSeries.labelsPositionChanged?4(QAbstractBarSeries.LabelsPosition)
+PyQt5.QtChart.QAbstractBarSeries.pressed?4(int, QBarSet)
+PyQt5.QtChart.QAbstractBarSeries.released?4(int, QBarSet)
+PyQt5.QtChart.QAbstractBarSeries.doubleClicked?4(int, QBarSet)
+PyQt5.QtChart.QAbstractBarSeries.setLabelsAngle?4(float)
+PyQt5.QtChart.QAbstractBarSeries.labelsAngle?4() -> float
+PyQt5.QtChart.QAbstractBarSeries.labelsAngleChanged?4(float)
+PyQt5.QtChart.QAbstractBarSeries.setLabelsPrecision?4(int)
+PyQt5.QtChart.QAbstractBarSeries.labelsPrecision?4() -> int
+PyQt5.QtChart.QAbstractBarSeries.labelsPrecisionChanged?4(int)
+PyQt5.QtChart.QLegendMarker.LegendMarkerType?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypeArea?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypeBar?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypePie?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypeXY?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypeBoxPlot?10
+PyQt5.QtChart.QLegendMarker.LegendMarkerTypeCandlestick?10
+PyQt5.QtChart.QLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QLegendMarker.label?4() -> QString
+PyQt5.QtChart.QLegendMarker.setLabel?4(QString)
+PyQt5.QtChart.QLegendMarker.labelBrush?4() -> QBrush
+PyQt5.QtChart.QLegendMarker.setLabelBrush?4(QBrush)
+PyQt5.QtChart.QLegendMarker.font?4() -> QFont
+PyQt5.QtChart.QLegendMarker.setFont?4(QFont)
+PyQt5.QtChart.QLegendMarker.pen?4() -> QPen
+PyQt5.QtChart.QLegendMarker.setPen?4(QPen)
+PyQt5.QtChart.QLegendMarker.brush?4() -> QBrush
+PyQt5.QtChart.QLegendMarker.setBrush?4(QBrush)
+PyQt5.QtChart.QLegendMarker.isVisible?4() -> bool
+PyQt5.QtChart.QLegendMarker.setVisible?4(bool)
+PyQt5.QtChart.QLegendMarker.series?4() -> QAbstractSeries
+PyQt5.QtChart.QLegendMarker.clicked?4()
+PyQt5.QtChart.QLegendMarker.hovered?4(bool)
+PyQt5.QtChart.QLegendMarker.labelChanged?4()
+PyQt5.QtChart.QLegendMarker.labelBrushChanged?4()
+PyQt5.QtChart.QLegendMarker.fontChanged?4()
+PyQt5.QtChart.QLegendMarker.penChanged?4()
+PyQt5.QtChart.QLegendMarker.brushChanged?4()
+PyQt5.QtChart.QLegendMarker.visibleChanged?4()
+PyQt5.QtChart.QLegendMarker.shape?4() -> QLegend.MarkerShape
+PyQt5.QtChart.QLegendMarker.setShape?4(QLegend.MarkerShape)
+PyQt5.QtChart.QLegendMarker.shapeChanged?4()
+PyQt5.QtChart.QAreaLegendMarker?1(QAreaSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QAreaLegendMarker.__init__?1(self, QAreaSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QAreaLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QAreaLegendMarker.series?4() -> QAreaSeries
+PyQt5.QtChart.QAreaSeries?1(QObject parent=None)
+PyQt5.QtChart.QAreaSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QAreaSeries?1(QLineSeries, QLineSeries lowerSeries=None)
+PyQt5.QtChart.QAreaSeries.__init__?1(self, QLineSeries, QLineSeries lowerSeries=None)
+PyQt5.QtChart.QAreaSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QAreaSeries.setUpperSeries?4(QLineSeries)
+PyQt5.QtChart.QAreaSeries.upperSeries?4() -> QLineSeries
+PyQt5.QtChart.QAreaSeries.setLowerSeries?4(QLineSeries)
+PyQt5.QtChart.QAreaSeries.lowerSeries?4() -> QLineSeries
+PyQt5.QtChart.QAreaSeries.setPen?4(QPen)
+PyQt5.QtChart.QAreaSeries.pen?4() -> QPen
+PyQt5.QtChart.QAreaSeries.setBrush?4(QBrush)
+PyQt5.QtChart.QAreaSeries.brush?4() -> QBrush
+PyQt5.QtChart.QAreaSeries.setPointsVisible?4(bool visible=True)
+PyQt5.QtChart.QAreaSeries.pointsVisible?4() -> bool
+PyQt5.QtChart.QAreaSeries.setColor?4(QColor)
+PyQt5.QtChart.QAreaSeries.color?4() -> QColor
+PyQt5.QtChart.QAreaSeries.setBorderColor?4(QColor)
+PyQt5.QtChart.QAreaSeries.borderColor?4() -> QColor
+PyQt5.QtChart.QAreaSeries.borderColorChanged?4(QColor)
+PyQt5.QtChart.QAreaSeries.colorChanged?4(QColor)
+PyQt5.QtChart.QAreaSeries.clicked?4(QPointF)
+PyQt5.QtChart.QAreaSeries.selected?4()
+PyQt5.QtChart.QAreaSeries.hovered?4(QPointF, bool)
+PyQt5.QtChart.QAreaSeries.setPointLabelsFormat?4(QString)
+PyQt5.QtChart.QAreaSeries.pointLabelsFormat?4() -> QString
+PyQt5.QtChart.QAreaSeries.setPointLabelsVisible?4(bool visible=True)
+PyQt5.QtChart.QAreaSeries.pointLabelsVisible?4() -> bool
+PyQt5.QtChart.QAreaSeries.setPointLabelsFont?4(QFont)
+PyQt5.QtChart.QAreaSeries.pointLabelsFont?4() -> QFont
+PyQt5.QtChart.QAreaSeries.setPointLabelsColor?4(QColor)
+PyQt5.QtChart.QAreaSeries.pointLabelsColor?4() -> QColor
+PyQt5.QtChart.QAreaSeries.pointLabelsFormatChanged?4(QString)
+PyQt5.QtChart.QAreaSeries.pointLabelsVisibilityChanged?4(bool)
+PyQt5.QtChart.QAreaSeries.pointLabelsFontChanged?4(QFont)
+PyQt5.QtChart.QAreaSeries.pointLabelsColorChanged?4(QColor)
+PyQt5.QtChart.QAreaSeries.pressed?4(QPointF)
+PyQt5.QtChart.QAreaSeries.released?4(QPointF)
+PyQt5.QtChart.QAreaSeries.doubleClicked?4(QPointF)
+PyQt5.QtChart.QAreaSeries.setPointLabelsClipping?4(bool enable=True)
+PyQt5.QtChart.QAreaSeries.pointLabelsClipping?4() -> bool
+PyQt5.QtChart.QAreaSeries.pointLabelsClippingChanged?4(bool)
+PyQt5.QtChart.QBarCategoryAxis?1(QObject parent=None)
+PyQt5.QtChart.QBarCategoryAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QBarCategoryAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QBarCategoryAxis.append?4(QStringList)
+PyQt5.QtChart.QBarCategoryAxis.append?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.remove?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.insert?4(int, QString)
+PyQt5.QtChart.QBarCategoryAxis.replace?4(QString, QString)
+PyQt5.QtChart.QBarCategoryAxis.clear?4()
+PyQt5.QtChart.QBarCategoryAxis.setCategories?4(QStringList)
+PyQt5.QtChart.QBarCategoryAxis.categories?4() -> QStringList
+PyQt5.QtChart.QBarCategoryAxis.count?4() -> int
+PyQt5.QtChart.QBarCategoryAxis.at?4(int) -> QString
+PyQt5.QtChart.QBarCategoryAxis.setMin?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.min?4() -> QString
+PyQt5.QtChart.QBarCategoryAxis.setMax?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.max?4() -> QString
+PyQt5.QtChart.QBarCategoryAxis.setRange?4(QString, QString)
+PyQt5.QtChart.QBarCategoryAxis.categoriesChanged?4()
+PyQt5.QtChart.QBarCategoryAxis.minChanged?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.maxChanged?4(QString)
+PyQt5.QtChart.QBarCategoryAxis.rangeChanged?4(QString, QString)
+PyQt5.QtChart.QBarCategoryAxis.countChanged?4()
+PyQt5.QtChart.QBarLegendMarker?1(QAbstractBarSeries, QBarSet, QLegend, QObject parent=None)
+PyQt5.QtChart.QBarLegendMarker.__init__?1(self, QAbstractBarSeries, QBarSet, QLegend, QObject parent=None)
+PyQt5.QtChart.QBarLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QBarLegendMarker.series?4() -> QAbstractBarSeries
+PyQt5.QtChart.QBarLegendMarker.barset?4() -> QBarSet
+PyQt5.QtChart.QBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QBarSet?1(QString, QObject parent=None)
+PyQt5.QtChart.QBarSet.__init__?1(self, QString, QObject parent=None)
+PyQt5.QtChart.QBarSet.append?4(float)
+PyQt5.QtChart.QBarSet.insert?4(int, float)
+PyQt5.QtChart.QBarSet.replace?4(int, float)
+PyQt5.QtChart.QBarSet.count?4() -> int
+PyQt5.QtChart.QBarSet.sum?4() -> float
+PyQt5.QtChart.QBarSet.setPen?4(QPen)
+PyQt5.QtChart.QBarSet.pen?4() -> QPen
+PyQt5.QtChart.QBarSet.setBrush?4(QBrush)
+PyQt5.QtChart.QBarSet.brush?4() -> QBrush
+PyQt5.QtChart.QBarSet.setLabelBrush?4(QBrush)
+PyQt5.QtChart.QBarSet.labelBrush?4() -> QBrush
+PyQt5.QtChart.QBarSet.setLabelFont?4(QFont)
+PyQt5.QtChart.QBarSet.labelFont?4() -> QFont
+PyQt5.QtChart.QBarSet.setLabel?4(QString)
+PyQt5.QtChart.QBarSet.label?4() -> QString
+PyQt5.QtChart.QBarSet.append?4(unknown-type)
+PyQt5.QtChart.QBarSet.remove?4(int, int count=1)
+PyQt5.QtChart.QBarSet.at?4(int) -> float
+PyQt5.QtChart.QBarSet.color?4() -> QColor
+PyQt5.QtChart.QBarSet.setColor?4(QColor)
+PyQt5.QtChart.QBarSet.borderColor?4() -> QColor
+PyQt5.QtChart.QBarSet.setBorderColor?4(QColor)
+PyQt5.QtChart.QBarSet.labelColor?4() -> QColor
+PyQt5.QtChart.QBarSet.setLabelColor?4(QColor)
+PyQt5.QtChart.QBarSet.penChanged?4()
+PyQt5.QtChart.QBarSet.brushChanged?4()
+PyQt5.QtChart.QBarSet.labelChanged?4()
+PyQt5.QtChart.QBarSet.labelBrushChanged?4()
+PyQt5.QtChart.QBarSet.labelFontChanged?4()
+PyQt5.QtChart.QBarSet.valuesAdded?4(int, int)
+PyQt5.QtChart.QBarSet.valuesRemoved?4(int, int)
+PyQt5.QtChart.QBarSet.valueChanged?4(int)
+PyQt5.QtChart.QBarSet.clicked?4(int)
+PyQt5.QtChart.QBarSet.hovered?4(bool, int)
+PyQt5.QtChart.QBarSet.colorChanged?4(QColor)
+PyQt5.QtChart.QBarSet.borderColorChanged?4(QColor)
+PyQt5.QtChart.QBarSet.labelColorChanged?4(QColor)
+PyQt5.QtChart.QBarSet.pressed?4(int)
+PyQt5.QtChart.QBarSet.released?4(int)
+PyQt5.QtChart.QBarSet.doubleClicked?4(int)
+PyQt5.QtChart.QBoxPlotLegendMarker?1(QBoxPlotSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QBoxPlotLegendMarker.__init__?1(self, QBoxPlotSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QBoxPlotLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QBoxPlotLegendMarker.series?4() -> QBoxPlotSeries
+PyQt5.QtChart.QBoxPlotSeries?1(QObject parent=None)
+PyQt5.QtChart.QBoxPlotSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QBoxPlotSeries.append?4(QBoxSet) -> bool
+PyQt5.QtChart.QBoxPlotSeries.remove?4(QBoxSet) -> bool
+PyQt5.QtChart.QBoxPlotSeries.take?4(QBoxSet) -> bool
+PyQt5.QtChart.QBoxPlotSeries.append?4(unknown-type) -> bool
+PyQt5.QtChart.QBoxPlotSeries.insert?4(int, QBoxSet) -> bool
+PyQt5.QtChart.QBoxPlotSeries.count?4() -> int
+PyQt5.QtChart.QBoxPlotSeries.boxSets?4() -> unknown-type
+PyQt5.QtChart.QBoxPlotSeries.clear?4()
+PyQt5.QtChart.QBoxPlotSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QBoxPlotSeries.setBoxOutlineVisible?4(bool)
+PyQt5.QtChart.QBoxPlotSeries.boxOutlineVisible?4() -> bool
+PyQt5.QtChart.QBoxPlotSeries.setBoxWidth?4(float)
+PyQt5.QtChart.QBoxPlotSeries.boxWidth?4() -> float
+PyQt5.QtChart.QBoxPlotSeries.setBrush?4(QBrush)
+PyQt5.QtChart.QBoxPlotSeries.brush?4() -> QBrush
+PyQt5.QtChart.QBoxPlotSeries.setPen?4(QPen)
+PyQt5.QtChart.QBoxPlotSeries.pen?4() -> QPen
+PyQt5.QtChart.QBoxPlotSeries.clicked?4(QBoxSet)
+PyQt5.QtChart.QBoxPlotSeries.hovered?4(bool, QBoxSet)
+PyQt5.QtChart.QBoxPlotSeries.countChanged?4()
+PyQt5.QtChart.QBoxPlotSeries.penChanged?4()
+PyQt5.QtChart.QBoxPlotSeries.brushChanged?4()
+PyQt5.QtChart.QBoxPlotSeries.boxOutlineVisibilityChanged?4()
+PyQt5.QtChart.QBoxPlotSeries.boxWidthChanged?4()
+PyQt5.QtChart.QBoxPlotSeries.boxsetsAdded?4(unknown-type)
+PyQt5.QtChart.QBoxPlotSeries.boxsetsRemoved?4(unknown-type)
+PyQt5.QtChart.QBoxPlotSeries.pressed?4(QBoxSet)
+PyQt5.QtChart.QBoxPlotSeries.released?4(QBoxSet)
+PyQt5.QtChart.QBoxPlotSeries.doubleClicked?4(QBoxSet)
+PyQt5.QtChart.QBoxSet.ValuePositions?10
+PyQt5.QtChart.QBoxSet.LowerExtreme?10
+PyQt5.QtChart.QBoxSet.LowerQuartile?10
+PyQt5.QtChart.QBoxSet.Median?10
+PyQt5.QtChart.QBoxSet.UpperQuartile?10
+PyQt5.QtChart.QBoxSet.UpperExtreme?10
+PyQt5.QtChart.QBoxSet?1(QString label='', QObject parent=None)
+PyQt5.QtChart.QBoxSet.__init__?1(self, QString label='', QObject parent=None)
+PyQt5.QtChart.QBoxSet?1(float, float, float, float, float, QString label='', QObject parent=None)
+PyQt5.QtChart.QBoxSet.__init__?1(self, float, float, float, float, float, QString label='', QObject parent=None)
+PyQt5.QtChart.QBoxSet.append?4(float)
+PyQt5.QtChart.QBoxSet.append?4(unknown-type)
+PyQt5.QtChart.QBoxSet.clear?4()
+PyQt5.QtChart.QBoxSet.setLabel?4(QString)
+PyQt5.QtChart.QBoxSet.label?4() -> QString
+PyQt5.QtChart.QBoxSet.setValue?4(int, float)
+PyQt5.QtChart.QBoxSet.at?4(int) -> float
+PyQt5.QtChart.QBoxSet.count?4() -> int
+PyQt5.QtChart.QBoxSet.setPen?4(QPen)
+PyQt5.QtChart.QBoxSet.pen?4() -> QPen
+PyQt5.QtChart.QBoxSet.setBrush?4(QBrush)
+PyQt5.QtChart.QBoxSet.brush?4() -> QBrush
+PyQt5.QtChart.QBoxSet.clicked?4()
+PyQt5.QtChart.QBoxSet.hovered?4(bool)
+PyQt5.QtChart.QBoxSet.penChanged?4()
+PyQt5.QtChart.QBoxSet.brushChanged?4()
+PyQt5.QtChart.QBoxSet.valuesChanged?4()
+PyQt5.QtChart.QBoxSet.valueChanged?4(int)
+PyQt5.QtChart.QBoxSet.cleared?4()
+PyQt5.QtChart.QBoxSet.pressed?4()
+PyQt5.QtChart.QBoxSet.released?4()
+PyQt5.QtChart.QBoxSet.doubleClicked?4()
+PyQt5.QtChart.QCandlestickLegendMarker?1(QCandlestickSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QCandlestickLegendMarker.__init__?1(self, QCandlestickSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QCandlestickLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QCandlestickLegendMarker.series?4() -> QCandlestickSeries
+PyQt5.QtChart.QCandlestickModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QCandlestickModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QCandlestickModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QCandlestickModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QCandlestickModelMapper.setSeries?4(QCandlestickSeries)
+PyQt5.QtChart.QCandlestickModelMapper.series?4() -> QCandlestickSeries
+PyQt5.QtChart.QCandlestickModelMapper.orientation?4() -> Qt.Orientation
+PyQt5.QtChart.QCandlestickModelMapper.modelReplaced?4()
+PyQt5.QtChart.QCandlestickModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QCandlestickModelMapper.setTimestamp?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.timestamp?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setOpen?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.open?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setHigh?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.high?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setLow?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.low?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setClose?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.close?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setFirstSetSection?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.firstSetSection?4() -> int
+PyQt5.QtChart.QCandlestickModelMapper.setLastSetSection?4(int)
+PyQt5.QtChart.QCandlestickModelMapper.lastSetSection?4() -> int
+PyQt5.QtChart.QCandlestickSeries?1(QObject parent=None)
+PyQt5.QtChart.QCandlestickSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QCandlestickSeries.append?4(QCandlestickSet) -> bool
+PyQt5.QtChart.QCandlestickSeries.remove?4(QCandlestickSet) -> bool
+PyQt5.QtChart.QCandlestickSeries.append?4(unknown-type) -> bool
+PyQt5.QtChart.QCandlestickSeries.remove?4(unknown-type) -> bool
+PyQt5.QtChart.QCandlestickSeries.insert?4(int, QCandlestickSet) -> bool
+PyQt5.QtChart.QCandlestickSeries.take?4(QCandlestickSet) -> bool
+PyQt5.QtChart.QCandlestickSeries.clear?4()
+PyQt5.QtChart.QCandlestickSeries.sets?4() -> unknown-type
+PyQt5.QtChart.QCandlestickSeries.count?4() -> int
+PyQt5.QtChart.QCandlestickSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QCandlestickSeries.setMaximumColumnWidth?4(float)
+PyQt5.QtChart.QCandlestickSeries.maximumColumnWidth?4() -> float
+PyQt5.QtChart.QCandlestickSeries.setMinimumColumnWidth?4(float)
+PyQt5.QtChart.QCandlestickSeries.minimumColumnWidth?4() -> float
+PyQt5.QtChart.QCandlestickSeries.setBodyWidth?4(float)
+PyQt5.QtChart.QCandlestickSeries.bodyWidth?4() -> float
+PyQt5.QtChart.QCandlestickSeries.setBodyOutlineVisible?4(bool)
+PyQt5.QtChart.QCandlestickSeries.bodyOutlineVisible?4() -> bool
+PyQt5.QtChart.QCandlestickSeries.setCapsWidth?4(float)
+PyQt5.QtChart.QCandlestickSeries.capsWidth?4() -> float
+PyQt5.QtChart.QCandlestickSeries.setCapsVisible?4(bool)
+PyQt5.QtChart.QCandlestickSeries.capsVisible?4() -> bool
+PyQt5.QtChart.QCandlestickSeries.setIncreasingColor?4(QColor)
+PyQt5.QtChart.QCandlestickSeries.increasingColor?4() -> QColor
+PyQt5.QtChart.QCandlestickSeries.setDecreasingColor?4(QColor)
+PyQt5.QtChart.QCandlestickSeries.decreasingColor?4() -> QColor
+PyQt5.QtChart.QCandlestickSeries.setBrush?4(QBrush)
+PyQt5.QtChart.QCandlestickSeries.brush?4() -> QBrush
+PyQt5.QtChart.QCandlestickSeries.setPen?4(QPen)
+PyQt5.QtChart.QCandlestickSeries.pen?4() -> QPen
+PyQt5.QtChart.QCandlestickSeries.clicked?4(QCandlestickSet)
+PyQt5.QtChart.QCandlestickSeries.hovered?4(bool, QCandlestickSet)
+PyQt5.QtChart.QCandlestickSeries.pressed?4(QCandlestickSet)
+PyQt5.QtChart.QCandlestickSeries.released?4(QCandlestickSet)
+PyQt5.QtChart.QCandlestickSeries.doubleClicked?4(QCandlestickSet)
+PyQt5.QtChart.QCandlestickSeries.candlestickSetsAdded?4(unknown-type)
+PyQt5.QtChart.QCandlestickSeries.candlestickSetsRemoved?4(unknown-type)
+PyQt5.QtChart.QCandlestickSeries.countChanged?4()
+PyQt5.QtChart.QCandlestickSeries.maximumColumnWidthChanged?4()
+PyQt5.QtChart.QCandlestickSeries.minimumColumnWidthChanged?4()
+PyQt5.QtChart.QCandlestickSeries.bodyWidthChanged?4()
+PyQt5.QtChart.QCandlestickSeries.bodyOutlineVisibilityChanged?4()
+PyQt5.QtChart.QCandlestickSeries.capsWidthChanged?4()
+PyQt5.QtChart.QCandlestickSeries.capsVisibilityChanged?4()
+PyQt5.QtChart.QCandlestickSeries.increasingColorChanged?4()
+PyQt5.QtChart.QCandlestickSeries.decreasingColorChanged?4()
+PyQt5.QtChart.QCandlestickSeries.brushChanged?4()
+PyQt5.QtChart.QCandlestickSeries.penChanged?4()
+PyQt5.QtChart.QCandlestickSet?1(float timestamp=0, QObject parent=None)
+PyQt5.QtChart.QCandlestickSet.__init__?1(self, float timestamp=0, QObject parent=None)
+PyQt5.QtChart.QCandlestickSet?1(float, float, float, float, float timestamp=0, QObject parent=None)
+PyQt5.QtChart.QCandlestickSet.__init__?1(self, float, float, float, float, float timestamp=0, QObject parent=None)
+PyQt5.QtChart.QCandlestickSet.setTimestamp?4(float)
+PyQt5.QtChart.QCandlestickSet.timestamp?4() -> float
+PyQt5.QtChart.QCandlestickSet.setOpen?4(float)
+PyQt5.QtChart.QCandlestickSet.open?4() -> float
+PyQt5.QtChart.QCandlestickSet.setHigh?4(float)
+PyQt5.QtChart.QCandlestickSet.high?4() -> float
+PyQt5.QtChart.QCandlestickSet.setLow?4(float)
+PyQt5.QtChart.QCandlestickSet.low?4() -> float
+PyQt5.QtChart.QCandlestickSet.setClose?4(float)
+PyQt5.QtChart.QCandlestickSet.close?4() -> float
+PyQt5.QtChart.QCandlestickSet.setBrush?4(QBrush)
+PyQt5.QtChart.QCandlestickSet.brush?4() -> QBrush
+PyQt5.QtChart.QCandlestickSet.setPen?4(QPen)
+PyQt5.QtChart.QCandlestickSet.pen?4() -> QPen
+PyQt5.QtChart.QCandlestickSet.clicked?4()
+PyQt5.QtChart.QCandlestickSet.hovered?4(bool)
+PyQt5.QtChart.QCandlestickSet.pressed?4()
+PyQt5.QtChart.QCandlestickSet.released?4()
+PyQt5.QtChart.QCandlestickSet.doubleClicked?4()
+PyQt5.QtChart.QCandlestickSet.timestampChanged?4()
+PyQt5.QtChart.QCandlestickSet.openChanged?4()
+PyQt5.QtChart.QCandlestickSet.highChanged?4()
+PyQt5.QtChart.QCandlestickSet.lowChanged?4()
+PyQt5.QtChart.QCandlestickSet.closeChanged?4()
+PyQt5.QtChart.QCandlestickSet.brushChanged?4()
+PyQt5.QtChart.QCandlestickSet.penChanged?4()
+PyQt5.QtChart.QValueAxis.TickType?10
+PyQt5.QtChart.QValueAxis.TicksDynamic?10
+PyQt5.QtChart.QValueAxis.TicksFixed?10
+PyQt5.QtChart.QValueAxis?1(QObject parent=None)
+PyQt5.QtChart.QValueAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QValueAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QValueAxis.setMin?4(float)
+PyQt5.QtChart.QValueAxis.min?4() -> float
+PyQt5.QtChart.QValueAxis.setMax?4(float)
+PyQt5.QtChart.QValueAxis.max?4() -> float
+PyQt5.QtChart.QValueAxis.setRange?4(float, float)
+PyQt5.QtChart.QValueAxis.setTickCount?4(int)
+PyQt5.QtChart.QValueAxis.tickCount?4() -> int
+PyQt5.QtChart.QValueAxis.setLabelFormat?4(QString)
+PyQt5.QtChart.QValueAxis.labelFormat?4() -> QString
+PyQt5.QtChart.QValueAxis.applyNiceNumbers?4()
+PyQt5.QtChart.QValueAxis.minChanged?4(float)
+PyQt5.QtChart.QValueAxis.maxChanged?4(float)
+PyQt5.QtChart.QValueAxis.rangeChanged?4(float, float)
+PyQt5.QtChart.QValueAxis.tickCountChanged?4(int)
+PyQt5.QtChart.QValueAxis.labelFormatChanged?4(QString)
+PyQt5.QtChart.QValueAxis.setMinorTickCount?4(int)
+PyQt5.QtChart.QValueAxis.minorTickCount?4() -> int
+PyQt5.QtChart.QValueAxis.minorTickCountChanged?4(int)
+PyQt5.QtChart.QValueAxis.setTickAnchor?4(float)
+PyQt5.QtChart.QValueAxis.tickAnchor?4() -> float
+PyQt5.QtChart.QValueAxis.setTickInterval?4(float)
+PyQt5.QtChart.QValueAxis.tickInterval?4() -> float
+PyQt5.QtChart.QValueAxis.setTickType?4(QValueAxis.TickType)
+PyQt5.QtChart.QValueAxis.tickType?4() -> QValueAxis.TickType
+PyQt5.QtChart.QValueAxis.tickIntervalChanged?4(float)
+PyQt5.QtChart.QValueAxis.tickAnchorChanged?4(float)
+PyQt5.QtChart.QValueAxis.tickTypeChanged?4(QValueAxis.TickType)
+PyQt5.QtChart.QCategoryAxis.AxisLabelsPosition?10
+PyQt5.QtChart.QCategoryAxis.AxisLabelsPositionCenter?10
+PyQt5.QtChart.QCategoryAxis.AxisLabelsPositionOnValue?10
+PyQt5.QtChart.QCategoryAxis?1(QObject parent=None)
+PyQt5.QtChart.QCategoryAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QCategoryAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QCategoryAxis.append?4(QString, float)
+PyQt5.QtChart.QCategoryAxis.remove?4(QString)
+PyQt5.QtChart.QCategoryAxis.replaceLabel?4(QString, QString)
+PyQt5.QtChart.QCategoryAxis.startValue?4(QString categoryLabel='') -> float
+PyQt5.QtChart.QCategoryAxis.setStartValue?4(float)
+PyQt5.QtChart.QCategoryAxis.endValue?4(QString) -> float
+PyQt5.QtChart.QCategoryAxis.categoriesLabels?4() -> QStringList
+PyQt5.QtChart.QCategoryAxis.count?4() -> int
+PyQt5.QtChart.QCategoryAxis.categoriesChanged?4()
+PyQt5.QtChart.QCategoryAxis.labelsPosition?4() -> QCategoryAxis.AxisLabelsPosition
+PyQt5.QtChart.QCategoryAxis.setLabelsPosition?4(QCategoryAxis.AxisLabelsPosition)
+PyQt5.QtChart.QCategoryAxis.labelsPositionChanged?4(QCategoryAxis.AxisLabelsPosition)
+PyQt5.QtChart.QChart.ChartType?10
+PyQt5.QtChart.QChart.ChartTypeUndefined?10
+PyQt5.QtChart.QChart.ChartTypeCartesian?10
+PyQt5.QtChart.QChart.ChartTypePolar?10
+PyQt5.QtChart.QChart.AnimationOption?10
+PyQt5.QtChart.QChart.NoAnimation?10
+PyQt5.QtChart.QChart.GridAxisAnimations?10
+PyQt5.QtChart.QChart.SeriesAnimations?10
+PyQt5.QtChart.QChart.AllAnimations?10
+PyQt5.QtChart.QChart.ChartTheme?10
+PyQt5.QtChart.QChart.ChartThemeLight?10
+PyQt5.QtChart.QChart.ChartThemeBlueCerulean?10
+PyQt5.QtChart.QChart.ChartThemeDark?10
+PyQt5.QtChart.QChart.ChartThemeBrownSand?10
+PyQt5.QtChart.QChart.ChartThemeBlueNcs?10
+PyQt5.QtChart.QChart.ChartThemeHighContrast?10
+PyQt5.QtChart.QChart.ChartThemeBlueIcy?10
+PyQt5.QtChart.QChart.ChartThemeQt?10
+PyQt5.QtChart.QChart?1(QGraphicsItem parent=None, Qt.WindowFlags flags=Qt.WindowFlags())
+PyQt5.QtChart.QChart.__init__?1(self, QGraphicsItem parent=None, Qt.WindowFlags flags=Qt.WindowFlags())
+PyQt5.QtChart.QChart.addSeries?4(QAbstractSeries)
+PyQt5.QtChart.QChart.removeSeries?4(QAbstractSeries)
+PyQt5.QtChart.QChart.removeAllSeries?4()
+PyQt5.QtChart.QChart.series?4() -> unknown-type
+PyQt5.QtChart.QChart.setTheme?4(QChart.ChartTheme)
+PyQt5.QtChart.QChart.theme?4() -> QChart.ChartTheme
+PyQt5.QtChart.QChart.setTitle?4(QString)
+PyQt5.QtChart.QChart.title?4() -> QString
+PyQt5.QtChart.QChart.setTitleFont?4(QFont)
+PyQt5.QtChart.QChart.titleFont?4() -> QFont
+PyQt5.QtChart.QChart.setTitleBrush?4(QBrush)
+PyQt5.QtChart.QChart.titleBrush?4() -> QBrush
+PyQt5.QtChart.QChart.setBackgroundBrush?4(QBrush)
+PyQt5.QtChart.QChart.backgroundBrush?4() -> QBrush
+PyQt5.QtChart.QChart.setBackgroundPen?4(QPen)
+PyQt5.QtChart.QChart.backgroundPen?4() -> QPen
+PyQt5.QtChart.QChart.setBackgroundVisible?4(bool visible=True)
+PyQt5.QtChart.QChart.isBackgroundVisible?4() -> bool
+PyQt5.QtChart.QChart.setAnimationOptions?4(QChart.AnimationOptions)
+PyQt5.QtChart.QChart.animationOptions?4() -> QChart.AnimationOptions
+PyQt5.QtChart.QChart.zoomIn?4()
+PyQt5.QtChart.QChart.zoomIn?4(QRectF)
+PyQt5.QtChart.QChart.zoomOut?4()
+PyQt5.QtChart.QChart.zoom?4(float)
+PyQt5.QtChart.QChart.legend?4() -> QLegend
+PyQt5.QtChart.QChart.setAxisX?4(QAbstractAxis, QAbstractSeries series=None)
+PyQt5.QtChart.QChart.setAxisY?4(QAbstractAxis, QAbstractSeries series=None)
+PyQt5.QtChart.QChart.axisX?4(QAbstractSeries series=None) -> QAbstractAxis
+PyQt5.QtChart.QChart.axisY?4(QAbstractSeries series=None) -> QAbstractAxis
+PyQt5.QtChart.QChart.createDefaultAxes?4()
+PyQt5.QtChart.QChart.setDropShadowEnabled?4(bool enabled=True)
+PyQt5.QtChart.QChart.isDropShadowEnabled?4() -> bool
+PyQt5.QtChart.QChart.scroll?4(float, float)
+PyQt5.QtChart.QChart.plotArea?4() -> QRectF
+PyQt5.QtChart.QChart.addAxis?4(QAbstractAxis, Qt.Alignment)
+PyQt5.QtChart.QChart.removeAxis?4(QAbstractAxis)
+PyQt5.QtChart.QChart.axes?4(Qt.Orientations orientation=Qt.Orientation.Horizontal|Qt.Orientation.Vertical, QAbstractSeries series=None) -> unknown-type
+PyQt5.QtChart.QChart.setMargins?4(QMargins)
+PyQt5.QtChart.QChart.margins?4() -> QMargins
+PyQt5.QtChart.QChart.mapToValue?4(QPointF, QAbstractSeries series=None) -> QPointF
+PyQt5.QtChart.QChart.mapToPosition?4(QPointF, QAbstractSeries series=None) -> QPointF
+PyQt5.QtChart.QChart.setBackgroundRoundness?4(float)
+PyQt5.QtChart.QChart.backgroundRoundness?4() -> float
+PyQt5.QtChart.QChart.zoomReset?4()
+PyQt5.QtChart.QChart.isZoomed?4() -> bool
+PyQt5.QtChart.QChart.setPlotArea?4(QRectF)
+PyQt5.QtChart.QChart.setPlotAreaBackgroundBrush?4(QBrush)
+PyQt5.QtChart.QChart.plotAreaBackgroundBrush?4() -> QBrush
+PyQt5.QtChart.QChart.setPlotAreaBackgroundPen?4(QPen)
+PyQt5.QtChart.QChart.plotAreaBackgroundPen?4() -> QPen
+PyQt5.QtChart.QChart.setPlotAreaBackgroundVisible?4(bool visible=True)
+PyQt5.QtChart.QChart.isPlotAreaBackgroundVisible?4() -> bool
+PyQt5.QtChart.QChart.chartType?4() -> QChart.ChartType
+PyQt5.QtChart.QChart.setLocalizeNumbers?4(bool)
+PyQt5.QtChart.QChart.localizeNumbers?4() -> bool
+PyQt5.QtChart.QChart.setLocale?4(QLocale)
+PyQt5.QtChart.QChart.locale?4() -> QLocale
+PyQt5.QtChart.QChart.plotAreaChanged?4(QRectF)
+PyQt5.QtChart.QChart.setAnimationDuration?4(int)
+PyQt5.QtChart.QChart.animationDuration?4() -> int
+PyQt5.QtChart.QChart.setAnimationEasingCurve?4(QEasingCurve)
+PyQt5.QtChart.QChart.animationEasingCurve?4() -> QEasingCurve
+PyQt5.QtChart.QChart.AnimationOptions?1()
+PyQt5.QtChart.QChart.AnimationOptions.__init__?1(self)
+PyQt5.QtChart.QChart.AnimationOptions?1(int)
+PyQt5.QtChart.QChart.AnimationOptions.__init__?1(self, int)
+PyQt5.QtChart.QChart.AnimationOptions?1(QChart.AnimationOptions)
+PyQt5.QtChart.QChart.AnimationOptions.__init__?1(self, QChart.AnimationOptions)
+PyQt5.QtChart.QChartView.RubberBand?10
+PyQt5.QtChart.QChartView.NoRubberBand?10
+PyQt5.QtChart.QChartView.VerticalRubberBand?10
+PyQt5.QtChart.QChartView.HorizontalRubberBand?10
+PyQt5.QtChart.QChartView.RectangleRubberBand?10
+PyQt5.QtChart.QChartView?1(QWidget parent=None)
+PyQt5.QtChart.QChartView.__init__?1(self, QWidget parent=None)
+PyQt5.QtChart.QChartView?1(QChart, QWidget parent=None)
+PyQt5.QtChart.QChartView.__init__?1(self, QChart, QWidget parent=None)
+PyQt5.QtChart.QChartView.setRubberBand?4(QChartView.RubberBands)
+PyQt5.QtChart.QChartView.rubberBand?4() -> QChartView.RubberBands
+PyQt5.QtChart.QChartView.setChart?4(QChart)
+PyQt5.QtChart.QChartView.chart?4() -> QChart
+PyQt5.QtChart.QChartView.resizeEvent?4(QResizeEvent)
+PyQt5.QtChart.QChartView.mousePressEvent?4(QMouseEvent)
+PyQt5.QtChart.QChartView.mouseMoveEvent?4(QMouseEvent)
+PyQt5.QtChart.QChartView.mouseReleaseEvent?4(QMouseEvent)
+PyQt5.QtChart.QChartView.wheelEvent?4(QWheelEvent)
+PyQt5.QtChart.QChartView.RubberBands?1()
+PyQt5.QtChart.QChartView.RubberBands.__init__?1(self)
+PyQt5.QtChart.QChartView.RubberBands?1(int)
+PyQt5.QtChart.QChartView.RubberBands.__init__?1(self, int)
+PyQt5.QtChart.QChartView.RubberBands?1(QChartView.RubberBands)
+PyQt5.QtChart.QChartView.RubberBands.__init__?1(self, QChartView.RubberBands)
+PyQt5.QtChart.QDateTimeAxis?1(QObject parent=None)
+PyQt5.QtChart.QDateTimeAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QDateTimeAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QDateTimeAxis.setMin?4(QDateTime)
+PyQt5.QtChart.QDateTimeAxis.min?4() -> QDateTime
+PyQt5.QtChart.QDateTimeAxis.setMax?4(QDateTime)
+PyQt5.QtChart.QDateTimeAxis.max?4() -> QDateTime
+PyQt5.QtChart.QDateTimeAxis.setRange?4(QDateTime, QDateTime)
+PyQt5.QtChart.QDateTimeAxis.setFormat?4(QString)
+PyQt5.QtChart.QDateTimeAxis.format?4() -> QString
+PyQt5.QtChart.QDateTimeAxis.setTickCount?4(int)
+PyQt5.QtChart.QDateTimeAxis.tickCount?4() -> int
+PyQt5.QtChart.QDateTimeAxis.minChanged?4(QDateTime)
+PyQt5.QtChart.QDateTimeAxis.maxChanged?4(QDateTime)
+PyQt5.QtChart.QDateTimeAxis.rangeChanged?4(QDateTime, QDateTime)
+PyQt5.QtChart.QDateTimeAxis.formatChanged?4(QString)
+PyQt5.QtChart.QDateTimeAxis.tickCountChanged?4(int)
+PyQt5.QtChart.QHBarModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QHBarModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHBarModelMapper.firstBarSetRow?4() -> int
+PyQt5.QtChart.QHBarModelMapper.setFirstBarSetRow?4(int)
+PyQt5.QtChart.QHBarModelMapper.lastBarSetRow?4() -> int
+PyQt5.QtChart.QHBarModelMapper.setLastBarSetRow?4(int)
+PyQt5.QtChart.QHBarModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QHBarModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QHBarModelMapper.series?4() -> QAbstractBarSeries
+PyQt5.QtChart.QHBarModelMapper.setSeries?4(QAbstractBarSeries)
+PyQt5.QtChart.QHBarModelMapper.firstColumn?4() -> int
+PyQt5.QtChart.QHBarModelMapper.setFirstColumn?4(int)
+PyQt5.QtChart.QHBarModelMapper.columnCount?4() -> int
+PyQt5.QtChart.QHBarModelMapper.setColumnCount?4(int)
+PyQt5.QtChart.QHBarModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QHBarModelMapper.modelReplaced?4()
+PyQt5.QtChart.QHBarModelMapper.firstBarSetRowChanged?4()
+PyQt5.QtChart.QHBarModelMapper.lastBarSetRowChanged?4()
+PyQt5.QtChart.QHBarModelMapper.firstColumnChanged?4()
+PyQt5.QtChart.QHBarModelMapper.columnCountChanged?4()
+PyQt5.QtChart.QHBoxPlotModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QHBoxPlotModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHBoxPlotModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QHBoxPlotModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QHBoxPlotModelMapper.series?4() -> QBoxPlotSeries
+PyQt5.QtChart.QHBoxPlotModelMapper.setSeries?4(QBoxPlotSeries)
+PyQt5.QtChart.QHBoxPlotModelMapper.firstBoxSetRow?4() -> int
+PyQt5.QtChart.QHBoxPlotModelMapper.setFirstBoxSetRow?4(int)
+PyQt5.QtChart.QHBoxPlotModelMapper.lastBoxSetRow?4() -> int
+PyQt5.QtChart.QHBoxPlotModelMapper.setLastBoxSetRow?4(int)
+PyQt5.QtChart.QHBoxPlotModelMapper.firstColumn?4() -> int
+PyQt5.QtChart.QHBoxPlotModelMapper.setFirstColumn?4(int)
+PyQt5.QtChart.QHBoxPlotModelMapper.columnCount?4() -> int
+PyQt5.QtChart.QHBoxPlotModelMapper.setColumnCount?4(int)
+PyQt5.QtChart.QHBoxPlotModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QHBoxPlotModelMapper.modelReplaced?4()
+PyQt5.QtChart.QHBoxPlotModelMapper.firstBoxSetRowChanged?4()
+PyQt5.QtChart.QHBoxPlotModelMapper.lastBoxSetRowChanged?4()
+PyQt5.QtChart.QHBoxPlotModelMapper.firstColumnChanged?4()
+PyQt5.QtChart.QHBoxPlotModelMapper.columnCountChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QHCandlestickModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHCandlestickModelMapper.orientation?4() -> Qt.Orientation
+PyQt5.QtChart.QHCandlestickModelMapper.setTimestampColumn?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.timestampColumn?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setOpenColumn?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.openColumn?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setHighColumn?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.highColumn?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setLowColumn?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.lowColumn?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setCloseColumn?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.closeColumn?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setFirstSetRow?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.firstSetRow?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.setLastSetRow?4(int)
+PyQt5.QtChart.QHCandlestickModelMapper.lastSetRow?4() -> int
+PyQt5.QtChart.QHCandlestickModelMapper.timestampColumnChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.openColumnChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.highColumnChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.lowColumnChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.closeColumnChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.firstSetRowChanged?4()
+PyQt5.QtChart.QHCandlestickModelMapper.lastSetRowChanged?4()
+PyQt5.QtChart.QHorizontalBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QHorizontalBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHorizontalBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QHorizontalPercentBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QHorizontalPercentBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHorizontalPercentBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QHorizontalStackedBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QHorizontalStackedBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHorizontalStackedBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QHPieModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QHPieModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHPieModelMapper.valuesRow?4() -> int
+PyQt5.QtChart.QHPieModelMapper.setValuesRow?4(int)
+PyQt5.QtChart.QHPieModelMapper.labelsRow?4() -> int
+PyQt5.QtChart.QHPieModelMapper.setLabelsRow?4(int)
+PyQt5.QtChart.QHPieModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QHPieModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QHPieModelMapper.series?4() -> QPieSeries
+PyQt5.QtChart.QHPieModelMapper.setSeries?4(QPieSeries)
+PyQt5.QtChart.QHPieModelMapper.firstColumn?4() -> int
+PyQt5.QtChart.QHPieModelMapper.setFirstColumn?4(int)
+PyQt5.QtChart.QHPieModelMapper.columnCount?4() -> int
+PyQt5.QtChart.QHPieModelMapper.setColumnCount?4(int)
+PyQt5.QtChart.QHPieModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QHPieModelMapper.modelReplaced?4()
+PyQt5.QtChart.QHPieModelMapper.valuesRowChanged?4()
+PyQt5.QtChart.QHPieModelMapper.labelsRowChanged?4()
+PyQt5.QtChart.QHPieModelMapper.firstColumnChanged?4()
+PyQt5.QtChart.QHPieModelMapper.columnCountChanged?4()
+PyQt5.QtChart.QHXYModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QHXYModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QHXYModelMapper.xRow?4() -> int
+PyQt5.QtChart.QHXYModelMapper.setXRow?4(int)
+PyQt5.QtChart.QHXYModelMapper.yRow?4() -> int
+PyQt5.QtChart.QHXYModelMapper.setYRow?4(int)
+PyQt5.QtChart.QHXYModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QHXYModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QHXYModelMapper.series?4() -> QXYSeries
+PyQt5.QtChart.QHXYModelMapper.setSeries?4(QXYSeries)
+PyQt5.QtChart.QHXYModelMapper.firstColumn?4() -> int
+PyQt5.QtChart.QHXYModelMapper.setFirstColumn?4(int)
+PyQt5.QtChart.QHXYModelMapper.columnCount?4() -> int
+PyQt5.QtChart.QHXYModelMapper.setColumnCount?4(int)
+PyQt5.QtChart.QHXYModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QHXYModelMapper.modelReplaced?4()
+PyQt5.QtChart.QHXYModelMapper.xRowChanged?4()
+PyQt5.QtChart.QHXYModelMapper.yRowChanged?4()
+PyQt5.QtChart.QHXYModelMapper.firstColumnChanged?4()
+PyQt5.QtChart.QHXYModelMapper.columnCountChanged?4()
+PyQt5.QtChart.QLegend.MarkerShape?10
+PyQt5.QtChart.QLegend.MarkerShapeDefault?10
+PyQt5.QtChart.QLegend.MarkerShapeRectangle?10
+PyQt5.QtChart.QLegend.MarkerShapeCircle?10
+PyQt5.QtChart.QLegend.MarkerShapeFromSeries?10
+PyQt5.QtChart.QLegend.paint?4(QPainter, QStyleOptionGraphicsItem, QWidget widget=None)
+PyQt5.QtChart.QLegend.setBrush?4(QBrush)
+PyQt5.QtChart.QLegend.brush?4() -> QBrush
+PyQt5.QtChart.QLegend.setPen?4(QPen)
+PyQt5.QtChart.QLegend.pen?4() -> QPen
+PyQt5.QtChart.QLegend.setAlignment?4(Qt.Alignment)
+PyQt5.QtChart.QLegend.alignment?4() -> Qt.Alignment
+PyQt5.QtChart.QLegend.detachFromChart?4()
+PyQt5.QtChart.QLegend.attachToChart?4()
+PyQt5.QtChart.QLegend.isAttachedToChart?4() -> bool
+PyQt5.QtChart.QLegend.setBackgroundVisible?4(bool visible=True)
+PyQt5.QtChart.QLegend.isBackgroundVisible?4() -> bool
+PyQt5.QtChart.QLegend.setColor?4(QColor)
+PyQt5.QtChart.QLegend.color?4() -> QColor
+PyQt5.QtChart.QLegend.setBorderColor?4(QColor)
+PyQt5.QtChart.QLegend.borderColor?4() -> QColor
+PyQt5.QtChart.QLegend.setFont?4(QFont)
+PyQt5.QtChart.QLegend.font?4() -> QFont
+PyQt5.QtChart.QLegend.setLabelBrush?4(QBrush)
+PyQt5.QtChart.QLegend.labelBrush?4() -> QBrush
+PyQt5.QtChart.QLegend.setLabelColor?4(QColor)
+PyQt5.QtChart.QLegend.labelColor?4() -> QColor
+PyQt5.QtChart.QLegend.markers?4(QAbstractSeries series=None) -> unknown-type
+PyQt5.QtChart.QLegend.backgroundVisibleChanged?4(bool)
+PyQt5.QtChart.QLegend.colorChanged?4(QColor)
+PyQt5.QtChart.QLegend.borderColorChanged?4(QColor)
+PyQt5.QtChart.QLegend.fontChanged?4(QFont)
+PyQt5.QtChart.QLegend.labelColorChanged?4(QColor)
+PyQt5.QtChart.QLegend.hideEvent?4(QHideEvent)
+PyQt5.QtChart.QLegend.showEvent?4(QShowEvent)
+PyQt5.QtChart.QLegend.reverseMarkers?4() -> bool
+PyQt5.QtChart.QLegend.setReverseMarkers?4(bool reverseMarkers=True)
+PyQt5.QtChart.QLegend.reverseMarkersChanged?4(bool)
+PyQt5.QtChart.QLegend.showToolTips?4() -> bool
+PyQt5.QtChart.QLegend.setShowToolTips?4(bool)
+PyQt5.QtChart.QLegend.showToolTipsChanged?4(bool)
+PyQt5.QtChart.QLegend.markerShape?4() -> QLegend.MarkerShape
+PyQt5.QtChart.QLegend.setMarkerShape?4(QLegend.MarkerShape)
+PyQt5.QtChart.QLegend.markerShapeChanged?4(QLegend.MarkerShape)
+PyQt5.QtChart.QXYSeries.append?4(float, float)
+PyQt5.QtChart.QXYSeries.append?4(QPointF)
+PyQt5.QtChart.QXYSeries.append?4(unknown-type)
+PyQt5.QtChart.QXYSeries.replace?4(float, float, float, float)
+PyQt5.QtChart.QXYSeries.replace?4(QPointF, QPointF)
+PyQt5.QtChart.QXYSeries.replace?4(unknown-type)
+PyQt5.QtChart.QXYSeries.replace?4(int, float, float)
+PyQt5.QtChart.QXYSeries.replace?4(int, QPointF)
+PyQt5.QtChart.QXYSeries.remove?4(float, float)
+PyQt5.QtChart.QXYSeries.remove?4(QPointF)
+PyQt5.QtChart.QXYSeries.remove?4(int)
+PyQt5.QtChart.QXYSeries.insert?4(int, QPointF)
+PyQt5.QtChart.QXYSeries.clear?4()
+PyQt5.QtChart.QXYSeries.count?4() -> int
+PyQt5.QtChart.QXYSeries.setPen?4(QPen)
+PyQt5.QtChart.QXYSeries.pen?4() -> QPen
+PyQt5.QtChart.QXYSeries.setBrush?4(QBrush)
+PyQt5.QtChart.QXYSeries.brush?4() -> QBrush
+PyQt5.QtChart.QXYSeries.setColor?4(QColor)
+PyQt5.QtChart.QXYSeries.color?4() -> QColor
+PyQt5.QtChart.QXYSeries.setPointsVisible?4(bool visible=True)
+PyQt5.QtChart.QXYSeries.pointsVisible?4() -> bool
+PyQt5.QtChart.QXYSeries.at?4(int) -> QPointF
+PyQt5.QtChart.QXYSeries.clicked?4(QPointF)
+PyQt5.QtChart.QXYSeries.colorChanged?4(QColor)
+PyQt5.QtChart.QXYSeries.pointReplaced?4(int)
+PyQt5.QtChart.QXYSeries.pointRemoved?4(int)
+PyQt5.QtChart.QXYSeries.pointAdded?4(int)
+PyQt5.QtChart.QXYSeries.pointsReplaced?4()
+PyQt5.QtChart.QXYSeries.hovered?4(QPointF, bool)
+PyQt5.QtChart.QXYSeries.setPointLabelsFormat?4(QString)
+PyQt5.QtChart.QXYSeries.pointLabelsFormat?4() -> QString
+PyQt5.QtChart.QXYSeries.setPointLabelsVisible?4(bool visible=True)
+PyQt5.QtChart.QXYSeries.pointLabelsVisible?4() -> bool
+PyQt5.QtChart.QXYSeries.setPointLabelsFont?4(QFont)
+PyQt5.QtChart.QXYSeries.pointLabelsFont?4() -> QFont
+PyQt5.QtChart.QXYSeries.setPointLabelsColor?4(QColor)
+PyQt5.QtChart.QXYSeries.pointLabelsColor?4() -> QColor
+PyQt5.QtChart.QXYSeries.pointLabelsFormatChanged?4(QString)
+PyQt5.QtChart.QXYSeries.pointLabelsVisibilityChanged?4(bool)
+PyQt5.QtChart.QXYSeries.pointLabelsFontChanged?4(QFont)
+PyQt5.QtChart.QXYSeries.pointLabelsColorChanged?4(QColor)
+PyQt5.QtChart.QXYSeries.pressed?4(QPointF)
+PyQt5.QtChart.QXYSeries.released?4(QPointF)
+PyQt5.QtChart.QXYSeries.doubleClicked?4(QPointF)
+PyQt5.QtChart.QXYSeries.removePoints?4(int, int)
+PyQt5.QtChart.QXYSeries.pointsVector?4() -> unknown-type
+PyQt5.QtChart.QXYSeries.setPointLabelsClipping?4(bool enable=True)
+PyQt5.QtChart.QXYSeries.pointLabelsClipping?4() -> bool
+PyQt5.QtChart.QXYSeries.pointLabelsClippingChanged?4(bool)
+PyQt5.QtChart.QXYSeries.pointsRemoved?4(int, int)
+PyQt5.QtChart.QXYSeries.penChanged?4(QPen)
+PyQt5.QtChart.QLineSeries?1(QObject parent=None)
+PyQt5.QtChart.QLineSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QLineSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QLogValueAxis?1(QObject parent=None)
+PyQt5.QtChart.QLogValueAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QLogValueAxis.type?4() -> QAbstractAxis.AxisType
+PyQt5.QtChart.QLogValueAxis.setMin?4(float)
+PyQt5.QtChart.QLogValueAxis.min?4() -> float
+PyQt5.QtChart.QLogValueAxis.setMax?4(float)
+PyQt5.QtChart.QLogValueAxis.max?4() -> float
+PyQt5.QtChart.QLogValueAxis.setRange?4(float, float)
+PyQt5.QtChart.QLogValueAxis.setLabelFormat?4(QString)
+PyQt5.QtChart.QLogValueAxis.labelFormat?4() -> QString
+PyQt5.QtChart.QLogValueAxis.setBase?4(float)
+PyQt5.QtChart.QLogValueAxis.base?4() -> float
+PyQt5.QtChart.QLogValueAxis.minChanged?4(float)
+PyQt5.QtChart.QLogValueAxis.maxChanged?4(float)
+PyQt5.QtChart.QLogValueAxis.rangeChanged?4(float, float)
+PyQt5.QtChart.QLogValueAxis.labelFormatChanged?4(QString)
+PyQt5.QtChart.QLogValueAxis.baseChanged?4(float)
+PyQt5.QtChart.QLogValueAxis.tickCount?4() -> int
+PyQt5.QtChart.QLogValueAxis.setMinorTickCount?4(int)
+PyQt5.QtChart.QLogValueAxis.minorTickCount?4() -> int
+PyQt5.QtChart.QLogValueAxis.tickCountChanged?4(int)
+PyQt5.QtChart.QLogValueAxis.minorTickCountChanged?4(int)
+PyQt5.QtChart.QPercentBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QPercentBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QPercentBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QPieLegendMarker?1(QPieSeries, QPieSlice, QLegend, QObject parent=None)
+PyQt5.QtChart.QPieLegendMarker.__init__?1(self, QPieSeries, QPieSlice, QLegend, QObject parent=None)
+PyQt5.QtChart.QPieLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QPieLegendMarker.series?4() -> QPieSeries
+PyQt5.QtChart.QPieLegendMarker.slice?4() -> QPieSlice
+PyQt5.QtChart.QPieSeries?1(QObject parent=None)
+PyQt5.QtChart.QPieSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QPieSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QPieSeries.append?4(QPieSlice) -> bool
+PyQt5.QtChart.QPieSeries.append?4(unknown-type) -> bool
+PyQt5.QtChart.QPieSeries.append?4(QString, float) -> QPieSlice
+PyQt5.QtChart.QPieSeries.insert?4(int, QPieSlice) -> bool
+PyQt5.QtChart.QPieSeries.remove?4(QPieSlice) -> bool
+PyQt5.QtChart.QPieSeries.clear?4()
+PyQt5.QtChart.QPieSeries.slices?4() -> unknown-type
+PyQt5.QtChart.QPieSeries.count?4() -> int
+PyQt5.QtChart.QPieSeries.isEmpty?4() -> bool
+PyQt5.QtChart.QPieSeries.sum?4() -> float
+PyQt5.QtChart.QPieSeries.setHorizontalPosition?4(float)
+PyQt5.QtChart.QPieSeries.horizontalPosition?4() -> float
+PyQt5.QtChart.QPieSeries.setVerticalPosition?4(float)
+PyQt5.QtChart.QPieSeries.verticalPosition?4() -> float
+PyQt5.QtChart.QPieSeries.setPieSize?4(float)
+PyQt5.QtChart.QPieSeries.pieSize?4() -> float
+PyQt5.QtChart.QPieSeries.setPieStartAngle?4(float)
+PyQt5.QtChart.QPieSeries.pieStartAngle?4() -> float
+PyQt5.QtChart.QPieSeries.setPieEndAngle?4(float)
+PyQt5.QtChart.QPieSeries.pieEndAngle?4() -> float
+PyQt5.QtChart.QPieSeries.setLabelsVisible?4(bool visible=True)
+PyQt5.QtChart.QPieSeries.added?4(unknown-type)
+PyQt5.QtChart.QPieSeries.removed?4(unknown-type)
+PyQt5.QtChart.QPieSeries.clicked?4(QPieSlice)
+PyQt5.QtChart.QPieSeries.hovered?4(QPieSlice, bool)
+PyQt5.QtChart.QPieSeries.countChanged?4()
+PyQt5.QtChart.QPieSeries.sumChanged?4()
+PyQt5.QtChart.QPieSeries.take?4(QPieSlice) -> bool
+PyQt5.QtChart.QPieSeries.setHoleSize?4(float)
+PyQt5.QtChart.QPieSeries.holeSize?4() -> float
+PyQt5.QtChart.QPieSeries.setLabelsPosition?4(QPieSlice.LabelPosition)
+PyQt5.QtChart.QPieSeries.pressed?4(QPieSlice)
+PyQt5.QtChart.QPieSeries.released?4(QPieSlice)
+PyQt5.QtChart.QPieSeries.doubleClicked?4(QPieSlice)
+PyQt5.QtChart.QPieSlice.LabelPosition?10
+PyQt5.QtChart.QPieSlice.LabelOutside?10
+PyQt5.QtChart.QPieSlice.LabelInsideHorizontal?10
+PyQt5.QtChart.QPieSlice.LabelInsideTangential?10
+PyQt5.QtChart.QPieSlice.LabelInsideNormal?10
+PyQt5.QtChart.QPieSlice?1(QObject parent=None)
+PyQt5.QtChart.QPieSlice.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QPieSlice?1(QString, float, QObject parent=None)
+PyQt5.QtChart.QPieSlice.__init__?1(self, QString, float, QObject parent=None)
+PyQt5.QtChart.QPieSlice.setLabel?4(QString)
+PyQt5.QtChart.QPieSlice.label?4() -> QString
+PyQt5.QtChart.QPieSlice.setValue?4(float)
+PyQt5.QtChart.QPieSlice.value?4() -> float
+PyQt5.QtChart.QPieSlice.setLabelVisible?4(bool visible=True)
+PyQt5.QtChart.QPieSlice.isLabelVisible?4() -> bool
+PyQt5.QtChart.QPieSlice.setExploded?4(bool exploded=True)
+PyQt5.QtChart.QPieSlice.isExploded?4() -> bool
+PyQt5.QtChart.QPieSlice.setPen?4(QPen)
+PyQt5.QtChart.QPieSlice.pen?4() -> QPen
+PyQt5.QtChart.QPieSlice.borderColor?4() -> QColor
+PyQt5.QtChart.QPieSlice.setBorderColor?4(QColor)
+PyQt5.QtChart.QPieSlice.borderWidth?4() -> int
+PyQt5.QtChart.QPieSlice.setBorderWidth?4(int)
+PyQt5.QtChart.QPieSlice.setBrush?4(QBrush)
+PyQt5.QtChart.QPieSlice.brush?4() -> QBrush
+PyQt5.QtChart.QPieSlice.color?4() -> QColor
+PyQt5.QtChart.QPieSlice.setColor?4(QColor)
+PyQt5.QtChart.QPieSlice.setLabelBrush?4(QBrush)
+PyQt5.QtChart.QPieSlice.labelBrush?4() -> QBrush
+PyQt5.QtChart.QPieSlice.labelColor?4() -> QColor
+PyQt5.QtChart.QPieSlice.setLabelColor?4(QColor)
+PyQt5.QtChart.QPieSlice.setLabelFont?4(QFont)
+PyQt5.QtChart.QPieSlice.labelFont?4() -> QFont
+PyQt5.QtChart.QPieSlice.setLabelArmLengthFactor?4(float)
+PyQt5.QtChart.QPieSlice.labelArmLengthFactor?4() -> float
+PyQt5.QtChart.QPieSlice.setExplodeDistanceFactor?4(float)
+PyQt5.QtChart.QPieSlice.explodeDistanceFactor?4() -> float
+PyQt5.QtChart.QPieSlice.percentage?4() -> float
+PyQt5.QtChart.QPieSlice.startAngle?4() -> float
+PyQt5.QtChart.QPieSlice.angleSpan?4() -> float
+PyQt5.QtChart.QPieSlice.series?4() -> QPieSeries
+PyQt5.QtChart.QPieSlice.labelPosition?4() -> QPieSlice.LabelPosition
+PyQt5.QtChart.QPieSlice.setLabelPosition?4(QPieSlice.LabelPosition)
+PyQt5.QtChart.QPieSlice.labelChanged?4()
+PyQt5.QtChart.QPieSlice.valueChanged?4()
+PyQt5.QtChart.QPieSlice.labelVisibleChanged?4()
+PyQt5.QtChart.QPieSlice.penChanged?4()
+PyQt5.QtChart.QPieSlice.brushChanged?4()
+PyQt5.QtChart.QPieSlice.labelBrushChanged?4()
+PyQt5.QtChart.QPieSlice.labelFontChanged?4()
+PyQt5.QtChart.QPieSlice.percentageChanged?4()
+PyQt5.QtChart.QPieSlice.startAngleChanged?4()
+PyQt5.QtChart.QPieSlice.angleSpanChanged?4()
+PyQt5.QtChart.QPieSlice.colorChanged?4()
+PyQt5.QtChart.QPieSlice.borderColorChanged?4()
+PyQt5.QtChart.QPieSlice.borderWidthChanged?4()
+PyQt5.QtChart.QPieSlice.labelColorChanged?4()
+PyQt5.QtChart.QPieSlice.clicked?4()
+PyQt5.QtChart.QPieSlice.hovered?4(bool)
+PyQt5.QtChart.QPieSlice.pressed?4()
+PyQt5.QtChart.QPieSlice.released?4()
+PyQt5.QtChart.QPieSlice.doubleClicked?4()
+PyQt5.QtChart.QPolarChart.PolarOrientation?10
+PyQt5.QtChart.QPolarChart.PolarOrientationRadial?10
+PyQt5.QtChart.QPolarChart.PolarOrientationAngular?10
+PyQt5.QtChart.QPolarChart?1(QGraphicsItem parent=None, Qt.WindowFlags flags=Qt.WindowFlags())
+PyQt5.QtChart.QPolarChart.__init__?1(self, QGraphicsItem parent=None, Qt.WindowFlags flags=Qt.WindowFlags())
+PyQt5.QtChart.QPolarChart.addAxis?4(QAbstractAxis, QPolarChart.PolarOrientation)
+PyQt5.QtChart.QPolarChart.axes?4(QPolarChart.PolarOrientations polarOrientation=QFlags&lt;QtCharts.QPolarChart.PolarOrientation&gt;(QFlag(3)), QAbstractSeries series=None) -> unknown-type
+PyQt5.QtChart.QPolarChart.axisPolarOrientation?4(QAbstractAxis) -> QPolarChart.PolarOrientation
+PyQt5.QtChart.QPolarChart.PolarOrientations?1()
+PyQt5.QtChart.QPolarChart.PolarOrientations.__init__?1(self)
+PyQt5.QtChart.QPolarChart.PolarOrientations?1(int)
+PyQt5.QtChart.QPolarChart.PolarOrientations.__init__?1(self, int)
+PyQt5.QtChart.QPolarChart.PolarOrientations?1(QPolarChart.PolarOrientations)
+PyQt5.QtChart.QPolarChart.PolarOrientations.__init__?1(self, QPolarChart.PolarOrientations)
+PyQt5.QtChart.QScatterSeries.MarkerShape?10
+PyQt5.QtChart.QScatterSeries.MarkerShapeCircle?10
+PyQt5.QtChart.QScatterSeries.MarkerShapeRectangle?10
+PyQt5.QtChart.QScatterSeries?1(QObject parent=None)
+PyQt5.QtChart.QScatterSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QScatterSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QScatterSeries.markerShape?4() -> QScatterSeries.MarkerShape
+PyQt5.QtChart.QScatterSeries.setMarkerShape?4(QScatterSeries.MarkerShape)
+PyQt5.QtChart.QScatterSeries.markerSize?4() -> float
+PyQt5.QtChart.QScatterSeries.setMarkerSize?4(float)
+PyQt5.QtChart.QScatterSeries.setPen?4(QPen)
+PyQt5.QtChart.QScatterSeries.brush?4() -> QBrush
+PyQt5.QtChart.QScatterSeries.setBrush?4(QBrush)
+PyQt5.QtChart.QScatterSeries.setColor?4(QColor)
+PyQt5.QtChart.QScatterSeries.color?4() -> QColor
+PyQt5.QtChart.QScatterSeries.setBorderColor?4(QColor)
+PyQt5.QtChart.QScatterSeries.borderColor?4() -> QColor
+PyQt5.QtChart.QScatterSeries.colorChanged?4(QColor)
+PyQt5.QtChart.QScatterSeries.borderColorChanged?4(QColor)
+PyQt5.QtChart.QScatterSeries.markerShapeChanged?4(QScatterSeries.MarkerShape)
+PyQt5.QtChart.QScatterSeries.markerSizeChanged?4(float)
+PyQt5.QtChart.QSplineSeries?1(QObject parent=None)
+PyQt5.QtChart.QSplineSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QSplineSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QStackedBarSeries?1(QObject parent=None)
+PyQt5.QtChart.QStackedBarSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QStackedBarSeries.type?4() -> QAbstractSeries.SeriesType
+PyQt5.QtChart.QVBarModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QVBarModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QVBarModelMapper.firstBarSetColumn?4() -> int
+PyQt5.QtChart.QVBarModelMapper.setFirstBarSetColumn?4(int)
+PyQt5.QtChart.QVBarModelMapper.lastBarSetColumn?4() -> int
+PyQt5.QtChart.QVBarModelMapper.setLastBarSetColumn?4(int)
+PyQt5.QtChart.QVBarModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QVBarModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QVBarModelMapper.series?4() -> QAbstractBarSeries
+PyQt5.QtChart.QVBarModelMapper.setSeries?4(QAbstractBarSeries)
+PyQt5.QtChart.QVBarModelMapper.firstRow?4() -> int
+PyQt5.QtChart.QVBarModelMapper.setFirstRow?4(int)
+PyQt5.QtChart.QVBarModelMapper.rowCount?4() -> int
+PyQt5.QtChart.QVBarModelMapper.setRowCount?4(int)
+PyQt5.QtChart.QVBarModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QVBarModelMapper.modelReplaced?4()
+PyQt5.QtChart.QVBarModelMapper.firstBarSetColumnChanged?4()
+PyQt5.QtChart.QVBarModelMapper.lastBarSetColumnChanged?4()
+PyQt5.QtChart.QVBarModelMapper.firstRowChanged?4()
+PyQt5.QtChart.QVBarModelMapper.rowCountChanged?4()
+PyQt5.QtChart.QVBoxPlotModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QVBoxPlotModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QVBoxPlotModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QVBoxPlotModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QVBoxPlotModelMapper.series?4() -> QBoxPlotSeries
+PyQt5.QtChart.QVBoxPlotModelMapper.setSeries?4(QBoxPlotSeries)
+PyQt5.QtChart.QVBoxPlotModelMapper.firstBoxSetColumn?4() -> int
+PyQt5.QtChart.QVBoxPlotModelMapper.setFirstBoxSetColumn?4(int)
+PyQt5.QtChart.QVBoxPlotModelMapper.lastBoxSetColumn?4() -> int
+PyQt5.QtChart.QVBoxPlotModelMapper.setLastBoxSetColumn?4(int)
+PyQt5.QtChart.QVBoxPlotModelMapper.firstRow?4() -> int
+PyQt5.QtChart.QVBoxPlotModelMapper.setFirstRow?4(int)
+PyQt5.QtChart.QVBoxPlotModelMapper.rowCount?4() -> int
+PyQt5.QtChart.QVBoxPlotModelMapper.setRowCount?4(int)
+PyQt5.QtChart.QVBoxPlotModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QVBoxPlotModelMapper.modelReplaced?4()
+PyQt5.QtChart.QVBoxPlotModelMapper.firstBoxSetColumnChanged?4()
+PyQt5.QtChart.QVBoxPlotModelMapper.lastBoxSetColumnChanged?4()
+PyQt5.QtChart.QVBoxPlotModelMapper.firstRowChanged?4()
+PyQt5.QtChart.QVBoxPlotModelMapper.rowCountChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QVCandlestickModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QVCandlestickModelMapper.orientation?4() -> Qt.Orientation
+PyQt5.QtChart.QVCandlestickModelMapper.setTimestampRow?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.timestampRow?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setOpenRow?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.openRow?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setHighRow?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.highRow?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setLowRow?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.lowRow?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setCloseRow?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.closeRow?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setFirstSetColumn?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.firstSetColumn?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.setLastSetColumn?4(int)
+PyQt5.QtChart.QVCandlestickModelMapper.lastSetColumn?4() -> int
+PyQt5.QtChart.QVCandlestickModelMapper.timestampRowChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.openRowChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.highRowChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.lowRowChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.closeRowChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.firstSetColumnChanged?4()
+PyQt5.QtChart.QVCandlestickModelMapper.lastSetColumnChanged?4()
+PyQt5.QtChart.QVPieModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QVPieModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QVPieModelMapper.valuesColumn?4() -> int
+PyQt5.QtChart.QVPieModelMapper.setValuesColumn?4(int)
+PyQt5.QtChart.QVPieModelMapper.labelsColumn?4() -> int
+PyQt5.QtChart.QVPieModelMapper.setLabelsColumn?4(int)
+PyQt5.QtChart.QVPieModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QVPieModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QVPieModelMapper.series?4() -> QPieSeries
+PyQt5.QtChart.QVPieModelMapper.setSeries?4(QPieSeries)
+PyQt5.QtChart.QVPieModelMapper.firstRow?4() -> int
+PyQt5.QtChart.QVPieModelMapper.setFirstRow?4(int)
+PyQt5.QtChart.QVPieModelMapper.rowCount?4() -> int
+PyQt5.QtChart.QVPieModelMapper.setRowCount?4(int)
+PyQt5.QtChart.QVPieModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QVPieModelMapper.modelReplaced?4()
+PyQt5.QtChart.QVPieModelMapper.valuesColumnChanged?4()
+PyQt5.QtChart.QVPieModelMapper.labelsColumnChanged?4()
+PyQt5.QtChart.QVPieModelMapper.firstRowChanged?4()
+PyQt5.QtChart.QVPieModelMapper.rowCountChanged?4()
+PyQt5.QtChart.QVXYModelMapper?1(QObject parent=None)
+PyQt5.QtChart.QVXYModelMapper.__init__?1(self, QObject parent=None)
+PyQt5.QtChart.QVXYModelMapper.xColumn?4() -> int
+PyQt5.QtChart.QVXYModelMapper.setXColumn?4(int)
+PyQt5.QtChart.QVXYModelMapper.yColumn?4() -> int
+PyQt5.QtChart.QVXYModelMapper.setYColumn?4(int)
+PyQt5.QtChart.QVXYModelMapper.model?4() -> QAbstractItemModel
+PyQt5.QtChart.QVXYModelMapper.setModel?4(QAbstractItemModel)
+PyQt5.QtChart.QVXYModelMapper.series?4() -> QXYSeries
+PyQt5.QtChart.QVXYModelMapper.setSeries?4(QXYSeries)
+PyQt5.QtChart.QVXYModelMapper.firstRow?4() -> int
+PyQt5.QtChart.QVXYModelMapper.setFirstRow?4(int)
+PyQt5.QtChart.QVXYModelMapper.rowCount?4() -> int
+PyQt5.QtChart.QVXYModelMapper.setRowCount?4(int)
+PyQt5.QtChart.QVXYModelMapper.seriesReplaced?4()
+PyQt5.QtChart.QVXYModelMapper.modelReplaced?4()
+PyQt5.QtChart.QVXYModelMapper.xColumnChanged?4()
+PyQt5.QtChart.QVXYModelMapper.yColumnChanged?4()
+PyQt5.QtChart.QVXYModelMapper.firstRowChanged?4()
+PyQt5.QtChart.QVXYModelMapper.rowCountChanged?4()
+PyQt5.QtChart.QXYLegendMarker?1(QXYSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QXYLegendMarker.__init__?1(self, QXYSeries, QLegend, QObject parent=None)
+PyQt5.QtChart.QXYLegendMarker.type?4() -> QLegendMarker.LegendMarkerType
+PyQt5.QtChart.QXYLegendMarker.series?4() -> QXYSeries

@@ -1,0 +1,15 @@
+{
+    "name":"extension_demo",
+    "display_name":"插件Demo",
+    "version":"0.1.0",
+    "description":"供大家修改的插件demo",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+    ]
+}

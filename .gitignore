@@ -86,6 +86,10 @@ venv.bak/
 
 .vscode/
 pyminer/config/qtlayout.ini
-pyminer_new/config/qtlayout.ini
+pyminer2/config/qtlayout.ini
 
-pyminer_new/workspace/**/*.pptx
+pyminer2/workspace/**/*.pptx
+
+test.py
+
+layout.ini

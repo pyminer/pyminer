@@ -1,0 +1,1168 @@
+PyQt5.QtDataVisualization.PYQT_DATAVISUALIZATION_VERSION?7
+PyQt5.QtDataVisualization.PYQT_DATAVISUALIZATION_VERSION_STR?7
+PyQt5.QtDataVisualization.QTDATAVISUALIZATION_VERSION?7
+PyQt5.QtDataVisualization.QTDATAVISUALIZATION_VERSION_STR?7
+PyQt5.QtDataVisualization.qDefaultSurfaceFormat?4(bool antialias=True) -> QSurfaceFormat
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHint?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationDefault?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationStatic?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementType?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementNone?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementSeries?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementAxisXLabel?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementAxisYLabel?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementAxisZLabel?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ElementCustomItem?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQuality?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualityNone?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualityLow?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualityMedium?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualityHigh?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualitySoftLow?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualitySoftMedium?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.ShadowQualitySoftHigh?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlag?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionNone?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionItem?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionRow?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionItemAndRow?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionColumn?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionItemAndColumn?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionRowAndColumn?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionItemRowAndColumn?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionSlice?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionMultiSeries?10
+PyQt5.QtDataVisualization.QAbstract3DGraph.addInputHandler?4(QAbstract3DInputHandler)
+PyQt5.QtDataVisualization.QAbstract3DGraph.releaseInputHandler?4(QAbstract3DInputHandler)
+PyQt5.QtDataVisualization.QAbstract3DGraph.setActiveInputHandler?4(QAbstract3DInputHandler)
+PyQt5.QtDataVisualization.QAbstract3DGraph.inputHandlers?4() -> unknown-type
+PyQt5.QtDataVisualization.QAbstract3DGraph.addTheme?4(Q3DTheme)
+PyQt5.QtDataVisualization.QAbstract3DGraph.releaseTheme?4(Q3DTheme)
+PyQt5.QtDataVisualization.QAbstract3DGraph.setActiveTheme?4(Q3DTheme)
+PyQt5.QtDataVisualization.QAbstract3DGraph.activeTheme?4() -> Q3DTheme
+PyQt5.QtDataVisualization.QAbstract3DGraph.themes?4() -> unknown-type
+PyQt5.QtDataVisualization.QAbstract3DGraph.setSelectionMode?4(QAbstract3DGraph.SelectionFlags)
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectionMode?4() -> QAbstract3DGraph.SelectionFlags
+PyQt5.QtDataVisualization.QAbstract3DGraph.setShadowQuality?4(QAbstract3DGraph.ShadowQuality)
+PyQt5.QtDataVisualization.QAbstract3DGraph.shadowQuality?4() -> QAbstract3DGraph.ShadowQuality
+PyQt5.QtDataVisualization.QAbstract3DGraph.scene?4() -> Q3DScene
+PyQt5.QtDataVisualization.QAbstract3DGraph.clearSelection?4()
+PyQt5.QtDataVisualization.QAbstract3DGraph.activeInputHandler?4() -> QAbstract3DInputHandler
+PyQt5.QtDataVisualization.QAbstract3DGraph.shadowsSupported?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.activeInputHandlerChanged?4(QAbstract3DInputHandler)
+PyQt5.QtDataVisualization.QAbstract3DGraph.activeThemeChanged?4(Q3DTheme)
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectionModeChanged?4(QAbstract3DGraph.SelectionFlags)
+PyQt5.QtDataVisualization.QAbstract3DGraph.shadowQualityChanged?4(QAbstract3DGraph.ShadowQuality)
+PyQt5.QtDataVisualization.QAbstract3DGraph.event?4(QEvent) -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.resizeEvent?4(QResizeEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.exposeEvent?4(QExposeEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.mouseDoubleClickEvent?4(QMouseEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.touchEvent?4(QTouchEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.mousePressEvent?4(QMouseEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.mouseReleaseEvent?4(QMouseEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.mouseMoveEvent?4(QMouseEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.wheelEvent?4(QWheelEvent)
+PyQt5.QtDataVisualization.QAbstract3DGraph.addCustomItem?4(QCustom3DItem) -> int
+PyQt5.QtDataVisualization.QAbstract3DGraph.removeCustomItems?4()
+PyQt5.QtDataVisualization.QAbstract3DGraph.removeCustomItem?4(QCustom3DItem)
+PyQt5.QtDataVisualization.QAbstract3DGraph.removeCustomItemAt?4(QVector3D)
+PyQt5.QtDataVisualization.QAbstract3DGraph.releaseCustomItem?4(QCustom3DItem)
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedLabelIndex?4() -> int
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedAxis?4() -> QAbstract3DAxis
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedCustomItemIndex?4() -> int
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedCustomItem?4() -> QCustom3DItem
+PyQt5.QtDataVisualization.QAbstract3DGraph.renderToImage?4(int msaaSamples=0, QSize imageSize=QSize()) -> QImage
+PyQt5.QtDataVisualization.QAbstract3DGraph.setMeasureFps?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.measureFps?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.currentFps?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.setOrthoProjection?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.isOrthoProjection?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedElement?4() -> QAbstract3DGraph.ElementType
+PyQt5.QtDataVisualization.QAbstract3DGraph.setAspectRatio?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.aspectRatio?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.setOptimizationHints?4(QAbstract3DGraph.OptimizationHints)
+PyQt5.QtDataVisualization.QAbstract3DGraph.optimizationHints?4() -> QAbstract3DGraph.OptimizationHints
+PyQt5.QtDataVisualization.QAbstract3DGraph.selectedElementChanged?4(QAbstract3DGraph.ElementType)
+PyQt5.QtDataVisualization.QAbstract3DGraph.measureFpsChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.currentFpsChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.orthoProjectionChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.aspectRatioChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.optimizationHintsChanged?4(QAbstract3DGraph.OptimizationHints)
+PyQt5.QtDataVisualization.QAbstract3DGraph.customItems?4() -> unknown-type
+PyQt5.QtDataVisualization.QAbstract3DGraph.setPolar?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.isPolar?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.setRadialLabelOffset?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.radialLabelOffset?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.setHorizontalAspectRatio?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.horizontalAspectRatio?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.setReflection?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.isReflection?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DGraph.setReflectivity?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.reflectivity?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.setLocale?4(QLocale)
+PyQt5.QtDataVisualization.QAbstract3DGraph.locale?4() -> QLocale
+PyQt5.QtDataVisualization.QAbstract3DGraph.queriedGraphPosition?4() -> QVector3D
+PyQt5.QtDataVisualization.QAbstract3DGraph.setMargin?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.margin?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DGraph.polarChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.radialLabelOffsetChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.horizontalAspectRatioChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.reflectionChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.reflectivityChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.localeChanged?4(QLocale)
+PyQt5.QtDataVisualization.QAbstract3DGraph.queriedGraphPositionChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QAbstract3DGraph.marginChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DGraph.hasContext?4() -> bool
+PyQt5.QtDataVisualization.Q3DBars?1(QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DBars.__init__?1(self, QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DBars.setPrimarySeries?4(QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.primarySeries?4() -> QBar3DSeries
+PyQt5.QtDataVisualization.Q3DBars.addSeries?4(QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.removeSeries?4(QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.insertSeries?4(int, QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.seriesList?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DBars.setMultiSeriesUniform?4(bool)
+PyQt5.QtDataVisualization.Q3DBars.isMultiSeriesUniform?4() -> bool
+PyQt5.QtDataVisualization.Q3DBars.setBarThickness?4(float)
+PyQt5.QtDataVisualization.Q3DBars.barThickness?4() -> float
+PyQt5.QtDataVisualization.Q3DBars.setBarSpacing?4(QSizeF)
+PyQt5.QtDataVisualization.Q3DBars.barSpacing?4() -> QSizeF
+PyQt5.QtDataVisualization.Q3DBars.setBarSpacingRelative?4(bool)
+PyQt5.QtDataVisualization.Q3DBars.isBarSpacingRelative?4() -> bool
+PyQt5.QtDataVisualization.Q3DBars.setRowAxis?4(QCategory3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.rowAxis?4() -> QCategory3DAxis
+PyQt5.QtDataVisualization.Q3DBars.setColumnAxis?4(QCategory3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.columnAxis?4() -> QCategory3DAxis
+PyQt5.QtDataVisualization.Q3DBars.setValueAxis?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.valueAxis?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DBars.addAxis?4(QAbstract3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.releaseAxis?4(QAbstract3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.axes?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DBars.selectedSeries?4() -> QBar3DSeries
+PyQt5.QtDataVisualization.Q3DBars.multiSeriesUniformChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DBars.barThicknessChanged?4(float)
+PyQt5.QtDataVisualization.Q3DBars.barSpacingChanged?4(QSizeF)
+PyQt5.QtDataVisualization.Q3DBars.barSpacingRelativeChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DBars.rowAxisChanged?4(QCategory3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.columnAxisChanged?4(QCategory3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.valueAxisChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DBars.primarySeriesChanged?4(QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.selectedSeriesChanged?4(QBar3DSeries)
+PyQt5.QtDataVisualization.Q3DBars.setFloorLevel?4(float)
+PyQt5.QtDataVisualization.Q3DBars.floorLevel?4() -> float
+PyQt5.QtDataVisualization.Q3DBars.floorLevelChanged?4(float)
+PyQt5.QtDataVisualization.Q3DObject?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DObject.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DObject.copyValuesFrom?4(Q3DObject)
+PyQt5.QtDataVisualization.Q3DObject.parentScene?4() -> Q3DScene
+PyQt5.QtDataVisualization.Q3DObject.position?4() -> QVector3D
+PyQt5.QtDataVisualization.Q3DObject.setPosition?4(QVector3D)
+PyQt5.QtDataVisualization.Q3DObject.positionChanged?4(QVector3D)
+PyQt5.QtDataVisualization.Q3DObject.setDirty?4(bool)
+PyQt5.QtDataVisualization.Q3DObject.isDirty?4() -> bool
+PyQt5.QtDataVisualization.Q3DCamera.CameraPreset?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetNone?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetFrontLow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetFront?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetFrontHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetLeftLow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetLeft?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetLeftHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetRightLow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetRight?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetRightHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetBehindLow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetBehind?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetBehindHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetIsometricLeft?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetIsometricLeftHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetIsometricRight?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetIsometricRightHigh?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetDirectlyAbove?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetDirectlyAboveCW45?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetDirectlyAboveCCW45?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetFrontBelow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetLeftBelow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetRightBelow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetBehindBelow?10
+PyQt5.QtDataVisualization.Q3DCamera.CameraPresetDirectlyBelow?10
+PyQt5.QtDataVisualization.Q3DCamera?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DCamera.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DCamera.xRotation?4() -> float
+PyQt5.QtDataVisualization.Q3DCamera.setXRotation?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.yRotation?4() -> float
+PyQt5.QtDataVisualization.Q3DCamera.setYRotation?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.wrapXRotation?4() -> bool
+PyQt5.QtDataVisualization.Q3DCamera.setWrapXRotation?4(bool)
+PyQt5.QtDataVisualization.Q3DCamera.wrapYRotation?4() -> bool
+PyQt5.QtDataVisualization.Q3DCamera.setWrapYRotation?4(bool)
+PyQt5.QtDataVisualization.Q3DCamera.copyValuesFrom?4(Q3DObject)
+PyQt5.QtDataVisualization.Q3DCamera.cameraPreset?4() -> Q3DCamera.CameraPreset
+PyQt5.QtDataVisualization.Q3DCamera.setCameraPreset?4(Q3DCamera.CameraPreset)
+PyQt5.QtDataVisualization.Q3DCamera.setCameraPosition?4(float, float, float zoom=100)
+PyQt5.QtDataVisualization.Q3DCamera.zoomLevel?4() -> float
+PyQt5.QtDataVisualization.Q3DCamera.setZoomLevel?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.xRotationChanged?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.yRotationChanged?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.zoomLevelChanged?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.cameraPresetChanged?4(Q3DCamera.CameraPreset)
+PyQt5.QtDataVisualization.Q3DCamera.wrapXRotationChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DCamera.wrapYRotationChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DCamera.minZoomLevel?4() -> float
+PyQt5.QtDataVisualization.Q3DCamera.setMinZoomLevel?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.maxZoomLevel?4() -> float
+PyQt5.QtDataVisualization.Q3DCamera.setMaxZoomLevel?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.target?4() -> QVector3D
+PyQt5.QtDataVisualization.Q3DCamera.setTarget?4(QVector3D)
+PyQt5.QtDataVisualization.Q3DCamera.minZoomLevelChanged?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.maxZoomLevelChanged?4(float)
+PyQt5.QtDataVisualization.Q3DCamera.targetChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.InputView?10
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.InputViewNone?10
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.InputViewOnPrimary?10
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.InputViewOnSecondary?10
+PyQt5.QtDataVisualization.QAbstract3DInputHandler?1(QObject parent=None)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.mouseDoubleClickEvent?4(QMouseEvent)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.touchEvent?4(QTouchEvent)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.mousePressEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.mouseReleaseEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.mouseMoveEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.wheelEvent?4(QWheelEvent)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.inputView?4() -> QAbstract3DInputHandler.InputView
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.setInputView?4(QAbstract3DInputHandler.InputView)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.inputPosition?4() -> QPoint
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.setInputPosition?4(QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.scene?4() -> Q3DScene
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.setScene?4(Q3DScene)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.positionChanged?4(QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.inputViewChanged?4(QAbstract3DInputHandler.InputView)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.sceneChanged?4(Q3DScene)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.setPrevDistance?4(int)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.prevDistance?4() -> int
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.setPreviousInputPos?4(QPoint)
+PyQt5.QtDataVisualization.QAbstract3DInputHandler.previousInputPos?4() -> QPoint
+PyQt5.QtDataVisualization.Q3DInputHandler?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DInputHandler.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DInputHandler.mousePressEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.Q3DInputHandler.mouseReleaseEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.Q3DInputHandler.mouseMoveEvent?4(QMouseEvent, QPoint)
+PyQt5.QtDataVisualization.Q3DInputHandler.wheelEvent?4(QWheelEvent)
+PyQt5.QtDataVisualization.Q3DInputHandler.setRotationEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.isRotationEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DInputHandler.setZoomEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.isZoomEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DInputHandler.setSelectionEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.isSelectionEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DInputHandler.setZoomAtTargetEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.isZoomAtTargetEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DInputHandler.rotationEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.zoomEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.selectionEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DInputHandler.zoomAtTargetEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DLight?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DLight.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DLight.setAutoPosition?4(bool)
+PyQt5.QtDataVisualization.Q3DLight.isAutoPosition?4() -> bool
+PyQt5.QtDataVisualization.Q3DLight.autoPositionChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DScatter?1(QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DScatter.__init__?1(self, QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DScatter.addSeries?4(QScatter3DSeries)
+PyQt5.QtDataVisualization.Q3DScatter.removeSeries?4(QScatter3DSeries)
+PyQt5.QtDataVisualization.Q3DScatter.seriesList?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DScatter.setAxisX?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axisX?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DScatter.setAxisY?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axisY?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DScatter.setAxisZ?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axisZ?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DScatter.addAxis?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.releaseAxis?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axes?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DScatter.selectedSeries?4() -> QScatter3DSeries
+PyQt5.QtDataVisualization.Q3DScatter.axisXChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axisYChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.axisZChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DScatter.selectedSeriesChanged?4(QScatter3DSeries)
+PyQt5.QtDataVisualization.Q3DScene?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DScene.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DScene.viewport?4() -> QRect
+PyQt5.QtDataVisualization.Q3DScene.primarySubViewport?4() -> QRect
+PyQt5.QtDataVisualization.Q3DScene.setPrimarySubViewport?4(QRect)
+PyQt5.QtDataVisualization.Q3DScene.isPointInPrimarySubView?4(QPoint) -> bool
+PyQt5.QtDataVisualization.Q3DScene.secondarySubViewport?4() -> QRect
+PyQt5.QtDataVisualization.Q3DScene.setSecondarySubViewport?4(QRect)
+PyQt5.QtDataVisualization.Q3DScene.isPointInSecondarySubView?4(QPoint) -> bool
+PyQt5.QtDataVisualization.Q3DScene.setSelectionQueryPosition?4(QPoint)
+PyQt5.QtDataVisualization.Q3DScene.selectionQueryPosition?4() -> QPoint
+PyQt5.QtDataVisualization.Q3DScene.invalidSelectionPoint?4() -> QPoint
+PyQt5.QtDataVisualization.Q3DScene.setSlicingActive?4(bool)
+PyQt5.QtDataVisualization.Q3DScene.isSlicingActive?4() -> bool
+PyQt5.QtDataVisualization.Q3DScene.setSecondarySubviewOnTop?4(bool)
+PyQt5.QtDataVisualization.Q3DScene.isSecondarySubviewOnTop?4() -> bool
+PyQt5.QtDataVisualization.Q3DScene.activeCamera?4() -> Q3DCamera
+PyQt5.QtDataVisualization.Q3DScene.setActiveCamera?4(Q3DCamera)
+PyQt5.QtDataVisualization.Q3DScene.activeLight?4() -> Q3DLight
+PyQt5.QtDataVisualization.Q3DScene.setActiveLight?4(Q3DLight)
+PyQt5.QtDataVisualization.Q3DScene.devicePixelRatio?4() -> float
+PyQt5.QtDataVisualization.Q3DScene.setDevicePixelRatio?4(float)
+PyQt5.QtDataVisualization.Q3DScene.viewportChanged?4(QRect)
+PyQt5.QtDataVisualization.Q3DScene.primarySubViewportChanged?4(QRect)
+PyQt5.QtDataVisualization.Q3DScene.secondarySubViewportChanged?4(QRect)
+PyQt5.QtDataVisualization.Q3DScene.secondarySubviewOnTopChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DScene.slicingActiveChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DScene.activeCameraChanged?4(Q3DCamera)
+PyQt5.QtDataVisualization.Q3DScene.activeLightChanged?4(Q3DLight)
+PyQt5.QtDataVisualization.Q3DScene.devicePixelRatioChanged?4(float)
+PyQt5.QtDataVisualization.Q3DScene.selectionQueryPositionChanged?4(QPoint)
+PyQt5.QtDataVisualization.Q3DScene.setGraphPositionQuery?4(QPoint)
+PyQt5.QtDataVisualization.Q3DScene.graphPositionQuery?4() -> QPoint
+PyQt5.QtDataVisualization.Q3DScene.graphPositionQueryChanged?4(QPoint)
+PyQt5.QtDataVisualization.Q3DSurface?1(QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DSurface.__init__?1(self, QSurfaceFormat format=None, QWindow parent=None)
+PyQt5.QtDataVisualization.Q3DSurface.addSeries?4(QSurface3DSeries)
+PyQt5.QtDataVisualization.Q3DSurface.removeSeries?4(QSurface3DSeries)
+PyQt5.QtDataVisualization.Q3DSurface.seriesList?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DSurface.setAxisX?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axisX?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DSurface.setAxisY?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axisY?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DSurface.setAxisZ?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axisZ?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.Q3DSurface.addAxis?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.releaseAxis?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axes?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DSurface.selectedSeries?4() -> QSurface3DSeries
+PyQt5.QtDataVisualization.Q3DSurface.axisXChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axisYChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.axisZChanged?4(QValue3DAxis)
+PyQt5.QtDataVisualization.Q3DSurface.selectedSeriesChanged?4(QSurface3DSeries)
+PyQt5.QtDataVisualization.Q3DSurface.setFlipHorizontalGrid?4(bool)
+PyQt5.QtDataVisualization.Q3DSurface.flipHorizontalGrid?4() -> bool
+PyQt5.QtDataVisualization.Q3DSurface.flipHorizontalGridChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.Theme?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeQt?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemePrimaryColors?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeDigia?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeStoneMoss?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeArmyBlue?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeRetro?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeEbony?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeIsabelle?10
+PyQt5.QtDataVisualization.Q3DTheme.ThemeUserDefined?10
+PyQt5.QtDataVisualization.Q3DTheme.ColorStyle?10
+PyQt5.QtDataVisualization.Q3DTheme.ColorStyleUniform?10
+PyQt5.QtDataVisualization.Q3DTheme.ColorStyleObjectGradient?10
+PyQt5.QtDataVisualization.Q3DTheme.ColorStyleRangeGradient?10
+PyQt5.QtDataVisualization.Q3DTheme?1(QObject parent=None)
+PyQt5.QtDataVisualization.Q3DTheme.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DTheme?1(Q3DTheme.Theme, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DTheme.__init__?1(self, Q3DTheme.Theme, QObject parent=None)
+PyQt5.QtDataVisualization.Q3DTheme.setType?4(Q3DTheme.Theme)
+PyQt5.QtDataVisualization.Q3DTheme.type?4() -> Q3DTheme.Theme
+PyQt5.QtDataVisualization.Q3DTheme.setBaseColors?4(unknown-type)
+PyQt5.QtDataVisualization.Q3DTheme.baseColors?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DTheme.setBackgroundColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.backgroundColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setWindowColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.windowColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setLabelTextColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.labelTextColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setLabelBackgroundColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.labelBackgroundColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setGridLineColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.gridLineColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setSingleHighlightColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.singleHighlightColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setMultiHighlightColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.multiHighlightColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setLightColor?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.lightColor?4() -> QColor
+PyQt5.QtDataVisualization.Q3DTheme.setBaseGradients?4(unknown-type)
+PyQt5.QtDataVisualization.Q3DTheme.baseGradients?4() -> unknown-type
+PyQt5.QtDataVisualization.Q3DTheme.setSingleHighlightGradient?4(QLinearGradient)
+PyQt5.QtDataVisualization.Q3DTheme.singleHighlightGradient?4() -> QLinearGradient
+PyQt5.QtDataVisualization.Q3DTheme.setMultiHighlightGradient?4(QLinearGradient)
+PyQt5.QtDataVisualization.Q3DTheme.multiHighlightGradient?4() -> QLinearGradient
+PyQt5.QtDataVisualization.Q3DTheme.setLightStrength?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.lightStrength?4() -> float
+PyQt5.QtDataVisualization.Q3DTheme.setAmbientLightStrength?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.ambientLightStrength?4() -> float
+PyQt5.QtDataVisualization.Q3DTheme.setHighlightLightStrength?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.highlightLightStrength?4() -> float
+PyQt5.QtDataVisualization.Q3DTheme.setLabelBorderEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.isLabelBorderEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DTheme.setFont?4(QFont)
+PyQt5.QtDataVisualization.Q3DTheme.font?4() -> QFont
+PyQt5.QtDataVisualization.Q3DTheme.setBackgroundEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.isBackgroundEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DTheme.setGridEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.isGridEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DTheme.setLabelBackgroundEnabled?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.isLabelBackgroundEnabled?4() -> bool
+PyQt5.QtDataVisualization.Q3DTheme.setColorStyle?4(Q3DTheme.ColorStyle)
+PyQt5.QtDataVisualization.Q3DTheme.colorStyle?4() -> Q3DTheme.ColorStyle
+PyQt5.QtDataVisualization.Q3DTheme.typeChanged?4(Q3DTheme.Theme)
+PyQt5.QtDataVisualization.Q3DTheme.baseColorsChanged?4(unknown-type)
+PyQt5.QtDataVisualization.Q3DTheme.backgroundColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.windowColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.labelTextColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.labelBackgroundColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.gridLineColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.singleHighlightColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.multiHighlightColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.lightColorChanged?4(QColor)
+PyQt5.QtDataVisualization.Q3DTheme.baseGradientsChanged?4(unknown-type)
+PyQt5.QtDataVisualization.Q3DTheme.singleHighlightGradientChanged?4(QLinearGradient)
+PyQt5.QtDataVisualization.Q3DTheme.multiHighlightGradientChanged?4(QLinearGradient)
+PyQt5.QtDataVisualization.Q3DTheme.lightStrengthChanged?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.ambientLightStrengthChanged?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.highlightLightStrengthChanged?4(float)
+PyQt5.QtDataVisualization.Q3DTheme.labelBorderEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.fontChanged?4(QFont)
+PyQt5.QtDataVisualization.Q3DTheme.backgroundEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.gridEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.labelBackgroundEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.Q3DTheme.colorStyleChanged?4(Q3DTheme.ColorStyle)
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisType?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisTypeNone?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisTypeCategory?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisTypeValue?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisOrientation?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisOrientationNone?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisOrientationX?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisOrientationY?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.AxisOrientationZ?10
+PyQt5.QtDataVisualization.QAbstract3DAxis.title?4() -> QString
+PyQt5.QtDataVisualization.QAbstract3DAxis.setLabels?4(QStringList)
+PyQt5.QtDataVisualization.QAbstract3DAxis.labels?4() -> QStringList
+PyQt5.QtDataVisualization.QAbstract3DAxis.orientation?4() -> QAbstract3DAxis.AxisOrientation
+PyQt5.QtDataVisualization.QAbstract3DAxis.type?4() -> QAbstract3DAxis.AxisType
+PyQt5.QtDataVisualization.QAbstract3DAxis.setMin?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.min?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DAxis.setMax?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.max?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DAxis.setAutoAdjustRange?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DAxis.isAutoAdjustRange?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DAxis.setRange?4(float, float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.setTitle?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DAxis.titleChanged?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DAxis.labelsChanged?4()
+PyQt5.QtDataVisualization.QAbstract3DAxis.orientationChanged?4(QAbstract3DAxis.AxisOrientation)
+PyQt5.QtDataVisualization.QAbstract3DAxis.minChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.maxChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.rangeChanged?4(float, float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.autoAdjustRangeChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DAxis.setLabelAutoRotation?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.labelAutoRotation?4() -> float
+PyQt5.QtDataVisualization.QAbstract3DAxis.setTitleVisible?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DAxis.isTitleVisible?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DAxis.setTitleFixed?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DAxis.isTitleFixed?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DAxis.labelAutoRotationChanged?4(float)
+PyQt5.QtDataVisualization.QAbstract3DAxis.titleVisibilityChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DAxis.titleFixedChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags?1()
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags.__init__?1(self)
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags?1(int)
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags.__init__?1(self, int)
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags?1(QAbstract3DGraph.SelectionFlags)
+PyQt5.QtDataVisualization.QAbstract3DGraph.SelectionFlags.__init__?1(self, QAbstract3DGraph.SelectionFlags)
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints?1()
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints.__init__?1(self)
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints?1(int)
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints.__init__?1(self, int)
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints?1(QAbstract3DGraph.OptimizationHints)
+PyQt5.QtDataVisualization.QAbstract3DGraph.OptimizationHints.__init__?1(self, QAbstract3DGraph.OptimizationHints)
+PyQt5.QtDataVisualization.QAbstract3DSeries.Mesh?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshUserDefined?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshBar?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshCube?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshPyramid?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshCone?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshCylinder?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshBevelBar?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshBevelCube?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshSphere?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshMinimal?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshArrow?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.MeshPoint?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.SeriesType?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.SeriesTypeNone?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.SeriesTypeBar?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.SeriesTypeScatter?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.SeriesTypeSurface?10
+PyQt5.QtDataVisualization.QAbstract3DSeries.type?4() -> QAbstract3DSeries.SeriesType
+PyQt5.QtDataVisualization.QAbstract3DSeries.setItemLabelFormat?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.itemLabelFormat?4() -> QString
+PyQt5.QtDataVisualization.QAbstract3DSeries.setVisible?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DSeries.isVisible?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMesh?4(QAbstract3DSeries.Mesh)
+PyQt5.QtDataVisualization.QAbstract3DSeries.mesh?4() -> QAbstract3DSeries.Mesh
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMeshSmooth?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DSeries.isMeshSmooth?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMeshRotation?4(QQuaternion)
+PyQt5.QtDataVisualization.QAbstract3DSeries.meshRotation?4() -> QQuaternion
+PyQt5.QtDataVisualization.QAbstract3DSeries.setUserDefinedMesh?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.userDefinedMesh?4() -> QString
+PyQt5.QtDataVisualization.QAbstract3DSeries.setColorStyle?4(Q3DTheme.ColorStyle)
+PyQt5.QtDataVisualization.QAbstract3DSeries.colorStyle?4() -> Q3DTheme.ColorStyle
+PyQt5.QtDataVisualization.QAbstract3DSeries.setBaseColor?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.baseColor?4() -> QColor
+PyQt5.QtDataVisualization.QAbstract3DSeries.setBaseGradient?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.baseGradient?4() -> QLinearGradient
+PyQt5.QtDataVisualization.QAbstract3DSeries.setSingleHighlightColor?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.singleHighlightColor?4() -> QColor
+PyQt5.QtDataVisualization.QAbstract3DSeries.setSingleHighlightGradient?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.singleHighlightGradient?4() -> QLinearGradient
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMultiHighlightColor?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.multiHighlightColor?4() -> QColor
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMultiHighlightGradient?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.multiHighlightGradient?4() -> QLinearGradient
+PyQt5.QtDataVisualization.QAbstract3DSeries.setName?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.name?4() -> QString
+PyQt5.QtDataVisualization.QAbstract3DSeries.setMeshAxisAndAngle?4(QVector3D, float)
+PyQt5.QtDataVisualization.QAbstract3DSeries.itemLabelFormatChanged?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.visibilityChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DSeries.meshChanged?4(QAbstract3DSeries.Mesh)
+PyQt5.QtDataVisualization.QAbstract3DSeries.meshSmoothChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DSeries.meshRotationChanged?4(QQuaternion)
+PyQt5.QtDataVisualization.QAbstract3DSeries.userDefinedMeshChanged?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.colorStyleChanged?4(Q3DTheme.ColorStyle)
+PyQt5.QtDataVisualization.QAbstract3DSeries.baseColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.baseGradientChanged?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.singleHighlightColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.singleHighlightGradientChanged?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.multiHighlightColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QAbstract3DSeries.multiHighlightGradientChanged?4(QLinearGradient)
+PyQt5.QtDataVisualization.QAbstract3DSeries.nameChanged?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.itemLabel?4() -> QString
+PyQt5.QtDataVisualization.QAbstract3DSeries.setItemLabelVisible?4(bool)
+PyQt5.QtDataVisualization.QAbstract3DSeries.isItemLabelVisible?4() -> bool
+PyQt5.QtDataVisualization.QAbstract3DSeries.itemLabelChanged?4(QString)
+PyQt5.QtDataVisualization.QAbstract3DSeries.itemLabelVisibilityChanged?4(bool)
+PyQt5.QtDataVisualization.QAbstractDataProxy.DataType?10
+PyQt5.QtDataVisualization.QAbstractDataProxy.DataTypeNone?10
+PyQt5.QtDataVisualization.QAbstractDataProxy.DataTypeBar?10
+PyQt5.QtDataVisualization.QAbstractDataProxy.DataTypeScatter?10
+PyQt5.QtDataVisualization.QAbstractDataProxy.DataTypeSurface?10
+PyQt5.QtDataVisualization.QAbstractDataProxy.type?4() -> QAbstractDataProxy.DataType
+PyQt5.QtDataVisualization.QBar3DSeries?1(QBarDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QBar3DSeries.__init__?1(self, QBarDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QBar3DSeries?1(QObject parent=None)
+PyQt5.QtDataVisualization.QBar3DSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QBar3DSeries.setDataProxy?4(QBarDataProxy)
+PyQt5.QtDataVisualization.QBar3DSeries.dataProxy?4() -> QBarDataProxy
+PyQt5.QtDataVisualization.QBar3DSeries.setSelectedBar?4(QPoint)
+PyQt5.QtDataVisualization.QBar3DSeries.selectedBar?4() -> QPoint
+PyQt5.QtDataVisualization.QBar3DSeries.invalidSelectionPosition?4() -> QPoint
+PyQt5.QtDataVisualization.QBar3DSeries.setMeshAngle?4(float)
+PyQt5.QtDataVisualization.QBar3DSeries.meshAngle?4() -> float
+PyQt5.QtDataVisualization.QBar3DSeries.dataProxyChanged?4(QBarDataProxy)
+PyQt5.QtDataVisualization.QBar3DSeries.selectedBarChanged?4(QPoint)
+PyQt5.QtDataVisualization.QBar3DSeries.meshAngleChanged?4(float)
+PyQt5.QtDataVisualization.QBarDataItem?1()
+PyQt5.QtDataVisualization.QBarDataItem.__init__?1(self)
+PyQt5.QtDataVisualization.QBarDataItem?1(float)
+PyQt5.QtDataVisualization.QBarDataItem.__init__?1(self, float)
+PyQt5.QtDataVisualization.QBarDataItem?1(float, float)
+PyQt5.QtDataVisualization.QBarDataItem.__init__?1(self, float, float)
+PyQt5.QtDataVisualization.QBarDataItem?1(QBarDataItem)
+PyQt5.QtDataVisualization.QBarDataItem.__init__?1(self, QBarDataItem)
+PyQt5.QtDataVisualization.QBarDataItem.setValue?4(float)
+PyQt5.QtDataVisualization.QBarDataItem.value?4() -> float
+PyQt5.QtDataVisualization.QBarDataItem.setRotation?4(float)
+PyQt5.QtDataVisualization.QBarDataItem.rotation?4() -> float
+PyQt5.QtDataVisualization.QBarDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QBarDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QBarDataProxy.rowCount?4() -> int
+PyQt5.QtDataVisualization.QBarDataProxy.rowLabels?4() -> QStringList
+PyQt5.QtDataVisualization.QBarDataProxy.setRowLabels?4(QStringList)
+PyQt5.QtDataVisualization.QBarDataProxy.columnLabels?4() -> QStringList
+PyQt5.QtDataVisualization.QBarDataProxy.setColumnLabels?4(QStringList)
+PyQt5.QtDataVisualization.QBarDataProxy.array?4() -> unknown-type
+PyQt5.QtDataVisualization.QBarDataProxy.rowAt?4(int) -> unknown-type
+PyQt5.QtDataVisualization.QBarDataProxy.itemAt?4(int, int) -> QBarDataItem
+PyQt5.QtDataVisualization.QBarDataProxy.itemAt?4(QPoint) -> QBarDataItem
+PyQt5.QtDataVisualization.QBarDataProxy.resetArray?4()
+PyQt5.QtDataVisualization.QBarDataProxy.resetArray?4(unknown-type)
+PyQt5.QtDataVisualization.QBarDataProxy.resetArray?4(unknown-type, QStringList, QStringList)
+PyQt5.QtDataVisualization.QBarDataProxy.setRow?4(int, unknown-type)
+PyQt5.QtDataVisualization.QBarDataProxy.setRow?4(int, unknown-type, QString)
+PyQt5.QtDataVisualization.QBarDataProxy.setRows?4(int, unknown-type)
+PyQt5.QtDataVisualization.QBarDataProxy.setRows?4(int, unknown-type, QStringList)
+PyQt5.QtDataVisualization.QBarDataProxy.setItem?4(int, int, QBarDataItem)
+PyQt5.QtDataVisualization.QBarDataProxy.setItem?4(QPoint, QBarDataItem)
+PyQt5.QtDataVisualization.QBarDataProxy.addRow?4(unknown-type) -> int
+PyQt5.QtDataVisualization.QBarDataProxy.addRow?4(unknown-type, QString) -> int
+PyQt5.QtDataVisualization.QBarDataProxy.addRows?4(unknown-type) -> int
+PyQt5.QtDataVisualization.QBarDataProxy.addRows?4(unknown-type, QStringList) -> int
+PyQt5.QtDataVisualization.QBarDataProxy.insertRow?4(int, unknown-type)
+PyQt5.QtDataVisualization.QBarDataProxy.insertRow?4(int, unknown-type, QString)
+PyQt5.QtDataVisualization.QBarDataProxy.insertRows?4(int, unknown-type)
+PyQt5.QtDataVisualization.QBarDataProxy.insertRows?4(int, unknown-type, QStringList)
+PyQt5.QtDataVisualization.QBarDataProxy.removeRows?4(int, int, bool removeLabels=True)
+PyQt5.QtDataVisualization.QBarDataProxy.series?4() -> QBar3DSeries
+PyQt5.QtDataVisualization.QBarDataProxy.arrayReset?4()
+PyQt5.QtDataVisualization.QBarDataProxy.rowsAdded?4(int, int)
+PyQt5.QtDataVisualization.QBarDataProxy.rowsChanged?4(int, int)
+PyQt5.QtDataVisualization.QBarDataProxy.rowsRemoved?4(int, int)
+PyQt5.QtDataVisualization.QBarDataProxy.rowsInserted?4(int, int)
+PyQt5.QtDataVisualization.QBarDataProxy.itemChanged?4(int, int)
+PyQt5.QtDataVisualization.QBarDataProxy.rowCountChanged?4(int)
+PyQt5.QtDataVisualization.QBarDataProxy.rowLabelsChanged?4()
+PyQt5.QtDataVisualization.QBarDataProxy.columnLabelsChanged?4()
+PyQt5.QtDataVisualization.QBarDataProxy.seriesChanged?4(QBar3DSeries)
+PyQt5.QtDataVisualization.QCategory3DAxis?1(QObject parent=None)
+PyQt5.QtDataVisualization.QCategory3DAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QCategory3DAxis.setLabels?4(QStringList)
+PyQt5.QtDataVisualization.QCategory3DAxis.labels?4() -> QStringList
+PyQt5.QtDataVisualization.QCategory3DAxis.labelsChanged?4()
+PyQt5.QtDataVisualization.QCustom3DItem?1(QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DItem.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DItem?1(QString, QVector3D, QVector3D, QQuaternion, QImage, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DItem.__init__?1(self, QString, QVector3D, QVector3D, QQuaternion, QImage, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DItem.setMeshFile?4(QString)
+PyQt5.QtDataVisualization.QCustom3DItem.meshFile?4() -> QString
+PyQt5.QtDataVisualization.QCustom3DItem.setTextureFile?4(QString)
+PyQt5.QtDataVisualization.QCustom3DItem.textureFile?4() -> QString
+PyQt5.QtDataVisualization.QCustom3DItem.setPosition?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DItem.position?4() -> QVector3D
+PyQt5.QtDataVisualization.QCustom3DItem.setPositionAbsolute?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.isPositionAbsolute?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DItem.setScaling?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DItem.scaling?4() -> QVector3D
+PyQt5.QtDataVisualization.QCustom3DItem.setRotation?4(QQuaternion)
+PyQt5.QtDataVisualization.QCustom3DItem.rotation?4() -> QQuaternion
+PyQt5.QtDataVisualization.QCustom3DItem.setVisible?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.isVisible?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DItem.setShadowCasting?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.isShadowCasting?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DItem.setRotationAxisAndAngle?4(QVector3D, float)
+PyQt5.QtDataVisualization.QCustom3DItem.setTextureImage?4(QImage)
+PyQt5.QtDataVisualization.QCustom3DItem.meshFileChanged?4(QString)
+PyQt5.QtDataVisualization.QCustom3DItem.textureFileChanged?4(QString)
+PyQt5.QtDataVisualization.QCustom3DItem.positionChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DItem.positionAbsoluteChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.scalingChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DItem.rotationChanged?4(QQuaternion)
+PyQt5.QtDataVisualization.QCustom3DItem.visibleChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.shadowCastingChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.setScalingAbsolute?4(bool)
+PyQt5.QtDataVisualization.QCustom3DItem.isScalingAbsolute?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DItem.scalingAbsoluteChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel?1(QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DLabel.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DLabel?1(QString, QFont, QVector3D, QVector3D, QQuaternion, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DLabel.__init__?1(self, QString, QFont, QVector3D, QVector3D, QQuaternion, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DLabel.setText?4(QString)
+PyQt5.QtDataVisualization.QCustom3DLabel.text?4() -> QString
+PyQt5.QtDataVisualization.QCustom3DLabel.setFont?4(QFont)
+PyQt5.QtDataVisualization.QCustom3DLabel.font?4() -> QFont
+PyQt5.QtDataVisualization.QCustom3DLabel.setTextColor?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DLabel.textColor?4() -> QColor
+PyQt5.QtDataVisualization.QCustom3DLabel.setBackgroundColor?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DLabel.backgroundColor?4() -> QColor
+PyQt5.QtDataVisualization.QCustom3DLabel.setBorderEnabled?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel.isBorderEnabled?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DLabel.setBackgroundEnabled?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel.isBackgroundEnabled?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DLabel.setFacingCamera?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel.isFacingCamera?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DLabel.textChanged?4(QString)
+PyQt5.QtDataVisualization.QCustom3DLabel.fontChanged?4(QFont)
+PyQt5.QtDataVisualization.QCustom3DLabel.textColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DLabel.backgroundColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DLabel.borderEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel.backgroundEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DLabel.facingCameraChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume?1(QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DVolume.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DVolume?1(QVector3D, QVector3D, QQuaternion, int, int, int, unknown-type, QImage.Format, unknown-type, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DVolume.__init__?1(self, QVector3D, QVector3D, QQuaternion, int, int, int, unknown-type, QImage.Format, unknown-type, QObject parent=None)
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureWidth?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureWidth?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureHeight?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureHeight?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureDepth?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureDepth?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureDimensions?4(int, int, int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureDataWidth?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceIndexX?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexX?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceIndexY?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexY?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceIndexZ?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexZ?4() -> int
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceIndices?4(int, int, int)
+PyQt5.QtDataVisualization.QCustom3DVolume.setColorTable?4(unknown-type)
+PyQt5.QtDataVisualization.QCustom3DVolume.colorTable?4() -> unknown-type
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureData?4(unknown-type)
+PyQt5.QtDataVisualization.QCustom3DVolume.createTextureData?4(unknown-type) -> unknown-type
+PyQt5.QtDataVisualization.QCustom3DVolume.textureData?4() -> unknown-type
+PyQt5.QtDataVisualization.QCustom3DVolume.setSubTextureData?4(Qt.Axis, int, sip.voidptr)
+PyQt5.QtDataVisualization.QCustom3DVolume.setSubTextureData?4(Qt.Axis, int, QImage)
+PyQt5.QtDataVisualization.QCustom3DVolume.setTextureFormat?4(QImage.Format)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureFormat?4() -> QImage.Format
+PyQt5.QtDataVisualization.QCustom3DVolume.setAlphaMultiplier?4(float)
+PyQt5.QtDataVisualization.QCustom3DVolume.alphaMultiplier?4() -> float
+PyQt5.QtDataVisualization.QCustom3DVolume.setPreserveOpacity?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.preserveOpacity?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DVolume.setUseHighDefShader?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.useHighDefShader?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DVolume.setDrawSlices?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.drawSlices?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DVolume.setDrawSliceFrames?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.drawSliceFrames?4() -> bool
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceFrameColor?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameColor?4() -> QColor
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceFrameWidths?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameWidths?4() -> QVector3D
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceFrameGaps?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameGaps?4() -> QVector3D
+PyQt5.QtDataVisualization.QCustom3DVolume.setSliceFrameThicknesses?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameThicknesses?4() -> QVector3D
+PyQt5.QtDataVisualization.QCustom3DVolume.renderSlice?4(Qt.Axis, int) -> QImage
+PyQt5.QtDataVisualization.QCustom3DVolume.textureWidthChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureHeightChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureDepthChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexXChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexYChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceIndexZChanged?4(int)
+PyQt5.QtDataVisualization.QCustom3DVolume.colorTableChanged?4()
+PyQt5.QtDataVisualization.QCustom3DVolume.textureDataChanged?4(unknown-type)
+PyQt5.QtDataVisualization.QCustom3DVolume.textureFormatChanged?4(QImage.Format)
+PyQt5.QtDataVisualization.QCustom3DVolume.alphaMultiplierChanged?4(float)
+PyQt5.QtDataVisualization.QCustom3DVolume.preserveOpacityChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.useHighDefShaderChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.drawSlicesChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.drawSliceFramesChanged?4(bool)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameColorChanged?4(QColor)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameWidthsChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameGapsChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QCustom3DVolume.sliceFrameThicknessesChanged?4(QVector3D)
+PyQt5.QtDataVisualization.QSurfaceDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowCount?4() -> int
+PyQt5.QtDataVisualization.QSurfaceDataProxy.columnCount?4() -> int
+PyQt5.QtDataVisualization.QSurfaceDataProxy.array?4() -> unknown-type
+PyQt5.QtDataVisualization.QSurfaceDataProxy.resetArray?4(unknown-type)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.setRow?4(int, unknown-type)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.setRows?4(int, unknown-type)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.setItem?4(int, int, QSurfaceDataItem)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.setItem?4(QPoint, QSurfaceDataItem)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.addRow?4(unknown-type) -> int
+PyQt5.QtDataVisualization.QSurfaceDataProxy.addRows?4(unknown-type) -> int
+PyQt5.QtDataVisualization.QSurfaceDataProxy.insertRow?4(int, unknown-type)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.insertRows?4(int, unknown-type)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.removeRows?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.series?4() -> QSurface3DSeries
+PyQt5.QtDataVisualization.QSurfaceDataProxy.itemAt?4(int, int) -> QSurfaceDataItem
+PyQt5.QtDataVisualization.QSurfaceDataProxy.itemAt?4(QPoint) -> QSurfaceDataItem
+PyQt5.QtDataVisualization.QSurfaceDataProxy.arrayReset?4()
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowsAdded?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowsChanged?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowsRemoved?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowsInserted?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.itemChanged?4(int, int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.rowCountChanged?4(int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.columnCountChanged?4(int)
+PyQt5.QtDataVisualization.QSurfaceDataProxy.seriesChanged?4(QSurface3DSeries)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy?1(QImage, QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.__init__?1(self, QImage, QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy?1(QString, QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.__init__?1(self, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setHeightMap?4(QImage)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.heightMap?4() -> QImage
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setHeightMapFile?4(QString)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.heightMapFile?4() -> QString
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setValueRanges?4(float, float, float, float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setMinXValue?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.minXValue?4() -> float
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setMaxXValue?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.maxXValue?4() -> float
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setMinZValue?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.minZValue?4() -> float
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.setMaxZValue?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.maxZValue?4() -> float
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.heightMapChanged?4(QImage)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.heightMapFileChanged?4(QString)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.minXValueChanged?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.maxXValueChanged?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.minZValueChanged?4(float)
+PyQt5.QtDataVisualization.QHeightMapSurfaceDataProxy.maxZValueChanged?4(float)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.MultiMatchBehavior?10
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.MMBFirst?10
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.MMBLast?10
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.MMBAverage?10
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.MMBCumulative?10
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QAbstractItemModel, QString, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setItemModel?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.itemModel?4() -> QAbstractItemModel
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRowRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setColumnRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setValueRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRowCategories?4(QStringList)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowCategories?4() -> QStringList
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setColumnCategories?4(QStringList)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnCategories?4() -> QStringList
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setUseModelCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.useModelCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setAutoRowCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.autoRowCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setAutoColumnCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.autoColumnCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowCategoryIndex?4(QString) -> int
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnCategoryIndex?4(QString) -> int
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRotationRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.remap?4(QString, QString, QString, QString, QStringList, QStringList)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.itemModelChanged?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowCategoriesChanged?4()
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnCategoriesChanged?4()
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.useModelCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.autoRowCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.autoColumnCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRowRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setColumnRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setValueRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRotationRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRowRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setColumnRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setValueRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setRotationRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.setMultiMatchBehavior?4(QItemModelBarDataProxy.MultiMatchBehavior)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.multiMatchBehavior?4() -> QItemModelBarDataProxy.MultiMatchBehavior
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rowRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.columnRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.valueRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.rotationRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelBarDataProxy.multiMatchBehaviorChanged?4(QItemModelBarDataProxy.MultiMatchBehavior)
+PyQt5.QtDataVisualization.QScatterDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QScatterDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QScatterDataProxy.itemCount?4() -> int
+PyQt5.QtDataVisualization.QScatterDataProxy.array?4() -> unknown-type
+PyQt5.QtDataVisualization.QScatterDataProxy.itemAt?4(int) -> QScatterDataItem
+PyQt5.QtDataVisualization.QScatterDataProxy.resetArray?4(unknown-type)
+PyQt5.QtDataVisualization.QScatterDataProxy.setItem?4(int, QScatterDataItem)
+PyQt5.QtDataVisualization.QScatterDataProxy.setItems?4(int, unknown-type)
+PyQt5.QtDataVisualization.QScatterDataProxy.addItem?4(QScatterDataItem) -> int
+PyQt5.QtDataVisualization.QScatterDataProxy.addItems?4(unknown-type) -> int
+PyQt5.QtDataVisualization.QScatterDataProxy.insertItem?4(int, QScatterDataItem)
+PyQt5.QtDataVisualization.QScatterDataProxy.insertItems?4(int, unknown-type)
+PyQt5.QtDataVisualization.QScatterDataProxy.removeItems?4(int, int)
+PyQt5.QtDataVisualization.QScatterDataProxy.series?4() -> QScatter3DSeries
+PyQt5.QtDataVisualization.QScatterDataProxy.arrayReset?4()
+PyQt5.QtDataVisualization.QScatterDataProxy.itemsAdded?4(int, int)
+PyQt5.QtDataVisualization.QScatterDataProxy.itemsChanged?4(int, int)
+PyQt5.QtDataVisualization.QScatterDataProxy.itemsRemoved?4(int, int)
+PyQt5.QtDataVisualization.QScatterDataProxy.itemsInserted?4(int, int)
+PyQt5.QtDataVisualization.QScatterDataProxy.itemCountChanged?4(int)
+PyQt5.QtDataVisualization.QScatterDataProxy.seriesChanged?4(QScatter3DSeries)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy?1(QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.__init__?1(self, QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy?1(QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy?1(QAbstractItemModel, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setItemModel?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.itemModel?4() -> QAbstractItemModel
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setXPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setYPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setZPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setRotationRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.remap?4(QString, QString, QString, QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.itemModelChanged?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setXPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setYPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setZPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setRotationRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setXPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setYPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setZPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.setRotationRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.rotationRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.xPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.yPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelScatterDataProxy.zPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.MultiMatchBehavior?10
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.MMBFirst?10
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.MMBLast?10
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.MMBAverage?10
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.MMBCumulativeY?10
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QString, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QString, QString, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QAbstractItemModel, QString, QString, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QAbstractItemModel, QString, QString, QString, QString, QString, QStringList, QStringList, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy?1(QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setItemModel?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.itemModel?4() -> QAbstractItemModel
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setRowRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setColumnRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setRowCategories?4(QStringList)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowCategories?4() -> QStringList
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setColumnCategories?4(QStringList)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnCategories?4() -> QStringList
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setUseModelCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.useModelCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setAutoRowCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.autoRowCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setAutoColumnCategories?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.autoColumnCategories?4() -> bool
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowCategoryIndex?4(QString) -> int
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnCategoryIndex?4(QString) -> int
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setXPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setYPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setZPosRole?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRole?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.remap?4(QString, QString, QString, QString, QString, QStringList, QStringList)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.itemModelChanged?4(QAbstractItemModel)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRoleChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowCategoriesChanged?4()
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnCategoriesChanged?4()
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.useModelCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.autoRowCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.autoColumnCategoriesChanged?4(bool)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setRowRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setColumnRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setXPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setYPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setZPosRolePattern?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRolePattern?4() -> QRegExp
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setRowRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setColumnRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setXPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setYPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setZPosRoleReplace?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRoleReplace?4() -> QString
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.setMultiMatchBehavior?4(QItemModelSurfaceDataProxy.MultiMatchBehavior)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.multiMatchBehavior?4() -> QItemModelSurfaceDataProxy.MultiMatchBehavior
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRolePatternChanged?4(QRegExp)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.rowRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.columnRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.xPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.yPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.zPosRoleReplaceChanged?4(QString)
+PyQt5.QtDataVisualization.QItemModelSurfaceDataProxy.multiMatchBehaviorChanged?4(QItemModelSurfaceDataProxy.MultiMatchBehavior)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter?1(QObject parent=None)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.setAllowNegatives?4(bool)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.allowNegatives?4() -> bool
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.setAllowZero?4(bool)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.allowZero?4() -> bool
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.createNewInstance?4() -> QValue3DAxisFormatter
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.recalculate?4()
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.stringForValue?4(float, QString) -> QString
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.positionAt?4(float) -> float
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.valueAt?4(float) -> float
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.populateCopy?4(QValue3DAxisFormatter)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.markDirty?4(bool labelsChange=False)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.axis?4() -> QValue3DAxis
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.gridPositions?4() -> unknown-type
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.subGridPositions?4() -> unknown-type
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.labelPositions?4() -> unknown-type
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.labelStrings?4() -> QStringList
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.setLocale?4(QLocale)
+PyQt5.QtDataVisualization.QValue3DAxisFormatter.locale?4() -> QLocale
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter?1(QObject parent=None)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.setBase?4(float)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.base?4() -> float
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.setAutoSubGrid?4(bool)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.autoSubGrid?4() -> bool
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.setShowEdgeLabels?4(bool)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.showEdgeLabels?4() -> bool
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.baseChanged?4(float)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.autoSubGridChanged?4(bool)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.showEdgeLabelsChanged?4(bool)
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.createNewInstance?4() -> QValue3DAxisFormatter
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.recalculate?4()
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.positionAt?4(float) -> float
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.valueAt?4(float) -> float
+PyQt5.QtDataVisualization.QLogValue3DAxisFormatter.populateCopy?4(QValue3DAxisFormatter)
+PyQt5.QtDataVisualization.QScatter3DSeries?1(QScatterDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QScatter3DSeries.__init__?1(self, QScatterDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QScatter3DSeries?1(QObject parent=None)
+PyQt5.QtDataVisualization.QScatter3DSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QScatter3DSeries.setDataProxy?4(QScatterDataProxy)
+PyQt5.QtDataVisualization.QScatter3DSeries.dataProxy?4() -> QScatterDataProxy
+PyQt5.QtDataVisualization.QScatter3DSeries.setSelectedItem?4(int)
+PyQt5.QtDataVisualization.QScatter3DSeries.selectedItem?4() -> int
+PyQt5.QtDataVisualization.QScatter3DSeries.invalidSelectionIndex?4() -> int
+PyQt5.QtDataVisualization.QScatter3DSeries.setItemSize?4(float)
+PyQt5.QtDataVisualization.QScatter3DSeries.itemSize?4() -> float
+PyQt5.QtDataVisualization.QScatter3DSeries.dataProxyChanged?4(QScatterDataProxy)
+PyQt5.QtDataVisualization.QScatter3DSeries.selectedItemChanged?4(int)
+PyQt5.QtDataVisualization.QScatter3DSeries.itemSizeChanged?4(float)
+PyQt5.QtDataVisualization.QScatterDataItem?1()
+PyQt5.QtDataVisualization.QScatterDataItem.__init__?1(self)
+PyQt5.QtDataVisualization.QScatterDataItem?1(QVector3D)
+PyQt5.QtDataVisualization.QScatterDataItem.__init__?1(self, QVector3D)
+PyQt5.QtDataVisualization.QScatterDataItem?1(QVector3D, QQuaternion)
+PyQt5.QtDataVisualization.QScatterDataItem.__init__?1(self, QVector3D, QQuaternion)
+PyQt5.QtDataVisualization.QScatterDataItem?1(QScatterDataItem)
+PyQt5.QtDataVisualization.QScatterDataItem.__init__?1(self, QScatterDataItem)
+PyQt5.QtDataVisualization.QScatterDataItem.setPosition?4(QVector3D)
+PyQt5.QtDataVisualization.QScatterDataItem.position?4() -> QVector3D
+PyQt5.QtDataVisualization.QScatterDataItem.setRotation?4(QQuaternion)
+PyQt5.QtDataVisualization.QScatterDataItem.rotation?4() -> QQuaternion
+PyQt5.QtDataVisualization.QScatterDataItem.setX?4(float)
+PyQt5.QtDataVisualization.QScatterDataItem.setY?4(float)
+PyQt5.QtDataVisualization.QScatterDataItem.setZ?4(float)
+PyQt5.QtDataVisualization.QScatterDataItem.x?4() -> float
+PyQt5.QtDataVisualization.QScatterDataItem.y?4() -> float
+PyQt5.QtDataVisualization.QScatterDataItem.z?4() -> float
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlag?10
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawWireframe?10
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawSurface?10
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawSurfaceAndWireframe?10
+PyQt5.QtDataVisualization.QSurface3DSeries?1(QSurfaceDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QSurface3DSeries.__init__?1(self, QSurfaceDataProxy, QObject parent=None)
+PyQt5.QtDataVisualization.QSurface3DSeries?1(QObject parent=None)
+PyQt5.QtDataVisualization.QSurface3DSeries.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QSurface3DSeries.setDataProxy?4(QSurfaceDataProxy)
+PyQt5.QtDataVisualization.QSurface3DSeries.dataProxy?4() -> QSurfaceDataProxy
+PyQt5.QtDataVisualization.QSurface3DSeries.setSelectedPoint?4(QPoint)
+PyQt5.QtDataVisualization.QSurface3DSeries.selectedPoint?4() -> QPoint
+PyQt5.QtDataVisualization.QSurface3DSeries.invalidSelectionPosition?4() -> QPoint
+PyQt5.QtDataVisualization.QSurface3DSeries.setFlatShadingEnabled?4(bool)
+PyQt5.QtDataVisualization.QSurface3DSeries.isFlatShadingEnabled?4() -> bool
+PyQt5.QtDataVisualization.QSurface3DSeries.setDrawMode?4(QSurface3DSeries.DrawFlags)
+PyQt5.QtDataVisualization.QSurface3DSeries.drawMode?4() -> QSurface3DSeries.DrawFlags
+PyQt5.QtDataVisualization.QSurface3DSeries.isFlatShadingSupported?4() -> bool
+PyQt5.QtDataVisualization.QSurface3DSeries.dataProxyChanged?4(QSurfaceDataProxy)
+PyQt5.QtDataVisualization.QSurface3DSeries.selectedPointChanged?4(QPoint)
+PyQt5.QtDataVisualization.QSurface3DSeries.flatShadingEnabledChanged?4(bool)
+PyQt5.QtDataVisualization.QSurface3DSeries.flatShadingSupportedChanged?4(bool)
+PyQt5.QtDataVisualization.QSurface3DSeries.drawModeChanged?4(QSurface3DSeries.DrawFlags)
+PyQt5.QtDataVisualization.QSurface3DSeries.setTexture?4(QImage)
+PyQt5.QtDataVisualization.QSurface3DSeries.texture?4() -> QImage
+PyQt5.QtDataVisualization.QSurface3DSeries.setTextureFile?4(QString)
+PyQt5.QtDataVisualization.QSurface3DSeries.textureFile?4() -> QString
+PyQt5.QtDataVisualization.QSurface3DSeries.textureChanged?4(QImage)
+PyQt5.QtDataVisualization.QSurface3DSeries.textureFileChanged?4(QString)
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags?1()
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags.__init__?1(self)
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags?1(int)
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags.__init__?1(self, int)
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags?1(QSurface3DSeries.DrawFlags)
+PyQt5.QtDataVisualization.QSurface3DSeries.DrawFlags.__init__?1(self, QSurface3DSeries.DrawFlags)
+PyQt5.QtDataVisualization.QSurfaceDataItem?1()
+PyQt5.QtDataVisualization.QSurfaceDataItem.__init__?1(self)
+PyQt5.QtDataVisualization.QSurfaceDataItem?1(QVector3D)
+PyQt5.QtDataVisualization.QSurfaceDataItem.__init__?1(self, QVector3D)
+PyQt5.QtDataVisualization.QSurfaceDataItem?1(QSurfaceDataItem)
+PyQt5.QtDataVisualization.QSurfaceDataItem.__init__?1(self, QSurfaceDataItem)
+PyQt5.QtDataVisualization.QSurfaceDataItem.setPosition?4(QVector3D)
+PyQt5.QtDataVisualization.QSurfaceDataItem.position?4() -> QVector3D
+PyQt5.QtDataVisualization.QSurfaceDataItem.setX?4(float)
+PyQt5.QtDataVisualization.QSurfaceDataItem.setY?4(float)
+PyQt5.QtDataVisualization.QSurfaceDataItem.setZ?4(float)
+PyQt5.QtDataVisualization.QSurfaceDataItem.x?4() -> float
+PyQt5.QtDataVisualization.QSurfaceDataItem.y?4() -> float
+PyQt5.QtDataVisualization.QSurfaceDataItem.z?4() -> float
+PyQt5.QtDataVisualization.QTouch3DInputHandler?1(QObject parent=None)
+PyQt5.QtDataVisualization.QTouch3DInputHandler.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QTouch3DInputHandler.touchEvent?4(QTouchEvent)
+PyQt5.QtDataVisualization.QValue3DAxis?1(QObject parent=None)
+PyQt5.QtDataVisualization.QValue3DAxis.__init__?1(self, QObject parent=None)
+PyQt5.QtDataVisualization.QValue3DAxis.setSegmentCount?4(int)
+PyQt5.QtDataVisualization.QValue3DAxis.segmentCount?4() -> int
+PyQt5.QtDataVisualization.QValue3DAxis.setSubSegmentCount?4(int)
+PyQt5.QtDataVisualization.QValue3DAxis.subSegmentCount?4() -> int
+PyQt5.QtDataVisualization.QValue3DAxis.setLabelFormat?4(QString)
+PyQt5.QtDataVisualization.QValue3DAxis.labelFormat?4() -> QString
+PyQt5.QtDataVisualization.QValue3DAxis.segmentCountChanged?4(int)
+PyQt5.QtDataVisualization.QValue3DAxis.subSegmentCountChanged?4(int)
+PyQt5.QtDataVisualization.QValue3DAxis.labelFormatChanged?4(QString)
+PyQt5.QtDataVisualization.QValue3DAxis.setFormatter?4(QValue3DAxisFormatter)
+PyQt5.QtDataVisualization.QValue3DAxis.formatter?4() -> QValue3DAxisFormatter
+PyQt5.QtDataVisualization.QValue3DAxis.setReversed?4(bool)
+PyQt5.QtDataVisualization.QValue3DAxis.reversed?4() -> bool
+PyQt5.QtDataVisualization.QValue3DAxis.formatterChanged?4(QValue3DAxisFormatter)
+PyQt5.QtDataVisualization.QValue3DAxis.reversedChanged?4(bool)

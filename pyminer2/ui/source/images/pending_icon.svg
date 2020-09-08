@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>pending_icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pending_icon" fill-rule="nonzero" fill="#4196FF">
+            <path d="M6.5,0 C2.9,0 0,2.9 0,6.5 C0,10.1 2.9,13 6.5,13 C10.1,13 13,10.1 13,6.5 C13,2.9 10.1,0 6.5,0 Z M6.7,10.8 C6.6,10.9 6.4,11 6.2,11 C6,11 5.8,10.9 5.7,10.8 C5.6,10.7 5.5,10.5 5.5,10.3 C5.5,10.1 5.6,9.9 5.7,9.8 C5.8,9.7 6,9.6 6.2,9.6 C6.4,9.6 6.6,9.7 6.7,9.8 C6.8,9.9 6.9,10.1 6.9,10.3 C6.9,10.5 6.8,10.6 6.7,10.8 Z M8.6,5.3 C8.3,5.7 7.8,6.2 7.6,6.4 C7.3,6.7 7.2,7 7,7.2 C6.8,7.4 6.7,7.6 6.7,7.9 L5.5,7.9 C5.5,7.5 5.6,6.5 6.4,5.9 C6.9,5.5 7.1,5.3 7.3,5.1 C7.5,4.8 7.6,4.5 7.6,4.2 C7.6,3.8 7.6,3.6 7.2,3.3 C6.8,3.1 6.6,3.1 6,3.1 C5,3.1 4.5,3.8 3.9,4.4 L3.9,3 C4.1,2.8 5,2 6.4,2 C7.4,2 7.7,2.2 8.3,2.6 C8.9,3 8.9,3.5 8.9,4.1 C9,4.6 8.9,5 8.6,5.3 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

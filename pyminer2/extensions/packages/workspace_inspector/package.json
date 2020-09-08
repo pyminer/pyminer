@@ -1,0 +1,37 @@
+{
+    "name":"workspace_inspector",
+    "display_name":"工作空间显示器",
+    "version":"0.1",
+    "description":"好多介绍",
+    "icon":"python.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+        {
+            "file":"main.py",
+            "widget":"PMWorkspaceInspectWidget",
+            "position":"new_dock_window",
+            "config":{
+                "message":"no",
+                "name":"workspace_inspector",
+                "side": "left",
+                "text": "工作空间"
+            }
+        },{
+            "file":"data_viewer.py",
+            "widget":"PMVariableViewerWidget",
+            "position":"new_dock_window",
+            "auto_insert":false,
+            "config":{
+                "message":"no",
+                "name":"data_view_table",
+                "side": "se",
+                "text": "变量视图"
+            }
+        }
+    ],
+    "requirements":[
+    ]
+}

@@ -1,0 +1,1 @@
+from pyminer2.extensions.extensionlib.pmext import PluginInterface

@@ -1,0 +1,15 @@
+{
+    "name":"pmagg",
+    "display_name":"PMAgg",
+    "version":"0.1.0",
+    "description":"一个matplotlib使用的GUI界面",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+    ]
+}
