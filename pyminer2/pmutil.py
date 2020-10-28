@@ -12,7 +12,7 @@ if TYPE_CHECKING:
 
 _application = None
 _root_dir = None
-_main_window: 'pyminer2.pmappmodern.MainWindow' = None
+_main_window: 'pyminer2.pmappmodern.PMGWebBrowser' = None
 
 
 def get_root_dir() -> str:
@@ -48,4 +48,5 @@ def get_work_dir() -> 'str':
     获取主窗口或者主控件。
     Returns:
     """
-    return _main_window.settings['work_dir']
+    from pyminer2.features.io.settings import Settings
+    return Settings.get_instance()['work_dir']

@@ -1,0 +1,26 @@
+{
+  "name": "file_tree",
+  "display_name": "文件树视图",
+  "version": "0.1.0",
+  "description": "文件树视图",
+  "icon": "extension_demo.jpg",
+  "interface": {
+    "file": "main.py",
+    "interface": "Interface"
+  },
+  "widgets": [
+    {
+      "file": "main.py",
+      "widget": "PMFilesTree",
+      "position": "new_dock_window",
+      "config": {
+        "name": "file_tree_widget",
+        "text": "File Tree",
+        "message": "no",
+        "side": "left"
+      }
+    }
+  ],
+  "requirements": [
+  ]
+}

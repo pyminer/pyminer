@@ -11,5 +11,9 @@
     "widgets":[
     ],
     "requirements":[
+    ],
+    "dependencies": [
+        "configparser",
+        "matplotlib"
     ]
 }

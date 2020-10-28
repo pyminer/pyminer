@@ -24,8 +24,8 @@ Workspace 需要用到 DataServer，目前采用 FastAPI 框架。但无论什�
 ### 工具栏
 #### 工具栏操作
 - 添加工具栏  
-主界面的工具栏使用的是```PMToolBar```这个类，继承自```QToolBar```。  
-主窗口```add_tool_bar()```方法，可以将```QToolBar```或```PMToolBar```，抑或是你自己的继承于```QToolBar```的工具栏添加到主窗口。
+主界面的工具栏使用的是```PMGToolBar```这个类，继承自```QToolBar```。  
+主窗口```add_tool_bar()```方法，可以将```QToolBar```或```PMGToolBar```，抑或是你自己的继承于```QToolBar```的工具栏添加到主窗口。
 
 - 获取工具栏 
 工具栏通过它的名称进行访问。预定义的工具栏只有一个,名曰```'toolbar_home'```。  
@@ -68,9 +68,9 @@ setup_ui方法，而是将启动方法放在__init__之中。
 隐藏起来了。如果确实要销毁窗口，那么请重写```PMDockWidget```中的closeEvent方法，确保窗口在被关闭的时候被正确销毁了。
 
 - 对于工具栏基类的建议  
-无论是主界面还是插件，建议继承`PMToolBar`类，这个类有设置好的样式。使用`QToolbar`尽管不会出错，但是样式很难统一。
+无论是主界面还是插件，建议继承`PMGToolBar`类，这个类有设置好的样式。使用`QToolbar`尽管不会出错，但是样式很难统一。
 ```python
-from pyminer.ui.generalwidgets import PMToolBar
+from pmgwidgets import PMGToolBar
 ```
 
 ## 主界面的全局获取方法

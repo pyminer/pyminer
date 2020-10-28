@@ -17,7 +17,7 @@
                 "message":"no",
                 "name":"workspace_inspector",
                 "side": "left",
-                "text": "工作空间"
+                "text": "Workspace"
             }
         },{
             "file":"data_viewer.py",
@@ -28,7 +28,7 @@
                 "message":"no",
                 "name":"data_view_table",
                 "side": "se",
-                "text": "变量视图"
+                "text": "变量管理器"
             }
         }
     ],

@@ -23,8 +23,8 @@ class Client:
         response = requests.post(url, json=payload).json()
 
     @staticmethod
-    def read(dataname:str):
-        t0=time.time()
+    def read(dataname: str):
+        t0 = time.time()
         url = "http://localhost:8783/"
         payload = {
             "method": "read",
@@ -33,8 +33,8 @@ class Client:
             "id": 0,
         }
         response = requests.post(url, json=payload).json()
-        t1=time.time()
-        print(t1-t0,response)
+        t1 = time.time()
+        print(t1 - t0, response)
         return response
 
 

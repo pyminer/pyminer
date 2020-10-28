@@ -5,8 +5,9 @@ import json
 from collections import namedtuple
 import copy
 import traceback
-
-from pyminer2.extensions.extensions_manager import log
+import logging
+logger = logging.getLogger('extensionmanager.extensionloader')
+# from pyminer2.extensions.extensions_manager import log
 from pyminer2.pmutil import get_root_dir
 
 BASEDIR = get_root_dir()
@@ -25,11 +26,13 @@ class PublicInterface:
 
 
 class ExtensionLoader:
-    def __init__(self):
+    def __init__(self, manager):
+        self.manager = manager
         # 这里不能直接写self.path,因为所有入口文件都叫main.py,会被Python缓存起来
-        self.import_path = os.path.join(BASEDIR, 'extensions','packages')
+        self.import_path = os.path.join(BASEDIR, 'extensions', 'packages')
         sys.path.append(self.import_path)  # 将模块导入路径设置为扩展文件夹,这样可以直接导入入口文件
-        self.extension_lib_path = os.path.join(BASEDIR, 'extensions','extensionlib')
+        self.extension_lib_path = os.path.join(
+            BASEDIR, 'extensions', 'extensionlib')
         sys.path.append(self.extension_lib_path)
 
     def load(self, file, ui_inserters):
@@ -44,14 +47,24 @@ class ExtensionLoader:
 
             self.path = os.path.join(
                 BASEDIR,
-                'extensions','packages',
+                'extensions', 'packages',
                 self.name)  # 扩展文件夹路径
 
-            main_config = self.package.get('main', {'file':'main.py', 'main':'Extension'})
-            main_class = self.load_class(main_config['file'], main_config['main'])
+            main_config = self.package.get(
+                'main', {'file': 'main.py', 'main': 'Extension'})
+            main_class = self.load_class(
+                main_config['file'], main_config['main'])
             self.main = main_class()
+            from pyminer2.extensions.extensionlib.extension_lib import extension_lib
+            self.main.extension_lib = extension_lib
+            self.binding_info()
+            try:
+                self.main._on_loading()
+            except Exception as e:
+                logger.error(e, exc_info=True)
 
-            interface_config = self.package.get('interface', {'file':'main.py', 'interface':'Interface'})
+            interface_config = self.package.get(
+                'interface', {'file': 'main.py', 'interface': 'Interface'})
             self.main.interface = self.load_class(
                 interface_config['file'], interface_config['interface'])()
             self.main.public_interface = self.create_public_interface(
@@ -60,8 +73,7 @@ class ExtensionLoader:
             for key in getattr(self.main.interface, 'ui_inserters', []):
                 self.ui_inserters[f'extension_{self.name}_{key}'] = self.main.interface.ui_inserters[key]
 
-            from pyminer2.extensions.extensionlib.extension_lib import extension_lib
-            self.main.extension_lib = extension_lib
+
 
             self.main.widget_classes = {}
             self.main.widgets = {}  # store auto inserted widgets
@@ -70,12 +82,36 @@ class ExtensionLoader:
                 widget_class_name = widget_class.__name__
                 self.main.widget_classes[widget_class_name] = widget_class
 
-            self.binding_info()
+            if 'settings' in self.package:
+                assert isinstance(self.package['settings'], str)
+                settings_path = os.path.join(self.path, self.package['settings'])
+                try:
+                    with open(settings_path, 'r') as f:
+                        settings = json.loads(f.read())
+                except Exception as e:
+                    logger.exception(e, exc_info=True)
+                else:
+                    self.main.settings = settings
+
+            self.manager.vermanager.set_current_modules([f'{self.name}=={self.version}'])
+
+            if 'requirements' in self.package:
+                requirements = self.package['requirements']
+                assert isinstance(requirements, list)
+                solvable, conflict = self.manager.vermanager.check_requirements(requirements)
+                if conflict:
+                    raise Exception(f'Conflicts in extensions {conflict}')
+                if solvable:
+                    for requirement in solvable:
+                        self.manager.enable_extension(requirement)
+
+            try:
+                self.main._on_load()
+            except Exception as e:
+                logger.error(e, exc_info=True)
             return self.main
         except KeyError as e:
-            traceback.print_exc()
-            log.error('插件的Package.json不完整')
-            log.error(e)
+            logger.error(f'插件的Package.json不完整 {e}', exc_info=True)
 
     def binding_info(self):
         self.main.info = Info(
@@ -102,8 +138,7 @@ class ExtensionLoader:
             module = importlib.import_module(
                 f'{package_name}.{module_name}')
         except Exception as e:
-            traceback.print_exc()
-            log.error(e)
+            logger.error(e, exc_info=True)
             module = None
         # sys.path.extend(pyminer_paths)
         return module
@@ -115,24 +150,22 @@ class ExtensionLoader:
             if hasattr(module, class_name):
                 return getattr(module, class_name)
             else:
-                traceback.print_exc()
-                log.error(f"{file}文件中不存在{class_name}类")
+                logger.error(f"{file}文件中不存在{class_name}类", exc_info=True)
         else:
-            traceback.print_exc()
-            log.error(f"{file}文件不存在或有误")
+            logger.error(f"{file}文件不存在或有误", exc_info=True)
 
     def load_widget(self, widget_config):
         try:
-            widget_class = self.load_class(widget_config['file'], widget_config['widget'])
+            widget_class = self.load_class(
+                widget_config['file'], widget_config['widget'])
             if widget_config.get('auto_insert', True):
                 widget_config = self.ui_inserters[widget_config['position']](
                     widget_class, widget_config['config'])
                 self.main.widgets[widget_class.__name__] = widget_config
             return widget_class
         except KeyError as e:
-            traceback.print_exc()
-            log.error(f"插件{self.name}的widgets配置不正确!")
-            log.error(f"位置:{widget_config}")
+            logger.error(f"插件{self.name}的widgets配置不正确!")
+            logger.error(f"位置:{widget_config}", exc_info=True)
 
     def create_public_interface(self, interface):
         public_interface = PublicInterface()
@@ -144,4 +177,3 @@ class ExtensionLoader:
 
     def reset(self):
         pass
-

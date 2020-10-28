@@ -1,0 +1,691 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>450</width>
+    <height>365</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>450</width>
+    <height>365</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>450</width>
+    <height>365</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>330</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>330</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>330</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>应用</string>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>441</width>
+     <height>321</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="currentIndex">
+    <number>4</number>
+   </property>
+   <widget class="QWidget" name="tab">
+    <attribute name="title">
+     <string>坐标</string>
+    </attribute>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>411</width>
+       <height>286</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>X 标签：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Y 标签：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_2"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Z 标签：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_3"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>主标题：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_4"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_12">
+          <property name="text">
+           <string>子标题：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_5"/>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>X  range：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="lineEdit_6"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Y  range：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="lineEdit_7"/>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>Z range：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="lineEdit_8"/>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="text">
+           <string>X  major  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLineEdit" name="lineEdit_9"/>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="text">
+           <string>Y  major  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="QLineEdit" name="lineEdit_10"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Z  major  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QLineEdit" name="lineEdit_11"/>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_13">
+          <property name="text">
+           <string>X  minor  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLineEdit" name="lineEdit_12"/>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Y minor  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="QLineEdit" name="lineEdit_13"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_15">
+          <property name="text">
+           <string>Z minor  locator：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QLineEdit" name="lineEdit_14"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="title">
+     <string>网格</string>
+    </attribute>
+    <widget class="QWidget" name="formLayoutWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>161</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_19">
+        <property name="text">
+         <string>显示轴：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_4"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_21">
+        <property name="text">
+         <string>网格颜色：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_5"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_22">
+        <property name="text">
+         <string>刻度：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_6"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_23">
+        <property name="text">
+         <string>网格样式：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_7"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_24">
+        <property name="text">
+         <string>网格宽度：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_15"/>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="title">
+     <string>字体</string>
+    </attribute>
+    <widget class="QWidget" name="formLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>341</width>
+       <height>131</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_4">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_16">
+        <property name="text">
+         <string>中文字体：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_17">
+        <property name="text">
+         <string>英文字体：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_2"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_18">
+        <property name="text">
+         <string>中英文混合字体：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_3"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_20">
+        <property name="text">
+         <string>重新检索字体库：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>150</y>
+       <width>341</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="title">
+     <string>注释</string>
+    </attribute>
+    <widget class="QWidget" name="formLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>211</width>
+       <height>272</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_6">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_25">
+        <property name="text">
+         <string>坐标样式：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_16">
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+         </font>
+        </property>
+        <property name="text">
+         <string>(%.2f,%.2f)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_27">
+        <property name="text">
+         <string>背景颜色：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBox_8"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_29">
+        <property name="text">
+         <string>边框颜色：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_12"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_28">
+        <property name="text">
+         <string>边框粗细：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_17"/>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_30">
+        <property name="text">
+         <string>文字偏移量：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_19">
+        <property name="text">
+         <string>(0,0)</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_31">
+        <property name="text">
+         <string>箭头粗细：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_20"/>
+      </item>
+      <item row="6" column="0">
+       <widget class="QLabel" name="label_32">
+        <property name="text">
+         <string>箭头颜色：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QComboBox" name="comboBox_9"/>
+      </item>
+      <item row="7" column="0">
+       <widget class="QLabel" name="label_33">
+        <property name="text">
+         <string>箭头形状：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QComboBox" name="comboBox_10"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="formLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>0</y>
+       <width>211</width>
+       <height>231</height>
+      </rect>
+     </property>
+     <layout class="QFormLayout" name="formLayout_7">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_34">
+        <property name="text">
+         <string>是否显示点：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QCheckBox" name="checkBox_2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_36">
+        <property name="text">
+         <string>文字大小：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_21"/>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_37">
+        <property name="text">
+         <string>文字颜色：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QComboBox" name="comboBox_11"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_38">
+        <property name="text">
+         <string>是否显示文字：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QCheckBox" name="checkBox_4">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_39">
+        <property name="text">
+         <string>是否显示箭头：</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QCheckBox" name="checkBox_5">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_5">
+    <attribute name="title">
+     <string>绘图</string>
+    </attribute>
+    <widget class="QWidget" name="gridLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>10</y>
+       <width>255</width>
+       <height>126</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_42">
+        <property name="text">
+         <string>输出图像分辨率/dpi：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_40">
+          <property name="text">
+           <string>宽</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_18"/>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_41">
+          <property name="text">
+           <string>高</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_22"/>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBox_13"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_23"/>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_35">
+        <property name="text">
+         <string>输出图像尺寸/英寸：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_26">
+        <property name="text">
+         <string>切换Tab页绘图方式：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_44">
+        <property name="text">
+         <string>选择默认绘图风格：</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QComboBox" name="comboBox_14"/>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>200</y>
+       <width>431</width>
+       <height>71</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="lineWidth">
+      <number>3</number>
+     </property>
+     <property name="text">
+      <string>1. 图像的大小和分辨率只有在保存时生效
+2. 图像像素数=图片尺寸/inch×分辨率/dpi
+3. 绘图风格采用SciencePlots包，只会在重新plt.show()后才会生效，文字中含有
+中文可能会报错，默认字体的设置将会无效</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::PlainText</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

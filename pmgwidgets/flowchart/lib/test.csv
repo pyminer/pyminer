@@ -1,0 +1,63 @@
+,text,inputs,outputs,ports_changeable,params,icon,group,code
+0,Add,"[""a"", ""b""]","[""sum""]","[true, false]",[],,simple_calc,"import copy
+def function(*args):
+    sum=copy.copy(args[0])
+    for val in args[1:]:
+        sum+=val
+    return [sum]"
+1,Mul,"[""a"", ""b""]","[""a * b""]","[true, false]",[],,simple_calc,"def function(x,y):
+    return [x*y]"
+2,inv,"[""input1""]","[""output1""]","[false, false]",[],,simple_calc,"def function(x):
+    return [not x]"
+3,Constant,[],"[""out""]","[false, false]","[[""number"", ""value"", ""Value"", 1, ""value"", [-10000, 10000]]]",,simple_calc,"def function():
+    return [globals().get('value'   ) ]"
+4,Random Array,[],"[""array""]","[false, false]","[[""eval"", ""size"", ""Random Array Size"", [100]]]",,simple_calc,"def function():
+    import numpy as np
+    return [np.random.random(size)]"
+5,Amplify,"[""in""]","[""out""]","[false, false]","[[""number"", ""value"", ""Mul Value"", 2.0, ""value"", [-10000, 10000]]]",,simple_calc,"def function(x):
+    return [x*value]"
+6,aaa,"[""input1""]","[""output1""]","[true, false]",[],,simple_calc,
+7,Random Boolean,[],"[""out""]","[false, false]","[[""number"", ""true_probability"", ""Probability of True"", 0.8, """", [0, 1]]]",,logic,"import random
+def function():
+    r = random.random()
+    if r>true_probability:
+        return [False]
+    else:
+        return [True]"
+8,Not,"[""x""]","[""not x""]","[false, false]",[],,logic,"def function(x):
+    return [not x]"
+9,Or,"[""in1"", ""in2""]","[""out""]","[true, false]",[],icons/down.png,logic,"def function(*args):
+    for arg in args:
+        if arg==True:
+            return [True]
+    return [False]"
+10,And,"[""in1"", ""in2""]","[""out""]","[true, false]",[],icons/down.png,logic,"def function(*args):
+    val = args[0]
+    for v in args:
+        val = val and v
+    return [val]"
+11,Plot,"[""x"", ""y""]",[],"[false, false]",[],,plot,"import matplotlib.pyplot as plt
+def function(x,y):
+    plt.plot(x,y,'*')
+    plt.show()"
+12,LinePlot,"[""y""]",[],"[false, false]","[[""bool"", ""new_figure"", ""Create New Figure"", true]]",,plot,"import matplotlib.pyplot as plt
+import pmgwidgets
+def function(y):
+    if  new_figure:
+        plt.figure()
+        print('new figure!')
+    plt.plot(y)
+    plt.show()"
+13,ReadCSV,[],"[""out data""]","[false, false]",[],,io,
+14,ReadXLS,"[""input1""]","[""output1""]","[false, false]",[],,io,
+15,ReadSAS,"[""input1""]","[""output1""]","[false, false]",[],,io,
+16,SendToWorkSpace,"[""var""]",[],"[false, false]","[[""line_edit"", ""var_name"", ""Variable Name"", ""var""]]",,io,"def function(var):
+    from pmgwidgets import BaseClient
+    c = BaseClient()
+    c.set_var(var_name,var)
+    return []"
+17,Run File,"[""in""]","[""out""]","[false, false]","[[""file"", ""file_dir"", ""File Name"", ""E:/Python/pyminer_bin/PyMiner/bin/pmgwidgets/platform/test/python_file_test.py""]]",,io,"from pmgwidgets import run_python_file_in_terminal
+
+def function(path):
+    run_python_file_in_terminal(file_dir, blocking=True)
+    return [None]"

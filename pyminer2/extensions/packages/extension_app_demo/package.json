@@ -1,0 +1,20 @@
+{
+  "name": "extension_app_demo",
+  "display_name": "对话框插件demo",
+  "version": "0.1",
+  "description": "好多介绍",
+  "icon": "python.jpg",
+  "interface": {
+    "file": "main.py",
+    "interface": "Interface"
+  },
+  "widgets": [
+  ],
+  "requirements": [
+    "applications_toolbar"
+  ],
+  "dependencies": [
+    "yapf>=0.30.0",
+    "flake8 >=3.8.3"
+  ]
+}

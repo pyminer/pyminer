@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据-行筛选</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0">
+      <widget class="QRadioButton" name="radioButton_no_filter">
+       <property name="text">
+        <string>不筛选</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QRadioButton" name="radioButton_simple">
+       <property name="text">
+        <string>简单</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>从</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_start">
+         <property name="minimum">
+          <number>1</number>
+         </property>
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>到</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_end">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+         <property name="value">
+          <number>100</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>行</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="2" column="0">
+      <widget class="QRadioButton" name="radioButton_random">
+       <property name="text">
+        <string>随机</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QComboBox" name="comboBox_random">
+         <item>
+          <property name="text">
+           <string>按比例随机抽样</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>按行数随机抽样</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_random">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>10</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_random">
+         <property name="text">
+          <string>%</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_replace">
+         <item>
+          <property name="text">
+           <string>无放回抽样</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>有放回抽样</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>随机种子</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QSpinBox" name="spinBox_random_state">
+         <property name="maximum">
+          <number>999999999</number>
+         </property>
+         <property name="value">
+          <number>12345</number>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="3" column="0">
+      <widget class="QRadioButton" name="radioButton_column">
+       <property name="text">
+        <string>列</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QComboBox" name="comboBox_columns">
+         <item>
+          <property name="text">
+           <string>变量列表</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBox_col_condition">
+         <item>
+          <property name="text">
+           <string>模糊匹配</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>in</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>not in</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>=</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>&gt;=</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>&lt;=</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_col_find">
+         <property name="maximumSize">
+          <size>
+           <width>200</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>13</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+     <item row="4" column="0">
+      <widget class="QRadioButton" name="radioButton_dtype">
+       <property name="text">
+        <string>数据类型</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <widget class="QComboBox" name="comboBox_dtype">
+         <item>
+          <property name="text">
+           <string>全部</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>13</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget_dataset"/>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QPushButton" name="pushButton_help">
+        <property name="text">
+         <string>帮助</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ok">
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_save">
+        <property name="toolTip">
+         <string>另存为新的数据集</string>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_cancel">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,10 +1,8 @@
 import numpy as np
 import pandas as pd
+
 from pyminer2.workspace.datamanager.variable import Variable
-
-
-class ConverterError(Exception):
-    pass
+from .exceptions import ConvertError
 
 
 class Converter:
@@ -19,7 +17,7 @@ class Converter:
         elif isinstance(var, Variable):
             return var.dump()
         else:
-            raise ConverterError(f'{var} is inconvertible')
+            raise ConvertError(f'{var} is inconvertible')
 
     def convert_to_var(self, data: dict):
         assert self.data_manager.dataset.is_valid(data)
@@ -35,21 +33,25 @@ class Converter:
     # convert to data, func format: convert_obj
 
     def convert_ndarray(self, arr: np.ndarray) -> dict:
+        # TODO (panhaoyu) 三维数组甚至四维数组都是很常见的数据格式，应该支持
         if arr.dtype in (np.int, np.float):
             if len(arr.shape) == 2:
                 return Variable('Matrix', {'value': arr.tolist()}).dump()
             elif len(arr.shape) == 1:
                 return Variable('Vector', {'value': arr.tolist()}).dump()
+            else:
+                raise ConvertError
         else:
-            raise ConverterError(f'{arr} is inconvertible')
+            raise ConvertError(f'{arr} is inconvertible')
 
     def convert_list(self, lst: list) -> dict:
         return self.convert_ndarray(np.array(lst))
 
     def convert_dataframe(self, dataframe: pd.DataFrame) -> dict:
-        return Variable('DataFrame', {'table': dataframe.values.tolist(), 'columns': dataframe.columns})
+        return Variable('DataFrame', {'table': dataframe.values.tolist(), 'columns': dataframe.columns.tolist()})
 
     # convert to var, func format: iconvert_type
+    # TODO (panhaoyu) 这三个函数目前没有在pycharm中发现调用，是否可以删除？
 
     def iconvert_matrix(self, mat: Variable) -> np.ndarray:
         assert mat.type == 'Matrix'
@@ -62,17 +64,3 @@ class Converter:
     def iconvert_dataframe(self, dataframe: Variable) -> pd.DataFrame:
         assert dataframe.type == 'DataFrame'
         return pd.DataFrame(dataframe['table'], columns=dataframe['columns'])
-
-
-def main():
-    c = Converter()
-    arr = np.array([[1, 2, 3], [3, 2, 1]])
-    mat = c.convert_to_data(arr)
-    print(mat)
-
-    arr1 = c.convert_to_var(mat)
-    print(arr1, type(arr1))
-
-
-if __name__ == "__main__":
-    main()

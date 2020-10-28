@@ -1,0 +1,42 @@
+{
+    "ext_names": {
+        "Program Scripts": {
+            ".pyx": true,
+            ".py": true,
+            ".m": true,
+            ".c": true,
+            ".pyi": true,
+            ".h": true,
+            ".cpp": true,
+            ".ipynb": true,
+            ".js": true
+        },
+        "Libs": {
+            ".dll": false,
+            ".pyd": false
+        },
+        "Documents": {
+            ".txt": false,
+            ".md": false,
+            ".doc": false,
+            ".docx": false,
+            ".ppt": false,
+            ".pptx": false,
+            ".html": true
+        },
+        "Data Files": {
+            ".csv": true,
+            ".mat": true,
+            ".json": true,
+            ".xml": true,
+            ".xls": true,
+            ".xlsx": true,
+            ".tab": true,
+            ".dat": true,
+            ".tsv": true,
+            ".sav": true,
+            ".zsav": true,
+            ".sas7bdat": true
+        }
+    }
+}

@@ -1,7 +1,5 @@
-import json
-import dill as pickle
-import base64
 import copy
+import json
 
 
 class VariableError(Exception):
@@ -13,6 +11,7 @@ class Variable(dict):
         members['type'] = vartype
         self.type = vartype
         self.update(members)
+        super(Variable, self).__init__()
 
     def load(self, dct: dict):
         if 'type' not in dct:

@@ -1,0 +1,107 @@
+{
+    "brown-selected": {
+        "features": {
+            "continuous": 79,
+            "discrete": 0,
+            "meta": 1
+        },
+        "location": "brown-selected.tab",
+        "missing": true,
+        "name": "brown-selected",
+        "rows": 186,
+        "target": {
+            "type": "discrete",
+            "values": 3
+        }
+    },
+    "heart_disease": {
+        "features": {
+            "continuous": 6,
+            "discrete": 7,
+            "meta": 0
+        },
+        "location": "heart_disease.tab",
+        "missing": true,
+        "name": "heart_disease",
+        "rows": 303,
+        "target": {
+            "type": "discrete",
+            "values": 2
+        }
+    },
+    "housing": {
+        "features": {
+            "continuous": 13,
+            "discrete": 0,
+            "meta": 0
+        },
+        "location": "housing.tab",
+        "missing": false,
+        "name": "housing",
+        "rows": 506,
+        "target": {
+            "type": "continuous",
+            "values": null
+        }
+    },
+    "iris": {
+        "features": {
+            "continuous": 4,
+            "discrete": 0,
+            "meta": 0
+        },
+        "location": "iris.tab",
+        "missing": false,
+        "name": "iris",
+        "rows": 150,
+        "target": {
+            "type": "discrete",
+            "values": 3
+        }
+    },
+    "iris_url": {
+        "features": {
+            "continuous": 4,
+            "discrete": 0,
+            "meta": 0
+        },
+        "location": "https://raw.githubusercontent.com/biolab/orange3/master/Orange/datasets/iris.tab",
+        "missing": false,
+        "name": "iris_url",
+        "rows": 150,
+        "target": {
+            "type": "discrete",
+            "values": 3
+        }
+    },
+    "titanic": {
+        "features": {
+            "continuous": 0,
+            "discrete": 3,
+            "meta": 0
+        },
+        "location": "titanic.tab",
+        "missing": false,
+        "name": "titanic",
+        "rows": 2201,
+        "target": {
+            "type": "discrete",
+            "values": 2
+        }
+    },
+    "zoo": {
+        "features": {
+            "continuous": 0,
+            "discrete": 16,
+            "meta": 1
+        },
+        "location": "zoo.tab",
+        "missing": false,
+        "name": "zoo",
+        "rows": 101,
+        "target": {
+            "type": "discrete",
+            "values": 7
+        }
+    }
+}

@@ -1,0 +1,508 @@
+{
+    "nodes": {
+        "8": {
+            "text": "And",
+            "id": "8",
+            "pos": [
+                -350.0,
+                -275.0
+            ],
+            "icon": "/home/hzy/\u6587\u6863/Python/Pyminer/pyminer_dist_debian_deepin-slimed/pyminer_dist_debian_deepin/pyminer/pmgwidgets/flowchart/icons/logo.png",
+            "content": {
+                "code": "def function(*args):\n    val = args[0]\n    for v in args:\n        val = val and v\n    return [val]",
+                "type": "function",
+                "params": [],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {
+                "8:input:1": {
+                    "id": "8:input:1",
+                    "pos": [
+                        -345.0,
+                        -235.0
+                    ],
+                    "contents": {},
+                    "text": "in1"
+                },
+                "8:input:2": {
+                    "id": "8:input:2",
+                    "pos": [
+                        -345.0,
+                        -195.0
+                    ],
+                    "contents": {},
+                    "text": "in2"
+                }
+            },
+            "output_ports": {
+                "8:output:1": {
+                    "id": "8:output:1",
+                    "pos": [
+                        -245.0,
+                        -215.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "12": {
+            "text": "Or",
+            "id": "12",
+            "pos": [
+                -190.0,
+                -215.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "def function(*args):\n    for arg in args:\n        if arg==True:\n            return [True]\n    return [False]",
+                "type": "function",
+                "params": [],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {
+                "12:input:1": {
+                    "id": "12:input:1",
+                    "pos": [
+                        -185.0,
+                        -175.0
+                    ],
+                    "contents": {},
+                    "text": "in1"
+                },
+                "12:input:2": {
+                    "id": "12:input:2",
+                    "pos": [
+                        -185.0,
+                        -135.0
+                    ],
+                    "contents": {},
+                    "text": "in2"
+                }
+            },
+            "output_ports": {
+                "12:output:1": {
+                    "id": "12:output:1",
+                    "pos": [
+                        -85.0,
+                        -155.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "13": {
+            "text": "Random Boolean",
+            "id": "13",
+            "pos": [
+                -515.0,
+                -335.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "import random\ndef function():\n    r = random.random()\n    if r>true_probability:\n        return [False]\n    else:\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.6,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "13:output:1": {
+                    "id": "13:output:1",
+                    "pos": [
+                        -410.0,
+                        -275.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "14": {
+            "text": "Random Boolean",
+            "id": "14",
+            "pos": [
+                -510.0,
+                -180.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "import random\ndef function():\n    r = random.random()\n    if r>true_probability:\n        return [False]\n    else:\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.89,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "14:output:1": {
+                    "id": "14:output:1",
+                    "pos": [
+                        -405.0,
+                        -120.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "15": {
+            "text": "Random Boolean",
+            "id": "15",
+            "pos": [
+                -350.0,
+                -120.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "import random\ndef function():\n    r = random.random()\n    if r>true_probability:\n        return [False]\n    else:\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.6,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "15:output:1": {
+                    "id": "15:output:1",
+                    "pos": [
+                        -245.0,
+                        -60.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "16": {
+            "text": "And",
+            "id": "16",
+            "pos": [
+                5.0,
+                -125.0
+            ],
+            "icon": "icons/down.png",
+            "content": {
+                "code": "def function(*args):\r\n    val = args[0]\r\n    for v in args:\r\n        val = val and v\r\n    return [val]",
+                "type": "function",
+                "params": [],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {
+                "16:input:1": {
+                    "id": "16:input:1",
+                    "pos": [
+                        10.0,
+                        -85.0
+                    ],
+                    "contents": {},
+                    "text": "in1"
+                },
+                "16:input:2": {
+                    "id": "16:input:2",
+                    "pos": [
+                        10.0,
+                        -45.0
+                    ],
+                    "contents": {},
+                    "text": "in2"
+                }
+            },
+            "output_ports": {
+                "16:output:1": {
+                    "id": "16:output:1",
+                    "pos": [
+                        110.0,
+                        -65.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "17": {
+            "text": "Random Boolean",
+            "id": "17",
+            "pos": [
+                -180.0,
+                -55.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "import random\r\ndef function():\r\n    r = random.random()\r\n    if r>true_probability:\r\n        return [False]\r\n    else:\r\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.6,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "17:output:1": {
+                    "id": "17:output:1",
+                    "pos": [
+                        -75.0,
+                        5.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "18": {
+            "text": "Or",
+            "id": "18",
+            "pos": [
+                170.0,
+                65.0
+            ],
+            "icon": "icons/down.png",
+            "content": {
+                "code": "def function(*args):\r\n    for arg in args:\r\n        if arg==True:\r\n            return [True]\r\n    return [False]",
+                "type": "function",
+                "params": [],
+                "ports_changable": [
+                    true,
+                    false
+                ]
+            },
+            "input_ports": {
+                "18:input:1": {
+                    "id": "18:input:1",
+                    "pos": [
+                        175.0,
+                        95.0
+                    ],
+                    "contents": {},
+                    "text": "in1"
+                },
+                "18:input:2": {
+                    "id": "18:input:2",
+                    "pos": [
+                        175.0,
+                        125.0
+                    ],
+                    "contents": {},
+                    "text": "in2"
+                },
+                "18:input:3": {
+                    "id": "18:input:3",
+                    "pos": [
+                        175.0,
+                        155.0
+                    ],
+                    "contents": {},
+                    "text": "in3"
+                }
+            },
+            "output_ports": {
+                "18:output:1": {
+                    "id": "18:output:1",
+                    "pos": [
+                        275.0,
+                        125.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "19": {
+            "text": "Random Boolean",
+            "id": "19",
+            "pos": [
+                5.0,
+                40.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "import random\r\ndef function():\r\n    r = random.random()\r\n    if r>true_probability:\r\n        return [False]\r\n    else:\r\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.2,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "19:output:1": {
+                    "id": "19:output:1",
+                    "pos": [
+                        110.0,
+                        100.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "20": {
+            "text": "Random Boolean",
+            "id": "20",
+            "pos": [
+                0.0,
+                210.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "import random\r\ndef function():\r\n    r = random.random()\r\n    if r>true_probability:\r\n        return [False]\r\n    else:\r\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.2,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ],
+                "ports_changable": [
+                    false,
+                    false
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "20:output:1": {
+                    "id": "20:output:1",
+                    "pos": [
+                        105.0,
+                        270.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        }
+    },
+    "connections": [
+        {
+            "start_id": "8:output:1",
+            "end_id": "12:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "13:output:1",
+            "end_id": "8:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "14:output:1",
+            "end_id": "8:input:2",
+            "mid_positions": []
+        },
+        {
+            "start_id": "15:output:1",
+            "end_id": "12:input:2",
+            "mid_positions": []
+        },
+        {
+            "start_id": "17:output:1",
+            "end_id": "16:input:2",
+            "mid_positions": []
+        },
+        {
+            "start_id": "12:output:1",
+            "end_id": "16:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "19:output:1",
+            "end_id": "18:input:2",
+            "mid_positions": []
+        },
+        {
+            "start_id": "16:output:1",
+            "end_id": "18:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "20:output:1",
+            "end_id": "18:input:3",
+            "mid_positions": []
+        }
+    ]
+}

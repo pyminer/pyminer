@@ -2,6 +2,11 @@ from pyminer2.workspace.datamanager.exceptions import NotFoundError
 
 
 class RecycleBin(list):
+    """
+    回收站，数据类型为(key, value)。
+    使用discard方法将对象移入回收站，再使用restore方法将对象移出回收站。
+    """
+
     def __init__(self, max_size=1000):
         super().__init__()
         self.max_size = max_size

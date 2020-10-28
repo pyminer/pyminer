@@ -4,7 +4,7 @@ from jsonrpc import JSONRPCResponseManager, Dispatcher
 from werkzeug.serving import run_simple
 from werkzeug.wrappers import Request, Response
 
-from pyminer2.workspace.datamanager.converter import ConverterError
+from pyminer2.workspace.datamanager.converter import ConvertError
 from pyminer2.workspace.datamanager.datamanager import DataManager
 from pyminer2.workspace.datamanager.exceptions import ConflictError, NotFoundError
 from pyminer2.workspace.datamanager.metadataset import WouldBlockError
@@ -31,7 +31,7 @@ class DataServer(Thread):
                 return self._error(e, self.WOULD_BLOCK_ERROR)
             except NotFoundError as e:
                 return self._error(e, self.NOT_FOUND_ERROR)
-            except ConverterError as e:
+            except ConvertError as e:
                 # This mean unsupported type obj is requested
                 # Users should regard this as not found error
                 return self._error(e, self.NOT_FOUND_ERROR)

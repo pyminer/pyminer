@@ -26,10 +26,14 @@
         }
     ],
     "requirements":[
-        {
-            "name":"",
-            "version":""
-        }
+        "name==version",
+        "name>=version",
+        "name<=version"
+    ],
+    "dependencies":[
+        "name==version",
+        "name>=version",
+        "name<=version"
     ]
 }
 ~~~

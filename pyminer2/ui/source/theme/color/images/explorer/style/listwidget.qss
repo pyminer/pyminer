@@ -1,0 +1,41 @@
+QListWidget#SystemOptionListItems
+{
+    border: 0px;
+    background-color: rgb(93,93,93);
+    font-size: 12px;
+    color: white;
+    outline: 0px;
+}
+QListWidget#SystemOptionListItems::item
+{
+    height: 38px;
+}
+QListWidget#SystemOptionListItems::item:selected
+{
+    background: rgb(240,240,240);
+    color: black;
+}
+/*
+QListWidget#SystemOptionListItems::item
+{
+    height: 38px;
+}
+
+QListWidget#SystemOptionListItems::item:hover
+{
+    background-color: rgb(148,152,158);
+    border: 1px solid rgb(170, 190, 230);
+
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 rgb(230, 240, 250), stop: 0.5 rgb(220, 235, 255), stop: 1.0 rgb(210, 230, 255));
+}
+QListWidget#SystemOptionListItems::item:selected
+{
+    background: rgb(240,240,240);
+    color: black;
+}
+QListWidget#SystemOptionListItems::item:selected:!active
+{
+    background: rgb(240,240,240);
+    color: black;
+}
+*/

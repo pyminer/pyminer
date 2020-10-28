@@ -6,10 +6,11 @@
 import sys
 
 from PyQt5.QtCore import pyqtSignal
+from PyQt5.QtGui import QCloseEvent
 from PyQt5.QtWidgets import QApplication, QTabWidget, QTableWidget, QTableWidgetItem, \
     QAbstractItemView
 
-from typing import Sized
+from typing import Sized, Iterable
 
 
 class PMGTableWidget(QTableWidget):
@@ -26,7 +27,6 @@ class PMGTableWidget(QTableWidget):
         self.horizontalHeader().setMinimumWidth(30)
 
     def closeEvent(self, a0: 'QCloseEvent') -> None:
-        print('close!!')
         super().closeEvent(a0)
 
     @staticmethod
@@ -34,8 +34,6 @@ class PMGTableWidget(QTableWidget):
         try:
             if not hasattr(data, '__len__'):
                 return True
-
-            rows = len(data)
             max_cols = 0
             for i, row_contents in enumerate(data):
                 if hasattr(row_contents, '__iter__'):
@@ -46,20 +44,18 @@ class PMGTableWidget(QTableWidget):
                 if col_span > max_cols:
                     max_cols = col_span
 
-            columns = max_cols
             for row, row_content in enumerate(data):
                 if hasattr(row_content, '__iter__'):
-                    print(row_content, hasattr(row_content, '__iter__'))
                     for col, content in enumerate(row_content):
-                        a = data[row][col]
+                        data[row][col]
                 else:
-                    a = data[row]
+                    data[row]
                 return True
 
         except:
             return False
 
-    def set_data_2d(self, data: 'np.ndarray', rows: int = None,
+    def set_data_2d(self, data: 'Iterable', rows: int = None,
                     columns: int = None):
 
         if not hasattr(data, '__len__'):
@@ -82,7 +78,6 @@ class PMGTableWidget(QTableWidget):
         self.setSelectionBehavior(QAbstractItemView.SelectRows)
         for row, row_content in enumerate(data):
             if hasattr(row_content, '__iter__'):
-                print(row_content, hasattr(row_content, '__iter__'))
                 for col, content in enumerate(row_content):
                     item = QTableWidgetItem(str(data[row][col]))
                     self.setItem(row, col, item)
@@ -95,22 +90,18 @@ class PMGTableTabWidget(QTabWidget):
     def __init__(self, parent=None):
         super().__init__(parent)
 
-        self.currentChanged.connect(lambda: print(self.currentIndex()))  # 4
-
 
 if __name__ == '__main__':
-    import numpy as np
-
     app = QApplication(sys.argv)
-    l = ['hhhhhhhhhhhhhh',
-         ['a', 'v'],
-         [1, 2, 3, 4],
-         [3, 4, 5, 66, 7],
-         [123, '333', 'ffffffff']
-         ]
+    list_to_display = ['hhhhhhhhhhhhhh',
+                       ['a', 'v'],
+                       [1, 2, 3, 4],
+                       [3, 4, 5, 66, 7],
+                       [123, '333', 'ffffffff']
+                       ]
     demo = PMGTableWidget()
 
-    demo.set_data_2d( l)
+    demo.set_data_2d(list_to_display)
 
     demo.show()
     sys.exit(app.exec_())

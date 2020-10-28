@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>unsel0</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="unsel0" transform="translate(3.000000, 2.000000)" fill-rule="nonzero" fill="#C5C6C7">
+            <path d="M7,14.988 C3.134,14.988 0,11.854 0,7.988 C0,4.122 3.134,0.988 7,0.988 C10.866,0.988 14,4.122 14,7.988 C14,11.854 10.866,14.988 7,14.988 Z M10,5.738 L9.25,4.988 L7,7.238 L4.75,4.988 L4,5.738 L6.25,7.988 L4,10.238 L4.75,10.988 L7,8.738 L9.25,10.988 L10,10.238 L7.75,7.988 L10,5.738 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

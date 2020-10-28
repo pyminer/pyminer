@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>数据-删除行</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_13">
+   <item>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>基本</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <property name="maximumSize">
+            <size>
+             <width>300</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <item>
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>全部变量:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QListWidget" name="listWidget_var"/>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_17">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_4">
+                <item>
+                 <widget class="QPushButton" name="pushButton_to_right">
+                  <property name="text">
+                   <string>&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_to_right_all">
+                  <property name="text">
+                   <string>&gt;&gt;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_16">
+                <item>
+                 <widget class="QPushButton" name="pushButton_to_left">
+                  <property name="text">
+                   <string>&lt;</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_to_left_all">
+                  <property name="text">
+                   <string>&lt;&lt;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>已选变量:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QListWidget" name="listWidget_selecetd"/>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>选项</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_8">
+       <item>
+        <widget class="QGroupBox" name="groupBox">
+         <property name="title">
+          <string>查询条件</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QComboBox" name="comboBox">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>变量列表</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_2">
+              <item>
+               <property name="text">
+                <string>等于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>不等于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>小于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>小于或等于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>大于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>大于或等于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>不在列表中</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>介于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>不介于</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>缺失</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>非缺失</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>模糊匹配</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_3">
+              <item>
+               <property name="text">
+                <string>AND</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>OR</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="text">
+               <string>新增</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="text">
+               <string>删除</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTableWidget" name="tableWidget_2">
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>2</string>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>变量</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>查询条件</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>匹配规则</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>条件逻辑</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>SEX</string>
+             </property>
+             <property name="checkState">
+              <enum>Checked</enum>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>等于</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>1</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignTrailing|AlignVCenter</set>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>AND</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>NAME</string>
+             </property>
+             <property name="checkState">
+              <enum>Checked</enum>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>等于</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+            <item row="1" column="2">
+             <property name="text">
+              <string>2</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignTrailing|AlignVCenter</set>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>AND</string>
+             </property>
+             <property name="textAlignment">
+              <set>AlignCenter</set>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="title">
+          <string>数据预览</string>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QTableWidget" name="tableWidget"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>50</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QPushButton" name="pushButton_help">
+          <property name="text">
+           <string>帮助</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_ok">
+          <property name="text">
+           <string>确定</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_cancel">
+          <property name="text">
+           <string>取消</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

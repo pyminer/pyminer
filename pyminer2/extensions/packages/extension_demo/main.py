@@ -1,15 +1,12 @@
+import logging
+logger = logging.getLogger(__name__)
 
-class Extension:
+from pyminer2.extensions.extensionlib import BaseExtension, BaseInterface
+
+class Extension(BaseExtension):
     def on_load(self):
-        print("extension_demo被加载!")
-
-    def on_install(self):
-        print('被安装')
-
-    def on_uninstall(self):
-        print("被卸载")
+        logger.debug(self.settings)
 
 
-class Interface:
-    def hello(self):
-        print("Hello")
+class Interface(BaseInterface):
+    pass

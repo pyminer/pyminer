@@ -87,9 +87,16 @@ venv.bak/
 .vscode/
 pyminer/config/qtlayout.ini
 pyminer2/config/qtlayout.ini
-
-pyminer2/workspace/**/*.pptx
+pyminer2/config/customized/*
+pyminer2/extensions/packages/code_editor/customized/settings.json
+*.pptx
 
 test.py
 
 layout.ini
+
+log
+*.pmcache
+settings.cfg
+
+*.log

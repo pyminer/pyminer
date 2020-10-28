@@ -1,0 +1,19 @@
+QGroupBox#ExtendedGroupBox::indicator
+{
+    width: 8px;
+    height: 8px;
+}
+QGroupBox#ExtendedGroupBox::indicator:unchecked
+{
+    image: url(../data/res/explorer/style/groupbox_arrow_right.png);
+}
+QGroupBox#ExtendedGroupBox::indicator:checked
+{
+    image: url(../data/res/explorer/style/groupbox_arrow_down.png);
+}
+QGroupBox#ExtendedGroupBox::title
+{
+    font: bold 14pt "Î¢ÈíÑÅºÚ";
+	color: #000000;
+}
+

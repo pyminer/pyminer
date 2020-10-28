@@ -1,15 +1,15 @@
 import platform
 import subprocess
-
+import logging
+logger = logging.getLogger(__name__)
 
 def check_platform() -> str:
     system = platform.system()
-    print(system)
     return system.lower()
 
 
 def run_command_in_terminal(cmd: str, close_mode: str = 'wait_key'):
-    print(check_platform())
+    logging.warning('this platform is :',check_platform())
     platform_name = check_platform()
     if platform_name == 'windows':
         close_action = {'auto': 'start cmd.exe /k \"%s &&exit \"',
@@ -17,7 +17,6 @@ def run_command_in_terminal(cmd: str, close_mode: str = 'wait_key'):
                         'wait_key': 'start cmd.exe /k \"%s &&pause &&exit \"'
                         }
         command = close_action[close_mode] % cmd
-
 
     elif platform_name == 'deepin':
         command = 'deepin-terminal -x bash -c \" %s \" ' % (cmd)

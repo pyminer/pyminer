@@ -1,0 +1,87 @@
+$critical-width: 600
+$nav-width:  300
+
+body
+  margin: 0 2px
+
+@media screen and (min-width: $critical-width + px)
+  .navtoggle
+    width: 300px
+    visibility: hidden
+    position: absolute
+
+  .navigation
+    width: $nav-width + px
+    margin: 0
+    top: 2px
+    position: absolute
+    background-color: gray
+
+  .document
+    position: relative
+    margin: 0 0 0 $nav-width + 20 + px
+
+@media screen and (max-width: $critical-width + px)
+  .navtoggle
+    font-size: 20px
+    width: 100%
+    line-height: 35px
+    text-align: center
+    color: white
+    background: #3B5997
+    visibility: visible
+    position: relative
+    cursor: pointer
+
+  .navigation
+    width: $nav-width + px
+    margin: 2px
+    top: 2px
+    background-color: gray
+    display: none
+    position: relative
+
+  .document
+    margin: 2px
+    position: relative
+
+.navigation-directory
+  background: #3B5997
+  color: white
+  margin-bottom: 3px
+
+.navigation-directory-title
+  font-size: 20px
+  text-indent: 10px
+  line-height: 40px
+  margin: 0 10px
+  border-bottom: solid white 2px
+
+  a
+    color: white
+    text-decoration: none
+
+    &:visited
+      color: white
+
+.navigation-page
+  margin: 0 20px 0 30px
+  border-bottom: solid 2px gray
+
+  &:last-child
+    border-bottom: none
+
+  a
+    color: white
+    text-decoration: none
+    text-indent: 20px
+    margin-left: 10px
+    line-height: 30px
+
+    &:visited
+      color: white
+
+.document
+  img
+    width: 90%
+    object-fit: cover

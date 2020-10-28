@@ -81,6 +81,8 @@ class PackageManagerForm(QWidget, EnvManager_Ui_Form):
         except BaseException:
             pass
 
+
+
     def package_setting_display(self):
         """
         显示"数据信息"窗口
@@ -752,7 +754,7 @@ class PackageUpdateForm(QWidget, PackageUpdate_Ui_Form):
             self.source_index = "-i http://pypi.douban.com/simple"
             QMessageBox.warning(self, '注意', '镜像源地址为空！', QMessageBox.Yes)
         cmd = sys.executable + " -m pip install --upgrade " + \
-            self.source_index + " " + target + " " + package_name + version
+              self.source_index + " " + target + " " + package_name + version
         self.textEdit_log.setPlainText("")  # 清空当前日志
         self.textEdit_log.insertPlainText("正在执行{0}".format(cmd) + '\n')
 
@@ -932,7 +934,7 @@ class PackageSettingForm(QWidget, PackageSetting_Ui_Form):
 
 
 class DelayedExecutionTimer(
-        QObject):  # source: https://wiki.qt.io/Delay_action_to_wait_for_user_interaction
+    QObject):  # source: https://wiki.qt.io/Delay_action_to_wait_for_user_interaction
     """
     延迟执行筛选
     """

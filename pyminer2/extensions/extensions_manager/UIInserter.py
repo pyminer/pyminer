@@ -1,6 +1,6 @@
 """
 控件插入器
-作者：冰中火，侯展意
+作者：冰中火
 
 这是加载UI控件的插件类。
 插件导入的时候，传递的widget_class是控件的类。
@@ -39,7 +39,6 @@ config.text:插件的文字。会显示在dockwidget或者工具栏上
 尽可能在主界面发出初始化完成信号之后在进行调用。
 """
 from typing import TYPE_CHECKING
-from pyminer2.extensions.extensionlib.pmext import PluginInterface
 from pyminer2.pmutil import get_main_window
 
 if TYPE_CHECKING:
@@ -53,7 +52,7 @@ def get_item_coor(coors: set, pos: str):
     elif pos == 'min':
         return min(l)
     else:
-        l=sorted(l)
+        l = sorted(l)
         if len(l) == 1:
             return l[0]
         else:
@@ -62,16 +61,13 @@ def get_item_coor(coors: set, pos: str):
 
 def get_dock_by_position(pos: str):
     import pyminer2.pmutil
-    if not pos in {'n', 's', 'w', 'e', 'nw', 'ne', 'sw', 'se', 'c'}:
-        raise Exception('dockwidget的位置须由合法字符串指定，这些字符串是：\'n\', \'s\', \'w\', \'e\','
-                        ' \'nw\', \'ne\', \'sw\', \'se\', \'c\'')
-    pos_dic = {'c':('med','med'),'n':('med','min'),'nw':('min','med'),'ne':('max','min'),
-               's':('med','max'),'se':('max','max'),'sw':('min','max'),'e':('max','med'),
-               'w':('min','med')}
+    if not pos in {'top', 'bottom', 'left', 'right'}:
+        raise Exception('dockwidget的位置须由合法字符串指定，这些字符串是：\'top\', \'bottom\', \'left\', \'right\'')
+    pos_dic = {'top': ('med', 'min'), 'bottom': ('med', 'max'), 'right': ('max', 'med'), 'left': ('min', 'med')}
 
     x_set = set()
     y_set = set()
-    x_policy,y_policy = pos_dic[pos]
+    x_policy, y_policy = pos_dic[pos]
 
     for k in pyminer2.pmutil.get_main_window().dock_widgets.keys():
         w2 = pyminer2.pmutil.get_main_window().get_dock_widget(k)
@@ -82,16 +78,16 @@ def get_dock_by_position(pos: str):
         w2 = pyminer2.pmutil.get_main_window().get_dock_widget(k)
         if w2.x() == x_pos and w2.y() >= 0:
             y_set.add(w2.y())
-    if 0 in y_set and len(list(y_set))>1:
+    if 0 in y_set and len(list(y_set)) > 1:
         y_set.remove(0)
 
     y_pos = get_item_coor(coors=y_set, pos=y_policy)
 
     for k in pyminer2.pmutil.get_main_window().dock_widgets.keys():
         w2 = pyminer2.pmutil.get_main_window().get_dock_widget(k)
-        # print(w2.name,w2.x(),w2.y(),x_pos,y_pos)
         if w2.x() == x_pos and w2.y() == y_pos:
             return w2
+
 
 class UiInserter(dict):
     def __init__(self):
@@ -99,40 +95,71 @@ class UiInserter(dict):
             'new_dock_window': self.new_dock_window,
             'new_toolbar': self.new_toolbar,
             'append_to_toolbar': self.append_to_toolbar,
+            'new_dock_window_obj':self.new_dock_window_obj
         })
 
     def new_toolbar(self, widget_class: 'QWidget', config=None):
+        from pyminer2.pmutil import get_main_window
         name = config['name']
         text = config['text']
+
         widget = widget_class()
-        PluginInterface.add_tool_bar(name, widget, text)
+        get_main_window().add_toolbar(name=name, toolbar=widget, text=text)
         return widget
 
     def new_dock_window(self, widget_class: 'QWidget', config=None):
+        from pyminer2.pmutil import get_main_window
+        ()
         dock_name = config['name']
         text = config['text']
         side = config['side']
         widget = widget_class()
 
-        dock = PluginInterface.add_docked_widget(
-            dock_name=dock_name,
-            widget=widget,
-            text=text,
-            side='left')
-        if side in {'n', 's', 'w', 'e', 'nw', 'ne', 'sw', 'se', 'c'}:
+        dock = get_main_window().add_widget_on_dock(dock_name=dock_name,
+                                                    widget=widget, text=text, side=side)
+
+        if side in {'top', 'bottom', 'left', 'right'}:
             import pyminer2.pmutil
-            w2 =get_dock_by_position(side)
+            w2 = get_dock_by_position(side)
+            pyminer2.pmutil.get_main_window().tabifyDockWidget(w2, dock)
+            pyminer2.pmutil.get_main_window()
+            dock.raise_into_view()
+        return widget
+
+    def new_dock_window_obj(self, widget: 'QWidget', config=None):
+        """
+        以窗口对象插入，适用于已经创建的窗口。
+        :param widget:
+        :param config:
+        :return:
+        """
+        from pyminer2.pmutil import get_main_window
+        ()
+        dock_name = config['name']
+        text = config['text']
+        side = config['side']
+
+        widget = widget
+        dock = get_main_window().add_widget_on_dock(dock_name=dock_name,
+                                                    widget=widget, text=text, side='left')
+
+        if side in {'top', 'bottom', 'left', 'right'}:
+            import pyminer2.pmutil
+            w2 = get_dock_by_position(side)
             pyminer2.pmutil.get_main_window().tabifyDockWidget(w2, dock)
             pyminer2.pmutil.get_main_window()
             dock.raise_into_view()
         return widget
 
     def append_to_toolbar(self, widget_class: 'QWidget', config=None):
+        from pyminer2.pmutil import get_main_window
         button_name = config['name']
         toolbar_name = config['toolbar']
         widget = widget_class()
-        PluginInterface.get_toolbar(toolbar_name).add_widget(
-            button_name, widget)
+        toolbar = get_main_window().toolbars.get(toolbar_name)
+        toolbar.add_widget(button_name, widget)
+        # PluginInterface.get_toolbar(toolbar_name).add_widget(
+        #     button_name, widget)
         return widget
 
 

@@ -1,0 +1,16 @@
+{
+    "name":"setting_manager",
+    "display_name":"设置管理器",
+    "version":"0.1.0",
+    "description":"设置管理器,负责生成设置窗口,获取设置,保存设置",
+    "icon":"python.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+        
+    ],
+    "requirements":[
+    ]
+}

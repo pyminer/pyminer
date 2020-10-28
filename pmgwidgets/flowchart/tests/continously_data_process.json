@@ -1,0 +1,322 @@
+{
+    "nodes": {
+        "1": {
+            "text": "start",
+            "id": "1",
+            "pos": [
+                -555.0,
+                -170.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "import time\ndef function(x=23):\n    return [x]\n        ",
+                "type": "custom_function"
+            },
+            "input_ports": {
+                "1:input:1": {
+                    "id": "1:input:1",
+                    "pos": [
+                        -550.0,
+                        -90.0
+                    ],
+                    "contents": {},
+                    "text": "input"
+                }
+            },
+            "output_ports": {
+                "1:output:1": {
+                    "id": "1:output:1",
+                    "pos": [
+                        -290.0,
+                        -90.0
+                    ],
+                    "contents": {},
+                    "text": "port"
+                }
+            }
+        },
+        "4": {
+            "text": "process\uff1ax+2",
+            "id": "4",
+            "pos": [
+                -105.0,
+                -300.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "\nimport time\ndef function(x):\n    return [x+2]\n        ",
+                "type": "custom_function"
+            },
+            "input_ports": {
+                "4:input:1": {
+                    "id": "4:input:1",
+                    "pos": [
+                        -100.0,
+                        -220.0
+                    ],
+                    "contents": {},
+                    "text": "x"
+                }
+            },
+            "output_ports": {
+                "4:output:1": {
+                    "id": "4:output:1",
+                    "pos": [
+                        160.0,
+                        -220.0
+                    ],
+                    "contents": {},
+                    "text": "x+2"
+                }
+            }
+        },
+        "5": {
+            "text": "process2:x=x*2",
+            "id": "5",
+            "pos": [
+                35.0,
+                -90.0
+            ],
+            "icon": "E:\\Python\\pyminer_bin\\PyMiner\\bin\\pmgwidgets\\flowchart\\icons\\logo.png",
+            "content": {
+                "code": "\nimport time\ndef function(x):\r\n    print(self)\n    return [x*2]\n        ",
+                "type": "custom_function"
+            },
+            "input_ports": {
+                "5:input:1": {
+                    "id": "5:input:1",
+                    "pos": [
+                        40.0,
+                        -10.0
+                    ],
+                    "contents": {},
+                    "text": "x"
+                }
+            },
+            "output_ports": {
+                "5:output:1": {
+                    "id": "5:output:1",
+                    "pos": [
+                        300.0,
+                        -10.0
+                    ],
+                    "contents": {},
+                    "text": "x*2"
+                }
+            }
+        },
+        "6": {
+            "text": "add",
+            "id": "6",
+            "pos": [
+                475.0,
+                -215.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "def function(x,y):\n    return [x+y]",
+                "type": "function",
+                "params": []
+            },
+            "input_ports": {
+                "6:input:1": {
+                    "id": "6:input:1",
+                    "pos": [
+                        480.0,
+                        -162.0
+                    ],
+                    "contents": {},
+                    "text": "a"
+                },
+                "6:input:2": {
+                    "id": "6:input:2",
+                    "pos": [
+                        480.0,
+                        -109.0
+                    ],
+                    "contents": {},
+                    "text": "b"
+                }
+            },
+            "output_ports": {
+                "6:output:1": {
+                    "id": "6:output:1",
+                    "pos": [
+                        740.0,
+                        -135.0
+                    ],
+                    "contents": {},
+                    "text": "a+b"
+                }
+            }
+        },
+        "7": {
+            "text": "add",
+            "id": "7",
+            "pos": [
+                -260.0,
+                45.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "def function(x,y):\n    return [x+y]",
+                "type": "function",
+                "params": []
+            },
+            "input_ports": {
+                "7:input:1": {
+                    "id": "7:input:1",
+                    "pos": [
+                        -255.0,
+                        98.0
+                    ],
+                    "contents": {},
+                    "text": "a"
+                },
+                "7:input:2": {
+                    "id": "7:input:2",
+                    "pos": [
+                        -255.0,
+                        151.0
+                    ],
+                    "contents": {},
+                    "text": "b"
+                }
+            },
+            "output_ports": {
+                "7:output:1": {
+                    "id": "7:output:1",
+                    "pos": [
+                        5.0,
+                        125.0
+                    ],
+                    "contents": {},
+                    "text": "a+b"
+                }
+            }
+        },
+        "8": {
+            "text": "Random Boolean",
+            "id": "8",
+            "pos": [
+                -575.0,
+                150.0
+            ],
+            "icon": null,
+            "content": {
+                "code": "import random\ndef function():\n    r = random.random()\n    if r>true_probability:\n        return [False]\n    else:\n        return [True]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "true_probability",
+                        "Probability of True",
+                        0.6,
+                        "",
+                        [
+                            0,
+                            1
+                        ]
+                    ]
+                ]
+            },
+            "input_ports": {},
+            "output_ports": {
+                "8:output:1": {
+                    "id": "8:output:1",
+                    "pos": [
+                        -310.0,
+                        230.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "9": {
+            "text": "Amplify",
+            "id": "9",
+            "pos": [
+                265.0,
+                120.0
+            ],
+            "icon": "/home/hzy/\u6587\u6863/Python/Pyminer/pyminer_dist_debian_deepin-slimed/pyminer_dist_debian_deepin/pyminer/pmgwidgets/flowchart/icons/logo.png",
+            "content": {
+                "code": "def function(x):\n    return [x*value]",
+                "type": "function",
+                "params": [
+                    [
+                        "number",
+                        "value",
+                        "Mul Value",
+                        1,
+                        "value",
+                        [
+                            -10000,
+                            10000
+                        ]
+                    ]
+                ]
+            },
+            "input_ports": {
+                "9:input:1": {
+                    "id": "9:input:1",
+                    "pos": [
+                        270.0,
+                        200.0
+                    ],
+                    "contents": {},
+                    "text": "in"
+                }
+            },
+            "output_ports": {
+                "9:output:1": {
+                    "id": "9:output:1",
+                    "pos": [
+                        530.0,
+                        200.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        }
+    },
+    "connections": [
+        {
+            "start_id": "1:output:1",
+            "end_id": "4:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "4:output:1",
+            "end_id": "6:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "7:output:1",
+            "end_id": "5:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "1:output:1",
+            "end_id": "7:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "8:output:1",
+            "end_id": "7:input:2",
+            "mid_positions": []
+        },
+        {
+            "start_id": "5:output:1",
+            "end_id": "9:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "9:output:1",
+            "end_id": "6:input:2",
+            "mid_positions": []
+        }
+    ]
+}

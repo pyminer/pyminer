@@ -16,10 +16,10 @@
             "config":{
                 "message": "no",
                 "name": "drawings_toolbar",
-                "text": "绘图"
+                "text": "可视化"
             }
         }
     ],
-    "requirements":[
+    "requirements":["workspace_inspector"
     ]
 }

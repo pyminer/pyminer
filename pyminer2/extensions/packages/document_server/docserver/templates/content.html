@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+<div class="navtoggle" id="navtoggle" onclick="toggleNav()">导航</div>
+<div class="navigation" id="navigation">
+    <div class="navigation-directory">
+        <div class="navigation-directory-title">
+            <a href="/">主页</a>
+        </div>
+{% for inner in file_tree %}
+    {% if not inner.is_directory %}
+        <div class="navigation-page">
+            <a href="{{ inner.url }}">{{ inner.text }}</a>
+        </div>
+    {% endif %}
+{% endfor %}
+    </div>
+{% for outer in file_tree %}
+    {% if outer.is_directory %}
+    <div class="navigation-directory">
+        <div class="navigation-directory-title">
+            <a href="{{ outer.url }}">{{ outer.text }}</a>
+        </div>
+        {% for inner in outer.children %}
+            {% if not inner.is_directory %}
+                <div class="navigation-page">
+                    <a href="{{ inner.url }}">{{ inner.text }}</a>
+                </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endif %}
+{% endfor %}
+</div>
+<div class="document">
+    {{ content|safe }}
+</div>
+<script  type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+<script type="text/javascript" id="MathJax-script" async
+        src="{{ url_for('static', filename='mathjax/tex-mml-svg.js') }}"></script>
+</body>
+</html>

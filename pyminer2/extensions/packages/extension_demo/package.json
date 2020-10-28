@@ -11,5 +11,6 @@
     "widgets":[
     ],
     "requirements":[
-    ]
+    ],
+    "settings": "settings.json"
 }
