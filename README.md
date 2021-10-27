@@ -2,7 +2,7 @@
 <p></p>
 
 <p align="center">
-<img src="pyminer/resources/icons/logo.png" height="80"/> 
+<img src="pyminer/resources/logo/logo.png" height="80"/> 
 </p>
 
 
@@ -37,23 +37,8 @@ pyminer 是一款基于Python的开源、跨平台数据分析环境。它以方
 
 pyminer通过加载各种插件实现不同的需求，开发者可以通过编写插件，将pyminer扩展的更强大、更趁手，甚至创建一番自己的商用程序。
 
-<p></p>
-<p></p>
-
-## 🔈 声明
-pyminer 遵循LGPL协议，是一个开放、包容的开源项目，项目中的工具方法来源也非常广泛，因此允许并鼓励任何人在遵循LGPL协议的基础上：
-
-1. 将pyminer用于商业、培训等任何合法场景；
-2. 复制、修改 pyminer中的任意代码且无需声明；
-3. 复制修改 pyminer官方文档；
-4. 鼓励自行写作 pyminer 相关的书籍、博客、文档等内容（收费也可）；
-5. 鼓励播主、培训机构培训 pyminer工具的任何内容（收费也可）；
-6. 对于商业应用的技术咨询，pyminer团队保留服务的收费权。
-pyminer希望成为一个伟大的开源项目，也希望得到大家的认可和赞美，仅此而已。
 
 
-<p></p>
-<p></p>
 
 ## 🎉 技术说明
 
@@ -71,18 +56,15 @@ pyminer希望成为一个伟大的开源项目，也希望得到大家的认可�
 - Gitee：[https://gitee.com/py2cn/pyminer](https://gitee.com/py2cn/pyminer)
 - GitHub：[https://github.com/aboutlong/pyminer](https://github.com/pyminer/pyminer)
 
-<p></p>
-<p></p>
+
 
 ## 🥂 安装体验
 
-<p></p>
-<p></p>
 
 ### 发行版下载（仅Windows系统）
 我们为Windows系统的用户提供了发行版的下载链接，你可以在我们的官网中下载发行版即刻体验。对于Mac OS和Linux系统的用户，暂时不提供发行版，可以参阅“开发者自行安装”一节。
 
-官网链接：[请点击这里打开](http://www.pyminer.com/)
+官网链接：[http://www.pyminer.com](http://www.pyminer.com/)
 
 ### 开发者自行安装（适合Windows、Mac OS以及各大Linux发行版）
 #### 安装前准备：
@@ -94,29 +76,22 @@ pyminer希望成为一个伟大的开源项目，也希望得到大家的认可�
 
 #### Windows安装 pyminer
 
+第一步：安装python 3.8或以上版本
+第二步：安装pyminer
+
 ```bash
-#第一步：安装python 3.8或以上版本
-#第二步：安装pyminer
+
 pip install pyminer
 
-windows环境下也可以前往官网下载exe发行版进行安装。
+```
 
 
-## 📱 加入我们
+## 🥂 加入我们
 
-作者：pyminer Development Team
+作者：pyminer Development Team<br>
 邮箱：team@pyminer.com
 
 欢迎各位开发者大佬加入 
-
-<p></p>
-<p></p>
-
-<img src="pyminer/resources/screenshot/group.jpg" width = "300" height = "500" alt="QQ群" align=center />
-
-<p></p>
-<p></p>
-
 
 
 ##  📸 预览截图
