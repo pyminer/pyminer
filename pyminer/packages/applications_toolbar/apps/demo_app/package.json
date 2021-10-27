@@ -1,0 +1,17 @@
+{
+  "name": "demo_app",
+  "display_name": "测试应用",
+  "author": "demo",
+  "version": "1.0.1",
+  "description": "自定义开发的应用",
+  "icon": "default.png",
+  "command": "",
+  "group": "",
+  "readme": "README.md",
+  "entry_point": {
+    "type": "file",
+    "file": "main.py",
+    "args": []
+  },
+  "pip_packages": []
+}

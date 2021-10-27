@@ -1,0 +1,16 @@
+{
+  "name": "document_server",
+  "display_name": "帮助文档服务器",
+  "version": "0.1.0",
+  "description": "用于进行算法库的帮助文档的显示",
+  "icon": "extension_demo.jpg",
+  "interface": {
+    "file": "main.py",
+    "interface": "Interface"
+  },
+  "widgets": [
+  ],
+  "requirements": ["embedded_browser"
+  ],
+  "settings": "settings.json"
+}

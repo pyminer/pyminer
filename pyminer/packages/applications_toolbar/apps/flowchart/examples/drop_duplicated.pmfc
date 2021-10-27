@@ -1,0 +1,87 @@
+{
+    "nodes": {
+        "1": {
+            "text": "\u53bb\u9664\u91cd\u590d\u503c",
+            "id": "1",
+            "pos": [
+                -50.0,
+                -150.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "DropDuplicated",
+                "info": {
+                    "regulations": []
+                }
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "1:input:1": {
+                    "id": "1:input:1",
+                    "pos": [
+                        -45.0,
+                        -90.0
+                    ],
+                    "contents": {},
+                    "text": "in"
+                }
+            },
+            "output_ports": {
+                "1:output:1": {
+                    "id": "1:output:1",
+                    "pos": [
+                        55.0,
+                        -90.0
+                    ],
+                    "contents": {},
+                    "text": "out"
+                }
+            }
+        },
+        "2": {
+            "text": "\u8bfb\u53d6Pandas\u6570\u636e\u96c6",
+            "id": "2",
+            "pos": [
+                -330.0,
+                -150.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "PandasImport",
+                "info": {
+                    "file_path": "",
+                    "csv_sep": ",",
+                    "skiprows": 0,
+                    "find_header_in_table": false,
+                    "header": 0,
+                    "limit_nrows": false,
+                    "nrows": 0
+                }
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {},
+            "output_ports": {
+                "2:output:1": {
+                    "id": "2:output:1",
+                    "pos": [
+                        -225.0,
+                        -90.0
+                    ],
+                    "contents": {},
+                    "text": "\u6570\u636e\u96c6"
+                }
+            }
+        }
+    },
+    "connections": [
+        {
+            "start_id": "2:output:1",
+            "end_id": "1:input:1",
+            "mid_positions": []
+        }
+    ]
+}

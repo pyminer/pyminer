@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>614</width>
+    <height>449</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>绘图</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../icons/Icon.ico</normaloff>../icons/Icon.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>614</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_load_figure"/>
+    <addaction name="separator"/>
+    <addaction name="action_save_figure"/>
+    <addaction name="action_save_image"/>
+    <addaction name="action_close"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>子图</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="action_help"/>
+    <addaction name="action_color_table"/>
+    <addaction name="action_matplotlib"/>
+   </widget>
+   <widget class="QMenu" name="menu_annotation">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>注释</string>
+    </property>
+    <addaction name="action_text"/>
+    <addaction name="action_annotation"/>
+    <addaction name="action_rectangle"/>
+    <addaction name="action_oval"/>
+    <addaction name="action_arrow"/>
+    <addaction name="action_image"/>
+   </widget>
+   <widget class="QMenu" name="menu_6">
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_main_view"/>
+    <addaction name="action_left_view"/>
+    <addaction name="action_right_view"/>
+    <addaction name="action_bottom_view"/>
+    <addaction name="action_top_view"/>
+    <addaction name="action_back_view"/>
+    <addaction name="action45_45_view"/>
+    <addaction name="action45_m45_view"/>
+    <addaction name="action_m45_45_view"/>
+    <addaction name="action_m45_m45_view"/>
+    <addaction name="action_arbitrary_view"/>
+    <addaction name="separator"/>
+    <addaction name="action_show_toolbar"/>
+    <addaction name="action_show_menubar"/>
+    <addaction name="action_zoom"/>
+    <addaction name="action_pan"/>
+    <addaction name="action_rotate"/>
+   </widget>
+   <widget class="QMenu" name="menu_edit">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="action_default_setting"/>
+    <addaction name="separator"/>
+    <addaction name="action_copy_figure_to_clipboard"/>
+    <addaction name="separator"/>
+    <addaction name="action_axis_edit"/>
+    <addaction name="action_space"/>
+    <addaction name="action_title_edit"/>
+    <addaction name="separator"/>
+    <addaction name="action_home"/>
+    <addaction name="action_back"/>
+    <addaction name="action_front"/>
+    <addaction name="separator"/>
+    <addaction name="action_legend"/>
+    <addaction name="action_colorbar"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_edit"/>
+   <addaction name="menu_annotation"/>
+   <addaction name="menu_6"/>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>22</height>
+    </size>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionX_X">
+   <property name="text">
+    <string>X 标签(X)</string>
+   </property>
+  </action>
+  <action name="actionNew">
+   <property name="text">
+    <string>New</string>
+   </property>
+  </action>
+  <action name="action_load_figure">
+   <property name="text">
+    <string>导入figure对象</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_save_image">
+   <property name="text">
+    <string>保存图片</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="text">
+    <string>保存为figure对象</string>
+   </property>
+  </action>
+  <action name="action_save_figure">
+   <property name="text">
+    <string>保存figure对象</string>
+   </property>
+  </action>
+  <action name="action_export_settings">
+   <property name="text">
+    <string>导出配置文件</string>
+   </property>
+  </action>
+  <action name="action_import_settings">
+   <property name="text">
+    <string>导入配置文件</string>
+   </property>
+  </action>
+  <action name="action_print">
+   <property name="text">
+    <string>打印</string>
+   </property>
+  </action>
+  <action name="actionscience">
+   <property name="text">
+    <string>science</string>
+   </property>
+  </action>
+  <action name="actionieee">
+   <property name="text">
+    <string>ieee</string>
+   </property>
+  </action>
+  <action name="action_text">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>文字</string>
+   </property>
+  </action>
+  <action name="action_annotation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>坐标</string>
+   </property>
+  </action>
+  <action name="action_rectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="action_oval">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>椭圆</string>
+   </property>
+  </action>
+  <action name="action_arrow">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>箭头</string>
+   </property>
+  </action>
+  <action name="action_main_view">
+   <property name="text">
+    <string>正视图</string>
+   </property>
+  </action>
+  <action name="action_left_view">
+   <property name="text">
+    <string>左视图</string>
+   </property>
+  </action>
+  <action name="action_right_view">
+   <property name="text">
+    <string>右视图</string>
+   </property>
+  </action>
+  <action name="action_bottom_view">
+   <property name="text">
+    <string>俯视图</string>
+   </property>
+  </action>
+  <action name="action_top_view">
+   <property name="text">
+    <string>仰视图</string>
+   </property>
+  </action>
+  <action name="action_back_view">
+   <property name="text">
+    <string>背视图 </string>
+   </property>
+  </action>
+  <action name="action45_45_view">
+   <property name="text">
+    <string>45°/45°侧视图</string>
+   </property>
+  </action>
+  <action name="action45_m45_view">
+   <property name="text">
+    <string>45°/-45°侧视图</string>
+   </property>
+  </action>
+  <action name="action_m45_45_view">
+   <property name="text">
+    <string>-45°/45°侧视图</string>
+   </property>
+  </action>
+  <action name="action_m45_m45_view">
+   <property name="text">
+    <string>-45°/-45°侧视图</string>
+   </property>
+  </action>
+  <action name="action_arbitrary_view">
+   <property name="text">
+    <string>任意视图</string>
+   </property>
+  </action>
+  <action name="action_close">
+   <property name="text">
+    <string>关闭</string>
+   </property>
+  </action>
+  <action name="action_axis">
+   <property name="text">
+    <string>坐标轴</string>
+   </property>
+  </action>
+  <action name="action_zh_cn">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>中文</string>
+   </property>
+   <property name="iconText">
+    <string>中文</string>
+   </property>
+   <property name="shortcutContext">
+    <enum>Qt::WidgetWithChildrenShortcut</enum>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="action_english">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="action_copy_figure_to_clipboard">
+   <property name="text">
+    <string>复制到剪贴板</string>
+   </property>
+  </action>
+  <action name="action_legend_draggable">
+   <property name="text">
+    <string>图例可拖拽</string>
+   </property>
+  </action>
+  <action name="action_move_text">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动文字</string>
+   </property>
+  </action>
+  <action name="action_move_annotation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动坐标</string>
+   </property>
+  </action>
+  <action name="action_move_rectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动矩形</string>
+   </property>
+  </action>
+  <action name="action_move_oval">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动椭圆</string>
+   </property>
+  </action>
+  <action name="action_move_arrow">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动箭头</string>
+   </property>
+  </action>
+  <action name="action_axis_edit">
+   <property name="text">
+    <string>调整坐标轴</string>
+   </property>
+  </action>
+  <action name="action_title_edit">
+   <property name="text">
+    <string>设置标题</string>
+   </property>
+  </action>
+  <action name="action_legend_edit">
+   <property name="text">
+    <string>修改图例</string>
+   </property>
+  </action>
+  <action name="action_grid_edit">
+   <property name="text">
+    <string>添加网格</string>
+   </property>
+  </action>
+  <action name="action_show_toolbar">
+   <property name="text">
+    <string>显示/隐藏工具栏</string>
+   </property>
+  </action>
+  <action name="action_help">
+   <property name="text">
+    <string>在线文档</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>禁用右键功能</string>
+   </property>
+  </action>
+  <action name="action_show_menubar">
+   <property name="text">
+    <string>显示/隐藏菜单栏</string>
+   </property>
+  </action>
+  <action name="action_tab">
+   <property name="text">
+    <string>隐藏tab页</string>
+   </property>
+  </action>
+  <action name="action_line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>直线</string>
+   </property>
+  </action>
+  <action name="action_matplotlib">
+   <property name="text">
+    <string>matplotlib官网</string>
+   </property>
+  </action>
+  <action name="action_polygon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>多边形</string>
+   </property>
+  </action>
+  <action name="action_image">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>图片</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>添加/移动圆</string>
+   </property>
+  </action>
+  <action name="action_default_setting">
+   <property name="text">
+    <string>更改默认设置</string>
+   </property>
+  </action>
+  <action name="action_color_table">
+   <property name="text">
+    <string>常用色彩表</string>
+   </property>
+  </action>
+  <action name="action_code">
+   <property name="text">
+    <string>示例代码</string>
+   </property>
+  </action>
+  <action name="action_space">
+   <property name="text">
+    <string>调整间隔</string>
+   </property>
+  </action>
+  <action name="action_home">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>回到最初</string>
+   </property>
+  </action>
+  <action name="action_front">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>恢复</string>
+   </property>
+  </action>
+  <action name="action_back">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="action_zoom">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>缩放</string>
+   </property>
+  </action>
+  <action name="action_pan">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>移动</string>
+   </property>
+  </action>
+  <action name="action_rotate">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>旋转</string>
+   </property>
+  </action>
+  <action name="action_legend">
+   <property name="text">
+    <string>显示/隐藏图例</string>
+   </property>
+  </action>
+  <action name="action_colorbar">
+   <property name="text">
+    <string>添加颜色条</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

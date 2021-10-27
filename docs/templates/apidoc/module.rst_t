@@ -1,6 +1,0 @@
-{% set names = basename.split('.') %}
-
-{{ names[-1] | heading }}
-
-.. automodule:: {{ qualname }}
-    :members:

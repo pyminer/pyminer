@@ -1,0 +1,18 @@
+{
+    "name":"graph_agg",
+    "display_name":"graph_agg",
+    "version":"0.1.0",
+    "description":"一个pyqtgraph使用的GUI界面",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+    ],
+    "dependencies": [
+        "pyqtgraph"
+    ]
+}

@@ -54,8 +54,8 @@
 ```python
 import numpy
 import pytest
-from pyminer2.workspace2 import data_manager
-from pyminer2.data_adapter import ArrayAdapter
+from features.workspace import data_manager
+from features.workspace.data_adapter import ArrayAdapter
 
 def test_curd():
     """测试数据管理工具的增删改查的基本功能"""
@@ -115,7 +115,7 @@ class DataManager(object):
 ```python
 from typing import Dict, Tuple, List
 from collections import OrderedDict
-from pyminer2.data_adapter import BaseAdapter
+from features.workspace.data_adapter import BaseAdapter
 class DataManager(object):
     def __init__(self):
         self.container: Dict[str, Tuple[List[BaseAdapter], List[BaseAdapter]]] = dict()

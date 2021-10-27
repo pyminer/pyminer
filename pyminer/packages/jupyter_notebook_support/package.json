@@ -1,0 +1,19 @@
+{
+    "name":"jupyter_notebook_support",
+    "display_name":"Jupyter Notebook 支持",
+    "version":"0.1.0",
+    "description":"在PyMiner内部查看和编辑Jupyter Notebook",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+        "embedded_browser"
+    ],
+    "dependencies": [
+        "notebook"
+    ]
+}

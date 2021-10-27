@@ -1,0 +1,98 @@
+{
+  "cftool": {
+    "enabled": true
+  },
+  "code_editor": {
+    "enabled": true
+  },
+  "dialog_demo": {
+    "enabled": false
+  },
+  "extension_app_demo": {
+    "enabled": false
+  },
+  "extension_demo": {
+    "enabled": false
+  },
+  "extension_dialog_demo": {
+    "enabled": false
+  },
+  "file_tree": {
+    "enabled": true
+  },
+  "ipython_console": {
+    "enabled": true
+  },
+  "pmagg": {
+    "enabled": true
+  },
+  "setting_manager": {
+    "enabled": true
+  },
+  "test_ext": {
+    "enabled": true
+  },
+  "variable_viewer": {
+    "enabled": true
+  },
+  "workspace_inspector": {
+    "enabled": true
+  },
+  "pyminer_server": {
+    "enabled": true
+  },
+  "jsonrpc-dataserver": {
+    "enabled": true
+  },
+  "socket-dataserver": {
+    "enabled": true
+  },
+  "socket_server": {
+    "enabled": true
+  },
+  "data_miner": {
+    "enabled": false
+  },
+  "flowchart": {
+    "enabled": true
+  },
+  "document_server": {
+    "enabled": false
+  },
+  "embedded_browser": {
+    "enabled": true
+  },
+  "tool_box": {
+    "enabled": false
+  },
+  "pm_preprocess": {
+    "enabled": true
+  },
+  "pm_statistics": {
+    "enabled": true
+  },
+  "drawings_toolbar": {
+    "enabled": true
+  },
+  "pm_modelling": {
+    "enabled": true
+  },
+  "applications_toolbar": {
+    "enabled": true
+  },
+  "qt_vditor": {
+    "enabled": true
+  },
+  "dataio": {
+    "enabled": true
+  },
+  "ligralpy": {
+    "enabled": true
+  },
+  "jupyter_notebook_support": {
+    "enabled": true
+  },
+  "pm_calc": {
+    "enabled": true
+  }
+}

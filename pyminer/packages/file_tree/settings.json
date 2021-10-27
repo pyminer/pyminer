@@ -1,0 +1,63 @@
+{
+  "filter_exts": true,
+  "ext_names": {
+    "Program Scripts": {
+      ".pyx": true,
+      ".py": true,
+      ".c": true,
+      ".pyi": true,
+      ".dll": true,
+      ".h": true,
+      ".cpp": true,
+      ".ipynb": true,
+      ".sh": true,
+      ".cmd": true,
+      ".bat": true,
+      ".m": true,
+      ".js": true
+    },
+    "Documents": {
+      ".txt": true,
+      ".md": true,
+      ".doc": true,
+      ".docx": true,
+      ".ppt": true,
+      ".pptx": true,
+      ".html": true
+    },
+    "Data Files": {
+      ".csv": true,
+      ".xls": true,
+      ".xlsx": true,
+      ".tab": true,
+      ".dat": true,
+      ".tsv": true,
+      ".sav": true,
+      ".zsav": true,
+      ".sas7bdat": true,
+      ".pkl": true,
+      ".json": true,
+      ".mat": true,
+      ".pmjson": true,
+      ".pmd": true,
+      ".xml": true
+    },
+    "Medias": {
+      ".mp3": false,
+      ".mp4": false,
+      ".avi": false,
+      ".wma": false,
+      ".png": true,
+      ".jpg": true,
+      ".svg": true
+    },
+    "Resources": {
+      ".qm": true,
+      ".ts": true
+    },
+    "Libs": {
+      ".dll": false,
+      ".pyd": false
+    }
+  }
+}

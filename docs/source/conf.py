@@ -10,12 +10,17 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
 import sys
+from os import path
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(os.path.dirname(__file__)))))
+from recommonmark.transform import AutoStructify
+from recommonmark.parser import CommonMarkParser
+from sphinx.application import Sphinx
+
+base_path = path.abspath(path.join(__file__, '../../..'))
+sys.path.insert(0, base_path)
+
 # -- Project information -----------------------------------------------------
-
 project = 'pyminer'
 copyright = '2020, py2cn'
 author = 'py2cn'
@@ -32,8 +37,10 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.todo',
     'sphinx.ext.coverage',
+    'sphinx.ext.viewcode',
     'sphinx.ext.mathjax',
-    'numpydoc',
+    'recommonmark',
+    # 'numpydoc',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -44,7 +51,7 @@ templates_path = ['_templates']
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = 'zh'
+language = 'zh_CN'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -56,11 +63,47 @@ exclude_patterns = []
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'alabaster'
+html_theme = "pydata_sphinx_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# 将首页采用独立的模板进行渲染，即配置独立的首页，同时将 rst 自动生成的首页，由 index 调整为 contents 以免冲突
+html_additional_pages = {'index': 'index.html'}
+master_doc = 'contents'
+
 add_module_names = False
+
+# 配置TODO插件
+todo_include_todos = True
+
+# 借助recommonmark插件，同时支持 *.md 和 *.rst 文件进行文档的撰写。
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
+
+# 使得类的文档字符串和 ``__init__`` 方法的文档字符串都显出来
+autoclass_content = 'both'
+
+# 使得生成的文档的顺序与源代码一致
+autodoc_member_order = 'bysource'
+
+# 配置模板的主题样式
+html_style = 'css/pyminer.css'
+
+# 显示 .. sectionauthor 指令指定的作者
+show_authors = True
+
+source_parsers = {
+    '.md': CommonMarkParser,
+}
+
+
+def setup(app: Sphinx):
+    app.add_config_value('recommonmark_config', {
+        'auto_toc_tree_section': 'Contents',
+    }, True)
+    app.add_transform(AutoStructify)

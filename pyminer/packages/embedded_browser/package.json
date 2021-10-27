@@ -1,0 +1,16 @@
+{
+    "name":"embedded_browser",
+    "display_name":"内置浏览器",
+    "version":"0.1.0",
+    "description":"",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+    ],
+    "settings": "settings.json"
+}

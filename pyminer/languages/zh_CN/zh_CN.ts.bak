@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_CN">
+<context>
+    <name>Dialog</name>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/uninstall.ui" line="14"/>
+        <source>Dialog</source>
+        <translation>对话框</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/uninstall.ui" line="20"/>
+        <source>Log</source>
+        <translation>输出</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/uninstall.ui" line="60"/>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+</context>
+<context>
+    <name>FirstForm</name>
+    <message>
+        <location filename="pyminer2/features/base.py" line="412"/>
+        <source>Quick Start</source>
+        <translation>快速启动</translation>
+    </message>
+</context>
+<context>
+    <name>Form</name>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="84"/>
+        <source>PyMiner</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="26"/>
+        <source>Form</source>
+        <translation>窗体</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="187"/>
+        <source>...</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="152"/>
+        <source>About</source>
+        <translation>关于</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="102"/>
+        <source>Version:</source>
+        <translation>版本：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="193"/>
+        <source>System</source>
+        <translation>系统信息</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="228"/>
+        <source>Credit</source>
+        <translation>鸣谢</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="752"/>
+        <source>Donate</source>
+        <translation>捐赠</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="156"/>
+        <source>Open File</source>
+        <translation>打开文件</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="199"/>
+        <source>Python File</source>
+        <translation>Python文件</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="249"/>
+        <source>CSV File</source>
+        <translation>CSV文件</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="299"/>
+        <source>Excel File</source>
+        <translation>Excel文件</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="349"/>
+        <source>MATLAB File</source>
+        <translation>MATLAB文件</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="418"/>
+        <source>Open Folder...</source>
+        <translation>打开文件夹...</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="496"/>
+        <source>Quick Start</source>
+        <translation>快速启动</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="533"/>
+        <source>Use Manual</source>
+        <translation>使用说明</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="583"/>
+        <source>Official Site</source>
+        <translation>官方网站</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="633"/>
+        <source>Gitee Repo</source>
+        <translation>Gitee项目仓库</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/first_form.ui" line="702"/>
+        <source>Join Us</source>
+        <translation>加入我们</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="117"/>
+        <source>v2.0 Beta</source>
+        <translation></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="25"/>
+        <source>Install</source>
+        <translation>安装</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="75"/>
+        <source>Download</source>
+        <translation>下载</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/main.ui" line="45"/>
+        <source>Details</source>
+        <translation>细节</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="35"/>
+        <source>Update</source>
+        <translation>更新</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="45"/>
+        <source>Uninstall</source>
+        <translation>卸载</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/main.ui" line="75"/>
+        <source>CheckUpdate</source>
+        <translation>检查更新</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="55"/>
+        <source>Import</source>
+        <translation>导入</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="65"/>
+        <source>Export</source>
+        <translation>导出</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="217"/>
+        <source>Name</source>
+        <translation>名称</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="222"/>
+        <source>Version</source>
+        <translation>版本</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/main.ui" line="10133"/>
+        <source>Latest Version</source>
+        <translation>最新版本</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/main.ui" line="10138"/>
+        <source>Type</source>
+        <translation>类型</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="24"/>
+        <source>Package:</source>
+        <translation>包名称：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="47"/>
+        <source>&lt;Latest&gt;</source>
+        <translation>&lt;最新&gt;</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="56"/>
+        <source>Source:</source>
+        <translation>下载源：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="81"/>
+        <source>Tencent</source>
+        <translation>腾讯</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="86"/>
+        <source>Official</source>
+        <translation>官方</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="91"/>
+        <source>Tsinghua</source>
+        <translation>清华</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="96"/>
+        <source>AliYun</source>
+        <translation>阿里云</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="101"/>
+        <source>DouBan</source>
+        <translation>豆瓣</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="106"/>
+        <source>Customize..</source>
+        <translation>自定义..</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="132"/>
+        <source>Options:</source>
+        <translation>选项：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="224"/>
+        <source>Log</source>
+        <translation>日志</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="286"/>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/package_manager_main.ui" line="14"/>
+        <source>Package Manager</source>
+        <translation>包管理器</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="14"/>
+        <source>Settings</source>
+        <translation>设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="73"/>
+        <source>Basic</source>
+        <translation>基本设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="81"/>
+        <source>Work Directory</source>
+        <translation>工作路径</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="88"/>
+        <source>Output Directory</source>
+        <translation>输出路径</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="95"/>
+        <source>Check upd on startup</source>
+        <translation>启动时检查更新</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="105"/>
+        <source>Start with system</source>
+        <translation>跟随系统启动</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="112"/>
+        <source>UI Language</source>
+        <translation>界面语言</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="133"/>
+        <source>Encoding</source>
+        <translation>默认编码方式</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="182"/>
+        <source>UI Theme</source>
+        <translation>UI主题</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="190"/>
+        <source>Fusion</source>
+        <translation>Fusion</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="195"/>
+        <source>Qdarkstyle</source>
+        <translation>QDarkStyle</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="200"/>
+        <source>windowsvista</source>
+        <translation>windowsVista</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="205"/>
+        <source>Windows</source>
+        <translation>Windows</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="213"/>
+        <source>Minimize to tray</source>
+        <translation>最小化到托盘</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="552"/>
+        <source>Help</source>
+        <translation>帮助</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="579"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="258"/>
+        <source>ä¾¯å±æ
+py2cn
+Junruoyu-Zheng
+å¿éé£
+nihk
+cl-jiang
+Irony
+å°ä¸­ç«
+houxinluo
+å¼å§è¯´æ&#x85;äº
+...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/aboutMe.ui" line="182"/>
+        <source>PyMiner is a mathematical tool based on Python. It provides solutions to various of problems by loading different plugins.  
+
+Authorï¼PyMiner Development Team
+E-Mailï¼team@py2cn.com</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/main.ui" line="14"/>
+        <source>æ©å±ä¸­å¿</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="40"/>
+        <source>æå®çæ¬</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="114"/>
+        <source>https://mirrors.cloud.tencent.com/pypi/simple</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="123"/>
+        <source>è&#x85;¾è®¯éåæº</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="154"/>
+        <source>é»è®¤ä½ç½®</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="159"/>
+        <source>ç¨æ·ç®å½</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="164"/>
+        <source>ä»&#x85;ä¸è½½</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="169"/>
+        <source>èªå®ä¹</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="180"/>
+        <source>é»è®¤</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/pm_marketplace/install.ui" line="200"/>
+        <source>è¯¦æ&#x85;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="31"/>
+        <source>å¸¸è§</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="36"/>
+        <source>å¤è§</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="41"/>
+        <source>æ&#xa0;¼å¼å</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="120"/>
+        <source>ç®ä½ä¸­æ</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="125"/>
+        <source>English</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="141"/>
+        <source>utf-8</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="146"/>
+        <source>gb2312</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="248"/>
+        <source>Interlaced coloring</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="260"/>
+        <source>Table Header Background:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="267"/>
+        <source>Color</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="296"/>
+        <source>Size:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="309"/>
+        <source>15</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="333"/>
+        <source>Font:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="341"/>
+        <source>Source Code Pro</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="370"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;SimSun&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Patata is a full-featured IDE&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;with a high level of usability and outstanding&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;advanced code editing and refactoring support.&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;abcdefghijklmnopqrstuvwxyz 0123456789 (){}[]&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;ABCDEFGHIJKLMNOPQRSTUVWXYZ +-*/= .,;:!? #&amp;amp;$%@|^&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="392"/>
+        <source>æ¥ææ&#xa0;¼å¼:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="400"/>
+        <source>2020-01-01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="405"/>
+        <source>2020/01/01</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="419"/>
+        <source>15:30:01(24-å°æ¶å¶)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="424"/>
+        <source>3:30:01 PM(12-å°æ¶å¶)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="437"/>
+        <source>æ¶é´æ&#xa0;¼å¼:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="445"/>
+        <source>ç¾å&#x85;US Dollar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="450"/>
+        <source>äººæ°å¸Chinese Yuan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="463"/>
+        <source>è´§å¸åä½:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="471"/>
+        <source>ï¿¥</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="476"/>
+        <source>CNY</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="481"/>
+        <source>$</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="486"/>
+        <source>USD</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="494"/>
+        <source>è´§å¸ç¬¦å·:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="502"/>
+        <source>åæ&#xa0;é¢å&#x85;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="507"/>
+        <source>åå&#x85;æ&#xa0;¼å&#x85;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="515"/>
+        <source>è´§å¸ç¬¦å·ä½äº:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="572"/>
+        <source>Ok</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <location filename="app2.py" line="307"/>
+        <source>Files</source>
+        <translation type="obsolete">文件</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="364"/>
+        <source>Welcome to PyMiner</source>
+        <translation>欢迎使用PyMiner</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="373"/>
+        <source>Plugs</source>
+        <translation>插件</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="402"/>
+        <source>Start Clear...</source>
+        <translation>开始清除...</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="404"/>
+        <source>Clear all variables</source>
+        <translation>清除所有变量</translation>
+    </message>
+    <message>
+        <location filename="../../../app2.py" line="474"/>
+        <source>update status</source>
+        <translation type="obsolete">更新状态</translation>
+    </message>
+    <message>
+        <location filename="../../../app2.py" line="467"/>
+        <source>You can download and install the updated version, whether to restart and install the update</source>
+        <translation type="obsolete">你可以下载并安装升级后的版本，或者重启并安装更新</translation>
+    </message>
+    <message>
+        <location filename="../../../app2.py" line="474"/>
+        <source>Is the latest version</source>
+        <translation type="obsolete">已是最新版本</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="568"/>
+        <source>Feedback</source>
+        <translation>反馈</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="569"/>
+        <source>You can give feedback through issue on suggestions or problems encountered in use</source>
+        <translation>你可以在这里提出反馈的意见和建议，我们将十分感谢！</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="612"/>
+        <source>Close</source>
+        <translation>关闭</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="612"/>
+        <source>Are you sure close?</source>
+        <translation>确定要关闭吗？</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="613"/>
+        <source>OK</source>
+        <translation>确定</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="614"/>
+        <source>Cancel</source>
+        <translation>取消</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="332"/>
+        <source>Interpreter</source>
+        <translation>解释器</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="360"/>
+        <source>Logs</source>
+        <translation>日志</translation>
+    </message>
+</context>
+<context>
+    <name>OptionForm</name>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="14"/>
+        <source>Settings</source>
+        <translation type="obsolete">设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="73"/>
+        <source>Basic</source>
+        <translation type="obsolete">基本设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="81"/>
+        <source>Work Directory</source>
+        <translation type="obsolete">工作路径</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="88"/>
+        <source>Output Directory</source>
+        <translation type="obsolete">输出路径</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="95"/>
+        <source>Check upd on startup</source>
+        <translation type="obsolete">启动时检查更新</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="105"/>
+        <source>Start with system</source>
+        <translation type="obsolete">跟随系统启动</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="112"/>
+        <source>UI Language</source>
+        <translation type="obsolete">界面语言</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="133"/>
+        <source>Encoding</source>
+        <translation type="obsolete">默认编码方式</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="182"/>
+        <source>UI Theme</source>
+        <translation type="obsolete">UI主题</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="190"/>
+        <source>Fusion</source>
+        <translation type="obsolete">Fusion</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="195"/>
+        <source>Qdarkstyle</source>
+        <translation type="obsolete">QDarkStyle</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="200"/>
+        <source>windowsvista</source>
+        <translation type="obsolete">WindowsVista</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="205"/>
+        <source>Windows</source>
+        <translation type="obsolete">Windows</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="213"/>
+        <source>Minimize to tray</source>
+        <translation type="obsolete">最小化到托盘</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="552"/>
+        <source>Help</source>
+        <translation type="obsolete">帮助</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/option.ui" line="579"/>
+        <source>Cancel</source>
+        <translation type="obsolete">取消</translation>
+    </message>
+</context>
+<context>
+    <name>PMToolBarHome</name>
+    <message>
+        <location filename="app2.py" line="189"/>
+        <source>New Script</source>
+        <translation>新建脚本</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="194"/>
+        <source>New</source>
+        <translation>新建</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="198"/>
+        <source>Open</source>
+        <translation>打开</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="204"/>
+        <source>Get Data</source>
+        <translation>获取数据</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="208"/>
+        <source>Import Database</source>
+        <translation>从数据库导入</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="212"/>
+        <source>Load Var</source>
+        <translation>加载变量</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="212"/>
+        <source>Save Var</source>
+        <translation>保存变量</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="212"/>
+        <source>Clear Var</source>
+        <translation>清除变量</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="226"/>
+        <source>Extensions</source>
+        <translation>扩展中心</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="229"/>
+        <source>Help</source>
+        <translation>帮助</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="232"/>
+        <source>Community</source>
+        <translation>社区</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="238"/>
+        <source>Layout</source>
+        <translation>布局</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="240"/>
+        <source>Settings</source>
+        <translation>设置</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="276"/>
+        <source>Support</source>
+        <translation>官方网站</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="280"/>
+        <source>Reference</source>
+        <translation>帮助文档</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="285"/>
+        <source>Check for updates</source>
+        <translation>检查更新</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="289"/>
+        <source>Give Feedback</source>
+        <translation>反馈</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="293"/>
+        <source>About</source>
+        <translation>关于</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="195"/>
+        <source>New Project</source>
+        <translation>新建项目</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="222"/>
+        <source>Text Data</source>
+        <translation type="obsolete">文本数据</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="225"/>
+        <source>CSV Data</source>
+        <translation type="obsolete">CSV数据</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="243"/>
+        <source>Encode converter</source>
+        <translation type="obsolete">编码转换</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="260"/>
+        <source>Home</source>
+        <translation>主页</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="198"/>
+        <source>Open Script or other files</source>
+        <translation>打开脚本或其他文件</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="204"/>
+        <source>Import data from a file</source>
+        <translation>从文件导入数据</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="208"/>
+        <source>Import data from the database</source>
+        <translation>从数据库导入数据</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="220"/>
+        <source>Browser</source>
+        <translation>浏览器</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="221"/>
+        <source>Open Internal Browser</source>
+        <translation>打开内置浏览器</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="227"/>
+        <source>PIP package management</source>
+        <translation>PIP包管理</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="229"/>
+        <source>Use a browser to access the help document</source>
+        <translation>使用浏览器获取帮助</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="232"/>
+        <source>Use a browser to access the community</source>
+        <translation>使用浏览器访问社区</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="238"/>
+        <source>Modify window layout</source>
+        <translation>修改窗口布局</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="240"/>
+        <source>Modify program Settings items</source>
+        <translation>修改程序设置项</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="296"/>
+        <source>Quick Start</source>
+        <translation>快速开始</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="234"/>
+        <source>Feedback</source>
+        <translation>反馈</translation>
+    </message>
+    <message>
+        <location filename="app2.py" line="234"/>
+        <source>Give your feedback.
+All feedback are greatly appreciated.</source>
+        <translation>提交您的宝贵意见和建议。
+PyMiner团队十分感谢您的贡献！</translation>
+    </message>
+</context>
+<context>
+    <name>Wizard</name>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="14"/>
+        <source>New Project</source>
+        <translation>新建项目</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="356"/>
+        <source>Steps</source>
+        <translation>步骤</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="374"/>
+        <source>1. Select Project Type</source>
+        <translation>1.选择项目类型</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="385"/>
+        <source>2. Configure Project</source>
+        <translation>2.项目设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="210"/>
+        <source>Type</source>
+        <translation>类型</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="315"/>
+        <source>Create a Python Project containing an empty main.py file.</source>
+        <translation>创建一个Python项目，包含一个空的main.py文件。</translation>
+    </message>
+    <message>
+        <location filename="../../ui/base/project_wizard.ui" line="382"/>
+        <source>1. New Project</source>
+        <translation type="obsolete">1、新建项目</translation>
+    </message>
+    <message>
+        <location filename="../../ui/base/project_wizard.ui" line="393"/>
+        <source>2. Project Configuration</source>
+        <translation type="obsolete">2、项目设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="418"/>
+        <source>Project Configuration</source>
+        <translation>项目设置</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="441"/>
+        <source>Project Name:</source>
+        <translation>项目名称：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="434"/>
+        <source>Project Directory:</source>
+        <translation>项目路径：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="500"/>
+        <source>...</source>
+        <translation>...</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="468"/>
+        <source>Absolute Directory:</source>
+        <translation>绝对路径：</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="155"/>
+        <source>Search</source>
+        <translation>搜索</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="199"/>
+        <source>Language</source>
+        <translation>语言</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="251"/>
+        <source>Project Type</source>
+        <translation>项目类型</translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="215"/>
+        <source>Python</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="259"/>
+        <source>Python-Empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="268"/>
+        <source>Python-Template-Basic</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="277"/>
+        <source>Python-Template-Plot</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="286"/>
+        <source>Python-Template-PyQt</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="pyminer2/ui/base/project_wizard.ui" line="448"/>
+        <source>PyMinerProject</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+</TS>

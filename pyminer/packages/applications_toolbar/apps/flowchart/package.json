@@ -1,0 +1,21 @@
+{
+  "name": "flowchart",
+  "display_name": "ConcreteKnots",
+  "version": "0.1",
+  "description": "好多介绍",
+  "icon": "python.jpg",
+  "readme": "README.md",
+  "group": "data",
+  "entry_point": {
+    "type": "file",
+    "file": "main.py",
+    "args": []
+  },
+  "widgets": [
+  ],
+  "pip_packages": [
+    "PySide2>=5.15.2",
+    "watchdog",
+    "scipy"
+  ]
+}

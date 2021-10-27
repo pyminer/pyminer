@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://code.bdstatic.com/npm/vditor@3.7.1/dist/index.css" rel="stylesheet"/>
+    <script src="https://code.bdstatic.com/npm/vditor@3.7.1/dist/index.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<div class="vditor" id="vditor">{{data.md_content}}</div>
+</body>
+</html>
+<script>
+    md_path = "{{data.md_path}}";
+
+    function saveMDText(path) {
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "{{data.url}}/save", true);
+        xhr.setRequestHeader('content-type', 'application/json')
+        var sendData = {'filepath': path, 'md_content': vditor.getValue()}
+        xhr.send(JSON.stringify(sendData))
+    }
+
+    function strToHexCharCode(str) {
+        if (str === "")
+            return "";
+        var hexCharCode = [];
+        for (var i = 0; i < str.length; i++) {
+            hexCharCode.push((str.charCodeAt(i)).toString(16));
+        }
+        return hexCharCode.join("");
+    }
+
+    const vditor = new Vditor('vditor', {
+        "toolbar": [
+            'emoji',
+            'headings',
+            'bold',
+            'italic',
+            'strike',
+            'link',
+            '|',
+            'list',
+            'ordered-list',
+            'check',
+            'outdent',
+            'indent',
+            '|',
+            'quote',
+            'line',
+            'code',
+            'inline-code',
+            'insert-before',
+            'insert-after',
+            '|',
+            {
+                name: 'insert',
+                tipPosition: 's',
+                tip: '插入图片',
+                className: 'right',
+                icon: '<svg t="1607682022778" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5064" width="200" height="200"><path d="M768 352a224 224 0 0 1 0 448h-32a32 32 0 0 1 0-64h32a160 160 0 0 0 0-320 147.2 147.2 0 0 0-27.84 2.56 32 32 0 0 1-38.08-27.52 192 192 0 0 0-380.16 0 32 32 0 0 1-38.08 27.52A147.2 147.2 0 0 0 256 416a160 160 0 0 0 0 320h32a32 32 0 0 1 0 64h-32a224 224 0 0 1 0-448h8.32a256 256 0 0 1 495.36 0z" p-id="5065"></path><path d="M544 896a32 32 0 0 1-64 0V608a32 32 0 0 1 64 0z" p-id="5066"></path><path d="M424 757.12a32 32 0 1 1-48-42.24l112-128a32 32 0 0 1 48 0l112 128a32 32 0 0 1-48 42.24l-88-100.48z" p-id="5067"></path></svg>',
+                click() {
+                    var xhr = new XMLHttpRequest();
+                    xhr.open("GET", "{{data.url}}/insert_picture", true);
+                    // xhr.setRequestHeader('content-type', 'application/json')
+                    xhr.send(JSON.stringify(""))
+                    xhr.onload = function () {
+                        var json = JSON.parse(xhr.responseText)
+                        if (json['code'] === 0) {
+                            vditor.insertValue(json['filepath'])
+                        }
+                    }
+                }
+            },
+            'record',
+            'table',
+            '|',
+            'undo',
+            'redo',
+            '|',
+            'edit-mode',
+            'content-theme',
+            'code-theme',
+            'export',
+            {
+                name: 'more',
+                toolbar: [
+                    'both',
+                    'preview',
+                    'info',
+                    'help',
+                ],
+            }
+        ],
+        "upload": {
+            "url": "{{data.url}}/upload_file/" + strToHexCharCode(md_path),
+            // "linkToImgUrl": "{{url}}/upload_file/" + strToHexCharCode(md_path), //暂时不配置
+            // handler(files) {
+            //     var data=new FormData();
+            //     for (var i in files) {
+            //         data.append('key','value')
+            //     }
+            //     var xhr = new XMLHttpRequest();
+            //     xhr.open("POST", "http://127.0.0.1:5000/qt_vditor/upload_file", true);
+            //     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            //     xhr.send(data)
+            // }
+
+        },
+        "mode": "wysiwyg",
+        "height": "auto",
+        "theme": "light",
+        "cache": {
+            "enable": false
+        },
+        "preview": {
+            "theme": {
+                "current": "light"
+            }
+        },
+        "comment": {
+            "enable": true
+        },
+        "toolbarConfig": {
+            "hide": false,
+            "pin": true
+        },
+        "counter": {
+            enable: false,
+            type: 'md'
+        }
+    })
+
+    function setTheme(mode) {
+        var themes=mode.split("|")
+        vditor.setTheme(themes[0],themes[1])
+    }
+
+</script>
+<style>
+    #vditor{
+    position: fixed;
+    top: 0;
+    width: 100%!important;
+    left: 0;
+    height: 100vh!important;
+    z-index: 90;
+    border-radius: 0;
+    }
+</style>

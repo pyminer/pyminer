@@ -1,0 +1,168 @@
+QWidget {
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    /*font-family: "等线";*/
+}
+
+/*QDockWidget {
+
+    titlebar-close-icon: url(:/logo/source/icons/close.png);
+    titlebar-normal-icon: url(:/logo/source/icons/float.png);
+}
+*/
+QDockWidget::title{
+    background-color: #f0f0f0;
+}
+
+QPushButton{
+    background-color: #F7F7F7;
+}
+QPushButton:hover{
+    background-color:#DADADA;
+}
+
+QPushButton#pmtopToolbarButton[stat="unselected"]:hover{
+    background-color:rgb(89,131,164);
+}
+QPushButton#pmtopToolbarButton[stat="selected"]{
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color: #F7F7F7;
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]{
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color: rgb(48, 69, 93);
+    color: rgb(255, 255, 255);
+}
+QPushButton[qssp="minibutton2"]{
+    height: 30px;
+}
+QPushButton[qssp="minibutton3"]{
+    height: 20px;
+}
+QToolButton[qssp="tooliconbtn"] {
+    qproperty-iconSize: 32px 32px;
+    border: 1px;
+    height: 80px;
+    padding: 2px 5px;
+}
+QToolBar#tab_bar_for_tool_bar{
+    border: 0px;
+    margin: 0px;
+    background-color: rgb(48, 69, 93);
+}
+QToolBar#top_toolbar_right {
+    border: 0px;
+    background-color: rgb(48, 69, 93);
+}
+QToolButton{
+    padding:2px 2px;
+    text-align:left;
+    border-radius:5px;
+}
+QToolButton:hover{
+    background-color:#DADADA;
+}
+QToolButton::checked{
+    background-color:#DADADA;
+}
+QToolButton#hidebutton {
+    max-width: 15px;
+    height:22px;
+    border: 0;
+    margin: 0;
+    color: white;
+}
+PMGToolBar{
+    border-bottom: 1px solid gray;
+    margin: 0 0 1px -5px;
+    padding: 0 0 0 10px;
+    min-height: 110px;
+    max-height: 110px;
+}
+PMPushButtonPane {
+    border: 0px;
+    padding: 0px;
+    spacing: 0px;
+    margin: 0px;
+    min-width: 130px;
+}
+/*toolbutton下三角居中靠下显示*/
+QToolButton::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: bottom center;
+	margin-top: 5px;
+}
+QTabBar::tab{
+height:20;
+}
+/*层叠的toolbutton下三角，靠右显示*/
+QToolButton#stacked_tool_button::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: right;
+	margin-top: 5px;
+}
+
+/*以下几行设定的是滚动条的横竖向功能*/
+QScrollBar::vertical {
+    background: #DADADA;
+    border: -0px solid grey;
+    margin: 0px 0px 0px 0px;
+    width: 10px;
+    border-radius:5px;
+}
+QScrollBar::horizontal {
+    background: #DADADA;
+    border: -0px solid grey;
+    margin: 0px 0px 0px 0px;
+    height:10px;
+    border-radius:5px;
+}
+
+QScrollBar::handle:vertical{
+border-radius:3px;
+min-height:30px;
+background:#DADADA;
+}
+
+QScrollBar::handle:horizontal{
+border-radius:3px;
+min-width:30px;
+background:#DADADA;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: #F7F7F7;
+    border:0px;
+}
+
+QLineEdit{
+    border-radius:5px;
+}
+
+
+QComboBox {
+    font: 14px;
+    border-radius: 5px;
+    border:1px solid #b4b4b4;
+    /*border-color:#000000;*/
+    background-color:rgba(255,255,255,0);
+    padding: 1px 0px 1px 3px; /* This (useless) line resolves a bug with the font color */
+}
+
+QComboBox::drop-down
+{
+    border: 0px; /* This seems to replace the whole arrow of the combo box */
+}
+
+/* Define a new custom arrow icon for the combo box */
+QComboBox::down-arrow {
+    image: url(:/resources/icons/down.png);
+    width: 14px;
+    height: 14px;
+}

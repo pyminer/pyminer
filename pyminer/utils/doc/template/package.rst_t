@@ -1,0 +1,14 @@
+==============================================================================
+{{ pkgname }}
+==============================================================================
+
+.. toctree::
+   :maxdepth: 2
+{% for docname in subpackages %}
+   {{ docname }}/index.rst{% endfor %}
+{% for docname in submodules %}
+   {{ docname }}.rst{% endfor %}
+
+.. automodule:: {{ pkgname }}
+    :members:
+    :undoc-members:

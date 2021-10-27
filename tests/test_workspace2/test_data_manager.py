@@ -1,37 +1,57 @@
-from pyminer2.workspace2 import data_manager
-from pyminer2.data_adapter import ArrayAdapter, UniversalAdapter
-import numpy
+from unittest import TestCase
 
+import numpy
 import pytest
 
+from features.workspace import data_manager
+from features.workspace.data_adapter import ArrayAdapter, UniversalAdapter
+from features.workspace.signals import workspace_data_created, workspace_data_deleted, workspace_data_changed
 
-def test_curd():
-    """测试数据管理工具的增删改查的基本功能"""
-    dm = data_manager.DataManager()
 
-    # 变量赋值后可以直接按字典的方式访问
-    dm['a'] = ArrayAdapter(numpy.zeros((3, 4)))
-    dm['b'] = ArrayAdapter(numpy.ones((4, 5)))
-    dm['c'] = ArrayAdapter(numpy.ones((3, 4)).cumsum().reshape((3, 4)))
-    assert dm['a'].data[2, 3] == 0
-    assert dm['b'].data[3, 4] == 1
-    assert dm['c'].data[2, 3] == 12
+class TestBasic(TestCase):
+    def setUp(self) -> None:
+        self.dm = data_manager.DataManager()
 
-    # 变量删除后不可再访问，会报KeyError
-    del dm['a']
-    with pytest.raises(KeyError):
-        _ = dm['a']
+    def test_curd(self):
+        """测试数据管理工具的增删改查的基本功能"""
+        dm = self.dm
 
-    # 变量删除后仍可再重新赋值
-    dm['a'] = ArrayAdapter(numpy.ones((4, 5)).cumsum().reshape((4, 5)))
-    assert dm['a'].data[3, 4] == 20
+        # 变量赋值后可以直接按字典的方式访问
+        dm['a'] = ArrayAdapter(numpy.zeros((3, 4)))
+        dm['b'] = ArrayAdapter(numpy.ones((4, 5)))
+        dm['c'] = ArrayAdapter(numpy.ones((3, 4)).cumsum().reshape((3, 4)))
+        assert dm['a'].data[2, 3] == 0
+        assert dm['b'].data[3, 4] == 1
+        assert dm['c'].data[2, 3] == 12
 
-    # 变量再删除再重新赋值后，不影响结果
-    del dm['a']
-    with pytest.raises(KeyError):
-        _ = dm['a']
-    dm['a'] = ArrayAdapter(numpy.ones((6, 7)).cumsum().reshape((6, 7)))
-    assert dm['a'].data[5, 6] == 42
+        # 变量删除后不可再访问，会报KeyError
+        del dm['a']
+        with pytest.raises(KeyError):
+            _ = dm['a']
+
+        # 变量删除后仍可再重新赋值
+        dm['a'] = ArrayAdapter(numpy.ones((4, 5)).cumsum().reshape((4, 5)))
+        assert dm['a'].data[3, 4] == 20
+
+        # 变量再删除再重新赋值后，不影响结果
+        del dm['a']
+        with pytest.raises(KeyError):
+            _ = dm['a']
+        dm['a'] = ArrayAdapter(numpy.ones((6, 7)).cumsum().reshape((6, 7)))
+        assert dm['a'].data[5, 6] == 42
+
+    def test_in(self):
+        self.assertFalse('a' in self.dm)
+        self.dm.set_raw_data('a', 123)
+        self.dm.set_raw_data('b', 234)
+        self.assertTrue('a' in self.dm)
+        self.assertTrue('b' in self.dm)
+        self.assertFalse('c' in self.dm)
+
+    def test_iter(self):
+        self.assertListEqual(list(self.dm), [])
+        self.dm.set_raw_data('a', 123)
+        self.assertListEqual(list(self.dm), ['a'])
 
 
 def test_history():
@@ -100,3 +120,60 @@ def test_methods():
     assert dm.items()[0][1].data == 2
     assert dm.items()[1][0] == 'b'
     assert dm.items()[1][1].data == 3
+
+    # 测试数据的自动转换
+    dm.set_raw_data('d', numpy.array([1, 2, 3]))
+    assert isinstance(dm['d'], ArrayAdapter)
+
+
+class TestSignals(TestCase):
+    """
+    在工作空间中定义了一系列的同步信号，用于作为数据管理器的回调函数供插件使用。
+    本类用于对这些信号进行测试。
+    """
+
+    def setUp(self) -> None:
+        self.dm = data_manager.DataManager()
+
+    def test_created_signal(self):
+        value = 'This is a test value'
+
+        @workspace_data_created.connect
+        def created(sender, key):
+            self.assertEqual(sender, self.dm)
+            self.assertEqual(key, 'test_value')
+            self.assertIs(self.dm[key].data, value)
+
+        self.dm.set_raw_data('test_value', value)
+
+    def test_updated_signal(self):
+        data = []
+
+        @workspace_data_changed.connect
+        def changed(sender, key):
+            data.append((key, self.dm[key].data))
+
+        self.dm.set_raw_data('v', 123)
+        self.assertListEqual(data, [])
+        self.dm.set_raw_data('v', 234)
+        self.assertListEqual(data, [('v', 234)])
+        del self.dm['v']
+        self.assertListEqual(data, [('v', 234)])
+
+    def test_deleted_signal(self):
+        data = []
+
+        @workspace_data_deleted.connect
+        def deleted(sender, key):
+            data.append(key)
+
+        self.dm.set_raw_data('v', 1)
+        self.assertListEqual(data, [])
+        del self.dm['v']
+        self.assertListEqual(data, ['v'])
+        self.dm.set_raw_data('v', 2)
+        del self.dm['v']
+        self.assertListEqual(data, ['v', 'v'])
+        self.dm.set_raw_data('w', 3)
+        del self.dm['w']
+        self.assertListEqual(data, ['v', 'v', 'w'])

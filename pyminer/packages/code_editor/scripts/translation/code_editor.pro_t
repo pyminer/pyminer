@@ -1,0 +1,7 @@
+SOURCES         = {{ python_files }}
+TRANSLATIONS    = ..\..\assets\languages\en.ts \
+                  ..\..\assets\languages\zh_CN.ts \
+                  ..\..\assets\languages\zh_TW.ts
+
+CODECFORTR      = UTF-8
+CODECFORSRC     = UTF-8

@@ -1,0 +1,1 @@
+from .vermanager import Module, VersionsManager

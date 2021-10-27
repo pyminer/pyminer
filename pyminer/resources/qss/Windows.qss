@@ -1,0 +1,72 @@
+QWidget {
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    /*font-family: "等线";*/
+}
+QPushButton#pmtopToolbarButton[stat="selected"]{
+    padding: 5px 25px 5px 25px;
+    margin: 10px 10px -5px 10px;
+    background-color: #f0f0f0;
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]{
+    padding: 5px 25px 5px 25px;
+    margin: 10px 10px -5px 10px;
+    background-color: #DADADA;
+}
+QPushButton[qssp="minibutton2"]{
+    height: 30px;
+}
+QPushButton[qssp="minibutton3"]{
+    height: 20px;
+}
+QToolButton[qssp="tooliconbtn"] {
+    qproperty-iconSize: 32px 32px;
+    border: 1px;
+    height: 80px;
+    padding: 2px 5px;
+}
+QToolBar#tab_bar_for_tool_bar{
+    border: 0px;
+    margin: 0px;
+    background-color: gray;
+}
+QToolBar#top_toolbar_right {
+    border: 0px;
+    background-color: gray;
+}
+QToolButton{
+    padding:2px 2px;
+    text-align:left;
+}
+QToolButton#hidebutton {
+    max-width: 15px;
+    height:22px;
+    border: 0;
+    margin: 0;
+}
+PMGToolBar{
+    border-bottom: 1px solid gray;
+    margin: 0 0 1px -5px;
+    padding: 0 0 0 10px;
+    min-height: 110px;
+    max-height: 110px;
+}
+PMPushButtonPane {
+    border: 0px;
+    padding: 0px;
+    spacing: 0px;
+    margin: 0px;
+    min-width: 130px;
+}
+/*toolbutton下三角居中靠下显示*/
+QToolButton::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: bottom center;
+	margin-top: 5px;
+}
+
+QToolButton#stacked_tool_button::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: right;
+	margin-top: 5px;
+}

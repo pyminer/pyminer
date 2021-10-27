@@ -1,0 +1,337 @@
+{
+    "nodes": {
+        "5": {
+            "text": "Scope",
+            "id": "5",
+            "pos": [
+                350.0,
+                -225.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Scope",
+                "info": {}
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "5:input:1": {
+                    "id": "5:input:1",
+                    "pos": [
+                        355.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "input"
+                }
+            },
+            "output_ports": {}
+        },
+        "9": {
+            "text": "Integrator",
+            "id": "9",
+            "pos": [
+                185.0,
+                -225.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Integrator",
+                "info": {}
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "9:input:1": {
+                    "id": "9:input:1",
+                    "pos": [
+                        190.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "input"
+                }
+            },
+            "output_ports": {
+                "9:output:1": {
+                    "id": "9:output:1",
+                    "pos": [
+                        290.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "output"
+                }
+            }
+        },
+        "10": {
+            "text": "Calculator",
+            "id": "10",
+            "pos": [
+                -295.0,
+                -245.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Calculator",
+                "info": {
+                    "type": "-"
+                }
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "10:input:1": {
+                    "id": "10:input:1",
+                    "pos": [
+                        -290.0,
+                        -205.0
+                    ],
+                    "contents": {},
+                    "text": "left"
+                },
+                "10:input:2": {
+                    "id": "10:input:2",
+                    "pos": [
+                        -290.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "right"
+                }
+            },
+            "output_ports": {
+                "10:output:1": {
+                    "id": "10:output:1",
+                    "pos": [
+                        -190.0,
+                        -185.0
+                    ],
+                    "contents": {},
+                    "text": "result"
+                }
+            }
+        },
+        "11": {
+            "text": "Constant",
+            "id": "11",
+            "pos": [
+                -460.0,
+                -265.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Constant",
+                "info": {
+                    "value": 1.0
+                }
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {},
+            "output_ports": {
+                "11:output:1": {
+                    "id": "11:output:1",
+                    "pos": [
+                        -355.0,
+                        -205.0
+                    ],
+                    "contents": {},
+                    "text": "value"
+                }
+            }
+        },
+        "12": {
+            "text": "Calculator",
+            "id": "12",
+            "pos": [
+                -140.0,
+                -225.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Calculator",
+                "info": {
+                    "type": "-"
+                }
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "12:input:1": {
+                    "id": "12:input:1",
+                    "pos": [
+                        -135.0,
+                        -185.0
+                    ],
+                    "contents": {},
+                    "text": "left"
+                },
+                "12:input:2": {
+                    "id": "12:input:2",
+                    "pos": [
+                        -135.0,
+                        -145.0
+                    ],
+                    "contents": {},
+                    "text": "right"
+                }
+            },
+            "output_ports": {
+                "12:output:1": {
+                    "id": "12:output:1",
+                    "pos": [
+                        -35.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "result"
+                }
+            }
+        },
+        "13": {
+            "text": "Integrator",
+            "id": "13",
+            "pos": [
+                15.0,
+                -225.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Integrator",
+                "info": {}
+            },
+            "look": {
+                "direction": "E"
+            },
+            "input_ports": {
+                "13:input:1": {
+                    "id": "13:input:1",
+                    "pos": [
+                        20.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "input"
+                }
+            },
+            "output_ports": {
+                "13:output:1": {
+                    "id": "13:output:1",
+                    "pos": [
+                        120.0,
+                        -165.0
+                    ],
+                    "contents": {},
+                    "text": "output"
+                }
+            }
+        },
+        "14": {
+            "text": "Gain",
+            "id": "14",
+            "pos": [
+                -80.0,
+                -55.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "Gain",
+                "info": {
+                    "value": 1.0
+                }
+            },
+            "look": {
+                "direction": "W"
+            },
+            "input_ports": {
+                "14:input:1": {
+                    "id": "14:input:1",
+                    "pos": [
+                        25.0,
+                        5.0
+                    ],
+                    "contents": {},
+                    "text": "input"
+                }
+            },
+            "output_ports": {
+                "14:output:1": {
+                    "id": "14:output:1",
+                    "pos": [
+                        -75.0,
+                        5.0
+                    ],
+                    "contents": {},
+                    "text": "output"
+                }
+            }
+        }
+    },
+    "connections": [
+        {
+            "start_id": "9:output:1",
+            "end_id": "5:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "9:output:1",
+            "end_id": "10:input:2",
+            "mid_positions": [
+                [
+                    290.0,
+                    110.0
+                ],
+                [
+                    -290.0,
+                    110.0
+                ]
+            ]
+        },
+        {
+            "start_id": "11:output:1",
+            "end_id": "10:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "10:output:1",
+            "end_id": "12:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "12:output:1",
+            "end_id": "13:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "13:output:1",
+            "end_id": "9:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "13:output:1",
+            "end_id": "14:input:1",
+            "mid_positions": [
+                [
+                    120.0,
+                    5.0
+                ]
+            ]
+        },
+        {
+            "start_id": "14:output:1",
+            "end_id": "12:input:2",
+            "mid_positions": [
+                [
+                    -135.0,
+                    5.0
+                ]
+            ]
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "cftool",
+  "display_name": "曲线拟合",
+  "version": "0.1",
+  "readme": "README.md",
+  "description": "曲线拟合工具可以拟合多种曲线，目前仅支持二维拟合",
+  "icon": "src/cftool.png",
+  "command": "cftool",
+  "group": "math",
+  "entry_point": {
+    "type": "file",
+    "file": "main.py",
+    "args": []
+  },
+  "pip_packages": [
+    "PySide2>=5.15.2",
+    "watchdog",
+    "scipy"
+  ]
+}

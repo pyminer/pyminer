@@ -1,0 +1,37 @@
+{
+    "name":"applications_toolbar",
+    "display_name":"应用工具栏",
+    "version":"0.1.0",
+    "description":"支持运行 python 命令",
+    "icon":"ipython_console.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"ApplicationsInterface"
+    },
+    "widgets":[
+        {
+            "file":"main.py",
+            "widget":"PMApplicationsToolBar",
+            "position":"new_toolbar",
+            "config":{
+                "message": "no",
+                "name": "applications_toolbar",
+                "text": "应用"
+            }
+        },
+                {
+            "file":"main.py",
+            "widget":"PMProcessConsoleTabWidget",
+            "position":"new_dock_window",
+            "config":{
+                "message": "no",
+                "name": "process_console_tab",
+                "text": "Process Console",
+                "side": "right"
+            }
+        }
+    ],
+    "requirements":[
+        "drawings_toolbar"
+    ]
+}

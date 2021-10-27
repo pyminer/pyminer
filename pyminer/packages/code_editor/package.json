@@ -1,0 +1,48 @@
+{
+  "name": "code_editor",
+  "author": "Irony",
+  "display_name": "代码编辑器",
+  "version": "0.1",
+  "description": "",
+  "icon": "python.jpg",
+  "interface": {
+    "file": "main.py",
+    "interface": "Interface"
+  },
+  "widgets": [
+    {
+      "file": "main.py",
+      "widget": "PMCodeEditTabWidget",
+      "position": "new_dock_window",
+      "config": {
+        "message": "no",
+        "name": "code_editor",
+        "side": "right",
+        "text": "编辑器"
+      }
+    },
+        {
+      "file": "main.py",
+      "widget": "PMDebugConsoleTabWidget",
+      "position": "new_dock_window",
+      "config": {
+        "message": "no",
+        "name": "debugger",
+        "side": "right",
+        "text": "调试器"
+      }
+    },
+    {
+      "file": "main.py",
+      "widget": "PMEditorToolbar",
+      "position": "new_toolbar",
+      "config": {
+        "message": "no",
+        "name": "code_editor_toolbar",
+        "text": "编辑器"
+      }
+    }
+  ],
+  "requirements": [
+  ]
+}

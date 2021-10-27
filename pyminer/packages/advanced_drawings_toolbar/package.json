@@ -1,0 +1,27 @@
+{
+    "name":"advanced_drawings_toolbar",
+    "display_name":"绘图工具栏",
+    "version":"0.1.0",
+    "description":"支持运行 python 命令",
+    "icon":"ipython_console.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"DrawingsInterface"
+    },
+    "widgets":[
+        {
+            "file":"main.py",
+            "widget":"PMDrawingsToolBar",
+            "position":"new_toolbar",
+            "config":{
+                "message": "no",
+                "name": "advanced_drawings_toolbar",
+                "text": "高级绘图"
+            }
+        }
+    ],
+    "requirements":[
+        "workspace_inspector",
+        "code_editor"
+    ]
+}

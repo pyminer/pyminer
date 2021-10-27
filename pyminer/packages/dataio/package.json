@@ -1,0 +1,16 @@
+{
+  "name": "dataio",
+  "author": "",
+  "display_name": "数据输入输出管理",
+  "version": "0.1",
+  "description": "",
+  "icon": "python.jpg",
+  "interface": {
+    "file": "main.py",
+    "interface": "Interface"
+  },
+  "widgets": [],
+  "requirements": [
+    "file_tree"
+  ]
+}

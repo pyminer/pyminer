@@ -1,0 +1,277 @@
+Error codes
+翻译规范：
+expected:缺少
+unexpected:不合规的，
+
+否定词：
+
+不合语法
+不合规
+不规范
+
+全部写成祈使句，不用陈述句。
+
+This is the current list of error and warning codes:
+code  sample message
+E1  Indentation
+E101    缩进不应包含混合空格和制表符（Tab）
+indentation contains mixed spaces and tabs
+E111  缩进应为4的整数倍
+indentation is not a multiple of four
+E112  此处应有缩进
+expected an indented block
+E113  缩进不符合语法
+unexpected indentation
+E114  注释缩进应为4的整数倍
+indentation is not a multiple of four (comment)
+E115  注释应有缩进
+expected an indented block (comment)
+E116  注释缩进不符合语法
+unexpected indentation (comment)
+E117  过度缩进
+over-indented
+E121 (*^)  continuation line under-indented for hanging indent
+E122 (^)  continuation line missing indentation or outdented
+E123 (*)  closing bracket does not match indentation of opening bracket”s line
+E124 (^)  closing bracket does not match visual indentation
+E125 (^)  continuation line with same indent as next logical line
+E126 (*^)  continuation line over-indented for hanging indent
+E127 (^)  continuation line over-indented for visual indent
+E128 (^)  continuation line under-indented for visual indent
+E129 (^)  visually indented line with same indent as next logical line
+E131 (^)  continuation line unaligned for hanging indent
+E133 (*)  closing bracket is missing indentation
+    
+E2  Whitespace
+E201  '('之后无需空格
+whitespace after “(“
+E202  ')'之前无需空格
+whitespace before “)”
+E203  ':'之前无需空格
+whitespace before “:”
+E211  '('之前无需空格
+whitespace before “(“
+    
+E221  运算符前不应出现多个空格
+multiple spaces before operator
+E222  运算符后不应出现空格
+multiple spaces after operator
+E223  运算符前不应出现制表符（Tab）
+tab before operator
+E224  运算符后不应出现制表符（Tab）
+tab after operator
+E225  运算符两侧各需要一个空格
+missing whitespace around operator
+E226 (*)    算术运算符两侧各需要一个空格
+missing whitespace around arithmetic operator
+E227  位运算符两侧各需要一个空格
+missing whitespace around bitwise or shift operator
+E228  取模运算符(%)两侧各需要一个空格
+missing whitespace around modulo operator
+E231  逗号（“,”）、分号（ “;”）或者冒号（ “:”）之后缺少空格
+missing whitespace after “,”, “;”, or “:”
+    
+E241 (*)  逗号（“,”）之后出现多个空格
+multiple spaces after “,”
+E242 (*)  逗号（“,”）之后出现制表符（Tab）
+tab after “,”
+E251  默认参数赋值语句的等号两侧不应有空格
+unexpected spaces around keyword / parameter equals
+    
+E261  行内注释需与最右端间隔至少2个字符
+at least two spaces before inline comment
+E262  行内注释需要在“#”号后面空一格
+inline comment should start with “# “
+E265  块注释需要在“#”号后空一格
+block comment should start with “# “
+E266  块注释前的“#”号太多
+too many leading “#” for block comment
+E271  关键字之后出现多个空格
+multiple spaces after keyword
+E272  关键字之前出现多个空格
+multiple spaces before keyword
+E273  关键字之后出现制表符（Tab）
+tab after keyword
+E274  关键字之前出现制表符（Tab）
+tab before keyword
+E275  关键字之后应有一个空格
+missing whitespace after keyword
+    
+E3  Blank line
+E301  需要1个空行，但目前没有空行
+expected 1 blank line, found 0
+E302  需要2个空行，但目前没有空行
+expected 2 blank lines, found 0
+E303  空行数量不应太多（不应超过3个）
+too many blank lines (3)
+E304  函数装饰器后不应有空行
+blank lines found after function decorator
+E305  函数或类结束后需要有两个空行
+expected 2 blank lines after end of function or class
+E306  嵌套定义的函数之前需要有一个空行
+expected 1 blank line before a nested definition
+    
+E4  Import
+E401  在单行import语句中，不应导入多个模块
+multiple imports on one line
+E402  模块的导入应当在文件顶端
+module level import not at top of file
+    
+E5  Line length
+E501 (^)  该行不应过长
+line too long (82 > 79 characters)
+E502  在括号中间，无需使用反斜杠（“\”）断行
+the backslash is redundant between brackets
+    
+E7  Statement
+E701  在单行中不应书写多个语句
+multiple statements on one line (colon)
+E702  在单行中不应书写多个语句
+multiple statements on one line (semicolon)
+E703  语句不应以分号结尾
+statement ends with a semicolon
+E704    一行中不应有多个定义(def)语句
+multiple statements on one line (def)
+E711    判断变量是否为None时,请使用“if 变量 is None:”
+comparison to None should be “if cond is None:”
+E712    判断变量是否为True时,请使用“if 变量 is True:”或者“if 变量:”
+comparison to True should be “if cond is True:” or “if cond:”
+E713  判断某个变量是否不在某个容器内时，请使用“变量 not in 容器”，而不是“not 变量 in 容器”
+test for membership should be “not in”
+E714  判断变量的编号（id）是否相等时，请使用“变量 not in 容器”，而不是“not 变量 in 容器”
+test for object identity should be “is not”
+E721    判断变量的类型时，尽可能不要使用“type()”。推荐使用“isinstance()”
+do not compare types, use “isinstance()”
+E722  不要用光秃秃的“except:”，请使用更加清晰的异常处理方式
+do not use bare except, specify exception instead
+E731  此处不推荐使用lambda表达式，不妨使用def。只有在作为参数传入时，才应当使用lambda表达式定义匿名函数
+do not assign a lambda expression, use a def
+E741    不要将变量命名为“l”、“O”、“I”等容易引起歧义的单字符
+do not use variables named “l”, “O”, or “I”
+E742  不要将类命名为“l”、“O”、“I”等容易引起歧义的单字符
+do not define classes named “l”, “O”, or “I”
+E743  不要将函数命名为“l”、“O”、“I”等容易引起歧义的单字符
+do not define functions named “l”, “O”, or “I”
+    
+E9  Runtime
+E901  出现语法错误或者缩进错误
+SyntaxError or IndentationError
+E902  输入输出错误
+IOError
+E999 语法错误
+Syntax Error
+W1  Indentation warning
+W191  缩进中包含制表符（Tab），可能出现了Tab和空格混用的问题
+indentation contains tabs
+    
+W2  Whitespace warning
+W291    一行代码结束后不应有空格
+trailing whitespace
+W292    文件结束处应有一个空行
+no newline at end of file
+W293  空行中含有缩进
+blank line contains whitespace
+    
+W3  Blank line warning
+W391    blank line at end of file
+    
+W5  Line break warning
+W503 (*)  line break before binary operator
+W504 (*)  line break after binary operator
+W505 (*^)  doc line too long (82 > 79 characters)
+    
+W6  Deprecation warning
+W601    字典的.has_key()方法已被弃用，请使用'in'来代替。
+.has_key() is deprecated, use “in”
+W602  此种抛出异常的方式已被弃用
+deprecated form of raising exception
+W603    判断是否不等时，“<>”符号已被弃用,请使用“!=”
+“<>” is deprecated, use “!=”
+W604  Python3中弃用了反引号表达式形如“`123`”，请使用类似repr(123)的方式获取变量的字符串表示
+backticks are deprecated, use “repr()”
+W605    invalid escape sequence “x”
+W606    “async” 和 “await” 在Python3.7之后的版本已经成为保留字，请勿将其用作变量名
+“async” and “await” are reserved keywords starting with Python 3.7
+
+#Error / Violation Codes
+
+#Flake8 and its plugins assign a code to each message that we refer to as an error code (or violation). Most plugins will list their error codes in their documentation or README.
+
+#Flake8 installs pycodestyle, pyflakes, and mccabe by default and generates its own error codes for pyflakes:
+#Code  Example Message
+F401  模块%s导入未使用
+module imported but unused
+F402  import module from line N shadowed by loop variable
+F403  请尽量避免使用“from module import *”语句，因为这会使得编辑器无法检查未定义的变量名
+“from module import *” used; unable to detect undefined names
+F404  future import(s) name after other statements
+F405  该名称可能未定义，或者由“from module import *”这样的语句导入。
+name may be undefined, or defined from star imports: module
+F406  “from module import *”这样的语句只允许在全局空间中导入，不允许局部导入
+“from module import *” only allowed at module level
+F407  an undefined __future__ feature name was imported
+    
+F501  无效的%格式化字符串语法
+invalid % format literal
+F502  % format expected mapping but got sequence
+F503  % format expected sequence but got mapping
+F504  
+% format unused named arguments
+F505  % format missing named arguments
+F506  % format mixed positional and named arguments
+F507  使用%格式化字符串时，%号的数量与参数的数量应相等。
+% format mismatch of placeholder and argument count
+F508  % format with * specifier requires a sequence
+F509  % format with unsupported format character
+F521  .format(...) invalid format string
+F522  .format(...) unused named arguments
+F523  .format(...) unused positional arguments
+F524  .format(...) missing argument
+F525  .format(...) mixing automatic and manual numbering
+F541  f-string without any placeholders
+    
+F601  字典的键发生重复，且同一个键对应不同的值
+dictionary key name repeated with different values
+F602    dictionary key variable name repeated with different values
+F621    too many expressions in an assignment with star-unpacking
+F622    two or more starred expressions in an assignment (a, *b, *c = d)
+F631  assertion test is a tuple, which is always True
+F632  对比字符串、字节或者整数是否相等时，请使用“==”或者“!=”符号
+use ==/!= to compare str, bytes, and int literals
+F633  use of >> is invalid with print function
+F634  if test is a tuple, which is always True
+    
+F701  break语句不应出现在循环语句外部
+a break statement outside of a while or for loop
+F702  continue语句不应出现在循环语句外部
+a continue statement outside of a while or for loop
+F703  continue语句不应出现在循环语句的最后
+a continue statement in a finally block in a loop
+F704  yield语句不应出现在函数外部
+a yield or yield from statement outside of a function
+F705  生成器内部的return语句不应传递参数
+a return statement with arguments inside a generator
+F706  return语句不应出现在函数或者方法外部
+a return statement outside of a function/method
+F707  an except: block as not the last exception handler
+F721  syntax error in doctest
+F722  syntax error in forward annotation
+F723  类型提示中出现语法错误
+syntax error in type comment
+    
+F811  redefinition of unused name from line N
+F812  列表推导式重新定义了变量%s在第%s行
+list comprehension redefines name from line N
+F821  %s未定义
+undefined name name
+F822  undefined name name in __all__
+F823  局部变量%s在使用前未定义
+local variable name … referenced before assignment
+F831  函数中有重复定义的参数%s
+duplicate argument name in function definition
+F841  局部变量%s已定义，但未被使用
+local variable name is assigned to but never used
+    
+F901  raise NotImplemented should be raise NotImplementedError
+
+C901   代码过于复杂（圈复杂度超出用户要求）

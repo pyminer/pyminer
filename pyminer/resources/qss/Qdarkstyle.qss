@@ -1,0 +1,93 @@
+QWidget {
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    /*font-family: "等线";*/
+}
+QPushButton#pmtopToolbarButton{
+    padding: 0px;
+
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]:hover{
+    background-color:rgb(89,131,164);
+}
+QPushButton#pmtopToolbarButton[stat="selected"]{
+border: 0px;
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color:#32414B;
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]{
+    border: 0px;
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color:#19232D;
+}
+QPushButton[qssp="minibutton2"]{
+    border: 0px;
+    height: 30px;
+}
+QPushButton[qssp="minibutton3"]{
+    border: 0px;
+    height: 20px;
+    margin: -5px -1px;
+}
+QToolButton[qssp="tooliconbtn"] {
+    qproperty-iconSize: 32px 32px;
+    border:1px;
+    height: 80px;
+    padding: 2px 5px;
+}
+QToolButton#hidebutton {
+    max-width: 15px;
+    height:22px;
+    border: 0px;
+    margin: 0px;
+    background-color:#19232D;
+}
+QToolBar#tab_bar_for_tool_bar{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color:#19232D;
+}
+QToolBar#top_toolbar_right {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color:#19232D;
+}
+PMGToolBar {
+    border-top: 1px solid #32414B;
+    border-bottom: 1px solid #19232D;
+    padding: 0 0 0 10px;
+    margin: 0px;
+    min-height: 110px;
+    max-height: 110px;
+    background-color:#32414B;
+}
+
+PMPushButtonPane {
+    border: 0px;
+    padding: 0px;
+    spacing: 0px;
+    margin: 0px;
+    min-width: 120px;
+}
+QToolButton::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: bottom center;
+	margin: 0;
+}
+QTabBar::tab{
+    height:20;
+}
+
+QToolButton#stacked_tool_button::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: right;
+	margin-top: 5px;
+}

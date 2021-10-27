@@ -1,0 +1,13 @@
+@import url("../pydoctheme.css");
+img {
+  border-radius: 2px;
+  border: solid 2px #dddddd;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.important {
+  background: #FFC107;
+}
+
+/*# sourceMappingURL=pyminer.css.map */

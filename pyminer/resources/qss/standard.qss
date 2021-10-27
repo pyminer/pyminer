@@ -1,0 +1,201 @@
+/*
+作者：@吴宫幽径
+鸣谢：@Irony提供的滚动条样式
+github链接：
+https://github.com/PyQt5/PyQt/blob/master/QScrollArea/Data/style.qss
+文件加载时，将会自动替换MAIN_THEME和MARGIN_THEME为相应的颜色。
+*/
+QMainWindow{background-color:#F7F7F7;}
+QDialog{background-color:#F7F7F7;}
+
+
+QAbstractScrollArea{
+    border:1px solid #DADADA;
+}
+TopToolBar {
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+ }
+TopToolBarRight {
+    border-bottom: 1px solid #DADADA;
+    border-top: 1px solid #DADADA;
+ }
+QDockWidget {
+
+    border: 0px;
+}
+
+QDockWidget::title {
+    border:0px 0px;
+    border-radius: 3px;
+    text-align: left; /* align the text to the left */
+    background: lightgray;
+    padding-left: 5px;
+}
+
+QDockWidget::close-button, QDockWidget::float-button {
+   /* border: 1px solid transparent;
+    background: darkgray;*/
+    border-radius: 3px;
+    /*padding: 0px;*/
+}
+
+QDockWidget::close-button:hover, QDockWidget::float-button:hover {
+    background: gray;
+}
+
+QDockWidget::close-button:pressed, QDockWidget::float-button:pressed {
+    padding: 1px -1px -1px 1px;
+}
+
+QPushButton{
+    border:1px solid #DADADA;
+    border-radius:5px;
+    height:20px;
+    width:80px;
+}
+QPushButton:hover{background-color:#DADADA;}
+/*按钮停留态*/
+QPushButton#pmtopToolbarButton[stat="selected"]{
+    /*背景颜色*/
+    height:20px;
+    padding:0px 0px 0px 0px;
+    border:1px;
+    border-radius:8px;
+    background-color:#DADADA;
+
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]{
+    /*背景颜色*/
+    height:20px;
+    padding:0px 0px 0px 0px;
+    border:1px;
+    border-radius:8px;
+    background-color:#F7F7F7;
+}
+
+QPushButton#pmtopToolbarButton:hover{
+    /*背景颜色*/
+    height:20px;
+    padding:0px 0px 0px 0px;
+    border:1px;
+    border-radius:8px;
+}
+
+/*按钮停留态*/
+QPushButton:hover
+{
+    /*背景颜色*/
+    background-color:#DADADA;
+}
+QToolBar{
+    height:100px;
+
+}
+
+
+QToolButton{
+    border:1px;
+    padding:2px 2px;
+    text-align:left;
+    border-radius:5px;
+}
+/*按钮停留态*/
+QToolButton:hover
+{
+    /*背景颜色*/
+    background-color:#DADADA;
+}
+/*toolbutton下三角居中靠下显示*/
+QToolButton::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: bottom center;
+	margin-top: 5px;
+}
+
+
+QScrollBar::vertical {
+    background: #DADADA;
+    border: -0px solid grey;
+    margin: 0px 0px 0px 0px;
+    width: 10px;
+    border-radius:5px;
+}
+QScrollBar::horizontal {
+    background: #DADADA;
+    margin: 0px 0px 0px 0px;
+    height:10px;
+
+}
+
+QScrollBar::handle:vertical{
+border-radius:3px;
+background:#DADADA;
+}
+
+QScrollBar::handle:horizontal{
+border-radius:3px;
+background:#DADADA;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical {
+    background: #F7F7F7;
+    border:0px;
+}
+QMessageBox QPushButton[text="OK"] {
+    qproperty-text: "确认";
+}
+QMessageBox QPushButton[text="Open"] {
+    qproperty-text: "打开";
+}
+QMessageBox QPushButton[text="Save"] {
+    qproperty-text: "保存";
+}
+QMessageBox QPushButton[text="Cancel"] {
+    qproperty-text: "取消";
+}
+QMessageBox QPushButton[text="Close"] {
+    qproperty-text: "关闭";
+}
+QMessageBox QPushButton[text="Discard"] {
+    qproperty-text: "不保存";
+}
+QMessageBox QPushButton[text="Don't Save"] {
+    qproperty-text: "不保存";
+}
+QMessageBox QPushButton[text="Apply"] {
+    qproperty-text: "应用";
+}
+QMessageBox QPushButton[text="Reset"] {
+    qproperty-text: "重置";
+}
+QMessageBox QPushButton[text="Restore Defaults"] {
+    qproperty-text: "恢复默认";
+}
+QMessageBox QPushButton[text="Help"] {
+    qproperty-text: "帮助";
+}
+QMessageBox QPushButton[text="Save All"] {
+    qproperty-text: "保存全部";
+}
+QMessageBox QPushButton[text="&Yes"] {
+    qproperty-text: "是";
+}
+QMessageBox QPushButton[text="Yes to &All"] {
+    qproperty-text: "全部都是";
+}
+QMessageBox QPushButton[text="&No"] {
+    qproperty-text: "不";
+}
+QMessageBox QPushButton[text="N&o to All"] {
+    qproperty-text: "全部都不";
+}
+QMessageBox QPushButton[text="Abort"] {
+    qproperty-text: "终止";
+}
+QMessageBox QPushButton[text="Retry"] {
+    qproperty-text: "重试";
+}
+QMessageBox QPushButton[text="Ignore"] {
+    qproperty-text: "忽略";
+}

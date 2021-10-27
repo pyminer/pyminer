@@ -1,0 +1,11 @@
+{
+  "apps": {
+    "cftool": {
+      "enabled": true,
+      "pinned": false,
+      "starts": 0
+    }
+  },
+  "paths": [
+  ]
+}

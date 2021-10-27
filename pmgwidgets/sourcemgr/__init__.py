@@ -1,1 +1,0 @@
-from .iconutils import create_icon

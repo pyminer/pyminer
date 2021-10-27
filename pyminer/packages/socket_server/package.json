@@ -1,0 +1,16 @@
+{
+    "name":"socket_server",
+    "display_name":"后台服务器",
+    "version":"0.1.0",
+    "description":"",
+    "icon":"extension_demo.jpg",
+    "interface":{
+        "file":"main.py",
+        "interface":"Interface"
+    },
+    "widgets":[
+    ],
+    "requirements":[
+    ],
+    "settings": "settings.json"
+}

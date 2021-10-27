@@ -1,56 +1,114 @@
 import os
-import shutil
 import sys
+from os import path
 
-# 文档的生程流程如下所示：
-# 首先，根据*.py文件生成一系列的*.rst文件，然后根据*.rst文件生成html文件，即静态页面。
+base_path = path.abspath(path.join(__file__, '../..'))
+sys.path.insert(0, base_path)
 
-# 是否将文件上传
-# 在进行页面上传时，会开启所有的强制刷新选项，这会降低页面的生成性能，但无伤大雅。
-upload = False
-# upload = True
+from sphinx.application import Sphinx
 
-# 项目的根路径，即pyminer项目的根文件夹
-base = os.path.dirname(os.path.dirname(__file__))
-sys.path.insert(0, base)
-
-# *.py文件夹，在这些路径读取*.py，然后生成*.rst文件
-alg_src_dir = os.path.join(base, 'pyminer_algorithms')
-
-# 用于存储rst模板的文件夹，这些模板用于生成*.rst文件
-template_dir = os.path.join(base, 'docs', 'templates', 'apidoc')
-
-# 根据*.py生成的*.rst文件夹
-alg_rst_dir = os.path.join(base, 'docs', 'source', 'alg')
-upload and os.path.exists(alg_rst_dir) and shutil.rmtree(alg_rst_dir)
-
-# make文件的路径，本脚本调用sphinx的makefile实现功能
-# TODO 目前仅支持调用windows下的makefile，请linux用户自行优化脚本并提交
-make_path = os.path.join(base, 'docs', 'make.bat')
-
-# 最终生成的html文件夹
-html_path = os.path.join(base, 'docs', 'build', 'html')
+from pyminer_devutils.doc import RstGenerator, PythonFileTreeNode
 
 
-def cmd(command):
-    for line in os.popen(command):
-        print(line, end='')
+def main():
+    # 在这个文件下定义了文档的具体生成细节，包括rst文件夹的位置、排除的文档等。
+    base = os.path.dirname(os.path.dirname(__file__))
+
+    source_dir = path.join(base, 'docs', 'source')
+    rst_root_dir = path.join(base, 'docs', 'build', 'rst')
+    path.exists(rst_root_dir) or os.makedirs(rst_root_dir)
+
+    generator = RstGenerator()
+
+    generator.sync_directory(source_dir, rst_root_dir, rm=False)
+
+    # 生成算法部分的文档
+    py_dir = os.path.join(base, 'pyminer_algorithms')  # py源文件的目录
+    rst_dir = os.path.join(rst_root_dir, 'alg')  # 根据py生成的rst文件的目录
+    exclude_dir = [os.path.join(py_dir, p) for p in (
+        # TODO (panhaoyu) 以下内容为无法自动生成的部分，请各位开发者自行检查其中的问题
+        'plotting/graph.py',
+    )]
+    node = PythonFileTreeNode(py_dir, exclude_dir)
+    generator.generate_python_package_files(node, rst_dir, 'pyminer_algorithms')
+
+    # 生成界面部分的文档
+    py_dir = os.path.join(base, 'pmgwidgets')  # py源文件的目录
+    rst_dir = os.path.join(rst_root_dir, 'pmg')  # 根据py生成的rst文件的目录
+    exclude_dir = [os.path.join(py_dir, p) for p in (
+        # TODO (panhaoyu) 以下内容为无法自动生成的部分，请各位开发者自行检查其中的问题
+        'display/browser/get_ipy.py',
+        'widgets/basic/texts/webeditors/__init__.py',
+        'examples',
+        'display/browser/handler.py',
+        'widgets/basic/quick/demo1.py',
+        'widgets/basic/texts',
+        'widgets/extended/texts/texteditor.py',
+        'utilities/platform/test',
+    )]
+    node = PythonFileTreeNode(py_dir, exclude_dir)
+    generator.generate_python_package_files(node, rst_dir, 'pmgwidgets')
+
+    # 生成主程序的文档
+    py_dir = os.path.join(base, 'pyminer2')  # py源文件的目录
+    rst_dir = os.path.join(rst_root_dir, 'pyminer')  # 根据py生成的rst文件的目录
+    exclude_dir = [os.path.join(py_dir, p) for p in (
+        'extensions/packages',  # 插件文档独立生成，这里跳过。
+
+        # TODO (panhaoyu) 以下内容为无法自动生成的部分，请各位开发者自行检查其中的问题
+        'ui/pyqtsource_rc.py',
+        'ui/base/widgets/resources.py',
+        'core',
+        'extensions/package_manager/package_manager.py',
+        'features/io/database.py',
+    )]
+    node = PythonFileTreeNode(py_dir, exclude_dir)
+    generator.generate_python_package_files(node, rst_dir, 'pyminer2')
+
+    # 生成插件的文档
+    py_dir = os.path.join(base, 'pyminer2/extensions/packages')  # py源文件的目录
+    rst_dir = os.path.join(rst_root_dir, 'pkgs')  # 根据py生成的rst文件的目录
+    exclude_dir = [os.path.join(py_dir, p) for p in (
+        'ipython_console/initialize.py',  # IPython控制台的全局文件，没什么生成文档的意义，跳过
+
+        # TODO (panhaoyu) 以下内容为无法自动生成的部分，请各位开发者自行检查其中的问题
+        'pm_preprocess/ui/pyqtsource_rc.py',
+        'code_editor',
+        'data_miner',
+        'cftool',
+        'extension_app_demo',
+        'pm_preprocess',
+    )]
+    node = PythonFileTreeNode(py_dir, exclude_dir)
+    generator.generate_python_package_files(node, rst_dir, 'packages')
+
+    # 生成开发工具文档
+    py_dir = os.path.join(base, 'pyminer_devutils')  # py源文件的目录
+    rst_dir = os.path.join(rst_root_dir, 'dev')  # 根据py生成的rst文件的目录
+    exclude_dir = [os.path.join(py_dir, p) for p in tuple()]
+    node = PythonFileTreeNode(py_dir, exclude_dir)
+    generator.generate_python_package_files(node, rst_dir, 'pyminer_devutils')
+
+    print('RST文件结构已生成。')
+
+    app = Sphinx(
+        srcdir=rst_root_dir,
+        confdir=rst_root_dir,
+        outdir=path.join(path.dirname(__file__), 'build/html'),
+        doctreedir=path.join(path.dirname(__file__), 'build/doctrees'),
+        buildername='html',
+        confoverrides=dict(),
+        status=sys.stdout,
+        warning=sys.stderr,
+        freshenv=False,
+        warningiserror=False,
+        tags=[],
+        verbosity=0,
+        parallel=0,
+        # parallel=multiprocessing.cpu_count(),
+        keep_going=True)
+    app.build()
 
 
-# 在上传时，强制重新生成*.rst文件，否则可以根据缓存加速rst文件生成过程
-if upload:
-    cmd(f'sphinx-apidoc -fMeo "{alg_rst_dir}" "{alg_src_dir}" -t {template_dir}')
-else:
-    cmd(f'sphinx-apidoc -Meo "{alg_rst_dir}" "{alg_src_dir}" -t {template_dir}')
-
-# 在上传时，删除已有的html页面，并重新生成，否则可以利用缓存加速html生成过程
-if upload:
-    cmd(f'"{make_path}" clean')
-cmd(f'"{make_path}" html')
-
-# 进行单元测试
-cmd(f'"{make_path}" doctest')
-
-# 在上传时，将生成的html文件推送至gitee的pages仓库
-if upload:
-    cmd(f'ghp-import -npfr git@gitee.com:py2cn/pyminer -b pages "{html_path}"')
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,90 @@
+QWidget {
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    /*font-family: "等线";*/
+}
+QDockWidget {
+
+    titlebar-close-icon: url(:/logo/source/icons/close.png);
+    titlebar-normal-icon: url(:/logo/source/icons/float.png);
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]:hover{
+    background-color:rgb(89,131,164);
+}
+QPushButton#pmtopToolbarButton[stat="selected"]{
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color: rgb(240,240,240);
+}
+QPushButton#pmtopToolbarButton[stat="unselected"]{
+    padding: 5px 0px 10px 0px;
+    margin: 5px 5px -5px 5px;
+    min-width: 120px;
+    border-radius:5px;
+    background-color: rgb(20,94,143);
+    color: rgb(255, 255, 255);
+}
+QPushButton[qssp="minibutton2"]{
+    height: 30px;
+}
+QPushButton[qssp="minibutton3"]{
+    height: 20px;
+}
+QToolButton[qssp="tooliconbtn"] {
+    qproperty-iconSize: 32px 32px;
+    border: 1px;
+    height: 80px;
+    padding: 2px 5px;
+}
+QToolBar#tab_bar_for_tool_bar{
+    border: 0px;
+    margin: 0px;
+    background-color: rgb(20,94,143);
+}
+QToolBar#top_toolbar_right {
+    border: 0px;
+    background-color: rgb(20,94,143);
+}
+QToolButton{
+    padding:2px 2px;
+    text-align:left;
+    border-radius:5px;
+}
+QToolButton:hover{
+    background-color: #DADADA;
+}
+QToolButton#hidebutton {
+    max-width: 15px;
+    height:22px;
+    border: 0;
+    margin: 0;
+    color: white;
+}
+PMGToolBar{
+    border-bottom: 1px solid gray;
+    margin: 0 0 1px -5px;
+    padding: 0 0 0 10px;
+    min-height: 110px;
+    max-height: 110px;
+}
+PMPushButtonPane {
+    border: 0px;
+    padding: 0px;
+    spacing: 0px;
+    margin: 0px;
+    min-width: 130px;
+}
+/*toolbutton下三角居中靠下显示*/
+QToolButton::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: bottom center;
+	margin-top: 5px;
+}
+
+QToolButton#stacked_tool_button::menu-indicator:image{
+    subcontrol-origin: margin;
+	subcontrol-position: right;
+	margin-top: 5px;
+}

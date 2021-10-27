@@ -1,0 +1,80 @@
+{
+    "lang": {
+        "zh_cn": true,
+        "English": false
+    },
+    "theme": [
+        {
+            "name": "default",
+            "index": 1,
+            "detail": {
+                "fontfamily": [
+                    "微软雅黑",
+                    "simhei"
+                ],
+                "color": "",
+                "font-size": 14
+            }
+        },
+        {
+            "name": "dark",
+            "index": 2,
+            "detail": {
+                "fontfamily": [
+                    "微软雅黑",
+                    "simhei"
+                ]
+            }
+        },
+        {
+            "name": "fushion",
+            "index": 3,
+            "detail": {
+                "fontfamily": [
+                    "微软雅黑",
+                    "simhei"
+                ]
+            }
+        },
+        {
+            "name": "windows",
+            "index": 4,
+            "detail": {
+                "fontfamily": [
+                    "微软雅黑",
+                    "simhei"
+                ]
+            }
+        }
+    ],
+    "core": {
+        "version": "2.1.0",
+        "website": "http://www.pyminer.com",
+        "author": "lixianglong",
+        "mail": "aboutlong@qq.com"
+    },
+    "table": {
+        "alternatingrowcolors": false
+    },
+    "interpreter": [
+        {
+            "name": "python",
+            "version": "3.8.2",
+            "path": "c:/patata/python",
+            "install_path": "c:/patata/python",
+            "pip_index": 1,
+            "pip_install_option": "only_download",
+            "is_default": true
+        }
+    ],
+    "project": [
+        {
+            "name": "demo",
+            "location": "c:/patata/patata/workspace/demo",
+            "description": ""
+        }
+    ],
+    "character_set": "utf-8",
+    "auto_start": false,
+    "workspace": "c:/patata/patata/workspace"
+}

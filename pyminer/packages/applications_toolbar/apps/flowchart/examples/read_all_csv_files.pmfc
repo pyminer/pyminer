@@ -1,0 +1,127 @@
+{
+    "nodes": {
+        "1": {
+            "text": "\u6587\u4ef6\u5217\u4e3e",
+            "id": "1",
+            "pos": [
+                -335.0,
+                -160.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "ListDirs",
+                "info": {
+                    "dir": "C:/Users/12957/Desktop/\u65b0\u5efa\u6587\u4ef6\u5939",
+                    "ext_filter": ".csv"
+                }
+            },
+            "input_ports": {},
+            "output_ports": {
+                "1:output:1": {
+                    "id": "1:output:1",
+                    "pos": [
+                        -230.0,
+                        -100.0
+                    ],
+                    "contents": {},
+                    "text": "\u8def\u5f84"
+                }
+            }
+        },
+        "2": {
+            "text": "\u8bfb\u53d6Pandas\u6570\u636e\u96c6",
+            "id": "2",
+            "pos": [
+                -75.0,
+                -245.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "PandasImport",
+                "info": {
+                    "csv_sep": "\t",
+                    "skiprows": 3,
+                    "find_header_in_table": true,
+                    "header": 0,
+                    "limit_nrows": false,
+                    "nrows": 0
+                }
+            },
+            "input_ports": {
+                "2:input:1": {
+                    "id": "2:input:1",
+                    "pos": [
+                        -70.0,
+                        -185.0
+                    ],
+                    "contents": {},
+                    "text": "\u8def\u5f84"
+                }
+            },
+            "output_ports": {
+                "2:output:1": {
+                    "id": "2:output:1",
+                    "pos": [
+                        30.0,
+                        -185.0
+                    ],
+                    "contents": {},
+                    "text": "\u6570\u636e\u96c6"
+                }
+            }
+        },
+        "3": {
+            "text": "\u53d8\u91cf\u4e0a\u4f20\u5de5\u4f5c\u7a7a\u95f4",
+            "id": "3",
+            "pos": [
+                185.0,
+                -95.0
+            ],
+            "icon": "C:\\Users\\12957\\Documents\\Developing\\Python\\PyMiner_dev_kit\\bin\\widgets\\flowchart\\core\\icons\\logo.png",
+            "content": {
+                "type": "SetVariable",
+                "info": {
+                    "var_name": "var_test_csv"
+                }
+            },
+            "input_ports": {
+                "3:input:1": {
+                    "id": "3:input:1",
+                    "pos": [
+                        190.0,
+                        -55.0
+                    ],
+                    "contents": {},
+                    "text": "value"
+                },
+                "3:input:2": {
+                    "id": "3:input:2",
+                    "pos": [
+                        190.0,
+                        -15.0
+                    ],
+                    "contents": {},
+                    "text": "name"
+                }
+            },
+            "output_ports": {}
+        }
+    },
+    "connections": [
+        {
+            "start_id": "1:output:1",
+            "end_id": "2:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "2:output:1",
+            "end_id": "3:input:1",
+            "mid_positions": []
+        },
+        {
+            "start_id": "1:output:1",
+            "end_id": "3:input:2",
+            "mid_positions": []
+        }
+    ]
+}
