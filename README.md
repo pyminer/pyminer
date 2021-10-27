@@ -8,7 +8,7 @@
 
 <div align="center">
 
-[![Stars](https://gitee.com/py2cn/pyminer/badge/star.svg?theme=gvp)](https://gitee.com/py2cn/pyminer/stargazers)
+
 [![Platform](https://img.shields.io/badge/python-v3.8-blue)](https://img.shields.io/badge/python-v3.8-blue)
 [![Platform](https://img.shields.io/badge/PySide2-blue)](https://img.shields.io/badge/PySide2-blue)
 [![License](https://img.shields.io/badge/license-LGPL-blue)](https://img.shields.io/badge/license-LGPL-blue)
@@ -57,13 +57,6 @@ pyminer希望成为一个伟大的开源项目，也希望得到大家的认可�
 
 ## 🎉 技术说明
 
-1. 项目开发环境支持跨平台，windows,linux,mac 都支持。
-2. Python版本：支持Python3.5及以上，但建议使用Python3.8及以上版本，性能更好。
-3. Qt的Python接口：使用PySide2，版本为5.15.2。
-4. 项目开发环境使用PyCharm
-
-注意：
-
 - pyminer 的官方发行版本为Python3.8+PySide2-5.15.2。开发者可自行使用其他版本的Python解释器配置相关环境。
 - pyminer 曾经由PyQt5开发。但考虑到官方支持以及许可证的类型，我们已经迁移到了PySide2并改变许可证为LGPL。请勿使用PyQt5安装。
 - 当使用Python3.8配置环境时，不支持3.8.0等低版本的Python3.8解释器。当使用Python3.8时，请使用3.8.5或者更高版本的解释器。
@@ -72,22 +65,11 @@ pyminer希望成为一个伟大的开源项目，也希望得到大家的认可�
 
 
 
-## 🎁 文档地址
-- 项目文档：[https://gitee.com/py2cn/pyminer/wikis](https://gitee.com/py2cn/pyminer/wikis)
-- API文档：[http://py2cn.gitee.io/pyminer](http://py2cn.gitee.io/pyminer)
-- MATLAB与Numpy对比：[http://mathesaurus.sourceforge.net/matlab-numpy.html](http://mathesaurus.sourceforge.net/matlab-numpy.html)
-
-<p></p>
-<p></p>
-
-## ⏳ 当前进度
-[https://gitee.com/py2cn/pyminer/board](https://gitee.com/py2cn/pyminer/board)
-
 
 ## 🚄 开源地址
 
 - Gitee：[https://gitee.com/py2cn/pyminer](https://gitee.com/py2cn/pyminer)
-- GitHub：[https://github.com/aboutlong/pyminer](https://github.com/aboutlong/pyminer)
+- GitHub：[https://github.com/aboutlong/pyminer](https://github.com/pyminer/pyminer)
 
 <p></p>
 <p></p>
@@ -113,49 +95,16 @@ pyminer希望成为一个伟大的开源项目，也希望得到大家的认可�
 #### Windows安装 pyminer
 
 ```bash
-#第一步：下载源代码
-git clone https://gitee.com/py2cn/pyminer.git
-#安装依赖 (如果下载太慢，请复制源码目录下的 pip.ini 文件到python安装目录下)
+#第一步：安装python 3.8或以上版本
+#第二步：安装pyminer
 pip install pyminer
-#第三步：运行主程序
-在控制台输入 pyminer 回车，即可打开pyminer 
 
+windows环境下也可以前往官网下载exe发行版进行安装。
 
-```
-
-#### 虚拟环境安装 pyminer
-
-```bash
-#第一步：创建pip虚拟环境
-pip install pipenv
-pipenv --three  # 使用当前系统中的python3创建环境
-#第二步：启动当前目录下的虚拟环境
-pipenv shell
-#第三步：为虚拟环境安装pyminer
-pipenv install pyminer -i https://mirrors.cloud.tencent.com/pypi/simple
-
-
-```
-
-## 开发重点（2021年4月修订）
-pyminer项目现在的开发目标是，打造初学者友好的Python编程环境，方便更多的人与Python这位踏实可靠（也有点笨呆呆）的自动化助手相知、相熟。
-
-因此pyminer的开发重点为：
-
-1、计算、统计方面低代码化功能性开发。需求详见：[低代码化功能性开发](https://gitee.com/py2cn/pyminer/issues/I3HTG9?from=project-issue)
-
-2、编写适用于Python入门的pyminer官方教程。需求详见：[编写教程](https://gitee.com/py2cn/pyminer/issues/I3I7FW?from=project-issue) 。在教程编写方面，
-我们深知开发团队力量有限，因此诚挚希望可以和各位开发者或培训机构合作。
-
-3、插件商店的开发。插件商店可以让pyminer如虎添翼。这一部分的开发需求详见：[插件商店](https://gitee.com/py2cn/pyminer/issues/I1TWAR?from=project-issue)
-
-为了减少开发负担，样式表只使用浅色样式表（Fusion），不对深色样式表做优化，且不再进行界面语言翻译工作。
-界面语言直接使用中文。
 
 ## 📱 加入我们
 
 作者：pyminer Development Team
-
 邮箱：team@pyminer.com
 
 欢迎各位开发者大佬加入 
@@ -169,10 +118,6 @@ pyminer项目现在的开发目标是，打造初学者友好的Python编程环�
 <p></p>
 
 
-##  🚥 许可说明
-本项目遵循LGPL许可证。
-
-许可解释权归属 pyminer Development Team。
 
 ##  📸 预览截图
 
